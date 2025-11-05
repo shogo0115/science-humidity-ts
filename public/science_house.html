@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>写真とボタンのウェブページ</title>
+  <style>
+    #backButton {
+      display: block;
+      margin: 20px 0 20px 0; /* 上下にスペース、左に固定配置 */
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    /* 全体のページのスタイル */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* 上寄せに変更 */
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding-top: 20px; /* ページ上部の余白を少し追加 */
+    }
+
+    /* 写真のスタイル */
+    .photo {
+      width: 800px;
+      height: auto;
+      margin-top: 0px;
+      border-radius: 8px;
+    }
+
+     /* 質問文のスタイル */
+    .question {
+      margin-top: 15px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    /* ボタンのコンテナ */
+    .button-container {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    /* ボタンのスタイル */
+    .button {
+      padding: 10px 50px;
+      font-size: 32px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    /* ボタンのホバー効果 */
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <button id="backButton" onclick="goHome()">ホームに戻る</button>
+
+  <!-- 中央上に写真を配置 -->
+  <img src="家具.png" alt="写真" class="photo">
+
+  <!-- 質問文を配置 -->
+  <div class="question">どれについて調べますか？</div>
+
+  <!-- ボタンを配置 -->
+<div class="button-container">
+  <a href="science_cup.html">
+    <button class="button">コップ</button>
+  </a>
+  <a href="science_window_winter.html">
+    <button class="button">窓（冬）</button>
+  </a>
+  <a href="science_towel.html">
+    <button class="button">タオル</button>
+  </a>
+</div>
+
+
+</body>
+<script>
+    'use strict';
+
+
+    // ホームに戻るボタンのクリックイベント
+    function goHome() {
+      window.location.href = "science_home.html";
+    }
+</script>
+</html>

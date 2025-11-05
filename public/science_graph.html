@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>飽和水蒸気量グラフ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* 凡例、公式、グラフを横並びに配置 */
+    #legend-formula-graph {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    #legend-and-formula {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 330px;
+    }
+
+    #canvas-container {
+      width: 800px; /* キャンバス部分の幅を固定 */
+  margin: 20px auto; /* 中央揃えと上下の余白 */
+  text-align: center; /* 子要素（キャンバス）を中央揃え */
+    }
+
+
+    #legend {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    #legend .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #formula-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 360px;
+    }
+
+    #gas-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    #controls-gas1,
+    #controls-gas2 {
+      flex: 1;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .control-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .control-group input[type="number"] {
+      width: 60px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <button id="backButton" onclick="goHome()">ホームに戻る</button>
+
+  <div id="container">
+    <!-- 凡例、公式、グラフを横並びに配置 -->
+    <div id="legend-formula-graph">
+      <div id="legend-and-formula">
+        <!-- 凡例 -->
+        <div id="legend">
+          <h3>棒グラフの色の説明</h3>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: blue; width: 20px; height: 20px;"></div>
+            <span>水蒸気量</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: green; width: 20px; height: 20px;"></div>
+            <span>水滴の量</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: orange; width: 20px; height: 20px;"></div>
+            <span>まだ空気中に含むことができる水蒸気量</span>
+          </div>
+        </div>
+
+        <!-- 公式 -->
+<div id="formula-container">
+  <h3>公式</h3>
+  <p>
+    湿度 [%] = (<span style="color: blue;">水蒸気量</span> / <span style="color: red;">飽和水蒸気量</span>) × 100
+  </p>
+  <p>
+    <span style="color: green;">水滴の量</span> [g/m<sup>3</sup>] = 空間内の水分量 - <span style="color: red;">飽和水蒸気量</span>
+  </p>
+  <p>
+    空間内の水分量 [g/m<sup>3</sup>] = <span style="color: blue;">水蒸気量</span> + <span style="color: green;">水滴の量</span>
+  </p>
+  <p style="color: red; font-weight: bold; margin-top: 10px;">
+    注意事項: スライダーはゆっくり動かして下さい。結果と異なる数値が表示される場合があります。温度が50℃以上、飽和水蒸気量が82.8g/m<sup>3</sup>以上となる場合は数値が赤色に変化します。
+  </p>
+</div>
+</div>
+
+      <!-- グラフ -->
+      <div id="canvas-container">
+        <canvas id="canvas" width="1100" height="600"></canvas>
+      </div>
+    </div>
+
+    <!-- 空間の状態と初めの空間の状態 -->
+    <div id="gas-container">
+      <div id="controls-gas1">
+        <h3>空間の状態</h3>
+        <div class="control-group">
+      <label for="temperatureSlider">温度 [℃]: </label>
+      <input type="range" id="temperatureSlider" min="0" max="50" value="0" step="0.1" oninput="syncInput('temperature')">
+      <input type="number" id="temperatureInput" min="0" max="50" step="0.1" value="0" oninput="syncSlider('temperature')">
+      <span>℃</span>
+    </div>
+    <div class="control-group">
+      <label for="saturationVaporSlider">飽和水蒸気量 [g/m³]: </label>
+      <input type="range" id="saturationVaporSlider" min="4.9" max="82.8" value="0" step="0.1" oninput="syncInput('saturationVapor')">
+      <input type="number" id="saturationVaporInput" min="4.9" max="82.8" step="0.1" value="0" oninput="syncSlider('saturationVapor')">
+      <span>g/m³</span>
+    </div>
+    <div class="control-group">
+      <label for="vaporSlider">空間内の水分量 [g/m³]: </label>
+      <input type="range" id="vaporSlider" min="4.9" max="90" value="4.9" step="0.1" oninput="syncInput('vapor')">
+      <input type="number" id="vaporInput" min="4.9" max="90" step="0.1" value="4.9" oninput="syncSlider('vapor')">
+      <span>g/m³</span>
+    </div>
+    <div class="control-group">
+      <label for="humiditySlider">湿度 [%]: </label>
+      <input type="range" id="humiditySlider" min="5.9" max="100" value="100" step="0.1" oninput="syncInput('humidity')" disabled="">
+      <input type="number" id="humidityInput" min="5.9" max="100" step="0.1" value="100" oninput="syncSlider('humidity')" disabled="">
+      <span>%</span>
+    </div>
+    <div class="control-group">
+      <label for="condensedWaterSlider">水滴の量 [g/m³]: </label>
+      <input type="range" id="condensedWaterSlider" min="0" max="85.1" value="0" step="0.1" oninput="syncInput('condensedWater')" disabled="">
+      <input type="number" id="condensedWaterInput" min="0" max="85.1" step="0.1" value="0" oninput="syncSlider('condensedWater')" disabled="">
+      <span>g/m³</span>
+    </div>
+        <div class="button-group">
+          <button id="temperatureButton">温度を固定</button>
+          <button id="vaporButton">水分量を固定</button>
+	  <button id="saveStateButton">初めの空間の状態として保存</button>
+        </div>
+      </div>
+
+      <div id="controls-gas2">
+  <h3>初めの空間の状態</h3>
+  <div class="control-group">
+    <label for="temperatureInput2">温度 [℃]: </label>
+    <input type="range" id="temperatureSlider2" min="0" max="50" value="0" step="0.1" disabled="">
+    <input type="number" id="temperatureInput2" min="0" max="50" value="0" step="0.1" readonly="">
+    <span>℃</span>
+  </div>
+  <div class="control-group">
+    <label for="saturationVaporInput2">飽和水蒸気量 [g/m³]: </label>
+    <input type="range" id="saturationVaporSlider2" min="4.9" max="82.8" value="4.9" step="0.1" disabled="">
+    <input type="number" id="saturationVaporInput2" min="4.9" max="82.8" value="4.9" step="0.1" readonly="">
+    <span>g/m³</span>
+  </div>
+  <div class="control-group">
+    <label for="vaporInput2">空間内の水分量 [g/m³]: </label>
+    <input type="range" id="vaporSlider2" min="4.9" max="90" value="4.9" step="0.1" disabled="">
+    <input type="number" id="vaporInput2" min="4.9" max="90" value="4.9" step="0.1" readonly="">
+    <span>g/m³</span>
+  </div>
+  <div class="control-group">
+    <label for="humidityInput2">湿度 [%]: </label>
+    <input type="range" id="humiditySlider2" min="5.9" max="100" value="5.9" step="0.1" disabled="">
+    <input type="number" id="humidityInput2" min="5.9" max="100" value="5.9" step="0.1" readonly="">
+    <span>%</span>
+  </div>
+  <div class="control-group">
+    <label for="condensedWaterInput2">水滴の量 [g/m³]: </label>
+    <input type="range" id="condensedWaterSlider2" min="0" max="85.1" value="0" step="0.1" disabled="">
+    <input type="number" id="condensedWaterInput2" min="0" max="85.1" value="0" step="0.1" readonly="">
+    <span>g/m³</span>
+  </div>
+</div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+  <script>
+    'use strict';
+
+     // グラフの設定
+    var c = document.getElementById('canvas');
+    var ctx = c.getContext('2d');
+    ctx.font = "20px 'Arial', sans-serif";
+    ctx.lineWidth = 1;
+
+    // グラフの座標
+    ctx.originX = 80;
+    ctx.originY = 540;
+    ctx.unitX = 10;
+    ctx.unitY = -5.4;
+    ctx.strokeStyle = "black";
+
+
+    // ページロード時の初期状態設定
+    //パラメータの有効無効について
+window.addEventListener('load', function() {
+    toggleControlState('temperature', false);
+    toggleControlState('vapor', false);
+    document.getElementById('humiditySlider').disabled = true;
+    document.getElementById('humidityInput').disabled = true;
+    document.getElementById('condensedWaterSlider').disabled = true;
+    document.getElementById('condensedWaterInput').disabled = true;
+　　//気体1の初期設定
+    document.getElementById('temperatureInput').value = 0.0;
+    document.getElementById('temperatureSlider').value = 0.0;
+    document.getElementById('saturationVaporInput').value = 4.9;
+    document.getElementById('saturationVaporSlider').value = 4.9;
+    document.getElementById('vaporInput').value = 4.9;
+    document.getElementById('vaporSlider').value = 4.9;
+    document.getElementById('humidityInput').value = 100;
+    document.getElementById('humiditySlider').value = 100;
+    document.getElementById('condensedWaterInput').value = 0.0;
+　　//気体2の初期設定
+    document.getElementById('temperatureInput2').value = 0.0;
+    document.getElementById('temperatureSlider2').value = 0.0;
+    document.getElementById('saturationVaporInput2').value = 4.9;
+    document.getElementById('saturationVaporSlider2').value = 4.9;
+    document.getElementById('vaporInput2').value = 4.9;
+    document.getElementById('vaporSlider2').value = 4.9;
+    document.getElementById('humidityInput2').value = 100;
+    document.getElementById('humiditySlider2').value = 100;
+    document.getElementById('condensedWaterInput2').value = 0.0;
+
+    updateGraph();
+});
+
+ // 「気体の状態を保存」ボタンのクリックイベント
+document.getElementById('saveStateButton').addEventListener('click', function() {
+    const temperature1 = parseFloat(document.getElementById('temperatureInput').value);
+    const saturationVapor1 = parseFloat(document.getElementById('saturationVaporInput').value);
+    const vapor1 = parseFloat(document.getElementById('vaporInput').value);
+    const humidity1 = parseFloat(document.getElementById('humidityInput').value);
+    const waterDroplets1 = parseFloat(document.getElementById('condensedWaterInput').value);
+
+    document.getElementById('temperatureInput2').value = temperature1.toFixed(1);
+    document.getElementById('temperatureSlider2').value = temperature1.toFixed(1);
+    document.getElementById('saturationVaporInput2').value = saturationVapor1.toFixed(1);
+    document.getElementById('saturationVaporSlider2').value = saturationVapor1.toFixed(1);
+    document.getElementById('vaporInput2').value = vapor1.toFixed(1);
+    document.getElementById('vaporSlider2').value = vapor1.toFixed(1);
+    document.getElementById('humidityInput2').value = humidity1.toFixed(1);
+    document.getElementById('humiditySlider2').value = humidity1.toFixed(1);
+    document.getElementById('condensedWaterInput2').value = waterDroplets1.toFixed(1);
+    document.getElementById('condensedWaterSlider2').value = waterDroplets1.toFixed(1);
+
+    updateGraph();
+});
+
+    function goHome() {
+      window.location.href = "science_home.html";
+    }
+
+    //温度・水蒸気量を固定のボタンのクリックイベント
+['temperature', 'vapor'].forEach(type => {
+    const button = document.getElementById(`${type}Button`);
+    const otherButton = type === 'temperature' ? 'vaporButton' : 'temperatureButton';
+    button.addEventListener('click', () => handleButtonClick(button, otherButton, type));
+});
+
+        // 各スライダーや入力フィールドの有効・無効の状態を切り替え
+function toggleControlState(type, isFixed) {
+    const temperatureSlider = document.getElementById('temperatureSlider');
+    const temperatureInput = document.getElementById('temperatureInput');
+    const vaporSlider = document.getElementById('vaporSlider');
+    const vaporInput = document.getElementById('vaporInput');
+    const saturationVaporSlider = document.getElementById('saturationVaporSlider');
+    const saturationVaporInput = document.getElementById('saturationVaporInput');
+    const humiditySlider = document.getElementById('humiditySlider');
+    const humidityInput = document.getElementById('humidityInput');
+
+    if (type === 'temperature') {
+        temperatureSlider.disabled = isFixed;
+        temperatureInput.disabled = isFixed;
+        saturationVaporSlider.disabled = isFixed;
+        saturationVaporInput.disabled = isFixed;
+    } else if (type === 'vapor'){
+        vaporSlider.disabled = isFixed;
+        vaporInput.disabled = isFixed;
+    }
+
+    // 湿度の有効/無効を設定
+    const isAnyFixed = document.getElementById('temperatureButton').classList.contains('active') || document.getElementById('vaporButton').classList.contains('active');
+    humiditySlider.disabled = !isAnyFixed;
+    humidityInput.disabled = !isAnyFixed;
+}
+
+function handleButtonClick(button, otherButton, type) {
+    const isFixed = button.classList.contains('active');
+    const otherButtonElement = document.getElementById(otherButton);
+    const temperatureInput = document.getElementById('temperatureInput');
+    const saturationVaporInput = document.getElementById('saturationVaporInput');
+
+    if (isFixed) {
+        button.classList.remove('active');
+        button.textContent = type === 'temperature' ? '温度を固定' : '水分量を固定';
+        button.style.backgroundColor = '#007bff'; // 青
+        toggleControlState(type, false);
+        otherButtonElement.disabled = false;
+
+        // 赤色を解除
+        temperatureInput.style.color = 'black';
+        saturationVaporInput.style.color = 'black';
+    } else {
+        button.classList.add('active');
+        button.textContent = type === 'temperature' ? '温度を固定中' : '水分量を固定中';
+        button.style.backgroundColor = '#ff0000'; // 赤
+        toggleControlState(type, true);
+        otherButtonElement.classList.remove('active');
+        otherButtonElement.textContent = otherButton === 'temperatureButton' ? '温度を固定' : '水分量を固定';
+        otherButtonElement.style.backgroundColor = '#007bff'; // 青
+        toggleControlState(type === 'temperature' ? 'vapor' : 'temperature', false);
+        otherButtonElement.disabled = true;
+    }
+
+    // 温度または水蒸気量が固定されている場合は、湿度のスライダーや入力フィールドを有効にする
+    const isTemperatureFixed = document.getElementById('temperatureButton').classList.contains('active');
+    const isVaporFixed = document.getElementById('vaporButton').classList.contains('active');
+    const isHumidityEnabled = isTemperatureFixed || isVaporFixed;
+
+    document.getElementById('humiditySlider').disabled = !isHumidityEnabled;
+    document.getElementById('humidityInput').disabled = !isHumidityEnabled;
+}
+
+
+
+
+
+    function drawScaleX(ctx) {
+        ctx.strokeStyle = "black";
+        ctx.fillStyle = "black";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "top";
+
+        for (var i = 0; i <= 50; i += 5) {
+            var x = ctx.originX + i * ctx.unitX;
+            ctx.beginPath();
+            ctx.strokeStyle = "rgba(0, 0, 0, 0.6)";
+            ctx.moveTo(x, ctx.originY);
+            ctx.lineTo(x, ctx.originY + 5);
+            ctx.stroke();
+            ctx.fillText(i, x, ctx.originY + 10);
+    　　}
+	for (var i = 0; i <= 50; i += 1){
+        var x = ctx.originX + i * ctx.unitX;
+        ctx.beginPath();
+        ctx.moveTo(x, ctx.originY);
+        ctx.lineTo(x, ctx.originY - 500);
+        ctx.stroke();
+    　　}
+　　}
+
+    function drawScaleY(ctx) {
+    ctx.strokeStyle = "black";
+    ctx.fillStyle = "black";
+    ctx.textAlign = "right";
+    ctx.textBaseline = "middle";
+
+    for (var i = 0; i <= 90; i += 10) {
+        var y = ctx.originY + i * ctx.unitY;
+        ctx.beginPath();
+        ctx.strokeStyle = "rgba(0, 0, 0, 0.6)";
+        ctx.moveTo(ctx.originX - 5, y);
+        ctx.lineTo(ctx.originX, y);
+        ctx.stroke();
+        ctx.fillText(i, ctx.originX - 10, y);
+    }
+    for (var i = 0; i <= 90; i += 2) {
+        var y = ctx.originY + i * ctx.unitY;
+        ctx.beginPath();
+        ctx.moveTo(ctx.originX, y);
+        ctx.lineTo(ctx.originX + 500, y);
+        ctx.stroke();
+    }
+    }
+
+
+    function drawAxis(ctx) {
+    ctx.beginPath();
+    ctx.moveTo(ctx.originX, ctx.originY);
+    ctx.lineTo(ctx.originX + 500, ctx.originY);
+    ctx.lineTo(ctx.originX + 495, ctx.originY - 5);
+    ctx.moveTo(ctx.originX + 500, ctx.originY);
+    ctx.lineTo(ctx.originX + 495, ctx.originY + 5);
+    ctx.moveTo(ctx.originX, ctx.originY);
+    ctx.lineTo(ctx.originX, ctx.originY - 500);
+    ctx.lineTo(ctx.originX - 5, ctx.originY - 495);
+    ctx.moveTo(ctx.originX, ctx.originY - 500);
+    ctx.lineTo(ctx.originX + 5, ctx.originY - 495);
+    ctx.strokeStyle = "black";
+    ctx.fillStyle = "black";
+    ctx.stroke();
+
+    ctx.fillText("温度 [℃]", ctx.originX + 300, ctx.originY + 50);
+
+　　ctx.textAlign = "center";
+    ctx.save();
+    ctx.translate(ctx.originX - 50, ctx.originY - 250);
+    ctx.rotate(-Math.PI / 2);
+    ctx.textAlign = "center";
+    ctx.fillText("水蒸気量 [g/m³]", 0, 0);
+    ctx.restore();
+    }
+
+    function draw(ctx, func) {
+        ctx.beginPath();
+        ctx.moveTo(ctx.originX, ctx.originY + a(0) * ctx.unitY);
+
+        for (var T = 0; T <= 50; T += 0.1) {
+            var x = ctx.originX + T * ctx.unitX;
+            var y = ctx.originY + a(T) * ctx.unitY;
+            ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+    }
+
+    function plotPointAndBar(ctx, T1, vapor1, T2, vapor2) {
+    // キャンバスをクリアする
+    ctx.clearRect(0, 0, c.width, c.height);
+
+     // 軸やスケールを再描画
+    drawAxis(ctx);
+    drawScaleX(ctx);
+    drawScaleY(ctx);
+    ctx.strokeStyle = "black";
+    draw(ctx, a);
+
+    // グラフの棒の幅
+    var barWidth = 8;
+
+    // 気体2の棒グラフを先に描画（薄い色を使用）
+    if (T2 !== null && vapor2 !== null) {
+        var vaporAtT2 = a(T2); // 気体2の飽和水蒸気量
+        var x2 = ctx.originX + T2 * ctx.unitX; // 温度に対応するx座標
+
+        ctx.fillStyle = "rgba(0, 0, 255, 0.5)";
+        ctx.fillRect(x2 - (barWidth / 2), ctx.originY, barWidth, vapor2 * ctx.unitY);
+        if (vapor2 > vaporAtT2) {
+            ctx.fillStyle = "rgba(0, 255, 0, 0.5)";
+            ctx.fillRect(x2 - (barWidth / 2), ctx.originY + vaporAtT2 * ctx.unitY, barWidth, (vapor2 - vaporAtT2) * ctx.unitY);
+        } else {
+            ctx.fillStyle = "rgba(255, 165, 0, 0.5)";
+            ctx.fillRect(x2 - (barWidth / 2), ctx.originY + vapor2 * ctx.unitY, barWidth, (vaporAtT2 - vapor2) * ctx.unitY);
+        }
+
+        ctx.strokeStyle = "rgba(0, 0, 255, 1)";
+        ctx.beginPath();
+        ctx.moveTo(ctx.originX, ctx.originY + vaporAtT2 * ctx.unitY);
+        ctx.lineTo(ctx.originX + 500, ctx.originY + vaporAtT2 * ctx.unitY);
+        ctx.stroke();
+
+        ctx.fillStyle = "black";
+        var labelX2 = ctx.originX + 1000;
+        var labelY2 = ctx.originY + vaporAtT2 * ctx.unitY;
+        ctx.fillText("初めの空間の状態: ", labelX2 - 80, labelY2 - 10);
+        ctx.fillText(" 飽和水蒸気量 " + vaporAtT2.toFixed(1) + " g/m³", labelX2,   labelY2  + 10);
+        ctx.fillText("(温度: " + T2.toFixed(1) + " °C)", labelX2, labelY2 + 30);
+    }
+
+
+    // 気体1の棒グラフを後に描画（濃い色を使用）
+    if (T1 !== null && vapor1 !== null) {
+        var vaporAtT1 = a(T1);
+        var x1 = ctx.originX + T1 * ctx.unitX;
+
+        ctx.fillStyle = "blue";
+        ctx.fillRect(x1 - (barWidth / 2), ctx.originY, barWidth, vapor1 * ctx.unitY);
+        if (vapor1 > vaporAtT1) {
+            ctx.fillStyle = "green";
+            ctx.fillRect(x1 - (barWidth / 2), ctx.originY + vaporAtT1 * ctx.unitY, barWidth, (vapor1 - vaporAtT1) * ctx.unitY);
+        } else {
+            ctx.fillStyle = "orange";
+            ctx.fillRect(x1 - (barWidth / 2), ctx.originY + vapor1 * ctx.unitY, barWidth, (vaporAtT1 - vapor1) * ctx.unitY);
+        }
+
+        ctx.strokeStyle = "red";
+        ctx.beginPath();
+        ctx.moveTo(ctx.originX, ctx.originY + vaporAtT1 * ctx.unitY);
+        ctx.lineTo(ctx.originX + 500, ctx.originY + vaporAtT1 * ctx.unitY);
+        ctx.stroke();
+
+        ctx.fillStyle = "black";
+        var labelX1 = ctx.originX + 720;
+        var labelY1 = ctx.originY + vaporAtT1 * ctx.unitY;
+	ctx.fillText("空間の状態:", labelX1 - 100,   labelY1 - 10);
+        ctx.fillText(" 飽和水蒸気量 " + vaporAtT1.toFixed(1) + " g/m³", labelX1,   labelY1  + 10);
+        ctx.fillText("(温度: " + T1.toFixed(1) + " °C)", labelX1, labelY1 + 30);
+    }
+}
+
+
+    // 温度から飽和水蒸気量
+function e(T) {
+    return 6.1078 * Math.pow(10, (7.5 * T / (T + 237.3)));
+}
+function a(T) {
+    return parseFloat((217 * e(T) / (T + 273.15)).toFixed(1));
+}
+
+// 温度から飽和水蒸気量(テーブル)
+function calculateSaturationVaporTable() {
+    const table = [];
+    for (let T = 0; T <= 50.1; T += 0.1) {
+        const roundedT = parseFloat(T.toFixed(1));
+        const e = 6.1078 * Math.pow(10, (7.5 * roundedT / (roundedT + 237.3)));
+        const saturationVapor = parseFloat((217 * e / (roundedT + 273.15)).toFixed(1));
+        table.push({ temperature: roundedT, saturationVapor });
+    }
+    return table;
+}
+// 飽和水蒸気量から温度
+function calculateTemperatureFromSaturationVapor(saturationVapor) {
+    const table = calculateSaturationVaporTable();
+
+    // 飽和水蒸気量がテーブル内にある場合、その温度を直接返す
+    const exactMatch = table.find(entry => entry.saturationVapor === saturationVapor);
+    if (exactMatch) {
+        return exactMatch.temperature;
+    }
+
+    // 最も近い値を探索
+    let closestTemperature = null;
+    let smallestDifference = Infinity;
+
+    for (const entry of table) {
+        const difference = Math.abs(entry.saturationVapor - saturationVapor);
+        if (difference < smallestDifference) {
+            smallestDifference = difference;
+            closestTemperature = entry.temperature;
+        }
+    }
+
+    return closestTemperature; // 最も近い温度を返す
+}
+
+function updateSaturationVapor(eventSource) {
+    const temperatureButtonActive = document.getElementById('temperatureButton').classList.contains('active');
+    const vaporButtonActive = document.getElementById('vaporButton').classList.contains('active');
+    const temperatureInput = document.getElementById('temperatureInput');
+    const saturationVaporInput = document.getElementById('saturationVaporInput');
+    const saturationVaporSlider = document.getElementById('saturationVaporSlider');
+    const vaporInput = document.getElementById('vaporInput');
+
+    let saturationVapor;
+
+    if (vaporButtonActive) {
+        if (eventSource === 'temperature') {
+            const temperature = parseFloat(temperatureInput.value);
+            saturationVapor = a(temperature); // 温度から飽和水蒸気量を計算
+        } else if (eventSource === 'humidity') {
+            const vapor = parseFloat(vaporInput.value);
+            const humidity = parseFloat(document.getElementById('humidityInput').value);
+            saturationVapor = (vapor / humidity) * 100;
+            updateTemperatureFromSaturationVapor(); // 飽和水蒸気量から温度を更新
+        }
+    } else {
+        const temperature = parseFloat(temperatureInput.value);
+        saturationVapor = a(temperature);
+    }
+
+    // 飽和水蒸気量が82.8を超えた場合の処理
+    if (saturationVapor > 82.8) {
+        saturationVaporInput.style.color = "red";
+        temperatureInput.style.color = "red";
+        saturationVapor = 82.8;
+    } else {
+        // 色を解除する処理
+        if (eventSource === 'temperature' || eventSource === 'vapor') {
+            saturationVaporInput.style.color = "";
+            temperatureInput.style.color = "";
+        }
+    }
+
+    if (!temperatureButtonActive) {
+        saturationVaporSlider.value = saturationVapor.toFixed(1);
+        saturationVaporInput.value = saturationVapor.toFixed(1);
+    }
+}
+
+// イベントリスナーの例
+document.getElementById('temperatureSlider').addEventListener('input', () => updateSaturationVapor('temperature'));
+document.getElementById('temperatureInput').addEventListener('input', () => updateSaturationVapor('temperature'));
+document.getElementById('humiditySlider').addEventListener('input', () => updateSaturationVapor('humidity'));
+document.getElementById('humidityInput').addEventListener('input', () => updateSaturationVapor('humidity'));
+
+
+　　//飽和水蒸気量から温度を求める
+    function updateTemperatureFromSaturationVapor() {
+    const saturationvapor = parseFloat(document.getElementById('saturationVaporInput').value);
+    const temperature = calculateTemperatureFromSaturationVapor(saturationvapor);
+    saturationVaporInput.style.color = "";
+    temperatureInput.style.color = "";
+    if (!document.getElementById('temperatureButton').classList.contains('active')) {//「温度を固定」の場合は実行されない
+      document.getElementById('temperatureSlider').value = temperature.toFixed(1);
+      document.getElementById('temperatureInput').value = temperature.toFixed(1);
+     }
+     }
+     document.getElementById('saturationVaporSlider').addEventListener('input', updateTemperatureFromSaturationVapor);
+     document.getElementById('saturationVaporInput').addEventListener('input', updateTemperatureFromSaturationVapor);
+
+
+ function updateVapor() {
+     const temperatureButtonActive = document.getElementById('temperatureButton').classList.contains('active');
+     if (temperatureButtonActive) {
+	 const humidity = parseFloat(document.getElementById('humidityInput').value);
+	 const saturationVapor = parseFloat(document.getElementById('saturationVaporInput').value);
+         const vapor = (humidity / 100) * saturationVapor;
+         document.getElementById('vaporSlider').value = vapor.toFixed(1);
+         document.getElementById('vaporInput').value = vapor.toFixed(1);
+    }
+}
+document.getElementById('humiditySlider').addEventListener('input', updateVapor);
+document.getElementById('humidityInput').addEventListener('input', updateVapor);
+
+
+
+    //湿度の計算
+
+    function updateHumidity() {
+    const saturationVapor = parseFloat(document.getElementById('saturationVaporInput').value);
+    const vapor = parseFloat(document.getElementById('vaporInput').value);
+    let humidity = (vapor / saturationVapor) * 100;
+    humidity = Math.max(0, Math.min(100, humidity)); // 0% から 100% の範囲に制限
+    document.getElementById('humiditySlider').value = humidity.toFixed(1);
+    document.getElementById('humidityInput').value = humidity.toFixed(1);
+}
+
+    document.getElementById('temperatureSlider').addEventListener('input', () => {syncInput('temperature');updateHumidity();});
+    document.getElementById('temperatureInput').addEventListener('input', () => {syncSlider('temperature');updateHumidity();});
+    document.getElementById('saturationVaporInput').addEventListener('input', updateHumidity);
+    document.getElementById('saturationVaporSlider').addEventListener('input', updateHumidity);
+    document.getElementById('vaporSlider').addEventListener('input', () => {syncInput('vapor');updateHumidity();});
+    document.getElementById('vaporInput').addEventListener('input', () => {syncSlider('vapor');updateHumidity();});
+
+
+
+
+    function updateCondensedWaterUnified() {
+    const vapor = parseFloat(document.getElementById('vaporInput').value);
+    const saturationVapor = parseFloat(document.getElementById('saturationVaporInput').value);
+    const condensedWater = Math.max(0, vapor - saturationVapor);
+
+    document.getElementById('condensedWaterSlider').value = condensedWater.toFixed(1);
+    document.getElementById('condensedWaterInput').value = condensedWater.toFixed(1);
+}
+
+document.getElementById('vaporInput').addEventListener('input', () => updateCondensedWaterUnified('vapor'));
+document.getElementById('vaporSlider').addEventListener('input', () => updateCondensedWaterUnified('vapor'));
+document.getElementById('saturationVaporInput').addEventListener('input', () => updateCondensedWaterUnified('saturationVapor'));
+document.getElementById('saturationVaporSlider').addEventListener('input', () => updateCondensedWaterUnified('saturationVapor'));
+document.getElementById('temperatureInput').addEventListener('input', () => updateCondensedWaterUnified('temperature'));
+document.getElementById('temperatureSlider').addEventListener('input', () => updateCondensedWaterUnified('temperature'));
+document.getElementById('humidityInput').addEventListener('input', () => updateCondensedWaterUnified('vapor'));
+document.getElementById('humiditySlider').addEventListener('input', () => updateCondensedWaterUnified('vapor'));
+
+
+ //レンジスライダーと入力フィールドの同機
+     function syncInput(type) {
+      const slider = document.getElementById(type + 'Slider');
+      const input = document.getElementById(type + 'Input');
+      const value = parseFloat(slider.value);
+      input.value = value.toFixed(1);
+      updateGraph();
+      }
+
+//入力フィールドとレンジスライダーの同機
+    function syncSlider(type) {
+    const slider = document.getElementById(type + 'Slider');
+    const input = document.getElementById(type + 'Input');
+    const value = parseFloat(input.value);
+    slider.value = value.toFixed(1);
+    updateGraph();
+    }
+
+    //レンジスライダーと入力フィールドの同機
+    document.getElementById('temperatureSlider').addEventListener('input', () => syncInput('temperature'));
+    document.getElementById('temperatureInput').addEventListener('input', () => syncSlider('temperature'));
+    document.getElementById('saturationVaporSlider').addEventListener('input', () => syncInput('saturationVapor'));
+    document.getElementById('saturationVaporInput').addEventListener('input', () => syncSlider('saturationVapor'));
+    document.getElementById('vaporSlider').addEventListener('input', () => syncInput('vapor'));
+    document.getElementById('vaporInput').addEventListener('input', () => syncSlider('vapor'));
+    document.getElementById('humiditySlider').addEventListener('input', () => syncInput('humidity'));
+    document.getElementById('humidityInput').addEventListener('input', () => syncSlider('humidity'));
+    document.getElementById('condensedWaterSlider').addEventListener('input', () => syncInput('condensedWater'));
+    document.getElementById('condensedWaterInput').addEventListener('input', () => syncSlider('condensedWater'));
+
+
+
+
+    function updateGraph() {
+    var T1 = parseFloat(document.getElementById('temperatureInput').value) || 0;
+    var vapor1 = parseFloat(document.getElementById('vaporInput').value) || 0;
+
+    var T2 = parseFloat(document.getElementById('temperatureInput2').value) || 0;
+    var vapor2 = parseFloat(document.getElementById('vaporInput2').value) || 0;
+
+    plotPointAndBar(ctx, T1, vapor1, T2, vapor2);
+    }
+
+  </script>
+
+</html>
