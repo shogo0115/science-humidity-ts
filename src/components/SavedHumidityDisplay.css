@@ -1,0 +1,66 @@
+/* ========================================================= */
+/* 1. 全体コンテナのスタイル (CurrentHumidityDisplayと共通) */
+/* ========================================================= */
+
+.graph-panel2 {
+  padding: 20px;
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  min-width: 300px;
+}
+
+.graph-panel h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* ========================================================= */
+/* 2. ReadRow コンポーネントのレイアウト */
+/* ========================================================= */
+
+/* 行のコンテナ (.read-row-container) */
+.read-row-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* ラベル (.read-row-label) */
+.read-row-label {
+  min-width: 200px; /* 幅を固定 */
+  font-weight: bold;
+  color: #555;
+}
+
+/* 値と単位のグループ (.read-row-value-group) */
+.read-row-value-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ========================================================= */
+/* 3. 入力要素のスタイル */
+/* ========================================================= */
+
+/* 読み取り専用の数値入力ボックス (.read-row-input-compact) */
+.read-row-input-compact {
+  width: 70px; /* 元のインラインスタイル width: 70 を反映 */
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+  font-size: 14px;
+
+  /* 読み取り専用の視覚的なスタイル */
+  background-color: #eee;
+  color: #333;
+  cursor: default;
+}

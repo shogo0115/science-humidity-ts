@@ -1,0 +1,138 @@
+/* ========================================================= */
+/* 1. 全体コンテナのスタイル */
+/* ========================================================= */
+
+.graph-panel1 {
+  padding: 20px;
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  min-width: 600px;
+}
+
+.graph-panel h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* ========================================================= */
+/* 2. Row コンポーネントのレイアウト (元のインラインスタイルを反映) */
+/* ========================================================= */
+
+.row-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.row-label {
+  /* 元の style={{ minWidth: 200 }} を反映 */
+  min-width: 200px;
+  font-weight: bold;
+  color: #555;
+}
+
+.row-controls {
+  /* 元の style={{ display: "flex", alignItems: "center", gap: 8 }} を反映 */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1; /* 入力部分を広げる */
+}
+
+/* ========================================================= */
+/* 3. 入力要素のスタイル */
+/* ========================================================= */
+
+/* 数値入力ボックスのコンパクトなスタイル */
+.input-compact {
+  width: 60px; /* コンパクトな幅 */
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* スライダーの基本スタイル */
+input[type="range"] {
+  /* 1. 基本設定 */
+  flex-grow: 1; /* 親要素に合わせて幅いっぱいに広げる */
+  margin: 10px 0; /* 上下のマージンを設定し、つまみのはみ出しに対応 */
+  width: auto; /* 幅はflex-growに任せる */
+
+  /* 2. ネイティブな外観の無効化（カスタマイズに必須） */
+  -webkit-appearance: none; /* Chrome, Safari, Edge (WebKit) */
+  -moz-appearance: none;    /* Firefox (通常は不要だが、保険として) */
+  appearance: none;         /* 標準 */
+
+  /* 3. トラック（バー）の基本スタイル */
+  height: 8px; /* トラックの高さ */
+  background: #ddd; /* トラックの背景色 */
+  border-radius: 4px;
+  cursor: pointer; /* マウスオーバー時にカーソルを指の形にする */
+}
+
+/* 無効化された入力フィールドのスタイル */
+input:disabled,
+input[readonly] {
+  background-color: #eee;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* ========================================================= */
+/* 4. アラート（警告）のスタイル */
+/* ========================================================= */
+
+.text-alert {
+  /* 警告時の視覚的なフィードバック */
+  border-color: #e74c3c;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+  background-color: #fbecec;
+}
+
+/* ========================================================= */
+/* 5. ボタンとボタンのグループのスタイル */
+/* ========================================================= */
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end; /* ボタンを右寄せに配置 */
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.btn:hover:not(.active) {
+  background-color: #2980b9;
+}
+
+/* 固定中（アクティブ）のボタンのスタイル */
+.btn.active {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  font-weight: bold;
+}
+
+.btn.active:hover {
+  background-color: #27ae60;
+}

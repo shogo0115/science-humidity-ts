@@ -1,29 +1,18 @@
 import React from "react";
-// Row コンポーネントの定義をこのファイルに含めるか、共通ファイルからインポートしてください。
+import "./currentHumidityDisplay.css";
 
-// (元のコードから移動を想定した Row コンポーネントの再掲)
+// Row コンポーネントもクラスベースに修正
 const Row: React.FC<{ label: string; children: React.ReactNode }> = ({
   label,
   children,
 }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: 10,
-        alignItems: "center",
-        justifyContent: "space-between",
-        marginBottom: 10,
-      }}
-    >
-      <label style={{ minWidth: 200 }}>{label}</label>
-      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        {children}
-      </div>
+    <div className="row-container">
+      <label className="row-label">{label}</label>
+      <div className="row-controls">{children}</div>
     </div>
   );
 };
-// --- Row ここまで ---
 
 interface CurrentHumidityDisplayProps {
   // --- データ (親から渡される状態) ---
@@ -31,13 +20,13 @@ interface CurrentHumidityDisplayProps {
   saturationVapor: number;
   vapor: number;
   humidity: number;
-  condensed: number;
+  waterDrop: number;
   fixTemperature: boolean;
   fixVapor: boolean;
 
   // --- 関数 (親から渡されるロジック) ---
   setTemperature: (t: number) => void;
-  updateTemperatureFromSV: (sv: number) => void;
+  setSaturationVapor: (sv: number) => void;
   setVapor: (v: number) => void;
   setHumidity: (h: number) => void;
   toggleFixTemperature: () => void;
@@ -45,19 +34,16 @@ interface CurrentHumidityDisplayProps {
   saveState: () => void;
 }
 
-/**
- * 空間の現在の状態を操作するためのコントロールパネル
- */
 const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
   temperature,
   saturationVapor,
   vapor,
   humidity,
-  condensed,
+  waterDrop,
   fixTemperature,
   fixVapor,
   setTemperature,
-  updateTemperatureFromSV,
+  setSaturationVapor,
   setVapor,
   setHumidity,
   toggleFixTemperature,
@@ -68,9 +54,11 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
   const anyFixed = fixTemperature || fixVapor;
   const humidityEnabled = anyFixed;
   const isSaturationVaporAlert = saturationVapor >= 82.8;
+  const isTemperatureAlert = temperature >= 50.0;
 
   return (
-    <div className="graph-panel">
+    // クラス名でコンテナのスタイルを設定
+    <div className="graph-panel1">
       <h3>空間の状態</h3>
 
       {/* 1. 温度 */}
@@ -92,7 +80,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
           value={temperature}
           disabled={fixTemperature}
           onChange={(e) => setTemperature(parseFloat(e.target.value || "0"))}
-          className={`input-compact ${saturationVapor > 82.8 ? "text-alert" : ""}`}
+          className={`input-compact ${isTemperatureAlert ? "text-alert" : ""}`}
         />
         <span>℃</span>
       </Row>
@@ -106,7 +94,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
           step={0.1}
           value={saturationVapor}
           disabled={fixTemperature}
-          onChange={(e) => updateTemperatureFromSV(parseFloat(e.target.value))}
+          onChange={(e) => setSaturationVapor(parseFloat(e.target.value))}
         />
         <input
           type="number"
@@ -115,7 +103,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
           step={0.1}
           value={saturationVapor}
           disabled={fixTemperature}
-          onChange={(e) => updateTemperatureFromSV(parseFloat(e.target.value || "4.9"))}
+          onChange={(e) => setSaturationVapor(parseFloat(e.target.value || "4.9"))}
           className={`input-compact ${isSaturationVaporAlert ? "text-alert" : ""}`}
         />
         <span>g/m³</span>
@@ -176,7 +164,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
           min={0}
           max={85.1}
           step={0.1}
-          value={condensed}
+          value={waterDrop}
           disabled
           readOnly
         />
@@ -185,7 +173,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
           min={0}
           max={85.1}
           step={0.1}
-          value={condensed}
+          value={waterDrop}
           disabled
           readOnly
           className="input-compact"

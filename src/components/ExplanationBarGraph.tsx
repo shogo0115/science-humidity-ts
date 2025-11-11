@@ -1,6 +1,6 @@
 import React from "react";
 
-const BarChartLegend: React.FC = () => {
+const ExplanationBarGraph: React.FC = () => {
   return (
     <div>
       <h3>棒グラフの色の説明</h3>
@@ -20,4 +20,4 @@ const BarChartLegend: React.FC = () => {
   );
 };
 
-export default BarChartLegend;
+export default ExplanationBarGraph;

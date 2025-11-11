@@ -1,59 +1,52 @@
 import React from "react";
+import "./savedHumidityDisplay.css";
 
-/**
- * ヘルパーコンポーネント: 読み取り専用の値を整形して表示する行
- * (Graph.tsx からの移動を想定)
- */
-const ReadRow: React.FC<{ label: string; value: number; unit: string }> = ({
+interface ReadRowProps {
+  label: string;
+  value: number;
+  unit: string;
+}
+
+const ReadRow: React.FC<ReadRowProps> = ({
   label,
   value,
   unit,
 }) => (
-  <div
-    style={{
-      display: "flex",
-      gap: 10,
-      alignItems: "center",
-      justifyContent: "space-between",
-      marginBottom: 10,
-    }}
-  >
-    <label style={{ minWidth: 200 }}>{label}</label>
-    <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+  <div className="read-row-container">
+    <label className="read-row-label">{label}</label>
+    <div className="read-row-value-group">
       <input
         type="number"
-        value={value.toFixed(1)} // 小数点以下1桁に整形して表示
+        value={value.toFixed(1)}
         readOnly
-        style={{ width: 70 }}
+        className="read-row-input-compact"
       />
       <span>{unit}</span>
     </div>
   </div>
 );
 
-// --- SavedHumidityDisplay コンポーネント本体 ---
-
 interface SavedHumidityDisplayProps {
-  // 保存された状態（スナップショット）の値
+  // --- データ (親から渡される状態) ---
   temperature2: number;
-  saturationVapor2: number; // 飽和水蒸気量も表示用に必要
+  saturationVapor2: number;
   vapor2: number;
   humidity2: number;
-  condensed2: number;
+  waterDrop2: number;
 }
 
 /**
- * ユーザーが保存した「初めの空間の状態」を読み取り専用で表示するコンポーネント
+ * 初めの空間の状態（読み取り専用）を表示するコンポーネント
  */
 const SavedHumidityDisplay: React.FC<SavedHumidityDisplayProps> = ({
   temperature2,
   saturationVapor2,
   vapor2,
   humidity2,
-  condensed2,
+  waterDrop2,
 }) => {
   return (
-    <div className="graph-panel">
+    <div className="graph-panel2">
       <h3>初めの空間の状態</h3>
 
       {/* 読み取り専用の行を使用して値を表示 */}
@@ -61,7 +54,7 @@ const SavedHumidityDisplay: React.FC<SavedHumidityDisplayProps> = ({
       <ReadRow label="飽和水蒸気量 [g/m³]" value={saturationVapor2} unit="g/m³" />
       <ReadRow label="空間内の水分量 [g/m³]" value={vapor2} unit="g/m³" />
       <ReadRow label="湿度 [%]" value={humidity2} unit="%" />
-      <ReadRow label="水滴の量 [g/m³]" value={condensed2} unit="g/m³" />
+      <ReadRow label="水滴の量 [g/m³]" value={waterDrop2} unit="g/m³" />
     </div>
   );
 };

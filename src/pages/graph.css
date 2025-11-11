@@ -1,80 +1,20 @@
-/* ページ外枠 */
 .graph-container {
-  padding: 16px;
+  padding: 20px;
 }
 
-/* 上部の戻るボタン */
 .graph-back-button {
   margin-bottom: 16px;
 }
 
-/* キャンバス周り */
 .graph-canvas-wrap {
   width: 800px;
   margin: 20px auto;
   text-align: center;
 }
-.graph-canvas {
-  max-width: 100%;
-  height: auto;
-}
 
-/* メインの2カラム（左：現在 / 右：保存） */
 .graph-controls {
   display: flex;
   gap: 20px;
   margin-top: 20px;
-  flex-wrap: wrap;         /* 画面が狭いときに折返し */
-}
-.graph-panel {
-  flex: 1;
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-  min-width: 320px;        /* 折返し時の最小幅 */
-}
-
-/* 行レイアウト（ラベル + 入力群） */
-.graph-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-.graph-row label {
-  min-width: 200px;
-}
-.graph-row .field {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* 入力の共通幅 */
-.input-compact {
-  width: 70px;
-}
-
-/* ボタン群 */
-.btn-group {
-  display: flex;
-  gap: 10px;
-  margin-top: 8px;
-}
-.btn {
-  color: #fff;
-  background: #007bff;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.btn.active {
-  background: #ff0000;
-}
-
-/* 注意表示（閾値超えなど） */
-.text-alert {
-  color: #c00;
+  flex-wrap: wrap;
 }

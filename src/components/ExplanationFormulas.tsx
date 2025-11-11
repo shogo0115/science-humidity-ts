@@ -1,6 +1,6 @@
 import React from "react";
 
-const HumidityFormulas: React.FC = () => {
+const ExplanationFormulas: React.FC = () => {
   return (
     <div>
       <h3>公式</h3>
@@ -17,10 +17,10 @@ const HumidityFormulas: React.FC = () => {
         <span style={{ color: "green" }}>水滴の量</span>
       </p>
       <p style={{ color: "red", fontWeight: "bold" }}>
-        注意: 温度が50℃以上/飽和水蒸気量が82.8以上になると上限で頭打ちします。
+        注意事項: スライダーはゆっくり動かして下さい。結果と異なる数値が表示される場合があります。温度が50℃以上、飽和水蒸気量が82.8g/m3以上となる場合は数値が赤色に変化します。
       </p>
     </div>
   );
 };
 
-export default HumidityFormulas;
+export default ExplanationFormulas;
