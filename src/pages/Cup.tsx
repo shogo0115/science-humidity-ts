@@ -9,7 +9,6 @@ import ExplanationBarGraph from "../components/common/ExplanationBarGraph";
 import ExperimentDescription from "../components/cup/ExperimentDescription";
 import CondensationStatusDisplay from "../components/cup/CondensationStatusDisplay";
 
-
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
 // ------------------------------------

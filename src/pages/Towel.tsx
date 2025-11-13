@@ -1,296 +1,236 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./towel.css";
+import React, { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./cup.css";
 
-// 物理・描画ユーティリティ
-function eSat(T: number): number {
-  // 飽和水蒸気圧 (hPa) 近似
-  return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
+import TowelControlPanel from "../components/towel/TowelControlPanel";
+import TowelCanvasAndLegend from "../components/towel/TowelCanvasAndLegend";
+import HumidityGraphCanvasMini from "../components/towel/HumidityGraphCanvasMini";
+import ExplanationBarGraph from "../components/common/ExplanationBarGraph";
+import ExperimentDescription from "../components/towel/ExperimentDescription";
+import CondensationStatusDisplay from "../components/towel/CondensationStatusDisplay";
+
+// ------------------------------------
+// 1. 関数の定義 (座標変換)
+// ------------------------------------
+function satPress(T: number) {
+ // 水飽和蒸気圧
+ return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
 }
-function aSat(T: number): number {
-  // 飽和水蒸気量 (g/m^3)
-  return parseFloat(((217 * eSat(T)) / (T + 273.15)).toFixed(1));
+function satVapor(T: number) {
+ // 飽和水蒸気量
+ return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
 }
 
-const X_MARGIN = 120; // 左余白
-const Y_BASE   = 350 - 50; // 下余白を引いた原点Y（canvas高さ350前提）
-const WIDTH    = 550;
-const HEIGHT   = 350;
-const unitX    = (WIDTH - 150) / 35; // xスケール (0〜35℃)
-const unitY    = (HEIGHT - 100) / 40; // yスケール (0〜40 g/m^3)
+ // ------------------------------------
+ // 2. コンポーネントの初期化と状態定義
+ // ------------------------------------
+const Cup: React.FC = () => {
+  const navigate = useNavigate();
 
-function drawAxis(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) {
-  ctx.strokeStyle = "black";
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  ctx.moveTo(X_MARGIN, 0);
-  ctx.lineTo(X_MARGIN, Y_BASE);
-  ctx.lineTo(canvas.width, Y_BASE);
-  ctx.stroke();
+ /** ------- 空間の現在の状態 ------- */
+ const [temperature, setTemperature] = useState<number>(25.0); // 部屋の温度 (T)
+ const [saturationVapor, setSaturationVapor] = useState<number>(23.0); // 飽和水蒸気量 (SV)
+ const [vapor, setVapor] = useState<number>(11.5); // 空間の水蒸気量 (V)
+ const [waterDrop, setWaterDrop] = useState<number>(0.0);
+ const [humidity, setHumidity] = useState<number>(50);
 
-  // x軸ラベル
-  ctx.font = "16px Arial";
-  ctx.fillStyle = "black";
-  ctx.textAlign = "center";
-  ctx.fillText("空間の温度 (°C)", canvas.width / 2 + 40, Y_BASE + 40);
+ /** ------- コップの状態 ------- */
+ const [cupTemperature, setCupTemperature] = useState<number>(0.0);
 
-  // y軸ラベル（縦）
-  ctx.save();
-  ctx.translate(50, canvas.height / 2);
-  ctx.rotate(-Math.PI / 2);
-  ctx.textAlign = "center";
-  ctx.fillText("飽和水蒸気量 (g/m³)", 0, 0);
-  ctx.restore();
-}
-function drawScaleX(ctx: CanvasRenderingContext2D) {
-  ctx.font = "12px Arial";
-  ctx.fillStyle = "black";
-  for (let i = 0; i <= 35; i += 5) {
-    const x = X_MARGIN + i * unitX;
-    ctx.beginPath();
-    ctx.moveTo(x, Y_BASE);
-    ctx.lineTo(x, Y_BASE + 10);
-    ctx.stroke();
-    ctx.fillText(`${i}°C`, x - 10, Y_BASE + 20);
+  /** ------- タオルの状態 ------- */
+ const [water, setWater] = useState<number>(0.0);
+
+/** ------- 実験の状態管理と初期値保存 ------- */
+const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
+
+ // 問題文として表示する初期条件（実験開始時に固定される値）
+ const [initialTemperature, setInitialTemperature] = useState<number>(25.0);
+ const [initialVapor, setInitialVapor] = useState<number>(11.5);
+ const [initialCupTemp, setInitialCupTemp] = useState<number>(0.0);
+ const [initialWater, setInitialWater] = useState<number>(0.0);
+
+
+ // ------------------------------------
+ // 3. ユーザの操作による変化/計算ロジック
+ // ------------------------------------
+
+ useEffect(() => {
+  const sv = satVapor(temperature);
+  setSaturationVapor(parseFloat(sv.toFixed(1)));
+}, [temperature]);
+
+ // 結露量の計算
+ useEffect(() => {
+  const wd = Math.max(0, vapor - saturationVapor);
+  setWaterDrop(parseFloat(wd.toFixed(1)));
+}, [vapor, saturationVapor]);
+
+// 湿度計算
+ useEffect(() => {
+  const h = Math.min(100, (vapor / saturationVapor) * 100);
+  setHumidity(parseFloat(h.toFixed(1)));
+}, [vapor, saturationVapor]);
+
+// 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
+ useEffect(() => {
+  if (!isExperimentRunning) {
+    setInitialTemperature(temperature);
+    setInitialVapor(vapor);
+    setInitialWater(water);
   }
-}
-function drawScaleY(ctx: CanvasRenderingContext2D) {
-  ctx.font = "12px Arial";
-  ctx.fillStyle = "black";
-  for (let j = 0; j <= 40; j += 10) {
-    const y = Y_BASE - j * unitY;
-    ctx.beginPath();
-    ctx.moveTo(X_MARGIN, y);
-    ctx.lineTo(X_MARGIN - 10, y);
-    ctx.stroke();
-    ctx.fillText(`${j}g/m³`, X_MARGIN - 35, y + 5);
+ }, [isExperimentRunning, temperature, vapor, water]);
+
+
+// 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
+ useEffect(() => {
+  // 実験が実行中でなければ何もしない
+  if (!isExperimentRunning) {
+    return;
   }
-}
-function drawCurve(ctx: CanvasRenderingContext2D) {
-  ctx.strokeStyle = "black";
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  for (let t = 0; t <= 35; t++) {
-    const x = X_MARGIN + t * unitX;
-    const y = Y_BASE - aSat(t) * unitY;
-    if (t === 0) ctx.moveTo(x, y);
-    else ctx.lineTo(x, y);
+
+  // 依存配列に humidity を追加したため、humidityが変更されるたびに
+  // この Effect は再実行されますが、これは現在の湿度を最新に保つために必要です。
+  if (humidity >= 100) {
+    // Effectがセットアップされる時点で既に100%であれば、何もしない
+    return;
   }
-  ctx.stroke();
-}
 
-function plotPointAndBar(
-  ctx: CanvasRenderingContext2D,
-  canvas: HTMLCanvasElement,
-  T: number,
-  vapor: number
-) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  drawAxis(ctx, canvas);
-  drawScaleX(ctx);
-  drawScaleY(ctx);
-  drawCurve(ctx);
+  const intervalId = setInterval(() => {
 
-  const barWidth = 8;
-  const vaporAtT = aSat(T);
-  const x = X_MARGIN + T * unitX;
-
-  // 実際の水蒸気量（青）
-  ctx.fillStyle = "blue";
-  ctx.fillRect(x - barWidth / 2, Y_BASE, barWidth, -vapor * unitY);
-
-  // 差分（緑=超過、橙=不足）
-  if (vapor > vaporAtT) {
-    ctx.fillStyle = "green";
-    ctx.fillRect(
-      x - barWidth / 2,
-      Y_BASE - vaporAtT * unitY,
-      barWidth,
-      -(vapor - vaporAtT) * unitY
-    );
-  } else {
-    ctx.fillStyle = "orange";
-    ctx.fillRect(
-      x - barWidth / 2,
-      Y_BASE - vapor * unitY,
-      barWidth,
-      -(vaporAtT - vapor) * unitY
-    );
-  }
-}
-
-const Towel: React.FC = () => {
-  // 状態
-  const [roomTemp, setRoomTemp] = useState<number>(20);
-  const [moisture, setMoisture] = useState<number>(5.0);
-  const [towelWater, setTowelWater] = useState<number>(5); // コップ＝タオルに含む水分（g）
-  const [running, setRunning] = useState<boolean>(false);
-
-  // 実験開始時の固定値
-  const [fixedStartMoisture, setFixedStartMoisture] = useState<number | null>(null);
-  const [fixedStartTowel, setFixedStartTowel] = useState<number | null>(null);
-
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const timerRef = useRef<number | null>(null);
-
-  // 描画
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-    plotPointAndBar(ctx, canvas, roomTemp, moisture);
-  }, [roomTemp, moisture]);
-
-  // 湿度（%）
-  const humidity = Math.min(100, Math.max(0, (moisture / aSat(roomTemp)) * 100));
-
-  // タオル画像（5の倍数に丸める想定）
-  const rounded = Math.max(0, Math.min(35, Math.ceil(towelWater / 5) * 5));
-  const towelImage = `/towel/towel2-${rounded}.png`;
-
-  // 実験の開始/停止
-  const onToggleExperiment = () => {
-    if (running) {
-      // 停止
-      setRunning(false);
-      if (timerRef.current) {
-        window.clearInterval(timerRef.current);
-        timerRef.current = null;
-      }
-      setFixedStartMoisture(null);
-      setFixedStartTowel(null);
-      return;
+    // 湿度が100%になったら停止するチェック
+    // ※注意: humidity の値はEffectが最後に実行された時点の値（クロージャ）です。
+    // そのため、waterの更新ロジック内でチェックする方が確実ですが、ここでは一般的な方法で記載します。
+    // waterの更新ロジック内のsetVaporによって湿度も更新されるため、次の実行時(0.5秒後)には最新値がチェックされます。
+    if (humidity >= 100) {
+        clearInterval(intervalId);
+        return;
     }
-    // 開始
-    setRunning(true);
-    setFixedStartMoisture(moisture);
-    setFixedStartTowel(towelWater);
 
-    timerRef.current = window.setInterval(() => {
-      // 飽和未満 && タオルに水が残る間は「蒸発して湿度↑・タオル水分↓」の簡易モデル
-      const sat = aSat(roomTemp);
-      setMoisture((m) => {
-        if (m < sat && towelWater > 0) {
-          return Math.min(sat, parseFloat((m + 0.1).toFixed(1)));
-        }
-        return m;
-      });
-      setTowelWater((w) => Math.max(0, parseFloat((w - 0.1).toFixed(1))));
-    }, 100);
+    setWater(currentWater => {
+      // waterが既に0g以下の場合は処理を停止するため、現在のwater値をそのまま返す
+      if (currentWater <= 0) {
+        clearInterval(intervalId); // water 0gで停止
+        return 0;
+      }
+
+      // waterを0.1g減らす
+      const nextWater = currentWater - 0.1;
+
+      // waterが0g以下になる場合は、0gで停止
+      if (nextWater <= 0) {
+        // waterが0になった時点でインターバルを停止
+        clearInterval(intervalId);
+
+        // waterが減った分だけvaporを増やす
+        // vaporが変化することでhumidityも更新され、次のサイクルで100%チェックが機能する
+        setVapor(currentVapor => parseFloat((currentVapor + currentWater).toFixed(1)));
+
+        return 0;
+      }
+
+      // 0.1gの蒸発処理
+      setVapor(currentVapor => parseFloat((currentVapor + 0.1).toFixed(1)));
+      return parseFloat(nextWater.toFixed(1));
+    });
+  }, 500);
+
+  // クリーンアップ関数
+  return () => clearInterval(intervalId);
+  // 依存配列に humidity を追加
+}, [isExperimentRunning, humidity, setWater, setVapor]);
+
+  // 実験開始/停止を切り替える関数（初期値の保存と復元ロジックを追加）
+  const toggleExperiment = () => {
+    setIsExperimentRunning(prevIsRunning => {
+      const nextIsRunning = !prevIsRunning;
+
+      if (nextIsRunning) {
+        setInitialTemperature(temperature);
+        setInitialVapor(vapor);
+        setInitialWater(water);
+
+      } else {
+
+        setTemperature(initialTemperature);
+        setVapor(initialVapor);
+      }
+
+      return nextIsRunning;
+    });
   };
 
-  useEffect(() => {
-    if (!running && timerRef.current) {
-      window.clearInterval(timerRef.current);
-      timerRef.current = null;
-    }
-  }, [running]);
+    // まだ空気中に含むことができる水蒸気量
+  const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
 
-  // 片付け
-  useEffect(() => {
-    return () => {
-      if (timerRef.current) window.clearInterval(timerRef.current);
-    };
-  }, []);
+  // タオルの計算
+ useEffect(() => {
+  const w = Math.max(0, water);
+  setWaterDrop(parseFloat(w.toFixed(1)));
+}, [water]);
 
-  const canHumidify = moisture < aSat(roomTemp);
-  const canDehumid  = moisture > 5;
-  const canTempUp   = roomTemp < 35;
-  const canTempDown = roomTemp > 10;
-  const canWaterUp  = !running && towelWater < 30;
-  const canWaterDn  = !running && towelWater > 0;
 
+
+    // ------------------------------------
+    // 4. UI
+    // ------------------------------------
   return (
-    <div className="page-wrap">
-      {/* 上部ナビ */}
-      <div className="top-buttons">
-        <button className="nav-button" onClick={() => (window.location.href = "/title/science_home.html")}>
-          ホームに戻る
-        </button>
-        <button className="nav-button" onClick={() => (window.location.href = "/house")}>
-          違うものを調べる
-        </button>
-      </div>
-
-      {/* 説明 */}
-      <div id="description-container">
-        <div id="condensation-explanation">
-          飽和水蒸気量は温度によって決まり、飽和水蒸気量を上回る水分は空気中に留まれません。
+    <div className="cup-container">
+      <button className="home-back-button" onClick={() => navigate("/")}>
+        ホームに戻る
+      </button>
+      <div className="experiment-main-layout">
+        <div className="legend-formula-column">
+          <TowelCanvasAndLegend
+          temperature={temperature}
+          water={water}
+          humidity={humidity}
+          cupTemperature={cupTemperature}
+          />
         </div>
-
-        <div id="experiment-controls">
-          <p id="description-text">
-            ＜実験内容＞ 室温 <b>{roomTemp}</b> ℃、水蒸気量 <b>{fixedStartMoisture ?? moisture}</b> g/m³ の 1m³ 密閉空間に
-            タオルが <b>{fixedStartTowel ?? towelWater}</b> g の水を含むとき、時間経過で乾くかを観察する。
-            ［湿度: <b>{humidity.toFixed(1)}</b>%］
-          </p>
-
-          <button
-            id="startExperimentButton"
-            className={`button ${running ? "running" : ""}`}
-            onClick={onToggleExperiment}
-          >
-            {running ? "実験をやめる" : "実験を開始する"}
-          </button>
+        <div className="legend-formula-column">
+          <ExplanationBarGraph />
+          <CondensationStatusDisplay
+          water={waterDrop}
+          humidity={humidity}
+          />
+        </div>
+        <div className="graph-canvas-wrap">
+          <HumidityGraphCanvasMini
+          temperature={temperature}
+          saturationVapor={saturationVapor}
+          vapor={vapor}
+          waterDrop={waterDrop}
+          cupTemperature={cupTemperature}
+          remainingVapor={remainingVapor}
+          />
         </div>
       </div>
-
-      {/* コントロール */}
-      <div className="controls">
-        <div className="control">
-          <label>温度: <span className="big">{roomTemp}</span> ℃</label>
-          <button className="button" onClick={() => setRoomTemp((t) => t + 1)} disabled={!canTempUp}>＋</button>
-          <span>(1℃上がる)</span>
-          <button className="button" onClick={() => setRoomTemp((t) => t - 1)} disabled={!canTempDown}>－</button>
-          <span>(1℃下がる)</span>
-        </div>
-
-        <div className="control">
-          <label>水蒸気量: <span className="big">{moisture.toFixed(1)}</span> g/m³</label>
-          <button className="button" onClick={() => setMoisture((m) => parseFloat((m + 1).toFixed(1)))} disabled={!canHumidify}>
-            加湿する
-          </button>
-          <span>(1 g/m³ 増える)</span>
-          <button className="button" onClick={() => setMoisture((m) => parseFloat((m - 1).toFixed(1)))} disabled={!canDehumid}>
-            除湿する
-          </button>
-          <span>(1 g/m³ 減る)</span>
-        </div>
-
-        <div className="control">
-          <label>タオル水分: <span className="big">{towelWater}</span> g</label>
-          <button className="button" onClick={() => setTowelWater((w) => w + 1)} disabled={!canWaterUp}>＋</button>
-          <span>(1 g 増やす)</span>
-          <button className="button" onClick={() => setTowelWater((w) => w - 1)} disabled={!canWaterDn}>－</button>
-          <span>(1 g 減らす)</span>
-        </div>
-      </div>
-
-      {/* 画像＋グラフ */}
-      <div id="layout-container">
-        <div id="photos-container">
-          <img id="cup-image" src={towelImage} alt="タオル" />
-          <img id="temperature-image" src="/towel/towel-water.png" alt="説明" />
-        </div>
-
-        <div id="condensationTextContainer">
-          <div id="condensationText" style={{ color: towelWater > 0 ? "blue" : "green" }}>
-            {towelWater > 0 ? "タオルは 濡れている" : "タオルが 乾いた"}
-          </div>
-          <div id="humidityText">湿度: <span className="big">{humidity.toFixed(1)}</span>%</div>
-        </div>
-
-        <div id="graph-container">
-          <canvas ref={canvasRef} id="graphCanvas" width={WIDTH} height={HEIGHT} />
-          <div id="legend">
-            <div className="legend-item"><div className="legend-color" style={{ background: "blue" }}></div><span>水蒸気量</span></div>
-            <div className="legend-item"><div className="legend-color" style={{ background: "green" }}></div><span>水滴の量</span></div>
-            <div className="legend-item"><div className="legend-color" style={{ background: "orange" }}></div><span>まだ空気中に含むことができる水蒸気量</span></div>
-          </div>
-        </div>
+      <div className="graph-controls">
+        <ExperimentDescription
+        initialTemperature={initialTemperature}
+        initialVapor={initialVapor}
+        initialWater={initialWater}
+        isExperimentRunning={isExperimentRunning}
+        />
+        <TowelControlPanel
+          // データ
+          temperature={temperature}
+          saturationVapor={saturationVapor}
+          vapor={vapor}
+          cupTemperature={cupTemperature}
+          water={water}
+          remainingVapor={remainingVapor}
+          isExperimentRunning={isExperimentRunning}
+          // 関数
+          setTemperature={setTemperature}
+          setVapor={setVapor}
+          setCupTemperature={setCupTemperature}
+          setWater={setWater}
+          toggleExperiment={toggleExperiment}
+        />
       </div>
     </div>
   );
 };
 
-export default Towel;
+export default Cup;

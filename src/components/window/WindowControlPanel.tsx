@@ -1,7 +1,6 @@
 import React from "react";
-import "./CupControlPanel.css";
 
-interface CupControlPanelProps {
+interface WindowControlPanelProps {
   temperature: number;
   saturationVapor: number;
   vapor: number;
@@ -15,7 +14,7 @@ interface CupControlPanelProps {
   toggleExperiment: () => void;
 }
 
-const CupControlPanel: React.FC<CupControlPanelProps> = ({
+const WindowControlPanel: React.FC<WindowControlPanelProps> = ({
   temperature,
   vapor,
   cupTemperature,
@@ -33,11 +32,11 @@ const CupControlPanel: React.FC<CupControlPanelProps> = ({
     <div className="graph-panel">
       <h3>実験条件設定</h3>
       <div className="graph-row">
-          <label>部屋の温度 [℃] ({temperature}℃)</label>
+          <label>室温 (窓のまわりの温度)  [℃] ({temperature}℃)</label>
           <input
             type="range"
-            min={20}
-            max={40}
+            min={14}
+            max={25}
             step={0.1}
             value={temperature}
             onChange={(e) => setTemperature(parseFloat(e.target.value))}
@@ -45,11 +44,11 @@ const CupControlPanel: React.FC<CupControlPanelProps> = ({
           />
           <input
           type="number"
-          min={20}
-          max={40}
+          min={14}
+          max={25}
           step={0.1}
           value={temperature}
-          onChange={(e) => setTemperature(parseFloat(e.target.value || "20"))}
+          onChange={(e) => setTemperature(parseFloat(e.target.value || "14"))}
           />
       </div>
 
@@ -57,8 +56,8 @@ const CupControlPanel: React.FC<CupControlPanelProps> = ({
           <label>空間内の水分量 [g/m³] ({vapor}g/m³)</label>
           <input
             type="range"
-            min={4.9}
-            max={51.1}
+            min={5}
+            max={40}
             step={0.1}
             value={vapor}
             onChange={(e) => setVapor(parseFloat(e.target.value))}
@@ -66,20 +65,20 @@ const CupControlPanel: React.FC<CupControlPanelProps> = ({
           />
           <input
           type="number"
-          min={4.9}
-          max={51.1}
+          min={5}
+          max={40}
           step={0.1}
           value={vapor}
-          onChange={(e) => setVapor(parseFloat(e.target.value || "4.9"))}
+          onChange={(e) => setVapor(parseFloat(e.target.value || "5"))}
           />
       </div>
 
       <div className="graph-row">
-          <label>コップの温度 [℃] ({cupTemperature}℃)</label>
+          <label>外の気温 [℃] ({cupTemperature}℃)</label>
           <input
             type="range"
             min={0}
-            max={20}
+            max={14}
             step={0.1}
             value={cupTemperature}
             onChange={(e) => setCupTemperature(parseFloat(e.target.value))}
@@ -88,7 +87,7 @@ const CupControlPanel: React.FC<CupControlPanelProps> = ({
           <input
           type="number"
           min={0}
-          max={20}
+          max={14}
           step={0.1}
           value={cupTemperature}
           onChange={(e) => setTemperature(parseFloat(e.target.value || "0"))}
@@ -102,4 +101,4 @@ const CupControlPanel: React.FC<CupControlPanelProps> = ({
   );
 };
 
-export default CupControlPanel;
+export default WindowControlPanel;

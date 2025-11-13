@@ -1,0 +1,84 @@
+/* -------------------------------------------------- */
+/* コントロールパネルのスタイル (CupControlPanel.tsx) */
+/* -------------------------------------------------- */
+
+.graph-panel {
+    /* ... 既存のスタイルを保持 ... */
+    padding: 20px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    /* min-width: 600px; はレスポンシブデザインの妨げになるため削除または調整を推奨しますが、
+       ここではご提示いただいた元のスタイルを尊重し、レスポンシブ対応はメディアクエリに任せます。 */
+    /* min-width: 600px; */
+}
+.graph-panel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    font-size: 1.4em; /* タイトルの文字サイズを大きく */
+}
+.graph-row {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.graph-row label {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+.graph-row input[type="range"] {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #bdc3c7;
+    border-radius: 4px;
+}
+.experiment-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.experiment-button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.experiment-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+/* -------------------------------------------------- */
+/* レスポンシブ対応 */
+/* -------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */
+    .experiment-main-layout,
+    .graph-controls {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    /* 各コンポーネントは幅いっぱいを使用 */
+    .experiment-main-layout > *,
+    .graph-controls > * {
+        flex: 1 1 100%;
+    }
+}
