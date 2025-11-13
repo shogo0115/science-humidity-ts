@@ -1,0 +1,1 @@
+{"version":3,"file":"PageSelectButton.d.ts","sourceRoot":"","sources":["PageSelectButton.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAE1B,KAAK,qBAAqB,GAAG;IAC3B,KAAK,EAAE,MAAM,CAAC;IACd,EAAE,EAAE,MAAM,CAAC;IACX,KAAK,EAAE,MAAM,CAAC;CACf,CAAC;AAEF,eAAO,MAAM,gBAAgB,EAAE,KAAK,CAAC,EAAE,CAAC,qBAAqB,CA4B5D,CAAC"}

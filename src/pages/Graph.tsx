@@ -1,14 +1,13 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./graph_copy.css";
-//import "../components/CurrentHumidityDisplay.css";
+import "./graph.css";
 
 // --- 作成済みのカスタムコンポーネントをインポート ---
-import ExplanationBarGraph from "../components/ExplanationBarGraph";
-import ExplanationFormulas from "../components/ExplanationFormulas";
-import CurrentHumidityDisplay from "../components/CurrentHumidityDisplay";
-import SavedHumidityDisplay from "../components/SavedHumidityDisplay";
-import HumidityGraphCanvas from "../components/HumidityGraphCanvas";
+import ExplanationBarGraph from "../components/common/ExplanationBarGraph";
+import ExplanationFormulas from "../components/common/ExplanationFormulas";
+import CurrentHumidityDisplay from "../components/graph/CurrentHumidityDisplay";
+import SavedHumidityDisplay from "../components/graph/SavedHumidityDisplay";
+import HumidityGraphCanvas from "../components/graph/HumidityGraphCanvas";
 
     // ------------------------------------
     // 1. 関数の定義 (座標変換)
@@ -160,7 +159,7 @@ useEffect(() => {
   return (
     <div className="graph-container">
 
-      <button className="graph-back-button" onClick={() => navigate("/")}>
+      <button className="home-back-button" onClick={() => navigate("/")}>
         ホームに戻る
       </button>
 

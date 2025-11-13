@@ -1,0 +1,23 @@
+.experiment-description {
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 0.95rem;
+}
+
+.experiment-description h2 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.experiment-description h3 {
+  margin: 8px 0 4px;
+  font-size: 1rem;
+}
+
+.experiment-note {
+  margin-top: 6px;
+  font-size: 0.85rem;
+}

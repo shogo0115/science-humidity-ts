@@ -152,7 +152,7 @@ const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
     ctx.save();
     ctx.translate(10, AXIS.height / 2 - 50);
     ctx.rotate(-Math.PI / 2);
-    ctx.fillText('水分量 [g/m³]', 0, 0);
+    ctx.fillText('飽和水蒸気量 [g/m³]', 0, 0);
     ctx.restore();
 };
 

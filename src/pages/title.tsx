@@ -1,7 +1,7 @@
 // src/pages/Home.tsx
 import React from "react";
 import "./title.css";
-import { Card } from "../components/Card";
+import { Card } from "../components/title/Card";
 
 export const Home: React.FC = () => {
   return (
