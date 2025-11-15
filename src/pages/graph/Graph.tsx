@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 import "./graph.css";
 
 // --- 作成済みのカスタムコンポーネントをインポート ---
-import ExplanationBarGraph from "../components/common/ExplanationBarGraph";
-import ExplanationFormulas from "../components/common/ExplanationFormulas";
-import CurrentHumidityDisplay from "../components/graph/CurrentHumidityDisplay";
-import SavedHumidityDisplay from "../components/graph/SavedHumidityDisplay";
-import HumidityGraphCanvas from "../components/graph/HumidityGraphCanvas";
+import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
+import ExplanationFormulas from "../../components/common/ExplanationFormulas";
+import CurrentHumidityDisplay from "../../components/graph/CurrentHumidityDisplay";
+import SavedHumidityDisplay from "../../components/graph/SavedHumidityDisplay";
+import HumidityGraphCanvas from "../../components/graph/HumidityGraphCanvas";
 
     // ------------------------------------
     // 1. 関数の定義 (座標変換)
@@ -150,7 +150,6 @@ useEffect(() => {
     setVapor2(vapor);
     setHumidity2(humidity);
     setWaterDrop2(waterDrop);
-    //setRemainingVapor2(remainingVapor);
   };
 
     // ------------------------------------

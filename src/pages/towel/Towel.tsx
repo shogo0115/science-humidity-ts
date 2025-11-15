@@ -1,13 +1,13 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./cup.css";
+import "../cup/cup.css";
 
-import TowelControlPanel from "../components/towel/TowelControlPanel";
-import TowelCanvasAndLegend from "../components/towel/TowelCanvasAndLegend";
-import HumidityGraphCanvasMini from "../components/towel/HumidityGraphCanvasMini";
-import ExplanationBarGraph from "../components/common/ExplanationBarGraph";
-import ExperimentDescription from "../components/towel/ExperimentDescription";
-import CondensationStatusDisplay from "../components/towel/CondensationStatusDisplay";
+import TowelControlPanel from "../../components/towel/TowelControlPanel";
+import TowelCanvasAndLegend from "../../components/towel/TowelCanvasAndLegend";
+import HumidityGraphCanvasMini from "../../components/towel/HumidityGraphCanvasMini";
+import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
+import ExperimentDescription from "../../components/towel/ExperimentDescription";
+import CondensationStatusDisplay from "../../components/towel/CondensationStatusDisplay";
 
 // ------------------------------------
 // 1. 関数の定義 (座標変換)

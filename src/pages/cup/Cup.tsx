@@ -2,13 +2,12 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./cup.css";
 
-import WindowControlPanel from "../components/window/WindowControlPanel";
-import WindowCanvasAndLegend from "../components/window/WindowCanvasAndLegend";
-import HumidityGraphCanvasMini from "../components/window/HumidityGraphCanvasMini";
-import ExplanationBarGraph from "../components/common/ExplanationBarGraph";
-import ExperimentDescription from "../components/window/ExperimentDescription";
-import CondensationStatusDisplay from "../components/window/CondensationStatusDisplay";
-
+import CupControlPanel from "../../components/cup/CupControlPanel";
+import CupCanvasAndLegend from "../../components/cup/CupCanvasAndLegend";
+import HumidityGraphCanvasMini from "../../components/cup/HumidityGraphCanvasMini";
+import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
+import ExperimentDescription from "../../components/cup/ExperimentDescription";
+import CondensationStatusDisplay from "../../components/cup/CondensationStatusDisplay";
 
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
@@ -137,7 +136,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       </button>
       <div className="experiment-main-layout">
         <div className="legend-formula-column">
-          <WindowCanvasAndLegend
+          <CupCanvasAndLegend
           temperature={temperature}
           waterDrop={waterDrop}
           humidity={humidity}
@@ -169,7 +168,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         initialCupTemperature={experimentInitialCupTemp}
         isExperimentRunning={isExperimentRunning}
         />
-        <WindowControlPanel
+        <CupControlPanel
           // データ
           temperature={temperature}
           saturationVapor={saturationVapor}

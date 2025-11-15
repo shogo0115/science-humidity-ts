@@ -1,0 +1,17 @@
+.furniture-select-button {
+  color: white;
+  padding: 1vw 3vw;
+  border-radius: 0.8vw;
+  border: none;
+  cursor: pointer;
+  height: 100px;
+  width: 320px;
+  font-size: 1.5vw;
+  min-width: 120px;
+  max-width: 320px;
+  transition: 0.3s;
+}
+.furniture-select-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}

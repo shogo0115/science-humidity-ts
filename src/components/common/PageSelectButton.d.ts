@@ -6,4 +6,3 @@ type PageSelectButtonProps = {
 };
 export declare const PageSelectButton: React.FC<PageSelectButtonProps>;
 export {};
-//# sourceMappingURL=PageSelectButton.d.ts.map

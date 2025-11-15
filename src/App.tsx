@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/title";
-import Graph from "./pages/Graph";
-import House from "./pages/House";
-import Cup from "./pages/Cup";
-import WindowWinter from "./pages/WindowWinter";
-import Towel from "./pages/Towel";
+import Home from "./pages/title/title";
+import Graph from "./pages/graph/Graph";
+import House from "./pages/house/House";
+import Cup from "./pages/cup/Cup";
+import WindowWinter from "./pages/window/WindowWinter";
+import Towel from "./pages/towel/Towel";
 
 
 const App: React.FC = () => {
