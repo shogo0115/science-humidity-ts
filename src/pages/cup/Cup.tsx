@@ -2,10 +2,11 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./cup.css";
 
+import PageSelectButton from "../../components/common/PageSelectButton";
+import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
 import CupControlPanel from "../../components/cup/CupControlPanel";
 import CupCanvasAndLegend from "../../components/cup/CupCanvasAndLegend";
 import HumidityGraphCanvasMini from "../../components/cup/HumidityGraphCanvasMini";
-import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
 import ExperimentDescription from "../../components/cup/ExperimentDescription";
 import CondensationStatusDisplay from "../../components/cup/CondensationStatusDisplay";
 
@@ -13,11 +14,9 @@ import CondensationStatusDisplay from "../../components/cup/CondensationStatusDi
 // 1. 関数の定義 (座標変換)
 // ------------------------------------
 function satPress(T: number) {
- // 水飽和蒸気圧
  return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
 }
 function satVapor(T: number) {
- // 飽和水蒸気量
  return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
 }
 
@@ -33,6 +32,8 @@ const Cup: React.FC = () => {
  const [vapor, setVapor] = useState<number>(11.5); // 空間の水蒸気量 (V)
  const [waterDrop, setWaterDrop] = useState<number>(0.0);
  const [humidity, setHumidity] = useState<number>(50);
+     // まだ空気中に含むことができる水蒸気量
+const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
 
  /** ------- コップの状態 ------- */
  const [cupTemperature, setCupTemperature] = useState<number>(0.0);
@@ -40,7 +41,7 @@ const Cup: React.FC = () => {
 /** ------- 実験の状態管理と初期値保存 ------- */
 const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
- // 問題文として表示する初期条件（実験開始時に固定される値）
+ // 問題文として表示する初期条件
  const [initialTemperature, setInitialTemperature] = useState<number>(25.0);
  const [initialVapor, setInitialVapor] = useState<number>(11.5);
  const [experimentInitialCupTemp, setExperimentInitialCupTemp] = useState<number>(0.0);
@@ -49,19 +50,16 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
  // ------------------------------------
  // 3. ユーザの操作による変化/計算ロジック
  // ------------------------------------
-
  useEffect(() => {
   const sv = satVapor(temperature);
   setSaturationVapor(parseFloat(sv.toFixed(1)));
 }, [temperature]);
 
- // 結露量の計算
  useEffect(() => {
   const wd = Math.max(0, vapor - saturationVapor);
   setWaterDrop(parseFloat(wd.toFixed(1)));
 }, [vapor, saturationVapor]);
 
-// 湿度計算
  useEffect(() => {
   const h = Math.min(100, (vapor / saturationVapor) * 100);
   setHumidity(parseFloat(h.toFixed(1)));
@@ -100,9 +98,9 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
     // クリーンアップ関数
     return () => clearInterval(intervalId);
-   }, [isExperimentRunning, experimentInitialCupTemp]); // 依存配列を修正
+   }, [isExperimentRunning, experimentInitialCupTemp]);
 
-  // 実験開始/停止を切り替える関数（初期値の保存と復元ロジックを追加）
+  // 実験開始/停止を切り替える関数
   const toggleExperiment = () => {
     setIsExperimentRunning(prevIsRunning => {
       const nextIsRunning = !prevIsRunning;
@@ -122,20 +120,25 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
     });
   };
 
-
-    // まだ空気中に含むことができる水蒸気量
-  const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
-
     // ------------------------------------
     // 4. UI
     // ------------------------------------
   return (
-    <div className="cup-container">
-      <button className="home-back-button" onClick={() => navigate("/")}>
-        ホームに戻る
-      </button>
-      <div className="experiment-main-layout">
-        <div className="legend-formula-column">
+    <div className="overall-layout">
+      <div className="page-button-layout">
+        <PageSelectButton
+        label="ホームに戻る"
+        to="/"
+        color= "#3498db"
+        />
+        <PageSelectButton
+        label="違うものを調べる"
+        to="/house"
+        color= "#3498db"
+        />
+      </div>
+      <div className="experiment-layout">
+        <div className="experimental-footage">
           <CupCanvasAndLegend
           temperature={temperature}
           waterDrop={waterDrop}
@@ -143,14 +146,14 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
           cupTemperature={cupTemperature}
           />
         </div>
-        <div className="legend-formula-column">
-          <ExplanationBarGraph />
+        <div className="center-item-layout">
           <CondensationStatusDisplay
           waterDrop={waterDrop}
           humidity={humidity}
           />
+          <ExplanationBarGraph />
         </div>
-        <div className="graph-canvas-wrap">
+        <div className="graph-canvas">
           <HumidityGraphCanvasMini
           temperature={temperature}
           saturationVapor={saturationVapor}

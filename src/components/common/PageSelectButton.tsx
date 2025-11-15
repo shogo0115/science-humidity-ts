@@ -28,3 +28,5 @@ export const PageSelectButton: React.FC<PageSelectButtonProps> = ({
     </button>
   );
 };
+
+export default PageSelectButton;

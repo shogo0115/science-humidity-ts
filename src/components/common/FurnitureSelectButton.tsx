@@ -28,3 +28,5 @@ export const FurnitureSelectButton: React.FC<FurnitureSelectButtonProps> = ({
     </button>
   );
 };
+
+export default FurnitureSelectButton;

@@ -11,22 +11,21 @@
   background-color: #f0f4f8;
 }
 
-.backButton {
+.page-button-layout {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
   align-self: flex-start;
-  padding: 10px 20px;
-  font-size: clamp(14px, 1.6vw, 16px);
-  cursor: pointer;
-  border: none;
-  border-radius: 8px;
 }
 
-.house {
+.house-picture {
   width: min(800px, 92vw);
   height: auto;
   border-radius: 8px;
 }
 
-.question {
+.question-text {
   margin: 8px 0 0;
   font-weight: 700;
   font-size: clamp(22px, 4vw, 36px);

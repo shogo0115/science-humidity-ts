@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./graph.css";
 
 // --- 作成済みのカスタムコンポーネントをインポート ---
+import PageSelectButton from "../../components/common/PageSelectButton";
 import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
 import ExplanationFormulas from "../../components/common/ExplanationFormulas";
 import CurrentHumidityDisplay from "../../components/graph/CurrentHumidityDisplay";
@@ -158,9 +159,13 @@ useEffect(() => {
   return (
     <div className="graph-container">
 
-      <button className="home-back-button" onClick={() => navigate("/")}>
-        ホームに戻る
-      </button>
+      <div className=".home-back-button">
+        <PageSelectButton
+        label="ホームに戻る"
+        to="/"
+        color="#3498db"
+        />
+      </div>
 
       <div className="graph-main-layout">
         <div className="graph-area-wrap">

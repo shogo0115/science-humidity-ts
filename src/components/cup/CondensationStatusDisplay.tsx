@@ -13,7 +13,7 @@ const CondensationStatusDisplay: React.FC<CondensationStatusDisplayProps> = ({
     const isCondensed = waterDrop > 0.1;
 
     return (
-        <div className="flex flex-col items-center p-3 mt-4 w-full bg-white rounded-lg shadow-md border border-gray-200">
+        <div style={{ fontSize: "28px" }}>
 
             {/* 結露判定 */}
             <div

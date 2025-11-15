@@ -1,41 +1,39 @@
 import React from "react";
 import "./house.css";
-import { PageSelectButton } from "../../components/common/PageSelectButton";
-import { FurnitureSelectButton } from "../../components/common/FurnitureSelectButton";
+import PageSelectButton from "../../components/common/PageSelectButton";
+import FurnitureSelectButton from "../../components/common/FurnitureSelectButton";
 
 const House: React.FC = () => {
-  const itemButtonColor = "#28a745";
-  const backButtonColor = "#6c757d";
 
   return (
     <div className="house-page">
-      <div className="backButton">
+      <div className="page-button-layout">
         <PageSelectButton
         label="ホームに戻る"
         to="/"
-        color={backButtonColor}
+        color="#3498db"
         />
       </div>
 
-      <img src="/title/家具.png" alt="部屋のイラスト" className="house" />
+      <img src="/title/家具.png" alt="部屋のイラスト" className="house-picture" />
 
-      <h1 className="question">どれについて調べますか？</h1>
+      <h1 className="question-text">どれについて調べますか？</h1>
 
       <div className="buttonContainer">
         <FurnitureSelectButton
           label="コップ"
           to="/cup"
-          color={itemButtonColor}
+          color="#28a745"
         />
         <FurnitureSelectButton
           label="窓（冬）"
           to="/winter-window"
-          color={itemButtonColor}
+          color="#28a745"
         />
         <FurnitureSelectButton
           label="タオル"
           to="/towel"
-          color={itemButtonColor}
+          color="#28a745"
         />
       </div>
     </div>

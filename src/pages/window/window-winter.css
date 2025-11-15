@@ -15,6 +15,14 @@
   margin-bottom: 20px;
 }
 
+.page-button-layout {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+  align-self: flex-start;
+}
+
 .nav-button,
 .button {
   background-color: #007bff;

@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../cup/cup.css";
 
+import PageSelectButton from "../../components/common/PageSelectButton";
 import TowelControlPanel from "../../components/towel/TowelControlPanel";
 import TowelCanvasAndLegend from "../../components/towel/TowelCanvasAndLegend";
 import HumidityGraphCanvasMini from "../../components/towel/HumidityGraphCanvasMini";
@@ -174,12 +175,21 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
     // 4. UI
     // ------------------------------------
   return (
-    <div className="cup-container">
-      <button className="home-back-button" onClick={() => navigate("/")}>
-        ホームに戻る
-      </button>
-      <div className="experiment-main-layout">
-        <div className="legend-formula-column">
+    <div className="overall-layout">
+      <div className="page-button-layout">
+              <PageSelectButton
+              label="ホームに戻る"
+              to="/"
+              color= "#3498db"
+              />
+              <PageSelectButton
+              label="違うものを調べる"
+              to="/house"
+              color= "#3498db"
+              />
+            </div>
+      <div className="experiment-layout">
+        <div className="experimental-footage">
           <TowelCanvasAndLegend
           temperature={temperature}
           water={water}
@@ -187,14 +197,14 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
           cupTemperature={cupTemperature}
           />
         </div>
-        <div className="legend-formula-column">
-          <ExplanationBarGraph />
+        <div className="center-item-layout">
           <CondensationStatusDisplay
           water={waterDrop}
           humidity={humidity}
           />
+          <ExplanationBarGraph />
         </div>
-        <div className="graph-canvas-wrap">
+        <div className="graph-canvas">
           <HumidityGraphCanvasMini
           temperature={temperature}
           saturationVapor={saturationVapor}

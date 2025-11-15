@@ -2,68 +2,70 @@
 /* 全体コンテナ */
 /* -------------------------------------------------- */
 
-.cup-container {
+.overall-layout {
+    display: flex;
     padding: 20px;
     background-color: #f0f4f8;
     min-height: 100vh;
     box-sizing: border-box;
     position: relative;
     font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    gap: 16px;
 }
 
-/* ホームに戻るボタン */
-.home-back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #3498db;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.1s;
-    z-index: 10;
-}
-.home-back-button:hover {
-    background-color: #2980b9;
+.page-button-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-self: flex-start;
 }
 
 /* -------------------------------------------------- */
-/* 上段エリア: コップ、結露の仕組み、グラフ (横並び) */
+/* 上段エリア: 実験映像、グラフ */
 /* -------------------------------------------------- */
 
-.experiment-main-layout {
+.experiment-layout {
     display: flex;
     gap: 0px;
     width: 100%;
     max-width: 1500px;
-    margin: 50px auto 20px auto; /* 上部のスペースを確保 */
+    margin: 0px auto 0px auto;
+    justify-content: center;
 }
 
-/* コップ画像、説明グラフ、グラフの各カラム */
-.legend-formula-column {
+.experimental-footage {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-item-layout {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    flex: 1; /* コップと結露の仕組み/ステータスに均等な幅を割り当てる */
-    min-width: 0;
-    padding: 15px;
-    border-radius: 12px;
+    gap: 60px;
+    width: 100%;
+    max-width: 400px;
+    margin:250px auto 0px auto;
+    align-items: center;
+    font-size: 20px;
 }
 
-.graph-canvas-wrap {
-    flex: 1; /* グラフエリアを広めに取る */
+.graph-canvas {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0px auto 50px auto;
     background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    padding: 10px;
+    border-radius: 0.8vw;
+    align-items: center;
 }
 
 /* -------------------------------------------------- */
-/* 下段エリア: 実験内容、条件設定 (横並び) */
+/* 下段エリア: 実験内容、条件設定 */
 /* -------------------------------------------------- */
 
 .graph-controls {
@@ -72,12 +74,13 @@
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
+    font-size: 24px;
 }
 .graph-controls > * {
-    flex: 1; /* 下段の要素を均等な幅に分割 */
+    flex: 1;
     padding: 15px;
     border-radius: 12px;
-    min-height: 250px; /* 見栄えのための最低限の高さ */
+    min-height: 250px;
 }
 
 /* -------------------------------------------------- */

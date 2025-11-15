@@ -11,23 +11,12 @@
   font-family: 'Inter', sans-serif;
 }
 
-.home-back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 10px 20px;
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.home-back-button:hover {
-  background-color: #357bd8;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+.page-button-layout {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+  align-self: flex-start;
 }
 
 /* ----------------------------------------------------
