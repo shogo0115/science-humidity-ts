@@ -1,6 +1,5 @@
 import React from "react";
-import "./CupControlPanel.css";
-interface CupControlPanelProps {
+interface WindowControlPanelProps {
     temperature: number;
     saturationVapor: number;
     vapor: number;
@@ -13,6 +12,6 @@ interface CupControlPanelProps {
     setCupTemperature: (ct: number) => void;
     toggleExperiment: () => void;
 }
-declare const CupControlPanel: React.FC<CupControlPanelProps>;
-export default CupControlPanel;
-//# sourceMappingURL=CupControlPanel.d.ts.map
+declare const WindowControlPanel: React.FC<WindowControlPanelProps>;
+export default WindowControlPanel;
+//# sourceMappingURL=WindowControlPanel.d.ts.map

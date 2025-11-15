@@ -1,18 +1,18 @@
 import React from "react";
-import "./CupControlPanel.css";
-interface CupControlPanelProps {
+interface TowelControlPanelProps {
     temperature: number;
     saturationVapor: number;
     vapor: number;
     cupTemperature: number;
-    waterDrop: number;
+    water: number;
     remainingVapor: number;
     isExperimentRunning: boolean;
     setTemperature: (t: number) => void;
     setVapor: (v: number) => void;
     setCupTemperature: (ct: number) => void;
+    setWater: (w: number) => void;
     toggleExperiment: () => void;
 }
-declare const CupControlPanel: React.FC<CupControlPanelProps>;
-export default CupControlPanel;
-//# sourceMappingURL=CupControlPanel.d.ts.map
+declare const TowelControlPanel: React.FC<TowelControlPanelProps>;
+export default TowelControlPanel;
+//# sourceMappingURL=TowelControlPanel.d.ts.map

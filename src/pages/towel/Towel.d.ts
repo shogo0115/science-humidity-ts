@@ -1,5 +1,5 @@
 import React from "react";
-import "./towel.css";
-declare const Towel: React.FC;
-export default Towel;
+import "../cup/cup.css";
+declare const Cup: React.FC;
+export default Cup;
 //# sourceMappingURL=Towel.d.ts.map

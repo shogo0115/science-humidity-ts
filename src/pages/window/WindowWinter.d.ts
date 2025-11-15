@@ -1,5 +1,5 @@
 import React from "react";
-import "./window-winter.css";
-export declare const WindowWinter: React.FC;
-export default WindowWinter;
+import "../cup/cup.css";
+declare const Cup: React.FC;
+export default Cup;
 //# sourceMappingURL=WindowWinter.d.ts.map

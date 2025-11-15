@@ -1,11 +1,10 @@
 import React from "react";
+import './Card.css';
 type CardProps = {
     imageSrc: string;
     title: string;
     description: string;
-    buttonLabel: string;
     to: string;
-    buttonColor: string;
 };
 export declare const Card: React.FC<CardProps>;
 export {};

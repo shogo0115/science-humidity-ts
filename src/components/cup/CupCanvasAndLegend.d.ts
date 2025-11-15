@@ -1,4 +1,5 @@
 import React from "react";
+import "./cupCanvasAndLegend.css";
 interface CupCanvasAndLegendProps {
     temperature: number;
     waterDrop: number;

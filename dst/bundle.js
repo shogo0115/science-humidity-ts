@@ -2,6 +2,235 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/furnitureSelectButton.css":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/furnitureSelectButton.css ***!
+  \***********************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.furniture-select-button {
+  color: white;
+  padding: 1vw 3vw;
+  border-radius: 0.8vw;
+  border: none;
+  cursor: pointer;
+  height: 100px;
+  width: 320px;
+  font-size: 1.5vw;
+  min-width: 120px;
+  max-width: 320px;
+  transition: 0.3s;
+}
+.furniture-select-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}`, "",{"version":3,"sources":["webpack://./src/components/common/furnitureSelectButton.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,gBAAgB;EAChB,oBAAoB;EACpB,YAAY;EACZ,eAAe;EACf,aAAa;EACb,YAAY;EACZ,gBAAgB;EAChB,gBAAgB;EAChB,gBAAgB;EAChB,gBAAgB;AAClB;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C","sourcesContent":[".furniture-select-button {\r\n  color: white;\r\n  padding: 1vw 3vw;\r\n  border-radius: 0.8vw;\r\n  border: none;\r\n  cursor: pointer;\r\n  height: 100px;\r\n  width: 320px;\r\n  font-size: 1.5vw;\r\n  min-width: 120px;\r\n  max-width: 320px;\r\n  transition: 0.3s;\r\n}\r\n.furniture-select-button:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/pageSelectButton.css":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/pageSelectButton.css ***!
+  \******************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.page-select-button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  padding: 1vw 3vw;
+  border-radius: 0.8vw;
+
+  font-size: clamp(14px, 1vw, 18px);
+
+  min-width: 120px;
+  max-width: 320px;
+}
+.page-select-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}`, "",{"version":3,"sources":["webpack://./src/components/common/pageSelectButton.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,YAAY;EACZ,eAAe;EACf,gBAAgB;;EAEhB,gBAAgB;EAChB,oBAAoB;;EAEpB,iCAAiC;;EAEjC,gBAAgB;EAChB,gBAAgB;AAClB;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C","sourcesContent":[".page-select-button {\r\n  color: white;\r\n  border: none;\r\n  cursor: pointer;\r\n  transition: 0.3s;\r\n\r\n  padding: 1vw 3vw;\r\n  border-radius: 0.8vw;\r\n\r\n  font-size: clamp(14px, 1vw, 18px);\r\n\r\n  min-width: 120px;\r\n  max-width: 320px;\r\n}\r\n.page-select-button:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/cup/CupControlPanel.css":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/cup/CupControlPanel.css ***!
+  \**************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* -------------------------------------------------- */
+/* コントロールパネルのスタイル (CupControlPanel.tsx) */
+/* -------------------------------------------------- */
+
+.graph-panel {
+    /* ... 既存のスタイルを保持 ... */
+    padding: 20px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    /* min-width: 600px; はレスポンシブデザインの妨げになるため削除または調整を推奨しますが、
+       ここではご提示いただいた元のスタイルを尊重し、レスポンシブ対応はメディアクエリに任せます。 */
+    /* min-width: 600px; */
+}
+.graph-panel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    font-size: 1.4em; /* タイトルの文字サイズを大きく */
+}
+.graph-row {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.graph-row label {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+.graph-row input[type="range"] {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #bdc3c7;
+    border-radius: 4px;
+}
+.experiment-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.experiment-button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.experiment-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+/* -------------------------------------------------- */
+/* レスポンシブ対応 */
+/* -------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */
+    .experiment-main-layout,
+    .graph-controls {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    /* 各コンポーネントは幅いっぱいを使用 */
+    .experiment-main-layout > *,
+    .graph-controls > * {
+        flex: 1 1 100%;
+    }
+}`, "",{"version":3,"sources":["webpack://./src/components/cup/CupControlPanel.css"],"names":[],"mappings":"AAAA,uDAAuD;AACvD,yCAAyC;AACzC,uDAAuD;;AAEvD;IACI,uBAAuB;IACvB,aAAa;IACb,OAAO;IACP,sBAAsB;IACtB,kBAAkB;IAClB,yBAAyB;IACzB;sDACkD;IAClD,sBAAsB;AAC1B;AACA;IACI,aAAa;IACb,mBAAmB;IACnB,WAAW;IACX,6BAA6B;IAC7B,oBAAoB;IACpB,gBAAgB,EAAE,mBAAmB;AACzC;AACA;IACI,mBAAmB;IACnB,aAAa;IACb,sBAAsB;AAC1B;AACA;IACI,gBAAgB;IAChB,gBAAgB;IAChB,kBAAkB;IAClB,cAAc;AAClB;AACA;IACI,WAAW;IACX,WAAW;IACX,eAAe;IACf,mBAAmB;IACnB,kBAAkB;AACtB;AACA;IACI,WAAW;IACX,aAAa;IACb,gBAAgB;IAChB,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,YAAY;IACZ,gBAAgB;IAChB,iBAAiB;IACjB,eAAe;IACf,kDAAkD;IAClD,wCAAwC;AAC5C;AACA;IACI,yBAAyB;IACzB,yCAAyC;AAC7C;AACA;IACI,yBAAyB;IACzB,mBAAmB;IACnB,gBAAgB;AACpB;;;AAGA,uDAAuD;AACvD,aAAa;AACb,uDAAuD;;AAEvD;IACI,6BAA6B;IAC7B;;QAEI,sBAAsB;QACtB,iBAAiB;IACrB;;IAEA,sBAAsB;IACtB;;QAEI,cAAc;IAClB;AACJ","sourcesContent":["/* -------------------------------------------------- */\r\n/* コントロールパネルのスタイル (CupControlPanel.tsx) */\r\n/* -------------------------------------------------- */\r\n\r\n.graph-panel {\r\n    /* ... 既存のスタイルを保持 ... */\r\n    padding: 20px;\r\n    flex: 1;\r\n    border: 1px solid #ddd;\r\n    border-radius: 8px;\r\n    background-color: #f9f9f9;\r\n    /* min-width: 600px; はレスポンシブデザインの妨げになるため削除または調整を推奨しますが、\r\n       ここではご提示いただいた元のスタイルを尊重し、レスポンシブ対応はメディアクエリに任せます。 */\r\n    /* min-width: 600px; */\r\n}\r\n.graph-panel h3 {\r\n    margin-top: 0;\r\n    margin-bottom: 20px;\r\n    color: #333;\r\n    border-bottom: 2px solid #eee;\r\n    padding-bottom: 10px;\r\n    font-size: 1.4em; /* タイトルの文字サイズを大きく */\r\n}\r\n.graph-row {\r\n    margin-bottom: 15px;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n.graph-row label {\r\n    font-size: 1.1em;\r\n    font-weight: 600;\r\n    margin-bottom: 8px;\r\n    color: #34495e;\r\n}\r\n.graph-row input[type=\"range\"] {\r\n    width: 100%;\r\n    height: 8px;\r\n    cursor: pointer;\r\n    background: #bdc3c7;\r\n    border-radius: 4px;\r\n}\r\n.experiment-button {\r\n    width: 100%;\r\n    padding: 12px;\r\n    margin-top: 20px;\r\n    border: none;\r\n    border-radius: 8px;\r\n    background-color: #e74c3c;\r\n    color: white;\r\n    font-size: 1.1em;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n    transition: background-color 0.3s, box-shadow 0.1s;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n}\r\n.experiment-button:hover {\r\n    background-color: #c0392b;\r\n    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);\r\n}\r\n.experiment-button:disabled {\r\n    background-color: #95a5a6;\r\n    cursor: not-allowed;\r\n    box-shadow: none;\r\n}\r\n\r\n\r\n/* -------------------------------------------------- */\r\n/* レスポンシブ対応 */\r\n/* -------------------------------------------------- */\r\n\r\n@media (max-width: 1024px) {\r\n    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */\r\n    .experiment-main-layout,\r\n    .graph-controls {\r\n        flex-direction: column;\r\n        margin: 20px auto;\r\n    }\r\n\r\n    /* 各コンポーネントは幅いっぱいを使用 */\r\n    .experiment-main-layout > *,\r\n    .graph-controls > * {\r\n        flex: 1 1 100%;\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/cup/cupCanvasAndLegend.css":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/cup/cupCanvasAndLegend.css ***!
+  \*****************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.picture-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto -40px auto;
+    min-height: 50vh;
+}`, "",{"version":3,"sources":["webpack://./src/components/cup/cupCanvasAndLegend.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,4BAA4B;IAC5B,gBAAgB;AACpB","sourcesContent":[".picture-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 20px auto -40px auto;\r\n    min-height: 50vh;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/currentHumidityDisplay.css":
 /*!***********************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/components/graph/currentHumidityDisplay.css ***!
@@ -256,19 +485,219 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* ===================================
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/graph.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/graph.css ***!
-  \*******************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/title/Card.css":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/title/Card.css ***!
+  \*****************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.card-link {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  background-color: white;
+
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-container {
+  flex: 0 0 40%;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  flex: 1;
+  padding: 2vw;
+}
+.card-content h2 {
+    margin-top: 0;
+}`, "",{"version":3,"sources":["webpack://./src/components/title/Card.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,gBAAgB;EAChB,YAAY;;EAEZ,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;EACV,gBAAgB;EAChB,sBAAsB;;EAEtB,aAAa;EACb,mBAAmB;EACnB,oBAAoB;;EAEpB,qBAAqB;EACrB,cAAc;EACd,eAAe;;EAEf,uBAAuB;;EAEvB,mEAAmE;AACrE;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,OAAO;EACP,YAAY;AACd;AACA;IACI,aAAa;AACjB","sourcesContent":[".card-link {\r\n  width: 100%;\r\n  max-width: 800px;\r\n  height: auto;\r\n\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  padding: 0;\r\n  text-align: left;\r\n  box-sizing: border-box;\r\n\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: stretch;\r\n\r\n  text-decoration: none;\r\n  color: inherit;\r\n  cursor: pointer;\r\n\r\n  background-color: white;\r\n\r\n  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\r\n}\r\n.card-link:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}\r\n\r\n.card-image-container {\r\n  flex: 0 0 40%;\r\n}\r\n\r\n.card-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  display: block;\r\n}\r\n\r\n.card-content {\r\n  flex: 1;\r\n  padding: 2vw;\r\n}\r\n.card-content h2 {\r\n    margin-top: 0;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/cup/cup.css":
+/*!*********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/cup/cup.css ***!
+  \*********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* -------------------------------------------------- */
+/* 全体コンテナ */
+/* -------------------------------------------------- */
+
+.overall-layout {
+    display: flex;
+    padding: 20px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.page-button-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-self: flex-start;
+}
+
+/* -------------------------------------------------- */
+/* 上段エリア: 実験映像、グラフ */
+/* -------------------------------------------------- */
+
+.experiment-layout {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto 0px auto;
+    justify-content: center;
+}
+
+.experimental-footage {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-item-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    max-width: 400px;
+    margin:250px auto 0px auto;
+    align-items: center;
+    font-size: 20px;
+}
+
+.graph-canvas {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0px auto 50px auto;
+    background-color: white;
+    border-radius: 0.8vw;
+    align-items: center;
+}
+
+/* -------------------------------------------------- */
+/* 下段エリア: 実験内容、条件設定 */
+/* -------------------------------------------------- */
+
+.graph-controls {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+.graph-controls > * {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    min-height: 250px;
+}
+
+/* -------------------------------------------------- */
+/* レスポンシブ対応 */
+/* -------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */
+    .experiment-main-layout,
+    .graph-controls {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    /* 各コンポーネントは幅いっぱいを使用 */
+    .experiment-main-layout > *,
+    .graph-controls > * {
+        flex: 1 1 100%;
+    }
+}`, "",{"version":3,"sources":["webpack://./src/pages/cup/cup.css"],"names":[],"mappings":"AAAA,uDAAuD;AACvD,WAAW;AACX,uDAAuD;;AAEvD;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA,uDAAuD;AACvD,oBAAoB;AACpB,uDAAuD;;AAEvD;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,iBAAiB;IACjB,yBAAyB;IACzB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,SAAS;IACT,WAAW;IACX,gBAAgB;IAChB,0BAA0B;IAC1B,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,gBAAgB;IAChB,0BAA0B;IAC1B,uBAAuB;IACvB,oBAAoB;IACpB,mBAAmB;AACvB;;AAEA,uDAAuD;AACvD,qBAAqB;AACrB,uDAAuD;;AAEvD;IACI,aAAa;IACb,SAAS;IACT,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,eAAe;AACnB;AACA;IACI,OAAO;IACP,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA,uDAAuD;AACvD,aAAa;AACb,uDAAuD;;AAEvD;IACI,6BAA6B;IAC7B;;QAEI,sBAAsB;QACtB,iBAAiB;IACrB;;IAEA,sBAAsB;IACtB;;QAEI,cAAc;IAClB;AACJ","sourcesContent":["/* -------------------------------------------------- */\r\n/* 全体コンテナ */\r\n/* -------------------------------------------------- */\r\n\r\n.overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 上段エリア: 実験映像、グラフ */\r\n/* -------------------------------------------------- */\r\n\r\n.experiment-layout {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n}\r\n\r\n.experimental-footage {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.center-item-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 60px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin:250px auto 0px auto;\r\n    align-items: center;\r\n    font-size: 20px;\r\n}\r\n\r\n.graph-canvas {\r\n    padding: 20px;\r\n    max-width: 600px;\r\n    margin: 0px auto 50px auto;\r\n    background-color: white;\r\n    border-radius: 0.8vw;\r\n    align-items: center;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 下段エリア: 実験内容、条件設定 */\r\n/* -------------------------------------------------- */\r\n\r\n.graph-controls {\r\n    display: flex;\r\n    gap: 20px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0 auto;\r\n    font-size: 24px;\r\n}\r\n.graph-controls > * {\r\n    flex: 1;\r\n    padding: 15px;\r\n    border-radius: 12px;\r\n    min-height: 250px;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* レスポンシブ対応 */\r\n/* -------------------------------------------------- */\r\n\r\n@media (max-width: 1024px) {\r\n    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */\r\n    .experiment-main-layout,\r\n    .graph-controls {\r\n        flex-direction: column;\r\n        margin: 20px auto;\r\n    }\r\n\r\n    /* 各コンポーネントは幅いっぱいを使用 */\r\n    .experiment-main-layout > *,\r\n    .graph-controls > * {\r\n        flex: 1 1 100%;\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/graph/graph.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/graph/graph.css ***!
+  \*************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -288,23 +717,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
   font-family: 'Inter', sans-serif;
 }
 
-.graph-back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 10px 20px;
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.graph-back-button:hover {
-  background-color: #357bd8;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+.page-button-layout {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+  align-self: flex-start;
 }
 
 /* ----------------------------------------------------
@@ -366,73 +784,66 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
   width: 620;
   flex-shrink: 0;
   flex-wrap: nowrap;
-}`, "",{"version":3,"sources":["webpack://./src/pages/graph.css"],"names":[],"mappings":"AAAA;;yDAEyD;AACzD;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,aAAa;EACb,iBAAiB;EACjB,yBAAyB;EACzB,gCAAgC;AAClC;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,UAAU;EACV,kBAAkB;EAClB,yBAAyB;EACzB,YAAY;EACZ,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,yBAAyB;EACzB,wCAAwC;AAC1C;AACA;EACE,yBAAyB;EACzB,yCAAyC;AAC3C;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,SAAS;;EAET,WAAW;EACX,iBAAiB;EACjB,gBAAgB,EAAE,YAAY;AAChC;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA,wBAAwB;AACxB;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,YAAY;EACZ,cAAc;AAChB;;AAEA,6BAA6B;AAC7B;EACE,YAAY;EACZ,YAAY,EAAE,qBAAqB;EACnC,cAAc;;EAEd,uBAAuB;EACvB,aAAa;EACb,mBAAmB;EACnB,0CAA0C;EAC1C,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;;EAET,UAAU;EACV,cAAc;EACd,iBAAiB;AACnB","sourcesContent":["/* ----------------------------------------------------\r\n * 全体コンテナ\r\n * ---------------------------------------------------- */\r\n.graph-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 20px;\r\n  min-height: 100vh;\r\n  background-color: #f0f4f8;\r\n  font-family: 'Inter', sans-serif;\r\n}\r\n\r\n.graph-back-button {\r\n  position: absolute;\r\n  top: 20px;\r\n  left: 20px;\r\n  padding: 10px 20px;\r\n  background-color: #4a90e2;\r\n  color: white;\r\n  border: none;\r\n  border-radius: 8px;\r\n  cursor: pointer;\r\n  font-weight: bold;\r\n  transition: all 0.2s ease;\r\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n}\r\n.graph-back-button:hover {\r\n  background-color: #357bd8;\r\n  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * メインレイアウト: グラフエリアとコントロールエリアの縦並び\r\n * ---------------------------------------------------- */\r\n.graph-main-layout {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 20px;\r\n\r\n  width: 100%;\r\n  max-width: 1700px;\r\n  margin-top: 30px; /* ボタンとの間隔 */\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * A. グラフエリア: 凡例/公式 と キャンバスを横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-area-wrap {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-grow: 0;\r\n  max-width: 1700px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n/* 1. 凡例と公式のコンテナ (縦並び) */\r\n.legend-formula-column {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  width: 400px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n/* 2. グラフキャンバスのコンテナ (グラフ本体) */\r\n.graph-canvas-wrap {\r\n  flex-grow: 0;\r\n  width: 600px; /* ⬅️ ユーザー指定の最大幅を反映 */\r\n  flex-shrink: 1;\r\n\r\n  background-color: white;\r\n  padding: 20px;\r\n  border-radius: 12px;\r\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);\r\n  border: 1px solid #e0e6ed;\r\n  text-align: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-controls {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 20px;\r\n\r\n  width: 620;\r\n  flex-shrink: 0;\r\n  flex-wrap: nowrap;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/graph/graph.css"],"names":[],"mappings":"AAAA;;yDAEyD;AACzD;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,aAAa;EACb,iBAAiB;EACjB,yBAAyB;EACzB,gCAAgC;AAClC;;AAEA;EACE,aAAa;EACb,mBAAmB;;EAEnB,SAAS;EACT,sBAAsB;AACxB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,SAAS;;EAET,WAAW;EACX,iBAAiB;EACjB,gBAAgB,EAAE,YAAY;AAChC;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA,wBAAwB;AACxB;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,YAAY;EACZ,cAAc;AAChB;;AAEA,6BAA6B;AAC7B;EACE,YAAY;EACZ,YAAY,EAAE,qBAAqB;EACnC,cAAc;;EAEd,uBAAuB;EACvB,aAAa;EACb,mBAAmB;EACnB,0CAA0C;EAC1C,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;;EAET,UAAU;EACV,cAAc;EACd,iBAAiB;AACnB","sourcesContent":["/* ----------------------------------------------------\r\n * 全体コンテナ\r\n * ---------------------------------------------------- */\r\n.graph-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 20px;\r\n  min-height: 100vh;\r\n  background-color: #f0f4f8;\r\n  font-family: 'Inter', sans-serif;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * メインレイアウト: グラフエリアとコントロールエリアの縦並び\r\n * ---------------------------------------------------- */\r\n.graph-main-layout {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 20px;\r\n\r\n  width: 100%;\r\n  max-width: 1700px;\r\n  margin-top: 30px; /* ボタンとの間隔 */\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * A. グラフエリア: 凡例/公式 と キャンバスを横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-area-wrap {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-grow: 0;\r\n  max-width: 1700px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n/* 1. 凡例と公式のコンテナ (縦並び) */\r\n.legend-formula-column {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  width: 400px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n/* 2. グラフキャンバスのコンテナ (グラフ本体) */\r\n.graph-canvas-wrap {\r\n  flex-grow: 0;\r\n  width: 600px; /* ⬅️ ユーザー指定の最大幅を反映 */\r\n  flex-shrink: 1;\r\n\r\n  background-color: white;\r\n  padding: 20px;\r\n  border-radius: 12px;\r\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);\r\n  border: 1px solid #e0e6ed;\r\n  text-align: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-controls {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 20px;\r\n\r\n  width: 620;\r\n  flex-shrink: 0;\r\n  flex-wrap: nowrap;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/house.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/house.css ***!
-  \*******************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/house/house.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/house/house.css ***!
+  \*************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* ページ全体を常に中央寄せ（上下左右） */
-.house-page {
+___CSS_LOADER_EXPORT___.push([module.id, `.house-page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;      /* 横方向センター */
-  justify-content: flex-start; /* 上寄せ→必要なら center に */
-  gap: 24px;                /* 各要素の間隔 */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
   padding: 24px 4vw;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
 }
 
-/* 戻るボタン */
-.backButton {
-  align-self: flex-start;   /* 左上配置。中央にしたいなら remove */
-  padding: 10px 20px;
-  font-size: clamp(14px, 1.6vw, 16px);
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
+.page-button-layout {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+  align-self: flex-start;
 }
 
-/* 写真（レスポンシブ） */
-.photo {
-  width: min(800px, 92vw);  /* 800pxを上限に画面幅に追従 */
+.house-picture {
+  width: min(800px, 92vw);
   height: auto;
   border-radius: 8px;
 }
 
-/* 見出し（レスポンシブ文字） */
-.question {
+.question-text {
   margin: 8px 0 0;
   font-weight: 700;
   font-size: clamp(22px, 4vw, 36px);
   text-align: center;
 }
 
-/* ボタンコンテナ：中央に横並び → 画面が狭いと縦積み */
 .buttonContainer {
   display: flex;
   flex-wrap: wrap;
@@ -440,41 +851,26 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* ページ全体を常に中央寄�
   justify-content: center;
   width: 100%;
 }
-
-/* 大きいボタン（レスポンシブ） */
-.bigButton {
-  padding: clamp(10px, 1.2vw, 14px) clamp(26px, 3.4vw, 50px);
-  font-size: clamp(18px, 2.6vw, 32px);
-  border: none;
-  border-radius: 10px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color .2s ease;
-}
-.bigButton:hover {
-  background-color: #0056b3;
-}
-`, "",{"version":3,"sources":["webpack://./src/pages/house.css"],"names":[],"mappings":"AAAA,uBAAuB;AACvB;EACE,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,mBAAmB,OAAO,YAAY;EACtC,2BAA2B,EAAE,sBAAsB;EACnD,SAAS,iBAAiB,WAAW;EACrC,iBAAiB;EACjB,sBAAsB;EACtB,8BAA8B;AAChC;;AAEA,UAAU;AACV;EACE,sBAAsB,IAAI,yBAAyB;EACnD,kBAAkB;EAClB,mCAAmC;EACnC,eAAe;EACf,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,kBAAkB;AACpB;;AAEA,eAAe;AACf;EACE,uBAAuB,GAAG,oBAAoB;EAC9C,YAAY;EACZ,kBAAkB;AACpB;;AAEA,kBAAkB;AAClB;EACE,eAAe;EACf,gBAAgB;EAChB,iCAAiC;EACjC,kBAAkB;AACpB;;AAEA,+BAA+B;AAC/B;EACE,aAAa;EACb,eAAe;EACf,SAAS;EACT,uBAAuB;EACvB,WAAW;AACb;;AAEA,mBAAmB;AACnB;EACE,0DAA0D;EAC1D,mCAAmC;EACnC,YAAY;EACZ,mBAAmB;EACnB,yBAAyB;EACzB,WAAW;EACX,eAAe;EACf,qCAAqC;AACvC;AACA;EACE,yBAAyB;AAC3B","sourcesContent":["/* ページ全体を常に中央寄せ（上下左右） */\r\n.house-page {\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;      /* 横方向センター */\r\n  justify-content: flex-start; /* 上寄せ→必要なら center に */\r\n  gap: 24px;                /* 各要素の間隔 */\r\n  padding: 24px 4vw;\r\n  box-sizing: border-box;\r\n  font-family: Arial, sans-serif;\r\n}\r\n\r\n/* 戻るボタン */\r\n.backButton {\r\n  align-self: flex-start;   /* 左上配置。中央にしたいなら remove */\r\n  padding: 10px 20px;\r\n  font-size: clamp(14px, 1.6vw, 16px);\r\n  cursor: pointer;\r\n  background-color: #007bff;\r\n  color: #fff;\r\n  border: none;\r\n  border-radius: 8px;\r\n}\r\n\r\n/* 写真（レスポンシブ） */\r\n.photo {\r\n  width: min(800px, 92vw);  /* 800pxを上限に画面幅に追従 */\r\n  height: auto;\r\n  border-radius: 8px;\r\n}\r\n\r\n/* 見出し（レスポンシブ文字） */\r\n.question {\r\n  margin: 8px 0 0;\r\n  font-weight: 700;\r\n  font-size: clamp(22px, 4vw, 36px);\r\n  text-align: center;\r\n}\r\n\r\n/* ボタンコンテナ：中央に横並び → 画面が狭いと縦積み */\r\n.buttonContainer {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 24px;\r\n  justify-content: center;\r\n  width: 100%;\r\n}\r\n\r\n/* 大きいボタン（レスポンシブ） */\r\n.bigButton {\r\n  padding: clamp(10px, 1.2vw, 14px) clamp(26px, 3.4vw, 50px);\r\n  font-size: clamp(18px, 2.6vw, 32px);\r\n  border: none;\r\n  border-radius: 10px;\r\n  background-color: #007bff;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  transition: background-color .2s ease;\r\n}\r\n.bigButton:hover {\r\n  background-color: #0056b3;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/pages/house/house.css"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,2BAA2B;EAC3B,SAAS;EACT,iBAAiB;EACjB,sBAAsB;EACtB,8BAA8B;EAC9B,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,mBAAmB;;EAEnB,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,uBAAuB;EACvB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,iCAAiC;EACjC,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,SAAS;EACT,uBAAuB;EACvB,WAAW;AACb","sourcesContent":[".house-page {\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  gap: 24px;\r\n  padding: 24px 4vw;\r\n  box-sizing: border-box;\r\n  font-family: Arial, sans-serif;\r\n  background-color: #f0f4f8;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n.house-picture {\r\n  width: min(800px, 92vw);\r\n  height: auto;\r\n  border-radius: 8px;\r\n}\r\n\r\n.question-text {\r\n  margin: 8px 0 0;\r\n  font-weight: 700;\r\n  font-size: clamp(22px, 4vw, 36px);\r\n  text-align: center;\r\n}\r\n\r\n.buttonContainer {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 24px;\r\n  justify-content: center;\r\n  width: 100%;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/title.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/title.css ***!
-  \*******************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/title/title.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/title/title.css ***!
+  \*************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -483,428 +879,53 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.top {
   display: flex;
-  flex-direction: column;     /* 縦方向に要素を並べる */
-  justify-content: center;    /* 垂直方向中央寄せ */
-  align-items: center;        /* 水平方向中央寄せ */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: 10vh;               /* 画面の40%の高さ（好みで調整） */
-  padding: 2vh 5vw;           /* 画面比に応じた余白 */
+  min-height: 10vh;
+  padding: 2vh 2vw;
   box-sizing: border-box;
-}
-
-/* タイトルと説明文のフォントサイズを画面幅に合わせる */
-.top h1 {
-  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
-  margin: 0.5em 0;
-}
-
-.top p {
-  font-size: clamp(0.9rem, 1.2vw, 1.5rem);
-  max-width: 60vw;            /* テキストの横幅を制限 */
-  margin: 0;
-  line-height: 1.6;
+  background-color: #f0f4f8;
 }
 
 .container {
-  display: grid;
-  /* 画面幅に応じて列数を自動調整（2〜3列） */
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2vw;                       /* 画面幅に応じたカード間の余白 */
-  width: 60vw;                    /* 全体幅を画面の90%に */
-  max-width: 1200px;              /* 最大幅を設定（大画面でも崩れにくく） */
-  margin: 5vh auto;               /* 上下に余白を取りつつ中央寄せ */
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+
+  width: 100vw;
+  max-width: 1500px;
+  margin: 5vh 5vw;
   padding: 0 2vw;
-  justify-items: center;          /* 各カードをセル内で中央寄せ */
+  align-items: center;
   box-sizing: border-box;
 }
 
-/* 画面が狭いときは1列に落とす */
-@media (max-width: 720px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* カード側は幅100%に（max-width を消して中央に） */
-.content_item {
-  width: 100%;
-  max-width: 420px;  /* カード自体の最大幅。見た目で調整、不要なら消してOK */
-  border: 1px solid #ddd;
-  padding: 12px;
-  border-radius: 8px;
-}
-
-/* 画像はカード幅にフィット */
-.content_item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-`, "",{"version":3,"sources":["webpack://./src/pages/title.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB,MAAM,eAAe;EAC3C,uBAAuB,KAAK,aAAa;EACzC,mBAAmB,SAAS,aAAa;EACzC,kBAAkB;EAClB,YAAY,gBAAgB,qBAAqB;EACjD,gBAAgB,YAAY,cAAc;EAC1C,sBAAsB;AACxB;;AAEA,8BAA8B;AAC9B;EACE,uCAAuC;EACvC,eAAe;AACjB;;AAEA;EACE,uCAAuC;EACvC,eAAe,aAAa,eAAe;EAC3C,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,2DAA2D;EAC3D,QAAQ,wBAAwB,mBAAmB;EACnD,WAAW,qBAAqB,gBAAgB;EAChD,iBAAiB,eAAe,uBAAuB;EACvD,gBAAgB,gBAAgB,mBAAmB;EACnD,cAAc;EACd,qBAAqB,WAAW,kBAAkB;EAClD,sBAAsB;AACxB;;AAEA,mBAAmB;AACnB;EACE;IACE,0BAA0B;EAC5B;AACF;;AAEA,mCAAmC;AACnC;EACE,WAAW;EACX,gBAAgB,GAAG,+BAA+B;EAClD,sBAAsB;EACtB,aAAa;EACb,kBAAkB;AACpB;;AAEA,iBAAiB;AACjB;EACE,WAAW;EACX,YAAY;EACZ,cAAc;AAChB","sourcesContent":[".top {\r\n  display: flex;\r\n  flex-direction: column;     /* 縦方向に要素を並べる */\r\n  justify-content: center;    /* 垂直方向中央寄せ */\r\n  align-items: center;        /* 水平方向中央寄せ */\r\n  text-align: center;\r\n  height: 10vh;               /* 画面の40%の高さ（好みで調整） */\r\n  padding: 2vh 5vw;           /* 画面比に応じた余白 */\r\n  box-sizing: border-box;\r\n}\r\n\r\n/* タイトルと説明文のフォントサイズを画面幅に合わせる */\r\n.top h1 {\r\n  font-size: clamp(1.2rem, 2.5vw, 2.5rem);\r\n  margin: 0.5em 0;\r\n}\r\n\r\n.top p {\r\n  font-size: clamp(0.9rem, 1.2vw, 1.5rem);\r\n  max-width: 60vw;            /* テキストの横幅を制限 */\r\n  margin: 0;\r\n  line-height: 1.6;\r\n}\r\n\r\n.container {\r\n  display: grid;\r\n  /* 画面幅に応じて列数を自動調整（2〜3列） */\r\n  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));\r\n  gap: 2vw;                       /* 画面幅に応じたカード間の余白 */\r\n  width: 60vw;                    /* 全体幅を画面の90%に */\r\n  max-width: 1200px;              /* 最大幅を設定（大画面でも崩れにくく） */\r\n  margin: 5vh auto;               /* 上下に余白を取りつつ中央寄せ */\r\n  padding: 0 2vw;\r\n  justify-items: center;          /* 各カードをセル内で中央寄せ */\r\n  box-sizing: border-box;\r\n}\r\n\r\n/* 画面が狭いときは1列に落とす */\r\n@media (max-width: 720px) {\r\n  .container {\r\n    grid-template-columns: 1fr;\r\n  }\r\n}\r\n\r\n/* カード側は幅100%に（max-width を消して中央に） */\r\n.content_item {\r\n  width: 100%;\r\n  max-width: 420px;  /* カード自体の最大幅。見た目で調整、不要なら消してOK */\r\n  border: 1px solid #ddd;\r\n  padding: 12px;\r\n  border-radius: 8px;\r\n}\r\n\r\n/* 画像はカード幅にフィット */\r\n.content_item img {\r\n  width: 100%;\r\n  height: auto;\r\n  display: block;\r\n}\r\n"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/towel.css":
-/*!*******************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/towel.css ***!
-  \*******************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `.page-wrap {
-  font-family: Arial, sans-serif;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #f0f0f0;
-}
-
-/* 上部ボタン */
-.top-buttons {
+.title {
   display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-.nav-button,
-.button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: clamp(8px, 1vw, 12px) clamp(14px, 2vw, 20px);
-  font-size: clamp(14px, 1.4vw, 16px);
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color .2s ease;
-}
-.nav-button:hover,
-.button:hover {
-  background-color: #0056b3;
-}
-.button:disabled {
-  background-color: #d3d3d3;
-  cursor: not-allowed;
-}
-.button.running {
-  background-color: #ff0000;
-}
-
-/* 説明 */
-#description-container {
-  margin: 12px 0 24px;
-  text-align: center;
-}
-#condensation-explanation {
-  font-size: clamp(16px, 1.6vw, 20px);
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 12px;
-}
-#experiment-controls {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  text-align: center;
+
+  gap: 0vw;
+  width: 60vw;
+  max-width: 1500px;
+  margin: 5vh auto;
+  padding: 0 2vw;
+  box-sizing: border-box;
 }
-#description-text {
-  font-size: clamp(16px, 1.8vw, 20px);
-  line-height: 1.6;
+.title h1 {
+  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+  margin: 0.5em 0;
+}
+.title p {
+  font-size: clamp(0.9rem, 1.2vw, 1.5rem);
+  max-width: 60vw;
   margin: 0;
-  color: #333;
-  text-align: left;
-  white-space: nowrap;
-}
-
-/* コントロール群 */
-.controls {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.control {
-  background: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.1);
-  text-align: center;
-  width: 220px;
-  min-height: 210px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
-}
-.big {
-  font-size: clamp(18px, 2.2vw, 24px);
-  font-weight: bold;
-  color: #333;
-}
-
-/* レイアウト：画像＋グラフ */
-#layout-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-#photos-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-#cup-image {
-  width: clamp(220px, 28vw, 300px);
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-#temperature-image {
-  width: clamp(280px, 36vw, 400px);
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-#condensationTextContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  width: clamp(120px, 16vw, 160px);
-}
-#condensationText {
-  font-weight: bold;
-  font-size: clamp(18px, 2.4vw, 24px);
-}
-#humidityText {
-  font-weight: bold;
-  font-size: clamp(16px, 2vw, 20px);
-  color: #111;
-}
-
-#graph-container {
-  flex: 1 1 520px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-#legend {
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-}
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.legend-color {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #000;
-}
-
-/* レスポンシブ（狭い時は縦積み） */
-@media (max-width: 900px) {
-  #layout-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  #description-text { white-space: normal; }
-}
-`, "",{"version":3,"sources":["webpack://./src/pages/towel.css"],"names":[],"mappings":"AAAA;EACE,8BAA8B;EAC9B,iBAAiB;EACjB,cAAc;EACd,aAAa;EACb,mBAAmB;AACrB;;AAEA,UAAU;AACV;EACE,aAAa;EACb,2BAA2B;EAC3B,SAAS;EACT,mBAAmB;AACrB;AACA;;EAEE,yBAAyB;EACzB,WAAW;EACX,YAAY;EACZ,qDAAqD;EACrD,mCAAmC;EACnC,kBAAkB;EAClB,eAAe;EACf,qCAAqC;AACvC;AACA;;EAEE,yBAAyB;AAC3B;AACA;EACE,yBAAyB;EACzB,mBAAmB;AACrB;AACA;EACE,yBAAyB;AAC3B;;AAEA,OAAO;AACP;EACE,mBAAmB;EACnB,kBAAkB;AACpB;AACA;EACE,mCAAmC;EACnC,gBAAgB;EAChB,WAAW;EACX,mBAAmB;AACrB;AACA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,SAAS;AACX;AACA;EACE,mCAAmC;EACnC,gBAAgB;EAChB,SAAS;EACT,WAAW;EACX,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,YAAY;AACZ;EACE,aAAa;EACb,SAAS;EACT,eAAe;EACf,8BAA8B;EAC9B,oBAAoB;AACtB;AACA;EACE,gBAAgB;EAChB,aAAa;EACb,kBAAkB;EAClB,oCAAoC;EACpC,kBAAkB;EAClB,YAAY;EACZ,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,QAAQ;AACV;AACA;EACE,mCAAmC;EACnC,iBAAiB;EACjB,WAAW;AACb;;AAEA,iBAAiB;AACjB;EACE,aAAa;EACb,8BAA8B;EAC9B,uBAAuB;EACvB,SAAS;EACT,gBAAgB;EAChB,eAAe;AACjB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,SAAS;AACX;AACA;EACE,gCAAgC;EAChC,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;AACA;EACE,gCAAgC;EAChC,YAAY;EACZ,cAAc;EACd,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,SAAS;EACT,gCAAgC;AAClC;AACA;EACE,iBAAiB;EACjB,mCAAmC;AACrC;AACA;EACE,iBAAiB;EACjB,iCAAiC;EACjC,WAAW;AACb;;AAEA;EACE,eAAe;EACf,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,QAAQ;AACV;AACA;EACE,eAAe;EACf,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,QAAQ;AACV;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,QAAQ;AACV;AACA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;AACxB;;AAEA,oBAAoB;AACpB;EACE;IACE,sBAAsB;IACtB,mBAAmB;EACrB;EACA,oBAAoB,mBAAmB,EAAE;AAC3C","sourcesContent":[".page-wrap {\r\n  font-family: Arial, sans-serif;\r\n  max-width: 1100px;\r\n  margin: 0 auto;\r\n  padding: 20px;\r\n  background: #f0f0f0;\r\n}\r\n\r\n/* 上部ボタン */\r\n.top-buttons {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  gap: 20px;\r\n  margin-bottom: 20px;\r\n}\r\n.nav-button,\r\n.button {\r\n  background-color: #007bff;\r\n  color: #fff;\r\n  border: none;\r\n  padding: clamp(8px, 1vw, 12px) clamp(14px, 2vw, 20px);\r\n  font-size: clamp(14px, 1.4vw, 16px);\r\n  border-radius: 6px;\r\n  cursor: pointer;\r\n  transition: background-color .2s ease;\r\n}\r\n.nav-button:hover,\r\n.button:hover {\r\n  background-color: #0056b3;\r\n}\r\n.button:disabled {\r\n  background-color: #d3d3d3;\r\n  cursor: not-allowed;\r\n}\r\n.button.running {\r\n  background-color: #ff0000;\r\n}\r\n\r\n/* 説明 */\r\n#description-container {\r\n  margin: 12px 0 24px;\r\n  text-align: center;\r\n}\r\n#condensation-explanation {\r\n  font-size: clamp(16px, 1.6vw, 20px);\r\n  line-height: 1.6;\r\n  color: #333;\r\n  margin-bottom: 12px;\r\n}\r\n#experiment-controls {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 16px;\r\n}\r\n#description-text {\r\n  font-size: clamp(16px, 1.8vw, 20px);\r\n  line-height: 1.6;\r\n  margin: 0;\r\n  color: #333;\r\n  text-align: left;\r\n  white-space: nowrap;\r\n}\r\n\r\n/* コントロール群 */\r\n.controls {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  align-items: stretch;\r\n}\r\n.control {\r\n  background: #fff;\r\n  padding: 10px;\r\n  border-radius: 8px;\r\n  box-shadow: 0 2px 5px rgba(0,0,0,.1);\r\n  text-align: center;\r\n  width: 220px;\r\n  min-height: 210px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  gap: 6px;\r\n}\r\n.big {\r\n  font-size: clamp(18px, 2.2vw, 24px);\r\n  font-weight: bold;\r\n  color: #333;\r\n}\r\n\r\n/* レイアウト：画像＋グラフ */\r\n#layout-container {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\r\n  gap: 20px;\r\n  margin-top: 24px;\r\n  flex-wrap: wrap;\r\n}\r\n#photos-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n#cup-image {\r\n  width: clamp(220px, 28vw, 300px);\r\n  height: auto;\r\n  object-fit: cover;\r\n  display: block;\r\n}\r\n#temperature-image {\r\n  width: clamp(280px, 36vw, 400px);\r\n  height: auto;\r\n  display: block;\r\n  margin: 0 auto;\r\n}\r\n\r\n#condensationTextContainer {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 12px;\r\n  width: clamp(120px, 16vw, 160px);\r\n}\r\n#condensationText {\r\n  font-weight: bold;\r\n  font-size: clamp(18px, 2.4vw, 24px);\r\n}\r\n#humidityText {\r\n  font-weight: bold;\r\n  font-size: clamp(16px, 2vw, 20px);\r\n  color: #111;\r\n}\r\n\r\n#graph-container {\r\n  flex: 1 1 520px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 8px;\r\n}\r\n#legend {\r\n  margin-top: 8px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n  gap: 6px;\r\n}\r\n.legend-item {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 6px;\r\n}\r\n.legend-color {\r\n  width: 20px;\r\n  height: 20px;\r\n  border: 1px solid #000;\r\n}\r\n\r\n/* レスポンシブ（狭い時は縦積み） */\r\n@media (max-width: 900px) {\r\n  #layout-container {\r\n    flex-direction: column;\r\n    align-items: center;\r\n  }\r\n  #description-text { white-space: normal; }\r\n}\r\n"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/window-winter.css":
-/*!***************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/window-winter.css ***!
-  \***************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* 画面中央にレイアウト & ベース */
-.ww-body {
-  font-family: Arial, sans-serif;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 20px 40px;
-  background-color: #f0f0f0;
-}
-
-/* 上部ナビ */
-.top-buttons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.nav-button,
-.button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: clamp(14px, 1.6vw, 16px);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color .3s ease;
-}
-.nav-button:hover,
-.button:hover { background-color: #0056b3; }
-.button:disabled { background: #d3d3d3; cursor: not-allowed; }
-
-.button.running {
-  background-color: #ff0000;
-  color: #fff;
-}
-
-/* 実験説明 */
-#description-container {
-  margin: 12px 0 20px;
-  text-align: center;
-}
-
-#condensation-explanation {
-  font-size: clamp(16px, 1.8vw, 20px);
   line-height: 1.6;
-  color: #333;
-  margin-bottom: 12px;
-}
-
-#experiment-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-}
-
-#description-text {
-  font-size: clamp(16px, 1.8vw, 20px);
-  line-height: 1.6;
-  color: #333;
-  margin: 0;
-  text-align: left;
-}
-
-/* コントロール群 */
-.controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.control {
-  background: #fff;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,.1);
-  text-align: center;
-  width: min(220px, 46%);
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: clamp(14px, 1.6vw, 18px);
-}
-
-.temperature-display {
-  font-size: clamp(18px, 2.2vw, 24px);
-  font-weight: bold;
-  color: #333;
-}
-
-/* 画像 + グラフ横並び */
-#cup-container { display: flex; justify-content: center; }
-#layout-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 24px;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-
-/* 画像の縦並び */
-#photos-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-/* 結露テキスト */
-#condensationTextContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: 180px;
-  margin-top: 20px;
-}
-#condensationText { font-weight: bold; font-size: clamp(18px, 2.2vw, 24px); }
-#humidityText { font-weight: bold; font-size: clamp(16px, 2vw, 20px); color: #000; }
-
-/* グラフ */
-#graph-container {
-  flex: 1;
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-#legend { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
-.legend-item { display: flex; align-items: center; gap: 6px; }
-.legend-color { width: 20px; height: 20px; border: 1px solid #000; }
-
-/* レスポンシブ */
-@media (max-width: 900px) {
-  .controls { justify-content: center; }
-  .control { width: min(280px, 100%); }
-}
-`, "",{"version":3,"sources":["webpack://./src/pages/window-winter.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;EACE,8BAA8B;EAC9B,iBAAiB;EACjB,cAAc;EACd,uBAAuB;EACvB,yBAAyB;AAC3B;;AAEA,SAAS;AACT;EACE,aAAa;EACb,2BAA2B;EAC3B,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,yBAAyB;EACzB,YAAY;EACZ,YAAY;EACZ,kBAAkB;EAClB,mCAAmC;EACnC,kBAAkB;EAClB,eAAe;EACf,qCAAqC;AACvC;AACA;gBACgB,yBAAyB,EAAE;AAC3C,mBAAmB,mBAAmB,EAAE,mBAAmB,EAAE;;AAE7D;EACE,yBAAyB;EACzB,WAAW;AACb;;AAEA,SAAS;AACT;EACE,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,mCAAmC;EACnC,gBAAgB;EAChB,WAAW;EACX,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,mCAAmC;EACnC,gBAAgB;EAChB,WAAW;EACX,SAAS;EACT,gBAAgB;AAClB;;AAEA,YAAY;AACZ;EACE,aAAa;EACb,8BAA8B;EAC9B,oBAAoB;EACpB,SAAS;EACT,eAAe;AACjB;;AAEA;EACE,gBAAgB;EAChB,aAAa;EACb,kBAAkB;EAClB,oCAAoC;EACpC,kBAAkB;EAClB,sBAAsB;EACtB,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mCAAmC;AACrC;;AAEA;EACE,mCAAmC;EACnC,iBAAiB;EACjB,WAAW;AACb;;AAEA,gBAAgB;AAChB,iBAAiB,aAAa,EAAE,uBAAuB,EAAE;AACzD;EACE,aAAa;EACb,8BAA8B;EAC9B,uBAAuB;EACvB,SAAS;EACT,gBAAgB;EAChB,eAAe;AACjB;;AAEA,WAAW;AACX;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,SAAS;AACX;;AAEA,WAAW;AACX;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,SAAS;EACT,YAAY;EACZ,gBAAgB;AAClB;AACA,oBAAoB,iBAAiB,EAAE,mCAAmC,EAAE;AAC5E,gBAAgB,iBAAiB,EAAE,iCAAiC,EAAE,WAAW,EAAE;;AAEnF,QAAQ;AACR;EACE,OAAO;EACP,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,SAAS;AACX;AACA,UAAU,aAAa,EAAE,sBAAsB,EAAE,QAAQ,EAAE,eAAe,EAAE;AAC5E,eAAe,aAAa,EAAE,mBAAmB,EAAE,QAAQ,EAAE;AAC7D,gBAAgB,WAAW,EAAE,YAAY,EAAE,sBAAsB,EAAE;;AAEnE,WAAW;AACX;EACE,YAAY,uBAAuB,EAAE;EACrC,WAAW,uBAAuB,EAAE;AACtC","sourcesContent":["/* 画面中央にレイアウト & ベース */\r\n.ww-body {\r\n  font-family: Arial, sans-serif;\r\n  max-width: 1000px;\r\n  margin: 0 auto;\r\n  padding: 20px 20px 40px;\r\n  background-color: #f0f0f0;\r\n}\r\n\r\n/* 上部ナビ */\r\n.top-buttons {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  gap: 20px;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.nav-button,\r\n.button {\r\n  background-color: #007bff;\r\n  color: white;\r\n  border: none;\r\n  padding: 10px 20px;\r\n  font-size: clamp(14px, 1.6vw, 16px);\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n  transition: background-color .3s ease;\r\n}\r\n.nav-button:hover,\r\n.button:hover { background-color: #0056b3; }\r\n.button:disabled { background: #d3d3d3; cursor: not-allowed; }\r\n\r\n.button.running {\r\n  background-color: #ff0000;\r\n  color: #fff;\r\n}\r\n\r\n/* 実験説明 */\r\n#description-container {\r\n  margin: 12px 0 20px;\r\n  text-align: center;\r\n}\r\n\r\n#condensation-explanation {\r\n  font-size: clamp(16px, 1.8vw, 20px);\r\n  line-height: 1.6;\r\n  color: #333;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n#experiment-controls {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 18px;\r\n}\r\n\r\n#description-text {\r\n  font-size: clamp(16px, 1.8vw, 20px);\r\n  line-height: 1.6;\r\n  color: #333;\r\n  margin: 0;\r\n  text-align: left;\r\n}\r\n\r\n/* コントロール群 */\r\n.controls {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: stretch;\r\n  gap: 20px;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n.control {\r\n  background: #fff;\r\n  padding: 12px;\r\n  border-radius: 8px;\r\n  box-shadow: 0 2px 5px rgba(0,0,0,.1);\r\n  text-align: center;\r\n  width: min(220px, 46%);\r\n  height: 250px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  font-size: clamp(14px, 1.6vw, 18px);\r\n}\r\n\r\n.temperature-display {\r\n  font-size: clamp(18px, 2.2vw, 24px);\r\n  font-weight: bold;\r\n  color: #333;\r\n}\r\n\r\n/* 画像 + グラフ横並び */\r\n#cup-container { display: flex; justify-content: center; }\r\n#layout-container {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: flex-start;\r\n  gap: 24px;\r\n  margin-top: 24px;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n/* 画像の縦並び */\r\n#photos-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 12px;\r\n}\r\n\r\n/* 結露テキスト */\r\n#condensationTextContainer {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 10px;\r\n  width: 180px;\r\n  margin-top: 20px;\r\n}\r\n#condensationText { font-weight: bold; font-size: clamp(18px, 2.2vw, 24px); }\r\n#humidityText { font-weight: bold; font-size: clamp(16px, 2vw, 20px); color: #000; }\r\n\r\n/* グラフ */\r\n#graph-container {\r\n  flex: 1;\r\n  min-width: 320px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n#legend { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }\r\n.legend-item { display: flex; align-items: center; gap: 6px; }\r\n.legend-color { width: 20px; height: 20px; border: 1px solid #000; }\r\n\r\n/* レスポンシブ */\r\n@media (max-width: 900px) {\r\n  .controls { justify-content: center; }\r\n  .control { width: min(280px, 100%); }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/title/title.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,kBAAkB;EAClB,gBAAgB;EAChB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,QAAQ;;EAER,YAAY;EACZ,iBAAiB;EACjB,eAAe;EACf,cAAc;EACd,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,kBAAkB;;EAElB,QAAQ;EACR,WAAW;EACX,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;EACd,sBAAsB;AACxB;AACA;EACE,uCAAuC;EACvC,eAAe;AACjB;AACA;EACE,uCAAuC;EACvC,eAAe;EACf,SAAS;EACT,gBAAgB;AAClB","sourcesContent":[".top {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-align: center;\r\n  min-height: 10vh;\r\n  padding: 2vh 2vw;\r\n  box-sizing: border-box;\r\n  background-color: #f0f4f8;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 3vh;\r\n\r\n  width: 100vw;\r\n  max-width: 1500px;\r\n  margin: 5vh 5vw;\r\n  padding: 0 2vw;\r\n  align-items: center;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.title {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-align: center;\r\n\r\n  gap: 0vw;\r\n  width: 60vw;\r\n  max-width: 1500px;\r\n  margin: 5vh auto;\r\n  padding: 0 2vw;\r\n  box-sizing: border-box;\r\n}\r\n.title h1 {\r\n  font-size: clamp(1.2rem, 2.5vw, 2.5rem);\r\n  margin: 0.5em 0;\r\n}\r\n.title p {\r\n  font-size: clamp(0.9rem, 1.2vw, 1.5rem);\r\n  max-width: 60vw;\r\n  margin: 0;\r\n  line-height: 1.6;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -46616,12 +46637,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-const title_1 = __importDefault(__webpack_require__(/*! ./pages/title */ "./src/pages/title.tsx"));
-const Graph_1 = __importDefault(__webpack_require__(/*! ./pages/Graph */ "./src/pages/Graph.tsx"));
-const House_1 = __importDefault(__webpack_require__(/*! ./pages/House */ "./src/pages/House.tsx"));
-const Cup_1 = __importDefault(__webpack_require__(/*! ./pages/Cup */ "./src/pages/Cup.tsx"));
-const WindowWinter_1 = __importDefault(__webpack_require__(/*! ./pages/WindowWinter */ "./src/pages/WindowWinter.tsx"));
-const Towel_1 = __importDefault(__webpack_require__(/*! ./pages/Towel */ "./src/pages/Towel.tsx"));
+const title_1 = __importDefault(__webpack_require__(/*! ./pages/title/title */ "./src/pages/title/title.tsx"));
+const Graph_1 = __importDefault(__webpack_require__(/*! ./pages/graph/Graph */ "./src/pages/graph/Graph.tsx"));
+const House_1 = __importDefault(__webpack_require__(/*! ./pages/house/House */ "./src/pages/house/House.tsx"));
+const Cup_1 = __importDefault(__webpack_require__(/*! ./pages/cup/Cup */ "./src/pages/cup/Cup.tsx"));
+const WindowWinter_1 = __importDefault(__webpack_require__(/*! ./pages/window/WindowWinter */ "./src/pages/window/WindowWinter.tsx"));
+const Towel_1 = __importDefault(__webpack_require__(/*! ./pages/towel/Towel */ "./src/pages/towel/Towel.tsx"));
 const App = () => {
     return ((0, jsx_runtime_1.jsx)(react_router_dom_1.BrowserRouter, { children: (0, jsx_runtime_1.jsxs)(react_router_dom_1.Routes, { children: [(0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: "/", element: (0, jsx_runtime_1.jsx)(title_1.default, {}) }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: "/graph", element: (0, jsx_runtime_1.jsx)(Graph_1.default, {}) }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: "/house", element: (0, jsx_runtime_1.jsx)(House_1.default, {}) }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: "/cup", element: (0, jsx_runtime_1.jsx)(Cup_1.default, {}) }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: "/winter-window", element: (0, jsx_runtime_1.jsx)(WindowWinter_1.default, {}) }), (0, jsx_runtime_1.jsx)(react_router_dom_1.Route, { path: "/towel", element: (0, jsx_runtime_1.jsx)(Towel_1.default, {}) })] }) }));
 };
@@ -46640,7 +46661,7 @@ exports["default"] = App;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const ExplanationBarGraph = () => {
-    return ((0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u68D2\u30B0\u30E9\u30D5\u306E\u8272\u306E\u8AAC\u660E" }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "blue" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u84B8\u6C17\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "green" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u6EF4\u306E\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "orange" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u307E\u3060\u7A7A\u6C17\u4E2D\u306B\u542B\u3080\u3053\u3068\u304C\u3067\u304D\u308B\u6C34\u84B8\u6C17\u91CF" })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "20px" }, children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u68D2\u30B0\u30E9\u30D5\u306E\u8272\u306E\u8AAC\u660E" }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "blue" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u84B8\u6C17\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "green" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u6EF4\u306E\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "orange" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u307E\u3060\u7A7A\u6C17\u4E2D\u306B\u542B\u3080\u3053\u3068\u304C\u3067\u304D\u308B\u6C34\u84B8\u6C17\u91CF" })] })] }));
 };
 exports["default"] = ExplanationBarGraph;
 
@@ -46664,6 +46685,180 @@ exports["default"] = ExplanationFormulas;
 
 /***/ }),
 
+/***/ "./src/components/common/FurnitureSelectButton.tsx":
+/*!*********************************************************!*\
+  !*** ./src/components/common/FurnitureSelectButton.tsx ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.FurnitureSelectButton = void 0;
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ./furnitureSelectButton.css */ "./src/components/common/furnitureSelectButton.css");
+const FurnitureSelectButton = ({ label, to, color, }) => {
+    const handleClick = () => {
+        window.location.href = to;
+    };
+    return ((0, jsx_runtime_1.jsx)("button", { className: "furniture-select-button", style: {
+            backgroundColor: color,
+        }, onClick: handleClick, children: label }));
+};
+exports.FurnitureSelectButton = FurnitureSelectButton;
+exports["default"] = exports.FurnitureSelectButton;
+
+
+/***/ }),
+
+/***/ "./src/components/common/PageSelectButton.tsx":
+/*!****************************************************!*\
+  !*** ./src/components/common/PageSelectButton.tsx ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.PageSelectButton = void 0;
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ./pageSelectButton.css */ "./src/components/common/pageSelectButton.css");
+const PageSelectButton = ({ label, to, color, }) => {
+    const handleClick = () => {
+        window.location.href = to;
+    };
+    return ((0, jsx_runtime_1.jsx)("button", { className: "page-select-button", style: {
+            backgroundColor: color,
+        }, onClick: handleClick, children: label }));
+};
+exports.PageSelectButton = PageSelectButton;
+exports["default"] = exports.PageSelectButton;
+
+
+/***/ }),
+
+/***/ "./src/components/common/furnitureSelectButton.css":
+/*!*********************************************************!*\
+  !*** ./src/components/common/furnitureSelectButton.css ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./furnitureSelectButton.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/furnitureSelectButton.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/common/pageSelectButton.css":
+/*!****************************************************!*\
+  !*** ./src/components/common/pageSelectButton.css ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./pageSelectButton.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/pageSelectButton.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/cup/CondensationStatusDisplay.tsx":
+/*!**********************************************************!*\
+  !*** ./src/components/cup/CondensationStatusDisplay.tsx ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const CondensationStatusDisplay = ({ waterDrop, humidity, }) => {
+    const isCondensed = waterDrop > 0.1;
+    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "28px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", className: "text-lg mb-2 transition-colors duration-300", style: { color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
+                    `結露が発生！ (${waterDrop.toFixed(1)}g/m³)` :
+                    "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", className: "text-sm text-gray-700", children: ["\u30B3\u30C3\u30D7\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
+};
+exports["default"] = CondensationStatusDisplay;
+
+
+/***/ }),
+
 /***/ "./src/components/cup/CupCanvasAndLegend.tsx":
 /*!***************************************************!*\
   !*** ./src/components/cup/CupCanvasAndLegend.tsx ***!
@@ -46673,6 +46868,7 @@ exports["default"] = ExplanationFormulas;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ./cupCanvasAndLegend.css */ "./src/components/cup/cupCanvasAndLegend.css");
 function getCupImageName(cupTemperature, cupWaterDrop) {
     let roundedTemp;
     // 0℃の場合の特別処理: 0℃は0に、それより大きい場合は5の倍数に切り上げ
@@ -46686,17 +46882,65 @@ function getCupImageName(cupTemperature, cupWaterDrop) {
         roundedTemp = Math.ceil(cupTemperature / 2.5) * 2.5;
     }
     const roundedWater = Math.min(Math.ceil(cupWaterDrop / 5) * 5, 35);
-    // 画像名を決定し、stringとして返す
     return `/glass/glass-${roundedTemp * 2}-${roundedWater}.png`;
 }
-const CupCanvasAndLegend = ({ temperature, waterDrop, humidity, cupTemperature }) => {
-    // 結露が発生しているかどうかの判定 (水滴量が 0.1g/m^3 以上)
-    const isCondensed = waterDrop > 0.1;
-    // 💡 純粋な関数として画像パスを取得 (TS2322 エラー解消)
+const CupCanvasAndLegend = ({ waterDrop, cupTemperature }) => {
     const cupImageName = getCupImageName(cupTemperature, waterDrop);
-    return ((0, jsx_runtime_1.jsx)("div", { id: "cup-container", children: (0, jsx_runtime_1.jsxs)("div", { id: "layout-container", children: [(0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `コップの周りの状態: 温度${temperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³` }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/glass/glass-color.png", alt: "\u6C34\u306E\u6E29\u5EA6\u8AAC\u660E\u753B\u50CF" })] }), (0, jsx_runtime_1.jsxs)("div", { id: "condensationTextContainer", children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "red" : "gray", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ? `結露が発生！ (${waterDrop.toFixed(1)}g/m³)` : "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", children: ["\u30B3\u30C3\u30D7\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { children: humidity.toFixed(1) }), "%"] })] })] }) }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "picture-layout", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `コップの周りの状態: 温度${cupTemperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³` }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/glass/glass-color.png", alt: "\u6C34\u306E\u6E29\u5EA6\u8AAC\u660E\u753B\u50CF" })] }));
 };
 exports["default"] = CupCanvasAndLegend;
+
+
+/***/ }),
+
+/***/ "./src/components/cup/CupControlPanel.css":
+/*!************************************************!*\
+  !*** ./src/components/cup/CupControlPanel.css ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./CupControlPanel.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/cup/CupControlPanel.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -46710,10 +46954,31 @@ exports["default"] = CupCanvasAndLegend;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ./CupControlPanel.css */ "./src/components/cup/CupControlPanel.css");
 const CupControlPanel = ({ temperature, vapor, cupTemperature, isExperimentRunning, setTemperature, setVapor, setCupTemperature, toggleExperiment }) => {
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [" ", (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u90E8\u5C4B\u306E\u6E29\u5EA6 [\u2103] (", temperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 20, max: 40, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value)) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6 [\u2103] (", cupTemperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 20, step: 0.1, value: cupTemperature, onChange: (e) => setCupTemperature(parseFloat(e.target.value)) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`, children: isExperimentRunning ? "実験を停止" : "実験開始（コップを冷やす）" })] }));
+    const isDisabled = isExperimentRunning;
+    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
+    const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u90E8\u5C4B\u306E\u6E29\u5EA6 [\u2103] (", temperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 20, max: 40, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 20, max: 40, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "20")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6 [\u2103] (", cupTemperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 20, step: 0.1, value: cupTemperature, onChange: (e) => setCupTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 20, step: 0.1, value: cupTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
 };
 exports["default"] = CupControlPanel;
+
+
+/***/ }),
+
+/***/ "./src/components/cup/ExperimentDescription.tsx":
+/*!******************************************************!*\
+  !*** ./src/components/cup/ExperimentDescription.tsx ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const ExperimentDescription = ({ initialTemperature, initialVapor, initialCupTemperature, isExperimentRunning, }) => {
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u7D50\u9732\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u7A7A\u6C17\u4E2D\u306B\u542B\u307E\u308C\u308B\u6C34\u84B8\u6C17\u304C\u30B3\u30C3\u30D7\u306E\u51B7\u305F\u3044\u7E01\u306B\u89E6\u308C\u308B\u3068\u3001\u305D\u306E\u90E8\u5206\u306E\u7A7A\u6C17\u304C\u51B7\u3084\u3055\u308C\u3001 \u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u305F\u6C34\u84B8\u6C17\u304C\u51DD\u7E2E\u3057\u3066\u6C34\u6EF4\u3068\u3057\u3066\u73FE\u308C\u307E\u3059\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u306E\u90E8\u5C4B\u306B\u3042\u308B \u30B3\u30C3\u30D7\u3092\u3001\u3086\u3063\u304F\u308A ", initialCupTemperature.toFixed(1), "\u2103 \u307E\u3067\u51B7\u307E\u3057\u3066\u3044\u304D\u307E\u3059\u3002"] }), isExperimentRunning && ((0, jsx_runtime_1.jsx)("p", { className: "experiment-note", children: "\u203B\u5B9F\u9A13\u4E2D\u306F\u6761\u4EF6\uFF08\u5BA4\u6E29\u30FB\u6C34\u5206\u91CF\u30FB\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6\uFF09\u3092\u56FA\u5B9A\u3057\u3066\u89B3\u5BDF\u3057\u307E\u3059\u3002" }))] }));
+};
+exports["default"] = ExperimentDescription;
 
 
 /***/ }),
@@ -46731,7 +46996,6 @@ exports.satVapor = satVapor;
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 //import "./savedHumidityDisplay.css";
-// --- 描画に必要な定数 (Graph.tsx から移動を想定) ---
 function satPress(T) {
     return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
 }
@@ -46886,6 +47150,58 @@ const HumidityGraphCanvasMini = ({ temperature, saturationVapor, vapor, waterDro
     return ((0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, width: AXIS.width, height: AXIS.height, style: { border: '0px solid #ccc' } }));
 };
 exports["default"] = HumidityGraphCanvasMini;
+
+
+/***/ }),
+
+/***/ "./src/components/cup/cupCanvasAndLegend.css":
+/*!***************************************************!*\
+  !*** ./src/components/cup/cupCanvasAndLegend.css ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./cupCanvasAndLegend.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/cup/cupCanvasAndLegend.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -47248,6 +47564,58 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./src/components/title/Card.css":
+/*!***************************************!*\
+  !*** ./src/components/title/Card.css ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./Card.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/title/Card.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/components/title/Card.tsx":
 /*!***************************************!*\
   !*** ./src/components/title/Card.tsx ***!
@@ -47258,52 +47626,531 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Card = void 0;
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const PageSelectButton_1 = __webpack_require__(/*! ./PageSelectButton */ "./src/components/title/PageSelectButton.tsx");
-const Card = ({ imageSrc, title, description, buttonLabel, to, buttonColor, }) => {
-    return ((0, jsx_runtime_1.jsxs)("div", { style: {
-            width: "100%",
-            maxWidth: "420px",
-            border: "1px solid #ddd",
-            borderRadius: "8px",
-            overflow: "hidden",
-            padding: "2vw",
-            textAlign: "center",
-            boxSizing: "border-box",
-        }, children: [(0, jsx_runtime_1.jsx)("img", { src: imageSrc, alt: title, style: { width: "100%", height: "auto" } }), (0, jsx_runtime_1.jsx)("h2", { children: title }), (0, jsx_runtime_1.jsx)("p", { children: description }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.PageSelectButton, { label: buttonLabel, to: to, color: buttonColor })] }));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+__webpack_require__(/*! ./Card.css */ "./src/components/title/Card.css");
+const Card = ({ imageSrc, title, description, to, }) => {
+    return ((0, jsx_runtime_1.jsxs)(react_router_dom_1.Link, { to: to, className: "card-link", children: [(0, jsx_runtime_1.jsx)("div", { className: "card-image-container", children: (0, jsx_runtime_1.jsx)("img", { src: imageSrc, alt: title, className: "card-image" }) }), (0, jsx_runtime_1.jsxs)("div", { className: "card-content", children: [(0, jsx_runtime_1.jsx)("h2", { children: title }), (0, jsx_runtime_1.jsx)("p", { children: description })] })] }));
 };
 exports.Card = Card;
 
 
 /***/ }),
 
-/***/ "./src/components/title/PageSelectButton.tsx":
-/*!***************************************************!*\
-  !*** ./src/components/title/PageSelectButton.tsx ***!
-  \***************************************************/
+/***/ "./src/components/towel/CondensationStatusDisplay.tsx":
+/*!************************************************************!*\
+  !*** ./src/components/towel/CondensationStatusDisplay.tsx ***!
+  \************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.PageSelectButton = void 0;
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const PageSelectButton = ({ label, to, color, }) => {
-    const handleClick = () => {
-        window.location.href = to;
-    };
-    return ((0, jsx_runtime_1.jsx)("button", { style: {
-            backgroundColor: color,
-            color: "white",
-            padding: "1vw 3vw",
-            borderRadius: "0.8vw",
-            border: "none",
-            cursor: "pointer",
-            fontSize: "1.2vw",
-            minWidth: "120px",
-            maxWidth: "240px",
-            transition: "0.3s",
-        }, onClick: handleClick, children: label }));
+const CondensationStatusDisplay = ({ water, humidity, }) => {
+    const isCondensed = water == 0.0;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "flex flex-col items-center p-3 mt-4 w-full bg-white rounded-lg shadow-md border border-gray-200", children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", className: "text-lg mb-2 transition-colors duration-300", style: { color: isCondensed ? "#2688f8ff" : "#1ffd74ff", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
+                    `タオルは濡れている (${water.toFixed(1)}g/m³)` :
+                    "タオルが乾いた" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", className: "text-sm text-gray-700", children: ["\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
 };
-exports.PageSelectButton = PageSelectButton;
+exports["default"] = CondensationStatusDisplay;
+
+
+/***/ }),
+
+/***/ "./src/components/towel/ExperimentDescription.tsx":
+/*!********************************************************!*\
+  !*** ./src/components/towel/ExperimentDescription.tsx ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const ExperimentDescription = ({ initialTemperature, initialVapor, initialWater, isExperimentRunning, }) => {
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u84B8\u767A\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u306F\u6E29\u5EA6\u306B\u3088\u3063\u3066\u6C7A\u5B9A\u3057\u3001\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u4E0A\u56DE\u308B\u6C34\u5206\u306F\u84B8\u767A\u3057\u307E\u305B\u3093\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u6C34\u84B8\u6C17\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u5165\u3063\u3066\u3044\u308B1m\u00B3\u306E\u5BC6\u9589\u7A7A\u9593\u306B \u3042\u308B\u30BF\u30AA\u30EB\u304C\u6C34\u3092 ", initialWater.toFixed(1), "g \u542B\u3093\u3067\u3044\u308B\u3068\u304D\u6642\u9593\u7D4C\u904E\u3067\u4E7E\u304F\u306E\u304B\u3092\u89B3\u5BDF\u3059\u308B\u3002"] }), isExperimentRunning && ((0, jsx_runtime_1.jsx)("p", { className: "experiment-note", children: "\u203B\u5B9F\u9A13\u4E2D\u306F\u6761\u4EF6\uFF08\u5BA4\u6E29\u30FB\u6C34\u5206\u91CF\u30FB\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6\uFF09\u3092\u56FA\u5B9A\u3057\u3066\u89B3\u5BDF\u3057\u307E\u3059\u3002" }))] }));
+};
+exports["default"] = ExperimentDescription;
+
+
+/***/ }),
+
+/***/ "./src/components/towel/HumidityGraphCanvasMini.tsx":
+/*!**********************************************************!*\
+  !*** ./src/components/towel/HumidityGraphCanvasMini.tsx ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.satPress = satPress;
+exports.satVapor = satVapor;
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function satPress(T) {
+    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
+}
+function satVapor(T) {
+    return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
+}
+// --- 描画に必要な定数 ---
+const AXIS = {
+    width: 580,
+    height: 530,
+    padding: 50,
+    xScale: 10, // 1℃ あたり 10px
+    yScale: 5, // 1g/m³ あたり 5px
+    xMax: 60, // 最大温度 50℃
+    yMax: 90, // 最大水蒸気量 90g/m³
+    zeroX: 50, // 0℃ の位置
+    zeroY: 480, // 0g/m³ の位置
+};
+const HumidityGraphCanvasMini = ({ temperature, saturationVapor, vapor, waterDrop, remainingVapor, }) => {
+    const canvasRef = (0, react_1.useRef)(null);
+    (0, react_1.useEffect)(() => {
+        const canvas = canvasRef.current;
+        if (!canvas)
+            return;
+        const ctx = canvas.getContext('2d');
+        if (!ctx)
+            return;
+        // ------------------------------------
+        // 1. ヘルパー関数の定義 (座標変換)
+        // ------------------------------------
+        const toX = (temp) => AXIS.zeroX + temp * AXIS.xScale;
+        const toY = (vapor) => AXIS.zeroY - vapor * AXIS.yScale;
+        const toScreenY = (vapor) => vapor * AXIS.yScale;
+        // ------------------------------------
+        // 2. 描画ロジックの定義 (Graph.tsxから全て移動)
+        // ------------------------------------
+        const drawAxis = () => {
+            // 軸を描画するロジック
+            ctx.clearRect(0, 0, AXIS.width, AXIS.height);
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            // Y軸 (飽和水蒸気量)
+            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
+            ctx.lineTo(AXIS.zeroX, -AXIS.height);
+            // X軸 (温度)
+            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
+            ctx.lineTo(AXIS.width, AXIS.zeroY);
+            ctx.stroke();
+        };
+        const drawScale = () => {
+            ctx.fillStyle = '#333';
+            ctx.font = '18px Arial';
+            // ------------------------------------
+            // ★ 1. グリッド線の描画
+            // ------------------------------------
+            // --- X軸（縦線）グリッド ---
+            for (let t = 0; t <= AXIS.xMax; t += 1) {
+                // 5℃ごと（目盛り位置）は太い線にする
+                if (t % 5 === 0) {
+                    ctx.strokeStyle = '#999';
+                    ctx.lineWidth = 1;
+                }
+                ctx.beginPath();
+                ctx.moveTo(toX(t), AXIS.zeroY);
+                ctx.lineTo(toX(t), -AXIS.height);
+                ctx.stroke();
+            }
+            // --- Y軸（横線）グリッド ---
+            for (let v = 0; v <= AXIS.yMax; v += 1) {
+                // 10g/m³ごと（目盛り位置）は太い線にする
+                if (v % 10 === 0) {
+                    ctx.strokeStyle = '#999';
+                    ctx.lineWidth = 1;
+                }
+                ctx.beginPath();
+                ctx.moveTo(AXIS.zeroX, toY(v));
+                ctx.lineTo(toX(AXIS.xMax), toY(v));
+                ctx.stroke();
+            }
+            // ------------------------------------
+            // ★ 2. テキストラベルの描画（既存ロジック）
+            // ------------------------------------
+            // X軸タイトル (温度)
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'top';
+            for (let t = 0; t <= AXIS.xMax; t += 10) {
+                ctx.fillText(`${t}`, toX(t), AXIS.zeroY + 5);
+            }
+            ctx.fillText('空間の温度 [℃]', AXIS.width / 2, AXIS.zeroY + 30);
+            // Y軸スケール (飽和水蒸気量)
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'middle';
+            for (let v = 0; v <= AXIS.yMax; v += 10) {
+                if (v !== 0)
+                    ctx.fillText(`${v}`, AXIS.zeroX - 5, toY(v));
+            }
+            // Y軸タイトル (回転)
+            ctx.save();
+            ctx.translate(10, AXIS.height / 2 - 50);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('飽和水蒸気量 [g/m³]', 0, 0);
+            ctx.restore();
+        };
+        const drawCurve = () => {
+            // 飽和水蒸気量曲線を描画するロジック
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(toX(0), toY(satVapor(0)));
+            for (let t = 0; t <= AXIS.xMax; t += 0.25) {
+                ctx.lineTo(toX(t), toY(satVapor(t)));
+            }
+            ctx.stroke();
+        };
+        const plotPointAndBar = (t, sv, v, rv) => {
+            const barWidth = 8;
+            const barX = toX(t);
+            -barWidth / 2;
+            const drawnVaporAmount = Math.min(v, sv);
+            // ------------------------------------
+            // 1. 棒グラフの描画 (3層構造)
+            // ------------------------------------
+            // (A) 水滴の量 (WaterDrop) - 最も上 (飽和ラインの上)
+            // v > sv の場合に wd > 0 となる
+            // (B) 空間内の水蒸気量 (Vapor)
+            ctx.fillStyle = '#3498db';
+            ctx.fillRect(barX, toY(drawnVaporAmount), barWidth, toScreenY(drawnVaporAmount));
+            // (C) 残りの水蒸気量 (RemainingVapor)
+            if (rv > 0) {
+                ctx.fillStyle = '#f39c12';
+                ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
+            }
+        };
+        // ------------------------------------
+        // 3. 全ての描画処理を実行
+        // ------------------------------------
+        drawAxis();
+        drawScale();
+        drawCurve();
+        plotPointAndBar(temperature, saturationVapor, vapor, remainingVapor);
+    }, [temperature,
+        saturationVapor,
+        vapor,
+        waterDrop,
+        remainingVapor
+    ]);
+    return ((0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, width: AXIS.width, height: AXIS.height, style: { border: '0px solid #ccc' } }));
+};
+exports["default"] = HumidityGraphCanvasMini;
+
+
+/***/ }),
+
+/***/ "./src/components/towel/TowelCanvasAndLegend.tsx":
+/*!*******************************************************!*\
+  !*** ./src/components/towel/TowelCanvasAndLegend.tsx ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function getCupImageName(water) {
+    let setTowel;
+    // 0℃の場合の特別処理: 0℃は0に、それより大きい場合は5の倍数に切り上げ
+    if (water <= 0.1) {
+        setTowel = 0;
+    }
+    else if (water >= 30) {
+        setTowel = 30;
+    }
+    else {
+        setTowel = Math.ceil(water / 5) * 5;
+    }
+    // 画像名を決定し、stringとして返す
+    return `/towel/towel2-${setTowel}.png`;
+}
+const TowelCanvasAndLegend = ({ water }) => {
+    // 💡 純粋な関数として画像パスを取得 (TS2322 エラー解消)
+    const cupImageName = getCupImageName(water);
+    return ((0, jsx_runtime_1.jsx)("div", { id: "cup-container", children: (0, jsx_runtime_1.jsx)("div", { id: "layout-container", children: (0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `タオルの状態: タオルに含まれる水分量${water.toFixed(1)}g/m³` }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/towel/towel-water.png", alt: "\u30BF\u30AA\u30EB\u753B\u50CF" })] }) }) }));
+};
+exports["default"] = TowelCanvasAndLegend;
+
+
+/***/ }),
+
+/***/ "./src/components/towel/TowelControlPanel.tsx":
+/*!****************************************************!*\
+  !*** ./src/components/towel/TowelControlPanel.tsx ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const TowelControlPanel = ({ temperature, vapor, cupTemperature, isExperimentRunning, water, setTemperature, setVapor, setWater, toggleExperiment }) => {
+    const isDisabled = isExperimentRunning;
+    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
+    const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6E29\u5EA6[\u2103] (", temperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 10, max: 35, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 10, max: 35, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "10")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6C34\u84B8\u6C17\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30BF\u30AA\u30EB\u306B\u542B\u3080\u6C34\u5206\u91CF [g] (", water, "g)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 30, step: 0.1, value: water, onChange: (e) => setWater(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 30, step: 0.1, value: water, onChange: (e) => setWater(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
+};
+exports["default"] = TowelControlPanel;
+
+
+/***/ }),
+
+/***/ "./src/components/window/CondensationStatusDisplay.tsx":
+/*!*************************************************************!*\
+  !*** ./src/components/window/CondensationStatusDisplay.tsx ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const CondensationStatusDisplay = ({ waterDrop, humidity, }) => {
+    const isCondensed = waterDrop > 0.1;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "flex flex-col items-center p-3 mt-4 w-full bg-white rounded-lg shadow-md border border-gray-200", children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", className: "text-lg mb-2 transition-colors duration-300", style: { color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
+                    `結露が発生！ (${waterDrop.toFixed(1)}g/m³)` :
+                    "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", className: "text-sm text-gray-700", children: ["\u30B3\u30C3\u30D7\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
+};
+exports["default"] = CondensationStatusDisplay;
+
+
+/***/ }),
+
+/***/ "./src/components/window/ExperimentDescription.tsx":
+/*!*********************************************************!*\
+  !*** ./src/components/window/ExperimentDescription.tsx ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const ExperimentDescription = ({ initialTemperature, initialVapor, initialCupTemperature, isExperimentRunning, }) => {
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u7D50\u9732\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u5BA4\u5185\u306E\u6696\u304B\u3044\u7A7A\u6C17\u304C\u51B7\u305F\u3044\u7A93\u306B\u89E6\u308C\u3001\u6C34\u84B8\u6C17\u91CF\u304C\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u308B\u3053\u3068\u3067\u3001 \u6C34\u6EF4\u304C\u767A\u751F\u3057\u307E\u3059\u3002 \u305D\u306E\u305F\u3081\u6C34\u6EF4\u306F\u7A93\u306E\u5185\u5074\u306B\u767A\u751F\u3057\u307E\u3059\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u306E\u90E8\u5C4B\u304C\u3042\u308A \u5916\u306E\u6C17\u6E29\u304C ", initialCupTemperature.toFixed(1), "\u2103 \u306E\u6642\u306E\u7A93\u306E\u69D8\u5B50\u3092\u89B3\u5BDF\u3059\u308B\u3002"] }), isExperimentRunning && ((0, jsx_runtime_1.jsx)("p", { className: "experiment-note", children: "\u203B\u5B9F\u9A13\u4E2D\u306F\u6761\u4EF6\uFF08\u5BA4\u6E29\u30FB\u6C34\u5206\u91CF\u30FB\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6\uFF09\u3092\u56FA\u5B9A\u3057\u3066\u89B3\u5BDF\u3057\u307E\u3059\u3002" }))] }));
+};
+exports["default"] = ExperimentDescription;
+
+
+/***/ }),
+
+/***/ "./src/components/window/HumidityGraphCanvasMini.tsx":
+/*!***********************************************************!*\
+  !*** ./src/components/window/HumidityGraphCanvasMini.tsx ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.satPress = satPress;
+exports.satVapor = satVapor;
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function satPress(T) {
+    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
+}
+function satVapor(T) {
+    return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
+}
+// --- 描画に必要な定数 ---
+const AXIS = {
+    width: 580,
+    height: 530,
+    padding: 50,
+    xScale: 10, // 1℃ あたり 10px
+    yScale: 5, // 1g/m³ あたり 5px
+    xMax: 60, // 最大温度 50℃
+    yMax: 90, // 最大水蒸気量 90g/m³
+    zeroX: 50, // 0℃ の位置
+    zeroY: 480, // 0g/m³ の位置
+};
+const HumidityGraphCanvasMini = ({ temperature, saturationVapor, vapor, waterDrop, remainingVapor, }) => {
+    const canvasRef = (0, react_1.useRef)(null);
+    (0, react_1.useEffect)(() => {
+        const canvas = canvasRef.current;
+        if (!canvas)
+            return;
+        const ctx = canvas.getContext('2d');
+        if (!ctx)
+            return;
+        // ------------------------------------
+        // 1. ヘルパー関数の定義 (座標変換)
+        // ------------------------------------
+        const toX = (temp) => AXIS.zeroX + temp * AXIS.xScale;
+        const toY = (vapor) => AXIS.zeroY - vapor * AXIS.yScale;
+        const toScreenY = (vapor) => vapor * AXIS.yScale;
+        // ------------------------------------
+        // 2. 描画ロジックの定義 (Graph.tsxから全て移動)
+        // ------------------------------------
+        const drawAxis = () => {
+            // 軸を描画するロジック
+            ctx.clearRect(0, 0, AXIS.width, AXIS.height);
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            // Y軸 (飽和水蒸気量)
+            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
+            ctx.lineTo(AXIS.zeroX, -AXIS.height);
+            // X軸 (温度)
+            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
+            ctx.lineTo(AXIS.width, AXIS.zeroY);
+            ctx.stroke();
+        };
+        const drawScale = () => {
+            ctx.fillStyle = '#333';
+            ctx.font = '18px Arial';
+            // ------------------------------------
+            // ★ 1. グリッド線の描画
+            // ------------------------------------
+            // --- X軸（縦線）グリッド ---
+            for (let t = 0; t <= AXIS.xMax; t += 1) {
+                // 5℃ごと（目盛り位置）は太い線にする
+                if (t % 5 === 0) {
+                    ctx.strokeStyle = '#999';
+                    ctx.lineWidth = 1;
+                }
+                ctx.beginPath();
+                ctx.moveTo(toX(t), AXIS.zeroY);
+                ctx.lineTo(toX(t), -AXIS.height);
+                ctx.stroke();
+            }
+            // --- Y軸（横線）グリッド ---
+            for (let v = 0; v <= AXIS.yMax; v += 1) {
+                // 10g/m³ごと（目盛り位置）は太い線にする
+                if (v % 10 === 0) {
+                    ctx.strokeStyle = '#999';
+                    ctx.lineWidth = 1;
+                }
+                ctx.beginPath();
+                ctx.moveTo(AXIS.zeroX, toY(v));
+                ctx.lineTo(toX(AXIS.xMax), toY(v));
+                ctx.stroke();
+            }
+            // ------------------------------------
+            // ★ 2. テキストラベルの描画（既存ロジック）
+            // ------------------------------------
+            // X軸タイトル (温度)
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'top';
+            for (let t = 0; t <= AXIS.xMax; t += 10) {
+                ctx.fillText(`${t}`, toX(t), AXIS.zeroY + 5);
+            }
+            ctx.fillText('コップの温度 [℃]', AXIS.width / 2, AXIS.zeroY + 30);
+            // Y軸スケール (飽和水蒸気量)
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'middle';
+            for (let v = 0; v <= AXIS.yMax; v += 10) {
+                if (v !== 0)
+                    ctx.fillText(`${v}`, AXIS.zeroX - 5, toY(v));
+            }
+            // Y軸タイトル (回転)
+            ctx.save();
+            ctx.translate(10, AXIS.height / 2 - 50);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('飽和水蒸気量 [g/m³]', 0, 0);
+            ctx.restore();
+        };
+        const drawCurve = () => {
+            // 飽和水蒸気量曲線を描画するロジック
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(toX(0), toY(satVapor(0)));
+            for (let t = 0; t <= AXIS.xMax; t += 0.25) {
+                ctx.lineTo(toX(t), toY(satVapor(t)));
+            }
+            ctx.stroke();
+        };
+        const plotPointAndBar = (t, sv, v, wd, rv) => {
+            const barWidth = 8;
+            const barX = toX(t);
+            -barWidth / 2;
+            const drawnVaporAmount = Math.min(v, sv);
+            // ------------------------------------
+            // 1. 棒グラフの描画 (3層構造)
+            // ------------------------------------
+            // (A) 水滴の量 (WaterDrop) - 最も上 (飽和ラインの上)
+            // v > sv の場合に wd > 0 となる
+            if (wd > 0) {
+                ctx.fillStyle = 'rgba(0, 255, 0, 0.5)';
+                ctx.fillRect(barX, toY(sv), barWidth, -toScreenY(wd));
+            }
+            // (B) 空間内の水蒸気量 (Vapor)
+            ctx.fillStyle = '#3498db';
+            ctx.fillRect(barX, toY(drawnVaporAmount), barWidth, toScreenY(drawnVaporAmount));
+            // (C) 残りの水蒸気量 (RemainingVapor)
+            if (rv > 0) {
+                ctx.fillStyle = '#f39c12';
+                ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
+            }
+        };
+        // ------------------------------------
+        // 3. 全ての描画処理を実行
+        // ------------------------------------
+        drawAxis();
+        drawScale();
+        drawCurve();
+        plotPointAndBar(temperature, saturationVapor, vapor, waterDrop, remainingVapor);
+    }, [temperature,
+        saturationVapor,
+        vapor,
+        waterDrop,
+        remainingVapor
+    ]);
+    return ((0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, width: AXIS.width, height: AXIS.height, style: { border: '0px solid #ccc' } }));
+};
+exports["default"] = HumidityGraphCanvasMini;
+
+
+/***/ }),
+
+/***/ "./src/components/window/WindowCanvasAndLegend.tsx":
+/*!*********************************************************!*\
+  !*** ./src/components/window/WindowCanvasAndLegend.tsx ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function getCupImageName(cupTemperature, cupWaterDrop) {
+    let roundedTemp;
+    // 0℃の場合の特別処理: 0℃は0に、それより大きい場合は5の倍数に切り上げ
+    if (cupTemperature <= 0.1) {
+        roundedTemp = 2;
+    }
+    else if (cupTemperature >= 14) {
+        roundedTemp = 14;
+    }
+    else {
+        roundedTemp = Math.ceil(cupTemperature / 2) * 2;
+    }
+    const roundedWater = Math.min(Math.ceil(cupWaterDrop / 5) * 5, 35);
+    // 画像名を決定し、stringとして返す
+    return `/winter-window/window-${roundedTemp}-${roundedWater}.png`;
+}
+const WindowCanvasAndLegend = ({ temperature, waterDrop, cupTemperature }) => {
+    // 💡 純粋な関数として画像パスを取得 (TS2322 エラー解消)
+    const cupImageName = getCupImageName(cupTemperature, waterDrop);
+    return ((0, jsx_runtime_1.jsx)("div", { id: "cup-container", children: (0, jsx_runtime_1.jsx)("div", { id: "layout-container", children: (0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `窓付近の状態: 温度${temperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³` }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/winter-window/winter-sky.png", alt: "\u5916\u306E\u6E29\u5EA6\u8AAC\u660E\u753B\u50CF" })] }) }) }));
+};
+exports["default"] = WindowCanvasAndLegend;
+
+
+/***/ }),
+
+/***/ "./src/components/window/WindowControlPanel.tsx":
+/*!******************************************************!*\
+  !*** ./src/components/window/WindowControlPanel.tsx ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const WindowControlPanel = ({ temperature, vapor, cupTemperature, isExperimentRunning, setTemperature, setVapor, setCupTemperature, toggleExperiment }) => {
+    const isDisabled = isExperimentRunning;
+    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
+    const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5BA4\u6E29 (\u7A93\u306E\u307E\u308F\u308A\u306E\u6E29\u5EA6)  [\u2103] (", temperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 14, max: 25, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 14, max: 25, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "14")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5916\u306E\u6C17\u6E29 [\u2103] (", cupTemperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 14, step: 0.1, value: cupTemperature, onChange: (e) => setCupTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 14, step: 0.1, value: cupTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
+};
+exports["default"] = WindowControlPanel;
 
 
 /***/ }),
@@ -47328,10 +48175,10 @@ root.render((0, jsx_runtime_1.jsx)(App_1.default, {}));
 
 /***/ }),
 
-/***/ "./src/pages/Cup.tsx":
-/*!***************************!*\
-  !*** ./src/pages/Cup.tsx ***!
-  \***************************/
+/***/ "./src/pages/cup/Cup.tsx":
+/*!*******************************!*\
+  !*** ./src/pages/cup/Cup.tsx ***!
+  \*******************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -47342,115 +48189,174 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-__webpack_require__(/*! ./graph.css */ "./src/pages/graph.css");
-// --- 新しいカスタムコンポーネントをインポート (想定) ---
-const CupControlPanel_1 = __importDefault(__webpack_require__(/*! ../components/cup/CupControlPanel */ "./src/components/cup/CupControlPanel.tsx"));
-const CupCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../components/cup/CupCanvasAndLegend */ "./src/components/cup/CupCanvasAndLegend.tsx"));
-const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../components/cup/HumidityGraphCanvasMini */ "./src/components/cup/HumidityGraphCanvasMini.tsx"));
-const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
+__webpack_require__(/*! ./cup.css */ "./src/pages/cup/cup.css");
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
+const CupControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CupControlPanel */ "./src/components/cup/CupControlPanel.tsx"));
+const CupCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CupCanvasAndLegend */ "./src/components/cup/CupCanvasAndLegend.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/cup/HumidityGraphCanvasMini */ "./src/components/cup/HumidityGraphCanvasMini.tsx"));
+const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/cup/ExperimentDescription */ "./src/components/cup/ExperimentDescription.tsx"));
+const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CondensationStatusDisplay */ "./src/components/cup/CondensationStatusDisplay.tsx"));
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
 // ------------------------------------
 function satPress(T) {
-    // 水飽和蒸気圧
     return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
 }
 function satVapor(T) {
-    // 飽和水蒸気量
     return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
 }
 // ------------------------------------
 // 2. コンポーネントの初期化と状態定義
 // ------------------------------------
-// コンポーネント名を Graph から Cup に変更
 const Cup = () => {
     const navigate = (0, react_router_dom_1.useNavigate)();
-    /** ------- 状態（気体1：現在の空間） ------- */
+    /** ------- 空間の現在の状態 ------- */
     const [temperature, setTemperature] = (0, react_1.useState)(25.0); // 部屋の温度 (T)
     const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0); // 飽和水蒸気量 (SV)
     const [vapor, setVapor] = (0, react_1.useState)(11.5); // 空間の水蒸気量 (V)
     const [waterDrop, setWaterDrop] = (0, react_1.useState)(0.0);
     const [humidity, setHumidity] = (0, react_1.useState)(50);
-    /** ------- コップの状態 (Cup.tsxで追加) ------- */
-    const [cupTemperature, setCupTemperature] = (0, react_1.useState)(0.0); // コップ表面の温度
-    // 💡 結露の飽和水蒸気量計算用の状態
+    // まだ空気中に含むことができる水蒸気量
+    const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
+    /** ------- コップの状態 ------- */
+    const [cupTemperature, setCupTemperature] = (0, react_1.useState)(0.0);
+    /** ------- 実験の状態管理と初期値保存 ------- */
     const [isExperimentRunning, setIsExperimentRunning] = (0, react_1.useState)(false);
+    // 問題文として表示する初期条件
+    const [initialTemperature, setInitialTemperature] = (0, react_1.useState)(25.0);
+    const [initialVapor, setInitialVapor] = (0, react_1.useState)(11.5);
+    const [experimentInitialCupTemp, setExperimentInitialCupTemp] = (0, react_1.useState)(0.0);
     // ------------------------------------
     // 3. ユーザの操作による変化/計算ロジック
     // ------------------------------------
-    // 💡 飽和水蒸気量 の計算
     (0, react_1.useEffect)(() => {
         const sv = satVapor(temperature);
         setSaturationVapor(parseFloat(sv.toFixed(1)));
     }, [temperature]);
-    // 湿度計算
-    (0, react_1.useEffect)(() => {
-        const h = Math.min(100, (vapor / saturationVapor) * 100);
-        setHumidity(parseFloat(h.toFixed(1)));
-    }, [vapor, saturationVapor]);
-    // 結露量
     (0, react_1.useEffect)(() => {
         const wd = Math.max(0, vapor - saturationVapor);
         setWaterDrop(parseFloat(wd.toFixed(1)));
     }, [vapor, saturationVapor]);
-    // 💡 実験ロジック (コップの温度が室温に近づくアニメーション)
+    (0, react_1.useEffect)(() => {
+        const h = Math.min(100, (vapor / saturationVapor) * 100);
+        setHumidity(parseFloat(h.toFixed(1)));
+    }, [vapor, saturationVapor]);
+    // 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
+    (0, react_1.useEffect)(() => {
+        if (!isExperimentRunning) {
+            setInitialTemperature(temperature);
+            setInitialVapor(vapor);
+            setExperimentInitialCupTemp(cupTemperature);
+        }
+    }, [isExperimentRunning, temperature, vapor, cupTemperature]);
+    // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
     (0, react_1.useEffect)(() => {
         if (!isExperimentRunning) {
             return;
         }
-        // 0.5秒ごとに 0.1℃ 変化させる
+        const targetTemp = experimentInitialCupTemp;
         const intervalId = setInterval(() => {
-            setTemperature(temperature => {
-                const diff = cupTemperature - temperature;
-                let nextT;
-                if (diff > 0) {
-                    nextT = temperature + 0.1;
-                }
-                else {
-                    nextT = temperature - 0.1;
-                }
-                if ((diff > 0 && nextT > temperature) || (diff < 0 && nextT < temperature)) {
-                    return temperature;
+            setTemperature(currentT => {
+                const nextT = currentT - 0.1;
+                if (nextT <= targetTemp) {
+                    clearInterval(intervalId);
+                    return targetTemp;
                 }
                 return parseFloat(nextT.toFixed(1));
             });
-        }, 500); // 500ミリ秒 = 0.5秒
+        }, 500);
         // クリーンアップ関数
         return () => clearInterval(intervalId);
-    }, [isExperimentRunning, cupTemperature, temperature]);
-    // コップの温度と室温がほぼ同じになったら実験終了
-    if (Math.abs(temperature - cupTemperature) < 0.1) {
-        setIsExperimentRunning(false);
-        return;
-    }
-    // 💡 実験開始/停止を切り替える関数
+    }, [isExperimentRunning, experimentInitialCupTemp]);
+    // 実験開始/停止を切り替える関数
     const toggleExperiment = () => {
-        setIsExperimentRunning(isExperimentRunning => {
-            return !isExperimentRunning;
+        setIsExperimentRunning(prevIsRunning => {
+            const nextIsRunning = !prevIsRunning;
+            if (nextIsRunning) {
+                setInitialTemperature(temperature);
+                setInitialVapor(vapor);
+                setExperimentInitialCupTemp(cupTemperature);
+            }
+            else {
+                setTemperature(initialTemperature);
+                setVapor(initialVapor);
+            }
+            return nextIsRunning;
         });
     };
-    // まだ空気中に含むことができる水蒸気量
-    const remainingVapor = Math.max(0, saturationVapor - vapor);
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-container", children: [(0, jsx_runtime_1.jsx)("button", { className: "graph-back-button", onClick: () => navigate("/"), children: "\u30DB\u30FC\u30E0\u306B\u623B\u308B" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-main-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "graph-area-wrap", children: [(0, jsx_runtime_1.jsxs)("div", { className: "legend-formula-column", children: [(0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {}), (0, jsx_runtime_1.jsx)(CupCanvasAndLegend_1.default, { temperature: temperature, waterDrop: waterDrop, humidity: humidity, cupTemperature: cupTemperature })] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas-wrap", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, cupTemperature: cupTemperature, remainingVapor: remainingVapor }) })] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-controls", children: (0, jsx_runtime_1.jsx)(CupControlPanel_1.default
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(CupCanvasAndLegend_1.default, { temperature: temperature, waterDrop: waterDrop, humidity: humidity, cupTemperature: cupTemperature }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, cupTemperature: cupTemperature, remainingVapor: remainingVapor }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initialTemperature, initialVapor: initialVapor, initialCupTemperature: experimentInitialCupTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(CupControlPanel_1.default
+                    // データ
+                    , { 
                         // データ
-                        , { 
-                            // データ
-                            temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, cupTemperature: cupTemperature, waterDrop: waterDrop, remainingVapor: remainingVapor, isExperimentRunning: isExperimentRunning, 
-                            // 関数
-                            setTemperature: setTemperature, setVapor: setVapor, setCupTemperature: setCupTemperature, toggleExperiment: toggleExperiment }) })] })] }));
+                        temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, cupTemperature: cupTemperature, waterDrop: waterDrop, remainingVapor: remainingVapor, isExperimentRunning: isExperimentRunning, 
+                        // 関数
+                        setTemperature: setTemperature, setVapor: setVapor, setCupTemperature: setCupTemperature, toggleExperiment: toggleExperiment })] })] }));
 };
 exports["default"] = Cup;
 
 
 /***/ }),
 
-/***/ "./src/pages/Graph.tsx":
-/*!*****************************!*\
-  !*** ./src/pages/Graph.tsx ***!
-  \*****************************/
+/***/ "./src/pages/cup/cup.css":
+/*!*******************************!*\
+  !*** ./src/pages/cup/cup.css ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./cup.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/cup/cup.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/pages/graph/Graph.tsx":
+/*!***********************************!*\
+  !*** ./src/pages/graph/Graph.tsx ***!
+  \***********************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -47461,13 +48367,14 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-__webpack_require__(/*! ./graph.css */ "./src/pages/graph.css");
+__webpack_require__(/*! ./graph.css */ "./src/pages/graph/graph.css");
 // --- 作成済みのカスタムコンポーネントをインポート ---
-const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
-const ExplanationFormulas_1 = __importDefault(__webpack_require__(/*! ../components/common/ExplanationFormulas */ "./src/components/common/ExplanationFormulas.tsx"));
-const CurrentHumidityDisplay_1 = __importDefault(__webpack_require__(/*! ../components/graph/CurrentHumidityDisplay */ "./src/components/graph/CurrentHumidityDisplay.tsx"));
-const SavedHumidityDisplay_1 = __importDefault(__webpack_require__(/*! ../components/graph/SavedHumidityDisplay */ "./src/components/graph/SavedHumidityDisplay.tsx"));
-const HumidityGraphCanvas_1 = __importDefault(__webpack_require__(/*! ../components/graph/HumidityGraphCanvas */ "./src/components/graph/HumidityGraphCanvas.tsx"));
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
+const ExplanationFormulas_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationFormulas */ "./src/components/common/ExplanationFormulas.tsx"));
+const CurrentHumidityDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/graph/CurrentHumidityDisplay */ "./src/components/graph/CurrentHumidityDisplay.tsx"));
+const SavedHumidityDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/graph/SavedHumidityDisplay */ "./src/components/graph/SavedHumidityDisplay.tsx"));
+const HumidityGraphCanvas_1 = __importDefault(__webpack_require__(/*! ../../components/graph/HumidityGraphCanvas */ "./src/components/graph/HumidityGraphCanvas.tsx"));
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
 // ------------------------------------
@@ -47595,12 +48502,11 @@ const Graph = () => {
         setVapor2(vapor);
         setHumidity2(humidity);
         setWaterDrop2(waterDrop);
-        //setRemainingVapor2(remainingVapor);
     };
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-container", children: [(0, jsx_runtime_1.jsx)("button", { className: "graph-back-button", onClick: () => navigate("/"), children: "\u30DB\u30FC\u30E0\u306B\u623B\u308B" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-main-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "graph-area-wrap", children: [(0, jsx_runtime_1.jsxs)("div", { className: "legend-formula-column", children: [(0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {}), (0, jsx_runtime_1.jsx)(ExplanationFormulas_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas-wrap", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvas_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, temperature2: temperature2, saturationVapor2: saturationVapor2, vapor2: vapor2, waterDrop2: waterDrop2, remainingVapor2: remainingVapor2 }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(CurrentHumidityDisplay_1.default
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-container", children: [(0, jsx_runtime_1.jsx)("div", { className: ".home-back-button", children: (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }) }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-main-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "graph-area-wrap", children: [(0, jsx_runtime_1.jsxs)("div", { className: "legend-formula-column", children: [(0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {}), (0, jsx_runtime_1.jsx)(ExplanationFormulas_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas-wrap", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvas_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, temperature2: temperature2, saturationVapor2: saturationVapor2, vapor2: vapor2, waterDrop2: waterDrop2, remainingVapor2: remainingVapor2 }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(CurrentHumidityDisplay_1.default
                             // データ
                             , { 
                                 // データ
@@ -47613,425 +48519,29 @@ exports["default"] = Graph;
 
 /***/ }),
 
-/***/ "./src/pages/House.tsx":
-/*!*****************************!*\
-  !*** ./src/pages/House.tsx ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-__webpack_require__(/*! ./house.css */ "./src/pages/house.css");
-const House = () => {
-    const navigate = (0, react_router_dom_1.useNavigate)();
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "house-page", children: [(0, jsx_runtime_1.jsx)("button", { className: "backButton", onClick: () => navigate("/"), children: "\u30DB\u30FC\u30E0\u306B\u623B\u308B" }), (0, jsx_runtime_1.jsx)("img", { src: "/title/\u5BB6\u5177.png", alt: "\u90E8\u5C4B\u306E\u30A4\u30E9\u30B9\u30C8", className: "photo" }), (0, jsx_runtime_1.jsx)("h1", { className: "question", children: "\u3069\u308C\u306B\u3064\u3044\u3066\u8ABF\u3079\u307E\u3059\u304B\uFF1F" }), (0, jsx_runtime_1.jsxs)("div", { className: "buttonContainer", children: [(0, jsx_runtime_1.jsx)("button", { className: "bigButton", onClick: () => navigate("/cup"), children: "\u30B3\u30C3\u30D7" }), (0, jsx_runtime_1.jsx)("button", { className: "bigButton", onClick: () => navigate("/winter-window"), children: "\u7A93\uFF08\u51AC\uFF09" }), (0, jsx_runtime_1.jsx)("button", { className: "bigButton", onClick: () => navigate("/towel"), children: "\u30BF\u30AA\u30EB" })] })] }));
-};
-exports["default"] = House;
-
-
-/***/ }),
-
-/***/ "./src/pages/Towel.tsx":
-/*!*****************************!*\
-  !*** ./src/pages/Towel.tsx ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-__webpack_require__(/*! ./towel.css */ "./src/pages/towel.css");
-// 物理・描画ユーティリティ
-function eSat(T) {
-    // 飽和水蒸気圧 (hPa) 近似
-    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
-}
-function aSat(T) {
-    // 飽和水蒸気量 (g/m^3)
-    return parseFloat(((217 * eSat(T)) / (T + 273.15)).toFixed(1));
-}
-const X_MARGIN = 120; // 左余白
-const Y_BASE = 350 - 50; // 下余白を引いた原点Y（canvas高さ350前提）
-const WIDTH = 550;
-const HEIGHT = 350;
-const unitX = (WIDTH - 150) / 35; // xスケール (0〜35℃)
-const unitY = (HEIGHT - 100) / 40; // yスケール (0〜40 g/m^3)
-function drawAxis(ctx, canvas) {
-    ctx.strokeStyle = "black";
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(X_MARGIN, 0);
-    ctx.lineTo(X_MARGIN, Y_BASE);
-    ctx.lineTo(canvas.width, Y_BASE);
-    ctx.stroke();
-    // x軸ラベル
-    ctx.font = "16px Arial";
-    ctx.fillStyle = "black";
-    ctx.textAlign = "center";
-    ctx.fillText("空間の温度 (°C)", canvas.width / 2 + 40, Y_BASE + 40);
-    // y軸ラベル（縦）
-    ctx.save();
-    ctx.translate(50, canvas.height / 2);
-    ctx.rotate(-Math.PI / 2);
-    ctx.textAlign = "center";
-    ctx.fillText("飽和水蒸気量 (g/m³)", 0, 0);
-    ctx.restore();
-}
-function drawScaleX(ctx) {
-    ctx.font = "12px Arial";
-    ctx.fillStyle = "black";
-    for (let i = 0; i <= 35; i += 5) {
-        const x = X_MARGIN + i * unitX;
-        ctx.beginPath();
-        ctx.moveTo(x, Y_BASE);
-        ctx.lineTo(x, Y_BASE + 10);
-        ctx.stroke();
-        ctx.fillText(`${i}°C`, x - 10, Y_BASE + 20);
-    }
-}
-function drawScaleY(ctx) {
-    ctx.font = "12px Arial";
-    ctx.fillStyle = "black";
-    for (let j = 0; j <= 40; j += 10) {
-        const y = Y_BASE - j * unitY;
-        ctx.beginPath();
-        ctx.moveTo(X_MARGIN, y);
-        ctx.lineTo(X_MARGIN - 10, y);
-        ctx.stroke();
-        ctx.fillText(`${j}g/m³`, X_MARGIN - 35, y + 5);
-    }
-}
-function drawCurve(ctx) {
-    ctx.strokeStyle = "black";
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    for (let t = 0; t <= 35; t++) {
-        const x = X_MARGIN + t * unitX;
-        const y = Y_BASE - aSat(t) * unitY;
-        if (t === 0)
-            ctx.moveTo(x, y);
-        else
-            ctx.lineTo(x, y);
-    }
-    ctx.stroke();
-}
-function plotPointAndBar(ctx, canvas, T, vapor) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawAxis(ctx, canvas);
-    drawScaleX(ctx);
-    drawScaleY(ctx);
-    drawCurve(ctx);
-    const barWidth = 8;
-    const vaporAtT = aSat(T);
-    const x = X_MARGIN + T * unitX;
-    // 実際の水蒸気量（青）
-    ctx.fillStyle = "blue";
-    ctx.fillRect(x - barWidth / 2, Y_BASE, barWidth, -vapor * unitY);
-    // 差分（緑=超過、橙=不足）
-    if (vapor > vaporAtT) {
-        ctx.fillStyle = "green";
-        ctx.fillRect(x - barWidth / 2, Y_BASE - vaporAtT * unitY, barWidth, -(vapor - vaporAtT) * unitY);
-    }
-    else {
-        ctx.fillStyle = "orange";
-        ctx.fillRect(x - barWidth / 2, Y_BASE - vapor * unitY, barWidth, -(vaporAtT - vapor) * unitY);
-    }
-}
-const Towel = () => {
-    // 状態
-    const [roomTemp, setRoomTemp] = (0, react_1.useState)(20);
-    const [moisture, setMoisture] = (0, react_1.useState)(5.0);
-    const [towelWater, setTowelWater] = (0, react_1.useState)(5); // コップ＝タオルに含む水分（g）
-    const [running, setRunning] = (0, react_1.useState)(false);
-    // 実験開始時の固定値
-    const [fixedStartMoisture, setFixedStartMoisture] = (0, react_1.useState)(null);
-    const [fixedStartTowel, setFixedStartTowel] = (0, react_1.useState)(null);
-    const canvasRef = (0, react_1.useRef)(null);
-    const timerRef = (0, react_1.useRef)(null);
-    // 描画
-    (0, react_1.useEffect)(() => {
-        const canvas = canvasRef.current;
-        if (!canvas)
-            return;
-        const ctx = canvas.getContext("2d");
-        if (!ctx)
-            return;
-        plotPointAndBar(ctx, canvas, roomTemp, moisture);
-    }, [roomTemp, moisture]);
-    // 湿度（%）
-    const humidity = Math.min(100, Math.max(0, (moisture / aSat(roomTemp)) * 100));
-    // タオル画像（5の倍数に丸める想定）
-    const rounded = Math.max(0, Math.min(35, Math.ceil(towelWater / 5) * 5));
-    const towelImage = `/towel/towel2-${rounded}.png`;
-    // 実験の開始/停止
-    const onToggleExperiment = () => {
-        if (running) {
-            // 停止
-            setRunning(false);
-            if (timerRef.current) {
-                window.clearInterval(timerRef.current);
-                timerRef.current = null;
-            }
-            setFixedStartMoisture(null);
-            setFixedStartTowel(null);
-            return;
-        }
-        // 開始
-        setRunning(true);
-        setFixedStartMoisture(moisture);
-        setFixedStartTowel(towelWater);
-        timerRef.current = window.setInterval(() => {
-            // 飽和未満 && タオルに水が残る間は「蒸発して湿度↑・タオル水分↓」の簡易モデル
-            const sat = aSat(roomTemp);
-            setMoisture((m) => {
-                if (m < sat && towelWater > 0) {
-                    return Math.min(sat, parseFloat((m + 0.1).toFixed(1)));
-                }
-                return m;
-            });
-            setTowelWater((w) => Math.max(0, parseFloat((w - 0.1).toFixed(1))));
-        }, 100);
-    };
-    (0, react_1.useEffect)(() => {
-        if (!running && timerRef.current) {
-            window.clearInterval(timerRef.current);
-            timerRef.current = null;
-        }
-    }, [running]);
-    // 片付け
-    (0, react_1.useEffect)(() => {
-        return () => {
-            if (timerRef.current)
-                window.clearInterval(timerRef.current);
-        };
-    }, []);
-    const canHumidify = moisture < aSat(roomTemp);
-    const canDehumid = moisture > 5;
-    const canTempUp = roomTemp < 35;
-    const canTempDown = roomTemp > 10;
-    const canWaterUp = !running && towelWater < 30;
-    const canWaterDn = !running && towelWater > 0;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "page-wrap", children: [(0, jsx_runtime_1.jsxs)("div", { className: "top-buttons", children: [(0, jsx_runtime_1.jsx)("button", { className: "nav-button", onClick: () => (window.location.href = "/title/science_home.html"), children: "\u30DB\u30FC\u30E0\u306B\u623B\u308B" }), (0, jsx_runtime_1.jsx)("button", { className: "nav-button", onClick: () => (window.location.href = "/house"), children: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B" })] }), (0, jsx_runtime_1.jsxs)("div", { id: "description-container", children: [(0, jsx_runtime_1.jsx)("div", { id: "condensation-explanation", children: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u306F\u6E29\u5EA6\u306B\u3088\u3063\u3066\u6C7A\u307E\u308A\u3001\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u4E0A\u56DE\u308B\u6C34\u5206\u306F\u7A7A\u6C17\u4E2D\u306B\u7559\u307E\u308C\u307E\u305B\u3093\u3002" }), (0, jsx_runtime_1.jsxs)("div", { id: "experiment-controls", children: [(0, jsx_runtime_1.jsxs)("p", { id: "description-text", children: ["\uFF1C\u5B9F\u9A13\u5185\u5BB9\uFF1E \u5BA4\u6E29 ", (0, jsx_runtime_1.jsx)("b", { children: roomTemp }), " \u2103\u3001\u6C34\u84B8\u6C17\u91CF ", (0, jsx_runtime_1.jsx)("b", { children: fixedStartMoisture ?? moisture }), " g/m\u00B3 \u306E 1m\u00B3 \u5BC6\u9589\u7A7A\u9593\u306B \u30BF\u30AA\u30EB\u304C ", (0, jsx_runtime_1.jsx)("b", { children: fixedStartTowel ?? towelWater }), " g \u306E\u6C34\u3092\u542B\u3080\u3068\u304D\u3001\u6642\u9593\u7D4C\u904E\u3067\u4E7E\u304F\u304B\u3092\u89B3\u5BDF\u3059\u308B\u3002 \uFF3B\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("b", { children: humidity.toFixed(1) }), "%\uFF3D"] }), (0, jsx_runtime_1.jsx)("button", { id: "startExperimentButton", className: `button ${running ? "running" : ""}`, onClick: onToggleExperiment, children: running ? "実験をやめる" : "実験を開始する" })] })] }), (0, jsx_runtime_1.jsxs)("div", { className: "controls", children: [(0, jsx_runtime_1.jsxs)("div", { className: "control", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6E29\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "big", children: roomTemp }), " \u2103"] }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setRoomTemp((t) => t + 1), disabled: !canTempUp, children: "\uFF0B" }), (0, jsx_runtime_1.jsx)("span", { children: "(1\u2103\u4E0A\u304C\u308B)" }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setRoomTemp((t) => t - 1), disabled: !canTempDown, children: "\uFF0D" }), (0, jsx_runtime_1.jsx)("span", { children: "(1\u2103\u4E0B\u304C\u308B)" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "control", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6C34\u84B8\u6C17\u91CF: ", (0, jsx_runtime_1.jsx)("span", { className: "big", children: moisture.toFixed(1) }), " g/m\u00B3"] }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setMoisture((m) => parseFloat((m + 1).toFixed(1))), disabled: !canHumidify, children: "\u52A0\u6E7F\u3059\u308B" }), (0, jsx_runtime_1.jsx)("span", { children: "(1 g/m\u00B3 \u5897\u3048\u308B)" }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setMoisture((m) => parseFloat((m - 1).toFixed(1))), disabled: !canDehumid, children: "\u9664\u6E7F\u3059\u308B" }), (0, jsx_runtime_1.jsx)("span", { children: "(1 g/m\u00B3 \u6E1B\u308B)" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "control", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30BF\u30AA\u30EB\u6C34\u5206: ", (0, jsx_runtime_1.jsx)("span", { className: "big", children: towelWater }), " g"] }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setTowelWater((w) => w + 1), disabled: !canWaterUp, children: "\uFF0B" }), (0, jsx_runtime_1.jsx)("span", { children: "(1 g \u5897\u3084\u3059)" }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setTowelWater((w) => w - 1), disabled: !canWaterDn, children: "\uFF0D" }), (0, jsx_runtime_1.jsx)("span", { children: "(1 g \u6E1B\u3089\u3059)" })] })] }), (0, jsx_runtime_1.jsxs)("div", { id: "layout-container", children: [(0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: towelImage, alt: "\u30BF\u30AA\u30EB" }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/towel/towel-water.png", alt: "\u8AAC\u660E" })] }), (0, jsx_runtime_1.jsxs)("div", { id: "condensationTextContainer", children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: towelWater > 0 ? "blue" : "green" }, children: towelWater > 0 ? "タオルは 濡れている" : "タオルが 乾いた" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", children: ["\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "big", children: humidity.toFixed(1) }), "%"] })] }), (0, jsx_runtime_1.jsxs)("div", { id: "graph-container", children: [(0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, id: "graphCanvas", width: WIDTH, height: HEIGHT }), (0, jsx_runtime_1.jsxs)("div", { id: "legend", children: [(0, jsx_runtime_1.jsxs)("div", { className: "legend-item", children: [(0, jsx_runtime_1.jsx)("div", { className: "legend-color", style: { background: "blue" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u84B8\u6C17\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "legend-item", children: [(0, jsx_runtime_1.jsx)("div", { className: "legend-color", style: { background: "green" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u6EF4\u306E\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "legend-item", children: [(0, jsx_runtime_1.jsx)("div", { className: "legend-color", style: { background: "orange" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u307E\u3060\u7A7A\u6C17\u4E2D\u306B\u542B\u3080\u3053\u3068\u304C\u3067\u304D\u308B\u6C34\u84B8\u6C17\u91CF" })] })] })] })] })] }));
-};
-exports["default"] = Towel;
-
-
-/***/ }),
-
-/***/ "./src/pages/WindowWinter.tsx":
-/*!************************************!*\
-  !*** ./src/pages/WindowWinter.tsx ***!
-  \************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.WindowWinter = void 0;
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-__webpack_require__(/*! ./window-winter.css */ "./src/pages/window-winter.css");
-const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-// 飽和水蒸気量の近似式群（元のJSと同じロジック）
-function e(T) {
-    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
-}
-function a(T) {
-    return parseFloat(((217 * e(T)) / (T + 273.15)).toFixed(1)); // g/m^3
-}
-const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
-const WindowWinter = () => {
-    const navigate = (0, react_router_dom_1.useNavigate)();
-    // --- 状態（元の初期値に合わせる） ---
-    const [roomTemp, setRoomTemp] = (0, react_1.useState)(20); // 室温（部屋の温度）
-    const [moisture, setMoisture] = (0, react_1.useState)(5); // 空間内の水分量 g/m^3
-    const [cupTemp, setCupTemp] = (0, react_1.useState)(14); // 外（または窓）温度の表示に使う値
-    const [running, setRunning] = (0, react_1.useState)(false);
-    // 実験開始前のスナップショット
-    const initialRef = (0, react_1.useRef)(null);
-    // setInterval を停止するための参照
-    const timerRef = (0, react_1.useRef)(null);
-    // Canvas 関連
-    const canvasRef = (0, react_1.useRef)(null);
-    const ctx = (0, react_1.useMemo)(() => {
-        const c = canvasRef.current;
-        return c ? c.getContext("2d") : null;
-    }, [canvasRef.current]);
-    // 描画計算で使う座標系
-    const originX = 120; // 左マージン
-    const originY = 300; // 下マージン（キャンバス 350 高に合わせる）
-    const unitX = (550 - 150) / 35; // 横スケール
-    const unitY = (350 - 100) / 40; // 縦スケール
-    // 湿度（%）
-    const humidity = (0, react_1.useMemo)(() => {
-        const sat = a(roomTemp);
-        const h = (moisture / sat) * 100;
-        return clamp(parseFloat(h.toFixed(1)), 0, 100);
-    }, [roomTemp, moisture]);
-    // 結露の判定
-    const isCondensed = (0, react_1.useMemo)(() => moisture - a(roomTemp) >= 0.1, [roomTemp, moisture]);
-    // 画像ファイル名（public/window に配置）
-    const windowPng = (0, react_1.useMemo)(() => {
-        const roundedTemp = Math.ceil(cupTemp / 2) * 2; // 2℃刻み
-        const waterExcess = Math.max(0, moisture - a(roomTemp));
-        const roundedWater = Math.min(Math.ceil(waterExcess / 5) * 5, 35); // 5 g/m^3 刻み（最大 35）
-        return `/winter-window/window-${roundedTemp}-${roundedWater}.png`;
-    }, [cupTemp, moisture, roomTemp]);
-    // グラフ描画
-    const drawAxis = (g) => {
-        g.strokeStyle = "black";
-        g.lineWidth = 2;
-        g.beginPath();
-        g.moveTo(originX, 0);
-        g.lineTo(originX, originY);
-        g.lineTo(550, originY);
-        g.stroke();
-        // X軸ラベル
-        g.font = "16px Arial";
-        g.fillStyle = "black";
-        g.textAlign = "center";
-        g.fillText("部屋の温度 (°C)", 550 / 2 + 40, originY + 40);
-        // Y軸ラベル（縦）
-        g.save();
-        g.translate(50, 350 / 2);
-        g.rotate(-Math.PI / 2);
-        g.textAlign = "center";
-        g.fillText("飽和水蒸気量 (g/m³)", 0, 0);
-        g.restore();
-    };
-    const drawScaleX = (g) => {
-        g.font = "12px Arial";
-        g.fillStyle = "black";
-        for (let i = 0; i <= 35; i += 5) {
-            const x = originX + i * unitX;
-            g.beginPath();
-            g.moveTo(x, originY);
-            g.lineTo(x, originY + 10);
-            g.stroke();
-            g.fillText(`${i}°C`, x - 10, originY + 20);
-        }
-    };
-    const drawScaleY = (g) => {
-        g.font = "12px Arial";
-        g.fillStyle = "black";
-        for (let j = 0; j <= 40; j += 10) {
-            const y = originY - j * unitY;
-            g.beginPath();
-            g.moveTo(originX, y);
-            g.lineTo(originX - 10, y);
-            g.stroke();
-            g.fillText(`${j}g/m³`, originX - 35, y + 5);
-        }
-    };
-    const drawSaturationCurve = (g) => {
-        g.strokeStyle = "black";
-        g.lineWidth = 2;
-        g.beginPath();
-        for (let t = 0; t <= 35; t++) {
-            const x = originX + t * unitX;
-            const y = originY - a(t) * unitY;
-            if (t === 0)
-                g.moveTo(x, y);
-            else
-                g.lineTo(x, y);
-        }
-        g.stroke();
-    };
-    const drawBars = (g) => {
-        const barWidth = 8;
-        const T = roomTemp;
-        const vapor = moisture;
-        const vaporAtT = a(T);
-        const x = originX + T * unitX;
-        // 青：水蒸気量
-        g.fillStyle = "blue";
-        g.fillRect(x - barWidth / 2, originY, barWidth, -vapor * unitY);
-        // 緑（過飽和） or オレンジ（飽和未満）
-        if (vapor > vaporAtT) {
-            g.fillStyle = "green";
-            g.fillRect(x - barWidth / 2, originY - vaporAtT * unitY, barWidth, -(vapor - vaporAtT) * unitY);
-        }
-        else {
-            g.fillStyle = "orange";
-            g.fillRect(x - barWidth / 2, originY - vapor * unitY, barWidth, (vaporAtT - vapor) * -unitY);
-        }
-    };
-    // Canvas再描画
-    (0, react_1.useEffect)(() => {
-        if (!ctx || !canvasRef.current)
-            return;
-        const g = ctx;
-        g.clearRect(0, 0, 550, 350);
-        drawAxis(g);
-        drawScaleX(g);
-        drawScaleY(g);
-        drawSaturationCurve(g);
-        drawBars(g);
-    }, [ctx, roomTemp, moisture]);
-    // 実験の開始/停止
-    const toggleExperiment = () => {
-        if (!running) {
-            // 開始
-            initialRef.current = { room: roomTemp, moist: moisture, cup: cupTemp };
-            setRunning(true);
-            // ボタン群を擬似的に無効化 → 実装は下の disableDuringRun で制御
-            timerRef.current = window.setInterval(() => {
-                setRoomTemp(prev => {
-                    const next = prev > cupTemp ? parseFloat((prev - 0.1).toFixed(1))
-                        : prev < cupTemp ? parseFloat((prev + 0.1).toFixed(1))
-                            : prev;
-                    return next;
-                });
-            }, 200);
-        }
-        else {
-            // 停止 → 初期値へ戻す
-            setRunning(false);
-            if (timerRef.current) {
-                clearInterval(timerRef.current);
-                timerRef.current = null;
-            }
-            if (initialRef.current) {
-                setRoomTemp(initialRef.current.room);
-                setMoisture(initialRef.current.moist);
-                setCupTemp(initialRef.current.cup);
-            }
-        }
-    };
-    const disableDuringRun = running;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "ww-body", children: [(0, jsx_runtime_1.jsxs)("div", { className: "top-buttons", children: [(0, jsx_runtime_1.jsx)("button", { className: "nav-button", onClick: () => navigate("/"), children: "\u30DB\u30FC\u30E0\u306B\u623B\u308B" }), (0, jsx_runtime_1.jsx)("button", { className: "nav-button", onClick: () => navigate("/house"), children: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B" })] }), (0, jsx_runtime_1.jsxs)("div", { id: "description-container", children: [(0, jsx_runtime_1.jsxs)("div", { id: "condensation-explanation", children: ["\u5BA4\u5185\u306E\u6696\u304B\u3044\u7A7A\u6C17\u304C\u51B7\u305F\u3044\u7A93\u306B\u89E6\u308C\u3001\u6C34\u84B8\u6C17\u91CF\u304C\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u308B\u3053\u3068\u3067\u3001", (0, jsx_runtime_1.jsx)("br", {}), "\u6C34\u6EF4\u304C\u767A\u751F\u3057\u307E\u3059\u3002\u305D\u306E\u305F\u3081\u6C34\u6EF4\u306F\u7A93\u306E\u5185\u5074\u306B\u767A\u751F\u3057\u307E\u3059\u3002"] }), (0, jsx_runtime_1.jsxs)("div", { id: "experiment-controls", children: [(0, jsx_runtime_1.jsxs)("p", { id: "description-text", children: ["\uFF1C\u5B9F\u9A13\u5185\u5BB9\uFF1E", (0, jsx_runtime_1.jsx)("br", {}), "\u5BA4\u6E29 ", (0, jsx_runtime_1.jsx)("span", { children: running ? (initialRef.current?.room ?? roomTemp) : roomTemp }), "\u2103 \u3001\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", (0, jsx_runtime_1.jsx)("span", { children: moisture.toFixed(1) }), "g/m\u00B3 \u306E\u90E8\u5C4B\u304C\u3042\u308A", (0, jsx_runtime_1.jsx)("br", {}), "\u5916\u306E\u6C17\u6E29\u304C ", (0, jsx_runtime_1.jsx)("span", { children: cupTemp }), "\u2103 \u306E\u6642\u306E\u7A93\u306E\u69D8\u5B50\u3092\u89B3\u5BDF\u3059\u308B\u3002"] }), (0, jsx_runtime_1.jsx)("button", { id: "startExperimentButton", className: `button ${running ? "running" : ""}`, onClick: toggleExperiment, children: running ? "実験をやめる" : "実験を開始する" })] })] }), (0, jsx_runtime_1.jsxs)("div", { className: "controls", children: [(0, jsx_runtime_1.jsxs)("div", { className: "control", id: "remote-control", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5BA4\u6E29 (\u7A93\u306E\u307E\u308F\u308A\u306E\u6E29\u5EA6): ", (0, jsx_runtime_1.jsx)("span", { id: "roomTempDisplay", children: roomTemp }), "\u00B0C"] }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setRoomTemp(t => clamp(parseFloat((t + 1).toFixed(1)), 14, 26)), disabled: disableDuringRun || roomTemp >= 26, children: "\uFF0B" }), (0, jsx_runtime_1.jsx)("span", { children: "(1\u2103\u4E0A\u304C\u308B)" }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setRoomTemp(t => clamp(parseFloat((t - 1).toFixed(1)), 14, 26)), disabled: disableDuringRun || roomTemp <= 14, children: "\uFF0D" }), (0, jsx_runtime_1.jsx)("span", { children: "(1\u2103\u4E0B\u304C\u308B)" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "control", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF: ", (0, jsx_runtime_1.jsx)("span", { id: "moistureDisplay", children: moisture.toFixed(1) }), "g/m\u00B3"] }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setMoisture(m => clamp(parseFloat((m + 1).toFixed(1)), 5, 40)), disabled: disableDuringRun || moisture >= 40, children: "\u52A0\u6E7F\u3059\u308B" }), (0, jsx_runtime_1.jsx)("span", { children: "(1g/m\u00B3\u5897\u3048\u308B)" }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setMoisture(m => clamp(parseFloat((m - 1).toFixed(1)), 5, 40)), disabled: disableDuringRun || moisture <= 5, children: "\u9664\u6E7F\u3059\u308B" }), (0, jsx_runtime_1.jsx)("span", { children: "(1g/m\u00B3\u6E1B\u308B)" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "control", id: "cup-control", children: [(0, jsx_runtime_1.jsxs)("div", { className: "temperature-display", children: [(0, jsx_runtime_1.jsx)("span", { id: "cupTempLabel", children: "\u5916\u306E\u6C17\u6E29" }), ": ", (0, jsx_runtime_1.jsx)("span", { id: "cupTempDisplay", children: cupTemp }), "\u00B0C"] }), (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setCupTemp(t => clamp(t + 1, 0, 14)), disabled: disableDuringRun || cupTemp >= 14, children: "\uFF0B" }), (0, jsx_runtime_1.jsx)("br", {}), "\uFF081\u2103\u4E0A\u304C\u308B\uFF09", (0, jsx_runtime_1.jsx)("button", { className: "button", onClick: () => setCupTemp(t => clamp(t - 1, 0, 14)), disabled: disableDuringRun || cupTemp <= 0, children: "\uFF0D" }), (0, jsx_runtime_1.jsx)("br", {}), "\uFF081\u2103\u4E0B\u304C\u308B\uFF09"] })] }), (0, jsx_runtime_1.jsx)("div", { id: "cup-container", children: (0, jsx_runtime_1.jsxs)("div", { id: "layout-container", children: [(0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: windowPng, alt: "\u7A93\u306E\u753B\u50CF", style: { width: 350, height: 350, objectFit: "cover" } }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/window/winter-sky.png", alt: "\u51AC\u306E\u7A7A", style: { width: 300, height: "auto", display: "block", margin: "0 auto" } })] }), (0, jsx_runtime_1.jsxs)("div", { id: "condensationTextContainer", children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "red" : "gray" }, children: isCondensed ? "結露が発生！" : "結露は発生　していない" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", children: ["\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { id: "humidityDisplay", children: humidity }), "%"] })] }), (0, jsx_runtime_1.jsxs)("div", { id: "graph-container", children: [(0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, id: "graphCanvas", width: 550, height: 350 }), (0, jsx_runtime_1.jsxs)("div", { id: "legend", children: [(0, jsx_runtime_1.jsxs)("div", { className: "legend-item", children: [(0, jsx_runtime_1.jsx)("div", { className: "legend-color", style: { backgroundColor: "blue" } }), " ", (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u84B8\u6C17\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "legend-item", children: [(0, jsx_runtime_1.jsx)("div", { className: "legend-color", style: { backgroundColor: "green" } }), " ", (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u6EF4\u306E\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "legend-item", children: [(0, jsx_runtime_1.jsx)("div", { className: "legend-color", style: { backgroundColor: "orange" } }), " ", (0, jsx_runtime_1.jsx)("span", { children: "\u307E\u3060\u7A7A\u6C17\u4E2D\u306B\u542B\u3080\u3053\u3068\u304C\u3067\u304D\u308B\u6C34\u84B8\u6C17\u91CF" })] })] })] })] }) })] }));
-};
-exports.WindowWinter = WindowWinter;
-exports["default"] = exports.WindowWinter;
-
-
-/***/ }),
-
-/***/ "./src/pages/graph.css":
-/*!*****************************!*\
-  !*** ./src/pages/graph.css ***!
-  \*****************************/
+/***/ "./src/pages/graph/graph.css":
+/*!***********************************!*\
+  !*** ./src/pages/graph/graph.css ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_graph_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./graph.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/graph.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_graph_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./graph.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/graph/graph.css");
 
       
       
@@ -48061,29 +48571,52 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/pages/house.css":
-/*!*****************************!*\
-  !*** ./src/pages/house.css ***!
-  \*****************************/
+/***/ "./src/pages/house/House.tsx":
+/*!***********************************!*\
+  !*** ./src/pages/house/House.tsx ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ./house.css */ "./src/pages/house/house.css");
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
+const FurnitureSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/FurnitureSelectButton */ "./src/components/common/FurnitureSelectButton.tsx"));
+const House = () => {
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "house-page", children: [(0, jsx_runtime_1.jsx)("div", { className: "page-button-layout", children: (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }) }), (0, jsx_runtime_1.jsx)("img", { src: "/title/\u5BB6\u5177.png", alt: "\u90E8\u5C4B\u306E\u30A4\u30E9\u30B9\u30C8", className: "house-picture" }), (0, jsx_runtime_1.jsx)("h1", { className: "question-text", children: "\u3069\u308C\u306B\u3064\u3044\u3066\u8ABF\u3079\u307E\u3059\u304B\uFF1F" }), (0, jsx_runtime_1.jsxs)("div", { className: "buttonContainer", children: [(0, jsx_runtime_1.jsx)(FurnitureSelectButton_1.default, { label: "\u30B3\u30C3\u30D7", to: "/cup", color: "#28a745" }), (0, jsx_runtime_1.jsx)(FurnitureSelectButton_1.default, { label: "\u7A93\uFF08\u51AC\uFF09", to: "/winter-window", color: "#28a745" }), (0, jsx_runtime_1.jsx)(FurnitureSelectButton_1.default, { label: "\u30BF\u30AA\u30EB", to: "/towel", color: "#28a745" })] })] }));
+};
+exports["default"] = House;
+
+
+/***/ }),
+
+/***/ "./src/pages/house/house.css":
+/*!***********************************!*\
+  !*** ./src/pages/house/house.css ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_house_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./house.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/house.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_house_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./house.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/house/house.css");
 
       
       
@@ -48113,29 +48646,29 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/pages/title.css":
-/*!*****************************!*\
-  !*** ./src/pages/title.css ***!
-  \*****************************/
+/***/ "./src/pages/title/title.css":
+/*!***********************************!*\
+  !*** ./src/pages/title/title.css ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_title_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./title.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/title.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_title_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./title.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/title/title.css");
 
       
       
@@ -48165,20 +48698,20 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/pages/title.tsx":
-/*!*****************************!*\
-  !*** ./src/pages/title.tsx ***!
-  \*****************************/
+/***/ "./src/pages/title/title.tsx":
+/*!***********************************!*\
+  !*** ./src/pages/title/title.tsx ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Home = void 0;
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-__webpack_require__(/*! ./title.css */ "./src/pages/title.css");
-const Card_1 = __webpack_require__(/*! ../components/title/Card */ "./src/components/title/Card.tsx");
+__webpack_require__(/*! ./title.css */ "./src/pages/title/title.css");
+const Card_1 = __webpack_require__(/*! ../../components/title/Card */ "./src/components/title/Card.tsx");
 const Home = () => {
-    return ((0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsxs)("div", { className: "top", children: [(0, jsx_runtime_1.jsx)("h1", { children: "\u6E7F\u5EA6\u5B66\u7FD2\u652F\u63F4Web\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3" }), (0, jsx_runtime_1.jsx)("p", { children: "\u4E2D\u5B662\u5E74\u6642\u306B\u5B66\u7FD2\u3059\u308B\u300C\u6E7F\u5EA6\u300D\u306B\u3064\u3044\u3066\u7406\u89E3\u3092\u6DF1\u3081\u308B\u305F\u3081\u4F5C\u6210\u3055\u308C\u305FWeb\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3067\u3059\u3002 \u30BF\u30D6\u30EC\u30C3\u30C8\u7AEF\u672B\u3092\u6A2A\u306B\u3057\u3066\u6D3B\u7528\u3059\u308B\u3053\u3068\u3092\u60F3\u5B9A\u3057\u305F\u30C7\u30B6\u30A4\u30F3\u3068\u306A\u3063\u3066\u3044\u307E\u3059\u3002" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "container", children: [(0, jsx_runtime_1.jsx)(Card_1.Card, { imageSrc: "/title/science.png", title: "\u6E29\u5EA6\uFF0C\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\uFF0C\u6C34\u84B8\u6C17\u91CF\uFF0C\u6E7F\u5EA6\u306E\u95A2\u4FC2\u6027\u3092\u5B66\u3076", description: "\u300C\u6E29\u5EA6\u300D\u3068\u300C\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF\u300D\u306E\u5909\u5316\u304C\u300C\u6E7F\u5EA6\u300D\u3084\u300C\u6C34\u6EF4\u306E\u91CF\u300D\u306B\u3069\u306E\u3088\u3046\u306B\u5F71\u97FF\u3092\u4E0E\u3048\u308B\u304B\u3092\u3001\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u30B0\u30E9\u30D5\u3092\u4F7F\u3063\u3066\u7406\u89E3\u3057\u307E\u3057\u3087\u3046\u3002", buttonLabel: "\u958B\u304F", to: "/graph", buttonColor: "#007bff" }), (0, jsx_runtime_1.jsx)(Card_1.Card, { imageSrc: "/title/\u5BB6\u5177\uFF08\u30BF\u30A4\u30C8\u30EB\uFF09.png", title: "\u65E5\u5E38\u751F\u6D3B\u3067\u306E\u6E7F\u5EA6\u3068\u305D\u306E\u5909\u5316", description: "\u300C\u6E29\u5EA6\u300D\u3084\u300C\u6C34\u84B8\u6C17\u91CF\u300D\u306E\u5909\u5316\u304C\u79C1\u305F\u3061\u306E\u751F\u6D3B\u74B0\u5883\u306B\u3069\u306E\u3088\u3046\u306A\u5F71\u97FF\u3092\u4E0E\u3048\u308B\u306E\u304B\u3092\u5B66\u3073\u307E\u3057\u3087\u3046\u3002", buttonLabel: "\u958B\u304F", to: "/house", buttonColor: "#28a745" })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "top", children: [(0, jsx_runtime_1.jsxs)("div", { className: "title", children: [(0, jsx_runtime_1.jsx)("h1", { children: "\u6E7F\u5EA6\u5B66\u7FD2\u652F\u63F4Web\u30B5\u30A4\u30C8" }), (0, jsx_runtime_1.jsx)("p", { children: "\u4E2D\u5B662\u5E74\u6642\u306B\u5B66\u7FD2\u3059\u308B\u300C\u6E7F\u5EA6\u300D\u306B\u3064\u3044\u3066\u7406\u89E3\u3092\u6DF1\u3081\u308B\u305F\u3081\u4F5C\u6210\u3055\u308C\u305FWeb\u30B5\u30A4\u30C8\u3067\u3059" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "container", children: [(0, jsx_runtime_1.jsx)(Card_1.Card, { imageSrc: "/title/science.png", title: "\u6E29\u5EA6\uFF0C\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\uFF0C\u6C34\u84B8\u6C17\u91CF\uFF0C\u6E7F\u5EA6\u306E\u95A2\u4FC2\u6027\u3092\u5B66\u3076", description: "\u300C\u6E29\u5EA6\u300D\u3068\u300C\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF\u300D\u306E\u5909\u5316\u304C\u300C\u6E7F\u5EA6\u300D\u3084\u300C\u6C34\u6EF4\u306E\u91CF\u300D\u306B\u3069\u306E\u3088\u3046\u306B\u5F71\u97FF\u3092\u4E0E\u3048\u308B\u304B\u3092\u3001\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u30B0\u30E9\u30D5\u3092\u4F7F\u3063\u3066\u7406\u89E3\u3057\u307E\u3057\u3087\u3046\u3002", to: "/graph" }), (0, jsx_runtime_1.jsx)(Card_1.Card, { imageSrc: "/title/\u5BB6\u5177\uFF08\u30BF\u30A4\u30C8\u30EB\uFF09.png", title: "\u65E5\u5E38\u751F\u6D3B\u3067\u306E\u6E7F\u5EA6\u3068\u305D\u306E\u5909\u5316", description: "\u300C\u6E29\u5EA6\u300D\u3084\u300C\u6C34\u84B8\u6C17\u91CF\u300D\u306E\u5909\u5316\u304C\u79C1\u305F\u3061\u306E\u751F\u6D3B\u74B0\u5883\u306B\u3069\u306E\u3088\u3046\u306A\u5F71\u97FF\u3092\u4E0E\u3048\u308B\u306E\u304B\u3092\u5B66\u3073\u307E\u3057\u3087\u3046\u3002", to: "/house" })] })] }));
 };
 exports.Home = Home;
 exports["default"] = exports.Home;
@@ -48186,106 +48719,298 @@ exports["default"] = exports.Home;
 
 /***/ }),
 
-/***/ "./src/pages/towel.css":
-/*!*****************************!*\
-  !*** ./src/pages/towel.css ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_towel_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./towel.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/towel.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_towel_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+/***/ "./src/pages/towel/Towel.tsx":
+/*!***********************************!*\
+  !*** ./src/pages/towel/Towel.tsx ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_towel_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_towel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_towel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+__webpack_require__(/*! ../cup/cup.css */ "./src/pages/cup/cup.css");
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
+const TowelControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/towel/TowelControlPanel */ "./src/components/towel/TowelControlPanel.tsx"));
+const TowelCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/towel/TowelCanvasAndLegend */ "./src/components/towel/TowelCanvasAndLegend.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/towel/HumidityGraphCanvasMini */ "./src/components/towel/HumidityGraphCanvasMini.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
+const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/towel/ExperimentDescription */ "./src/components/towel/ExperimentDescription.tsx"));
+const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/towel/CondensationStatusDisplay */ "./src/components/towel/CondensationStatusDisplay.tsx"));
+// ------------------------------------
+// 1. 関数の定義 (座標変換)
+// ------------------------------------
+function satPress(T) {
+    // 水飽和蒸気圧
+    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
+}
+function satVapor(T) {
+    // 飽和水蒸気量
+    return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
+}
+// ------------------------------------
+// 2. コンポーネントの初期化と状態定義
+// ------------------------------------
+const Cup = () => {
+    const navigate = (0, react_router_dom_1.useNavigate)();
+    /** ------- 空間の現在の状態 ------- */
+    const [temperature, setTemperature] = (0, react_1.useState)(25.0); // 部屋の温度 (T)
+    const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0); // 飽和水蒸気量 (SV)
+    const [vapor, setVapor] = (0, react_1.useState)(11.5); // 空間の水蒸気量 (V)
+    const [waterDrop, setWaterDrop] = (0, react_1.useState)(0.0);
+    const [humidity, setHumidity] = (0, react_1.useState)(50);
+    /** ------- コップの状態 ------- */
+    const [cupTemperature, setCupTemperature] = (0, react_1.useState)(0.0);
+    /** ------- タオルの状態 ------- */
+    const [water, setWater] = (0, react_1.useState)(0.0);
+    /** ------- 実験の状態管理と初期値保存 ------- */
+    const [isExperimentRunning, setIsExperimentRunning] = (0, react_1.useState)(false);
+    // 問題文として表示する初期条件（実験開始時に固定される値）
+    const [initialTemperature, setInitialTemperature] = (0, react_1.useState)(25.0);
+    const [initialVapor, setInitialVapor] = (0, react_1.useState)(11.5);
+    const [initialCupTemp, setInitialCupTemp] = (0, react_1.useState)(0.0);
+    const [initialWater, setInitialWater] = (0, react_1.useState)(0.0);
+    // ------------------------------------
+    // 3. ユーザの操作による変化/計算ロジック
+    // ------------------------------------
+    (0, react_1.useEffect)(() => {
+        const sv = satVapor(temperature);
+        setSaturationVapor(parseFloat(sv.toFixed(1)));
+    }, [temperature]);
+    // 結露量の計算
+    (0, react_1.useEffect)(() => {
+        const wd = Math.max(0, vapor - saturationVapor);
+        setWaterDrop(parseFloat(wd.toFixed(1)));
+    }, [vapor, saturationVapor]);
+    // 湿度計算
+    (0, react_1.useEffect)(() => {
+        const h = Math.min(100, (vapor / saturationVapor) * 100);
+        setHumidity(parseFloat(h.toFixed(1)));
+    }, [vapor, saturationVapor]);
+    // 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
+    (0, react_1.useEffect)(() => {
+        if (!isExperimentRunning) {
+            setInitialTemperature(temperature);
+            setInitialVapor(vapor);
+            setInitialWater(water);
+        }
+    }, [isExperimentRunning, temperature, vapor, water]);
+    // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
+    (0, react_1.useEffect)(() => {
+        // 実験が実行中でなければ何もしない
+        if (!isExperimentRunning) {
+            return;
+        }
+        // 依存配列に humidity を追加したため、humidityが変更されるたびに
+        // この Effect は再実行されますが、これは現在の湿度を最新に保つために必要です。
+        if (humidity >= 100) {
+            // Effectがセットアップされる時点で既に100%であれば、何もしない
+            return;
+        }
+        const intervalId = setInterval(() => {
+            // 湿度が100%になったら停止するチェック
+            // ※注意: humidity の値はEffectが最後に実行された時点の値（クロージャ）です。
+            // そのため、waterの更新ロジック内でチェックする方が確実ですが、ここでは一般的な方法で記載します。
+            // waterの更新ロジック内のsetVaporによって湿度も更新されるため、次の実行時(0.5秒後)には最新値がチェックされます。
+            if (humidity >= 100) {
+                clearInterval(intervalId);
+                return;
+            }
+            setWater(currentWater => {
+                // waterが既に0g以下の場合は処理を停止するため、現在のwater値をそのまま返す
+                if (currentWater <= 0) {
+                    clearInterval(intervalId); // water 0gで停止
+                    return 0;
+                }
+                // waterを0.1g減らす
+                const nextWater = currentWater - 0.1;
+                // waterが0g以下になる場合は、0gで停止
+                if (nextWater <= 0) {
+                    // waterが0になった時点でインターバルを停止
+                    clearInterval(intervalId);
+                    // waterが減った分だけvaporを増やす
+                    // vaporが変化することでhumidityも更新され、次のサイクルで100%チェックが機能する
+                    setVapor(currentVapor => parseFloat((currentVapor + currentWater).toFixed(1)));
+                    return 0;
+                }
+                // 0.1gの蒸発処理
+                setVapor(currentVapor => parseFloat((currentVapor + 0.1).toFixed(1)));
+                return parseFloat(nextWater.toFixed(1));
+            });
+        }, 500);
+        // クリーンアップ関数
+        return () => clearInterval(intervalId);
+        // 依存配列に humidity を追加
+    }, [isExperimentRunning, humidity, setWater, setVapor]);
+    // 実験開始/停止を切り替える関数（初期値の保存と復元ロジックを追加）
+    const toggleExperiment = () => {
+        setIsExperimentRunning(prevIsRunning => {
+            const nextIsRunning = !prevIsRunning;
+            if (nextIsRunning) {
+                setInitialTemperature(temperature);
+                setInitialVapor(vapor);
+                setInitialWater(water);
+            }
+            else {
+                setTemperature(initialTemperature);
+                setVapor(initialVapor);
+            }
+            return nextIsRunning;
+        });
+    };
+    // まだ空気中に含むことができる水蒸気量
+    const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
+    // タオルの計算
+    (0, react_1.useEffect)(() => {
+        const w = Math.max(0, water);
+        setWaterDrop(parseFloat(w.toFixed(1)));
+    }, [water]);
+    // ------------------------------------
+    // 4. UI
+    // ------------------------------------
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(TowelCanvasAndLegend_1.default, { temperature: temperature, water: water, humidity: humidity, cupTemperature: cupTemperature }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { water: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, cupTemperature: cupTemperature, remainingVapor: remainingVapor }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initialTemperature, initialVapor: initialVapor, initialWater: initialWater, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(TowelControlPanel_1.default
+                    // データ
+                    , { 
+                        // データ
+                        temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, cupTemperature: cupTemperature, water: water, remainingVapor: remainingVapor, isExperimentRunning: isExperimentRunning, 
+                        // 関数
+                        setTemperature: setTemperature, setVapor: setVapor, setCupTemperature: setCupTemperature, setWater: setWater, toggleExperiment: toggleExperiment })] })] }));
+};
+exports["default"] = Cup;
 
 
 /***/ }),
 
-/***/ "./src/pages/window-winter.css":
-/*!*************************************!*\
-  !*** ./src/pages/window-winter.css ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_window_winter_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./window-winter.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/window-winter.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_window_winter_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+/***/ "./src/pages/window/WindowWinter.tsx":
+/*!*******************************************!*\
+  !*** ./src/pages/window/WindowWinter.tsx ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_window_winter_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_window_winter_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_window_winter_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+__webpack_require__(/*! ../cup/cup.css */ "./src/pages/cup/cup.css");
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
+const WindowControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/window/WindowControlPanel */ "./src/components/window/WindowControlPanel.tsx"));
+const WindowCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/window/WindowCanvasAndLegend */ "./src/components/window/WindowCanvasAndLegend.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/window/HumidityGraphCanvasMini */ "./src/components/window/HumidityGraphCanvasMini.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
+const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/window/ExperimentDescription */ "./src/components/window/ExperimentDescription.tsx"));
+const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/window/CondensationStatusDisplay */ "./src/components/window/CondensationStatusDisplay.tsx"));
+// ------------------------------------
+// 1. 関数の定義 (座標変換)
+// ------------------------------------
+function satPress(T) {
+    // 水飽和蒸気圧
+    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
+}
+function satVapor(T) {
+    // 飽和水蒸気量
+    return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
+}
+// ------------------------------------
+// 2. コンポーネントの初期化と状態定義
+// ------------------------------------
+const Cup = () => {
+    const navigate = (0, react_router_dom_1.useNavigate)();
+    /** ------- 空間の現在の状態 ------- */
+    const [temperature, setTemperature] = (0, react_1.useState)(25.0); // 部屋の温度 (T)
+    const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0); // 飽和水蒸気量 (SV)
+    const [vapor, setVapor] = (0, react_1.useState)(11.5); // 空間の水蒸気量 (V)
+    const [waterDrop, setWaterDrop] = (0, react_1.useState)(0.0);
+    const [humidity, setHumidity] = (0, react_1.useState)(50);
+    /** ------- コップの状態 ------- */
+    const [cupTemperature, setCupTemperature] = (0, react_1.useState)(0.0);
+    /** ------- 実験の状態管理と初期値保存 ------- */
+    const [isExperimentRunning, setIsExperimentRunning] = (0, react_1.useState)(false);
+    // 問題文として表示する初期条件（実験開始時に固定される値）
+    const [initialTemperature, setInitialTemperature] = (0, react_1.useState)(25.0);
+    const [initialVapor, setInitialVapor] = (0, react_1.useState)(11.5);
+    const [experimentInitialCupTemp, setExperimentInitialCupTemp] = (0, react_1.useState)(0.0);
+    // ------------------------------------
+    // 3. ユーザの操作による変化/計算ロジック
+    // ------------------------------------
+    (0, react_1.useEffect)(() => {
+        const sv = satVapor(temperature);
+        setSaturationVapor(parseFloat(sv.toFixed(1)));
+    }, [temperature]);
+    // 結露量の計算
+    (0, react_1.useEffect)(() => {
+        const wd = Math.max(0, vapor - saturationVapor);
+        setWaterDrop(parseFloat(wd.toFixed(1)));
+    }, [vapor, saturationVapor]);
+    // 湿度計算
+    (0, react_1.useEffect)(() => {
+        const h = Math.min(100, (vapor / saturationVapor) * 100);
+        setHumidity(parseFloat(h.toFixed(1)));
+    }, [vapor, saturationVapor]);
+    // 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
+    (0, react_1.useEffect)(() => {
+        if (!isExperimentRunning) {
+            setInitialTemperature(temperature);
+            setInitialVapor(vapor);
+            setExperimentInitialCupTemp(cupTemperature);
+        }
+    }, [isExperimentRunning, temperature, vapor, cupTemperature]);
+    // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
+    (0, react_1.useEffect)(() => {
+        if (!isExperimentRunning) {
+            return;
+        }
+        const targetTemp = experimentInitialCupTemp;
+        const intervalId = setInterval(() => {
+            setTemperature(currentT => {
+                const nextT = currentT - 0.1;
+                if (nextT <= targetTemp) {
+                    clearInterval(intervalId);
+                    return targetTemp;
+                }
+                return parseFloat(nextT.toFixed(1));
+            });
+        }, 500);
+        // クリーンアップ関数
+        return () => clearInterval(intervalId);
+    }, [isExperimentRunning, experimentInitialCupTemp]); // 依存配列を修正
+    // 実験開始/停止を切り替える関数（初期値の保存と復元ロジックを追加）
+    const toggleExperiment = () => {
+        setIsExperimentRunning(prevIsRunning => {
+            const nextIsRunning = !prevIsRunning;
+            if (nextIsRunning) {
+                setInitialTemperature(temperature);
+                setInitialVapor(vapor);
+                setExperimentInitialCupTemp(cupTemperature);
+            }
+            else {
+                setTemperature(initialTemperature);
+                setVapor(initialVapor);
+            }
+            return nextIsRunning;
+        });
+    };
+    // まだ空気中に含むことができる水蒸気量
+    const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
+    // ------------------------------------
+    // 4. UI
+    // ------------------------------------
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(WindowCanvasAndLegend_1.default, { temperature: temperature, waterDrop: waterDrop, humidity: humidity, cupTemperature: cupTemperature }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, cupTemperature: cupTemperature, remainingVapor: remainingVapor }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initialTemperature, initialVapor: initialVapor, initialCupTemperature: experimentInitialCupTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(WindowControlPanel_1.default
+                    // データ
+                    , { 
+                        // データ
+                        temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, cupTemperature: cupTemperature, waterDrop: waterDrop, remainingVapor: remainingVapor, isExperimentRunning: isExperimentRunning, 
+                        // 関数
+                        setTemperature: setTemperature, setVapor: setVapor, setCupTemperature: setCupTemperature, toggleExperiment: toggleExperiment })] })] }));
+};
+exports["default"] = Cup;
 
 
 /***/ })

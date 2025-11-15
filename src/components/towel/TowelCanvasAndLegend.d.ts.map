@@ -1,0 +1,1 @@
+{"version":3,"file":"TowelCanvasAndLegend.d.ts","sourceRoot":"","sources":["TowelCanvasAndLegend.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAE1B,UAAU,yBAAyB;IACjC,WAAW,EAAE,MAAM,CAAC;IACpB,KAAK,EAAE,MAAM,CAAC;IACd,QAAQ,EAAE,MAAM,CAAC;IACjB,cAAc,EAAE,MAAM,CAAC;CACxB;AAoBD,QAAA,MAAM,oBAAoB,EAAE,KAAK,CAAC,EAAE,CAAC,yBAAyB,CAqB7D,CAAC;AAEF,eAAe,oBAAoB,CAAC"}
