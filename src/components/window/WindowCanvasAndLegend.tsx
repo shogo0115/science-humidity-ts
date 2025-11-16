@@ -33,8 +33,6 @@ const WindowCanvasAndLegend: React.FC<WindowCanvasAndLegendProps> = ({
   cupTemperature
 }) => {
 
-
-    // 💡 純粋な関数として画像パスを取得 (TS2322 エラー解消)
     const cupImageName = getCupImageName(cupTemperature, waterDrop);
 
   return (
@@ -43,8 +41,18 @@ const WindowCanvasAndLegend: React.FC<WindowCanvasAndLegendProps> = ({
 
         {/* 画像コンテナ */}
         <div id="photos-container">
-          <img id="cup-image" src={cupImageName} alt={`窓付近の状態: 温度${temperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³`} />
-          <img id="temperature-image" src="/winter-window/winter-sky.png" alt="外の温度説明画像" />
+          <img
+          id="cup-image"
+          src={cupImageName}
+          alt={`窓付近の状態: 温度${temperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³`}
+          style={{ width: '400px', height: 'auto' }}
+          />
+          <img
+          id="temperature-image"
+          src="/winter-window/winter-sky.png"
+          alt="外の温度説明画像"
+          style={{ width: '400px', height: 'auto' }}
+          />
         </div>
 
       </div>

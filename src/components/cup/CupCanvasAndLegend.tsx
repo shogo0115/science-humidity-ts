@@ -1,5 +1,4 @@
 import React from "react";
-import "./cupCanvasAndLegend.css";
 
 interface CupCanvasAndLegendProps {
   temperature: number;
@@ -34,9 +33,19 @@ const CupCanvasAndLegend: React.FC<CupCanvasAndLegendProps> = ({
     const cupImageName = getCupImageName(cupTemperature, waterDrop);
 
   return (
+    /*picture-layoutのデザインはexperimentPage.cssで指定*/
     <div className="picture-layout">
-      <img id="cup-image" src={cupImageName} alt={`コップの周りの状態: 温度${cupTemperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³`} />
-      <img id="temperature-image" src="/glass/glass-color.png" alt="水の温度説明画像" />
+      <img
+      id="cup-image"
+      src={cupImageName}
+      alt={`コップの周りの状態: 温度${cupTemperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³`}
+      style={{ width: '300px', height: 'auto' }}
+      />
+      <img
+      id="temperature-image"
+      src="/glass/glass-color.png"
+      alt="水の温度説明画像"
+      style={{ width: '400px', height: 'auto' }}/>
     </div>
   );
 };

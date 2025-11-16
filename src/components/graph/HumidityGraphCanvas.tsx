@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import "./savedHumidityDisplay.css";
 
-// --- 描画に必要な定数 (Graph.tsx から移動を想定) ---
+// --- 描画に必要な定数 ---
 export function satPress(T: number) {
   return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
 }
@@ -22,22 +22,20 @@ const AXIS = {
   zeroY: 480,  // 0g/m³ の位置
 };
 
-// --- 定数と計算関数 ここまで ---
-
 interface HumidityGraphCanvasProps {
-  // 1. 現在の状態 (通常、黒い点とカラフルな棒グラフ)
-  temperature: number;            // 現在の空間の温度 [℃]
-  saturationVapor: number;        // 現在の温度における飽和水蒸気量 [g/m³]
-  vapor: number;                  // 現在の水蒸気量 [g/m³] (青)
-  waterDrop: number;              // 現在の水滴の量 [g/m³] (緑)
-  remainingVapor: number;         // 現在のまだ空気中に含むことができる水蒸気量 [g/m³] (オレンジ)
+  // 1. 現在の状態
+  temperature: number;
+  saturationVapor: number;
+  vapor: number;
+  waterDrop: number;
+  remainingVapor: number;
 
-  // 2. 保存された初期状態 (通常、紫の点と灰色の棒グラフ)
-  temperature2: number;           // 保存された空間の温度 [℃]
-  saturationVapor2: number;       // 保存された温度における飽和水蒸気量 [g/m³]
-  vapor2: number;                 // 保存された水蒸気量 [g/m³]
-  waterDrop2: number;             // 保存された水滴の量 [g/m³]
-  remainingVapor2: number;        // 保存されたまだ空気中に含むことができる水蒸気量 [g/m³]
+  // 2. 保存された初期状態
+  temperature2: number;
+  saturationVapor2: number;
+  vapor2: number;
+  waterDrop2: number;
+  remainingVapor2: number;
 }
 
 const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
@@ -61,15 +59,11 @@ const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
     if (!ctx) return;
 
     // ------------------------------------
-    // 1. ヘルパー関数の定義 (座標変換)
+    // グラフの描画
     // ------------------------------------
     const toX = (temp: number) => AXIS.zeroX + temp * AXIS.xScale;
     const toY = (vapor: number) => AXIS.zeroY - vapor * AXIS.yScale;
     const toScreenY = (vapor: number) => vapor * AXIS.yScale;
-
-    // ------------------------------------
-    // 2. 描画ロジックの定義 (Graph.tsxから全て移動)
-    // ------------------------------------
 
     const drawAxis = () => {
       // 軸を描画するロジック
@@ -86,21 +80,14 @@ const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
       ctx.stroke();
     };
 
-
     const drawScale = () => {
     ctx.fillStyle = '#333';
     ctx.font = '18px Arial';
-
-    // ------------------------------------
-    // ★ 1. グリッド線の描画
-    // ------------------------------------
 
     // --- X軸（縦線）グリッド ---
     for (let t = 0; t <= AXIS.xMax; t += 1) {
         ctx.strokeStyle = '#ddd';
         ctx.lineWidth = 0.5;
-
-        // 10℃ごと（目盛り位置）は太い線にする
         if (t % 10 === 0) {
             ctx.strokeStyle = '#999';
             ctx.lineWidth = 1;
@@ -116,8 +103,6 @@ const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
     for (let v = 0; v <= AXIS.yMax; v += 1) {
         ctx.strokeStyle = '#ddd';
         ctx.lineWidth = 0.5;
-
-        // 10g/m³ごと（目盛り位置）は太い線にする
         if (v % 10 === 0) {
             ctx.strokeStyle = '#999';
             ctx.lineWidth = 1;
@@ -128,10 +113,6 @@ const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
         ctx.lineTo(toX(AXIS.xMax), toY(v));
         ctx.stroke();
     }
-
-    // ------------------------------------
-    // ★ 2. テキストラベルの描画（既存ロジック）
-    // ------------------------------------
 
     // X軸タイトル (温度)
     ctx.textAlign = 'center';
@@ -181,10 +162,9 @@ const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
       const drawnVaporAmount = Math.min(v, sv);
 
       // ------------------------------------
-      // 1. 棒グラフの描画 (3層構造)
+      //  棒グラフの描画 (3層構造)
       // ------------------------------------
-      // (A) 水滴の量 (WaterDrop) - 最も上 (飽和ラインの上)
-      // v > sv の場合に wd > 0 となる
+      // (A) 水滴の量 (WaterDrop)
       if (wd > 0) {
         ctx.fillStyle = isSaved ? 'rgba(0, 255, 0, 0.5)' : '#1abc9c';
         ctx.fillRect(barX, toY(sv), barWidth, -toScreenY(wd));
@@ -200,33 +180,8 @@ const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
         ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
       }
 
-      /*
-      // ------------------------------------
-      // 2. 飽和水蒸気量レベルの横線
-      // ------------------------------------
-      ctx.strokeStyle = isSaved ? 'blue' : 'red'; // 保存:青 / 現在:赤 (参考コードに合わせる)
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      // グラフの左端からX軸の最大値(toX(AXIS.xMax))まで線を引く
-      ctx.moveTo(AXIS.zeroX, toY(drawnVaporAmount));
-      ctx.lineTo(toX(AXIS.xMax), toY(drawnVaporAmount));
-      ctx.stroke();
-
-      // ------------------------------------
-      // 3. 点 (プロット) の描画
-      // ------------------------------------
-      // 水分総量 (vaporTotal) の位置に点を打つ
-      const pointY = toY(vaporTotal);
-      ctx.fillStyle = isSaved ? 'purple' : 'black'; // 点の色 (以前のやり取りの提案に合わせる)
-      ctx.beginPath();
-      ctx.arc(toX(barX), toY(sv), 5, 0, 2 * Math.PI);
-      ctx.fill();
-      */
     };
 
-    // ------------------------------------
-    // 3. 全ての描画処理を実行
-    // ------------------------------------
     drawAxis();
     drawScale();
     drawCurve();

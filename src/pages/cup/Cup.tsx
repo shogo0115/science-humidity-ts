@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./cup.css";
+import "../experimentPage.css";
 
 import PageSelectButton from "../../components/common/PageSelectButton";
 import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";

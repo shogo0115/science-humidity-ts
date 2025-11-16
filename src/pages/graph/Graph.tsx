@@ -157,9 +157,8 @@ useEffect(() => {
     // 4. UI
     // ------------------------------------
   return (
-    <div className="graph-container">
-
-      <div className=".home-back-button">
+    <div className="overall-layout">
+      <div className="page-button-layout">
         <PageSelectButton
         label="ホームに戻る"
         to="/"
@@ -173,9 +172,7 @@ useEffect(() => {
             <ExplanationBarGraph />
             <ExplanationFormulas />
           </div>
-
-          {/* キャンバス */}
-          <div className="graph-canvas-wrap">
+          <div className="graph-canvas">
             <HumidityGraphCanvas
             temperature={temperature}
             saturationVapor={saturationVapor}
@@ -191,36 +188,35 @@ useEffect(() => {
           </div>
         </div>
 
-      <div className="graph-controls">
-        {/* 空間の状態 */}
-        <CurrentHumidityDisplay
-          // データ
-          temperature={temperature}
-          saturationVapor={saturationVapor}
-          vapor={vapor}
-          humidity={humidity}
-          waterDrop={waterDrop}
-          fixTemperature={fixTemperature}
-          fixVapor={fixVapor}
-          // 関数
-          setTemperature={setTemperature}
-          setSaturationVapor={setSaturationVapor}
-          setVapor={setVapor}
-          setHumidity={setHumidity}
-          toggleFixTemperature={toggleFixTemperature}
-          toggleFixVapor={toggleFixVapor}
-          saveState={saveState}
-        />
-        {/* 保存した状態 */}
-        <SavedHumidityDisplay
-          temperature2={temperature2}
-          saturationVapor2={saturationVapor2}
-          vapor2={vapor2}
-          humidity2={humidity2}
-          waterDrop2={waterDrop2}
-        />
-      </div>
-
+        <div className="graph-controls">
+          {/* 空間の状態 */}
+          <CurrentHumidityDisplay
+            // データ
+            temperature={temperature}
+            saturationVapor={saturationVapor}
+            vapor={vapor}
+            humidity={humidity}
+            waterDrop={waterDrop}
+            fixTemperature={fixTemperature}
+            fixVapor={fixVapor}
+            // 関数
+            setTemperature={setTemperature}
+            setSaturationVapor={setSaturationVapor}
+            setVapor={setVapor}
+            setHumidity={setHumidity}
+            toggleFixTemperature={toggleFixTemperature}
+            toggleFixVapor={toggleFixVapor}
+            saveState={saveState}
+          />
+          {/* 保存した状態 */}
+          <SavedHumidityDisplay
+            temperature2={temperature2}
+            saturationVapor2={saturationVapor2}
+            vapor2={vapor2}
+            humidity2={humidity2}
+            waterDrop2={waterDrop2}
+          />
+        </div>
       </div>
     </div>
   );

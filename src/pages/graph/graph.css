@@ -1,36 +1,30 @@
-/* ----------------------------------------------------
- * 全体コンテナ
- * ---------------------------------------------------- */
-.graph-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  min-height: 100vh;
-  background-color: #f0f4f8;
-  font-family: 'Inter', sans-serif;
+.overall-layout {
+    display: flex;
+    padding: 20px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .page-button-layout {
   display: flex;
   flex-direction: row;
-
   gap: 16px;
   align-self: flex-start;
 }
 
-/* ----------------------------------------------------
- * メインレイアウト: グラフエリアとコントロールエリアの縦並び
- * ---------------------------------------------------- */
 .graph-main-layout {
   display: flex;
+  gap: 0px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0px auto 0px auto;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-
-  width: 100%;
-  max-width: 1700px;
-  margin-top: 30px; /* ボタンとの間隔 */
 }
 
 /* ----------------------------------------------------
@@ -40,11 +34,10 @@
   display: flex;
   gap: 20px;
   flex-grow: 0;
-  max-width: 1700px;
+  max-width: 1500px;
   flex-shrink: 1;
 }
 
-/* 1. 凡例と公式のコンテナ (縦並び) */
 .legend-formula-column {
   display: flex;
   flex-direction: column;
@@ -53,29 +46,29 @@
   flex-shrink: 1;
 }
 
-/* 2. グラフキャンバスのコンテナ (グラフ本体) */
-.graph-canvas-wrap {
-  flex-grow: 0;
-  width: 600px; /* ⬅️ ユーザー指定の最大幅を反映 */
-  flex-shrink: 1;
-
-  background-color: white;
+.graph-canvas {
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e0e6ed;
-  text-align: center;
+  max-width: 600px;
+  margin: 0px auto 50px auto;
+  background-color: white;
+  border-radius: 0.8vw;
+  align-items: center;
 }
 
 /* ----------------------------------------------------
  * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする
  * ---------------------------------------------------- */
 .graph-controls {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-
-  width: 620;
-  flex-shrink: 0;
-  flex-wrap: nowrap;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+.graph-controls > * {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    min-height: 250px;
 }

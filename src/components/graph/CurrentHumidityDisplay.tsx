@@ -1,7 +1,6 @@
 import React from "react";
 import "./currentHumidityDisplay.css";
 
-// Row コンポーネントもクラスベースに修正
 const Row: React.FC<{ label: string; children: React.ReactNode }> = ({
   label,
   children,
@@ -15,7 +14,6 @@ const Row: React.FC<{ label: string; children: React.ReactNode }> = ({
 };
 
 interface CurrentHumidityDisplayProps {
-  // --- データ (親から渡される状態) ---
   temperature: number;
   saturationVapor: number;
   vapor: number;
@@ -23,8 +21,6 @@ interface CurrentHumidityDisplayProps {
   waterDrop: number;
   fixTemperature: boolean;
   fixVapor: boolean;
-
-  // --- 関数 (親から渡されるロジック) ---
   setTemperature: (t: number) => void;
   setSaturationVapor: (sv: number) => void;
   setVapor: (v: number) => void;
@@ -57,12 +53,10 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
   const isTemperatureAlert = temperature >= 50.0;
 
   return (
-    // クラス名でコンテナのスタイルを設定
     <div className="graph-panel1">
       <h3>空間の状態</h3>
 
-      {/* 1. 温度 */}
-      <Row label="温度 [℃]">
+      <Row label="温度 [℃](0~50℃)">
         <input
           type="range"
           min={0}
@@ -85,8 +79,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>℃</span>
       </Row>
 
-      {/* 2. 飽和水蒸気量 */}
-      <Row label="飽和水蒸気量 [g/m³]">
+      <Row label="飽和水蒸気量 [g/m³](4.9~82.8g/m³)">
         <input
           type="range"
           min={4.9}
@@ -109,8 +102,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>g/m³</span>
       </Row>
 
-      {/* 3. 空間内の水分量 */}
-      <Row label="空間内の水分量 [g/m³]">
+      <Row label="空間内の水分量 [g/m³](4.9~90.0g/m³)">
         <input
           type="range"
           min={4.9}
@@ -133,8 +125,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>g/m³</span>
       </Row>
 
-      {/* 4. 湿度 */}
-      <Row label="湿度 [%]">
+      <Row label="湿度 [%](5.9~100%)">
         <input
           type="range"
           min={5.9}
@@ -157,8 +148,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>%</span>
       </Row>
 
-      {/* 5. 水滴の量（読み取り専用） */}
-      <Row label="水滴の量 [g/m³]">
+      <Row label="水滴の量 [g/m³](0~85.1g/m³)">
         <input
           type="range"
           min={0}
@@ -181,7 +171,6 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>g/m³</span>
       </Row>
 
-      {/* 6. モード切替＆保存ボタン */}
       <div className="btn-group">
         <button
           onClick={toggleFixTemperature}

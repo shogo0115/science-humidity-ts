@@ -34,16 +34,19 @@ const TowelCanvasAndLegend: React.FC<TowelCanvasAndLegendProps> = ({
     const cupImageName = getCupImageName(water);
 
   return (
-    <div id="cup-container">
-      <div id="layout-container">
-
-        {/* 画像コンテナ */}
-        <div id="photos-container">
-          <img id="cup-image" src={cupImageName} alt={`タオルの状態: タオルに含まれる水分量${water.toFixed(1)}g/m³`} />
-          <img id="temperature-image" src="/towel/towel-water.png" alt="タオル画像" />
-        </div>
-
-      </div>
+    <div id="photos-container">
+      <img
+      id="cup-image"
+      src={cupImageName}
+      alt={`タオルの状態: タオルに含まれる水分量${water.toFixed(1)}g/m³`}
+      style={{ width: '400px', height: 'auto' }}
+      />
+      <img
+      id="temperature-image"
+      src="/towel/towel-water.png"
+      alt="タオル画像"
+      style={{ width: '400px', height: 'auto' }}
+      />
     </div>
   );
 };
