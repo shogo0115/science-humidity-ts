@@ -4,9 +4,9 @@ import "../experimentPage.css";
 
 import PageSelectButton from "../../components/common/PageSelectButton";
 import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
+import HumidityGraphCanvasMini from "../../components/common/HumidityGraphCanvasMini";
 import CupControlPanel from "../../components/cup/CupControlPanel";
 import CupCanvasAndLegend from "../../components/cup/CupCanvasAndLegend";
-import HumidityGraphCanvasMini from "../../components/cup/HumidityGraphCanvasMini";
 import ExperimentDescription from "../../components/cup/ExperimentDescription";
 import CondensationStatusDisplay from "../../components/cup/CondensationStatusDisplay";
 
@@ -27,39 +27,40 @@ const Cup: React.FC = () => {
   const navigate = useNavigate();
 
  /** ------- 空間の現在の状態 ------- */
- const [temperature, setTemperature] = useState<number>(25.0); // 部屋の温度 (T)
- const [saturationVapor, setSaturationVapor] = useState<number>(23.0); // 飽和水蒸気量 (SV)
- const [vapor, setVapor] = useState<number>(11.5); // 空間の水蒸気量 (V)
+ const [originTemp, setOriginTemp] = useState<number>(25.0);
+ const [saturationVapor, setSaturationVapor] = useState<number>(23.0);
+ const [vapor, setVapor] = useState<number>(11.5);
  const [waterDrop, setWaterDrop] = useState<number>(0.0);
  const [humidity, setHumidity] = useState<number>(50);
-     // まだ空気中に含むことができる水蒸気量
-const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
+ const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
 
  /** ------- コップの状態 ------- */
- const [cupTemperature, setCupTemperature] = useState<number>(0.0);
+ const [tergetTemp, setTergetTemp] = useState<number>(0.0);
 
 /** ------- 実験の状態管理と初期値保存 ------- */
 const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
  // 問題文として表示する初期条件
- const [initialTemperature, setInitialTemperature] = useState<number>(25.0);
- const [initialVapor, setInitialVapor] = useState<number>(11.5);
- const [experimentInitialCupTemp, setExperimentInitialCupTemp] = useState<number>(0.0);
-
+ const [initOriginTemp, setInitOriginTemp] = useState<number>(25.0);
+ const [initVapor, setInitVapor] = useState<number>(11.5);
+ const [initTergetTemp, setInitTergetTemp] = useState<number>(0.0);
 
  // ------------------------------------
  // 3. ユーザの操作による変化/計算ロジック
  // ------------------------------------
+ //飽和水蒸気量の計算
  useEffect(() => {
-  const sv = satVapor(temperature);
+  const sv = satVapor(originTemp);
   setSaturationVapor(parseFloat(sv.toFixed(1)));
-}, [temperature]);
+}, [originTemp]);
 
+ // 結露量の計算
  useEffect(() => {
   const wd = Math.max(0, vapor - saturationVapor);
   setWaterDrop(parseFloat(wd.toFixed(1)));
 }, [vapor, saturationVapor]);
 
+// 湿度計算
  useEffect(() => {
   const h = Math.min(100, (vapor / saturationVapor) * 100);
   setHumidity(parseFloat(h.toFixed(1)));
@@ -68,11 +69,11 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 // 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
  useEffect(() => {
   if (!isExperimentRunning) {
-    setInitialTemperature(temperature);
-    setInitialVapor(vapor);
-    setExperimentInitialCupTemp(cupTemperature);
+    setInitOriginTemp(originTemp);
+    setInitVapor(vapor);
+    setInitTergetTemp(tergetTemp);
   }
- }, [isExperimentRunning, temperature, vapor, cupTemperature]);
+ }, [isExperimentRunning, originTemp, vapor, tergetTemp]);
 
 
 // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
@@ -81,10 +82,10 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
     return;
   }
 
-  const targetTemp = experimentInitialCupTemp;
+  const targetTemp = initTergetTemp;
 
   const intervalId = setInterval(() => {
-    setTemperature(currentT => {
+    setOriginTemp(currentT => {
       const nextT = currentT - 0.1;
 
       if (nextT <= targetTemp) {
@@ -94,11 +95,11 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
       return parseFloat(nextT.toFixed(1));
       });
-    }, 500);
+    }, 100);
 
     // クリーンアップ関数
     return () => clearInterval(intervalId);
-   }, [isExperimentRunning, experimentInitialCupTemp]);
+   }, [isExperimentRunning, initTergetTemp]);
 
   // 実験開始/停止を切り替える関数
   const toggleExperiment = () => {
@@ -106,14 +107,14 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       const nextIsRunning = !prevIsRunning;
 
       if (nextIsRunning) {
-        setInitialTemperature(temperature);
-        setInitialVapor(vapor);
-        setExperimentInitialCupTemp(cupTemperature);
+        setInitOriginTemp(originTemp);
+        setInitVapor(vapor);
+        setInitTergetTemp(tergetTemp);
 
       } else {
 
-        setTemperature(initialTemperature);
-        setVapor(initialVapor);
+        setOriginTemp(initOriginTemp);
+        setVapor(initVapor);
       }
 
       return nextIsRunning;
@@ -140,10 +141,8 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       <div className="experiment-layout">
         <div className="experimental-footage">
           <CupCanvasAndLegend
-          temperature={temperature}
           waterDrop={waterDrop}
-          humidity={humidity}
-          cupTemperature={cupTemperature}
+          originTemp={originTemp}
           />
         </div>
         <div className="center-item-layout">
@@ -155,35 +154,34 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         </div>
         <div className="graph-canvas">
           <HumidityGraphCanvasMini
-          temperature={temperature}
+          temp={originTemp}
           saturationVapor={saturationVapor}
           vapor={vapor}
           waterDrop={waterDrop}
-          cupTemperature={cupTemperature}
           remainingVapor={remainingVapor}
+          xAxisLabel={"コップの温度[℃]"}
+          yAxisLabel={"飽和水蒸気量[g/m³]"}
           />
         </div>
       </div>
       <div className="graph-controls">
         <ExperimentDescription
-        initialTemperature={initialTemperature}
-        initialVapor={initialVapor}
-        initialCupTemperature={experimentInitialCupTemp}
+        initialOriginalTemperature={initOriginTemp}
+        initialVapor={initVapor}
+        initialCupTemperature={initTergetTemp}
         isExperimentRunning={isExperimentRunning}
         />
         <CupControlPanel
-          // データ
-          temperature={temperature}
+          temperature={originTemp}
           saturationVapor={saturationVapor}
           vapor={vapor}
-          cupTemperature={cupTemperature}
+          cupTemperature={tergetTemp}
           waterDrop={waterDrop}
           remainingVapor={remainingVapor}
           isExperimentRunning={isExperimentRunning}
-          // 関数
-          setTemperature={setTemperature}
+          setOriginalTemperature={setOriginTemp}
           setVapor={setVapor}
-          setCupTemperature={setCupTemperature}
+          setCupTemperature={setTergetTemp}
           toggleExperiment={toggleExperiment}
         />
       </div>

@@ -1,10 +1,8 @@
 import React from "react";
 
 interface CupCanvasAndLegendProps {
-  temperature: number;
   waterDrop: number;
-  humidity: number;
-  cupTemperature: number;
+  originTemp: number;
 }
 
 function getCupImageName(cupTemperature: number, cupWaterDrop: number): string {
@@ -12,33 +10,32 @@ function getCupImageName(cupTemperature: number, cupWaterDrop: number): string {
 
     // 0℃の場合の特別処理: 0℃は0に、それより大きい場合は5の倍数に切り上げ
     if (cupTemperature <= 0.1) {
-        roundedTemp = 2.5;
+        roundedTemp = 5;
     }
-      else if (cupTemperature >= 17.5) {
-        roundedTemp = 17.5;
+      else if (cupTemperature >= 35) {
+        roundedTemp = 35;
       }
       else {
-        roundedTemp = Math.ceil(cupTemperature / 2.5) * 2.5;
+        roundedTemp = Math.ceil(cupTemperature / 5) * 5;
     }
 
     const roundedWater = Math.min(Math.ceil(cupWaterDrop / 5) * 5, 35);
 
-    return `/glass/glass-${roundedTemp * 2}-${roundedWater}.png`;
+    return `/glass/glass-${roundedTemp}-${roundedWater}.png`;
 }
 
 const CupCanvasAndLegend: React.FC<CupCanvasAndLegendProps> = ({
   waterDrop,
-  cupTemperature
+  originTemp: tergetTemp
 }) => {
-    const cupImageName = getCupImageName(cupTemperature, waterDrop);
+    const cupImageName = getCupImageName(tergetTemp, waterDrop);
 
   return (
-    /*picture-layoutのデザインはexperimentPage.cssで指定*/
     <div className="picture-layout">
       <img
       id="cup-image"
       src={cupImageName}
-      alt={`コップの周りの状態: 温度${cupTemperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³`}
+      alt={`コップの周りの状態: 温度${tergetTemp.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³`}
       style={{ width: '300px', height: 'auto' }}
       />
       <img

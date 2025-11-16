@@ -1,14 +1,14 @@
 import React from "react";
 
 type ExperimentDescriptionProps = {
-  initialTemperature: number;        // 実験開始時の室温
+  initialOriginalTemperature: number;        // 実験開始時の室温
   initialVapor: number;              // 実験開始時の水蒸気量
   initialCupTemperature: number;     // 実験開始時に設定したコップの温度
   isExperimentRunning: boolean;      // 実験中フラグ
 };
 
 const ExperimentDescription: React.FC<ExperimentDescriptionProps> = ({
-  initialTemperature,
+  initialOriginalTemperature: initialTemperature,
   initialVapor,
   initialCupTemperature,
   isExperimentRunning,

@@ -3,7 +3,7 @@ import React from 'react';
 
 interface CondensationStatusDisplayProps {
     waterDrop: number;
-    humidity: number; // コップ表面の湿度
+    humidity: number;
 }
 
 const CondensationStatusDisplay: React.FC<CondensationStatusDisplayProps> = ({
@@ -14,11 +14,8 @@ const CondensationStatusDisplay: React.FC<CondensationStatusDisplayProps> = ({
 
     return (
         <div style={{ fontSize: "28px" }}>
-
-            {/* 結露判定 */}
             <div
                 id="condensationText"
-                className="text-lg mb-2 transition-colors duration-300"
                 style={{ color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }}
             >
                 {isCondensed ?
@@ -27,8 +24,7 @@ const CondensationStatusDisplay: React.FC<CondensationStatusDisplayProps> = ({
                 }
             </div>
 
-            {/* コップ表面の湿度 */}
-            <div id="humidityText" className="text-sm text-gray-700">
+            <div id="humidityText">
                 コップ表面の湿度: <span className="font-semibold text-blue-600">{humidity.toFixed(1)}</span>%
             </div>
 

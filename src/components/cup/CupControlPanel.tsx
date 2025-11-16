@@ -9,7 +9,7 @@ interface CupControlPanelProps {
   waterDrop: number;
   remainingVapor: number;
   isExperimentRunning: boolean;
-  setTemperature: (t: number) => void;
+  setOriginalTemperature: (t: number) => void;
   setVapor: (v: number) => void;
   setCupTemperature: (ct: number) => void;
   toggleExperiment: () => void;
@@ -20,7 +20,7 @@ const CupControlPanel: React.FC<CupControlPanelProps> = ({
   vapor,
   cupTemperature,
   isExperimentRunning,
-  setTemperature,
+  setOriginalTemperature: setTemperature,
   setVapor,
   setCupTemperature,
   toggleExperiment

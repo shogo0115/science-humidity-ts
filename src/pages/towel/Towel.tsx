@@ -5,7 +5,7 @@ import "../experimentPage.css";
 import PageSelectButton from "../../components/common/PageSelectButton";
 import TowelControlPanel from "../../components/towel/TowelControlPanel";
 import TowelCanvasAndLegend from "../../components/towel/TowelCanvasAndLegend";
-import HumidityGraphCanvasMini from "../../components/towel/HumidityGraphCanvasMini";
+import HumidityGraphCanvasMini from "../../components/common/HumidityGraphCanvasMini";
 import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
 import ExperimentDescription from "../../components/towel/ExperimentDescription";
 import CondensationStatusDisplay from "../../components/towel/CondensationStatusDisplay";
@@ -29,25 +29,24 @@ const Cup: React.FC = () => {
   const navigate = useNavigate();
 
  /** ------- 空間の現在の状態 ------- */
- const [temperature, setTemperature] = useState<number>(25.0); // 部屋の温度 (T)
+ const [originTemp, setOriginTemp] = useState<number>(25.0); // 部屋の温度 (T)
  const [saturationVapor, setSaturationVapor] = useState<number>(23.0); // 飽和水蒸気量 (SV)
  const [vapor, setVapor] = useState<number>(11.5); // 空間の水蒸気量 (V)
  const [waterDrop, setWaterDrop] = useState<number>(0.0);
  const [humidity, setHumidity] = useState<number>(50);
-
- /** ------- コップの状態 ------- */
- const [cupTemperature, setCupTemperature] = useState<number>(0.0);
+ const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
 
   /** ------- タオルの状態 ------- */
+ const [tergetTemp, setTergetTemp] = useState<number>(0.0);
  const [water, setWater] = useState<number>(0.0);
 
 /** ------- 実験の状態管理と初期値保存 ------- */
 const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
  // 問題文として表示する初期条件（実験開始時に固定される値）
- const [initialTemperature, setInitialTemperature] = useState<number>(25.0);
+ const [initOriginTemp, setInitOriginTemp] = useState<number>(25.0);
  const [initialVapor, setInitialVapor] = useState<number>(11.5);
- const [initialCupTemp, setInitialCupTemp] = useState<number>(0.0);
+ const [initTergetTemp, setInitTergetTemp] = useState<number>(0.0);
  const [initialWater, setInitialWater] = useState<number>(0.0);
 
 
@@ -56,9 +55,9 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
  // ------------------------------------
 
  useEffect(() => {
-  const sv = satVapor(temperature);
+  const sv = satVapor(originTemp);
   setSaturationVapor(parseFloat(sv.toFixed(1)));
-}, [temperature]);
+}, [originTemp]);
 
  // 結露量の計算
  useEffect(() => {
@@ -75,11 +74,11 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 // 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
  useEffect(() => {
   if (!isExperimentRunning) {
-    setInitialTemperature(temperature);
+    setInitOriginTemp(originTemp);
     setInitialVapor(vapor);
     setInitialWater(water);
   }
- }, [isExperimentRunning, temperature, vapor, water]);
+ }, [isExperimentRunning, originTemp, vapor, water]);
 
 
 // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
@@ -133,7 +132,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       setVapor(currentVapor => parseFloat((currentVapor + 0.1).toFixed(1)));
       return parseFloat(nextWater.toFixed(1));
     });
-  }, 500);
+  }, 100);
 
   // クリーンアップ関数
   return () => clearInterval(intervalId);
@@ -146,22 +145,19 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       const nextIsRunning = !prevIsRunning;
 
       if (nextIsRunning) {
-        setInitialTemperature(temperature);
+        setInitOriginTemp(originTemp);
         setInitialVapor(vapor);
         setInitialWater(water);
 
       } else {
 
-        setTemperature(initialTemperature);
+        setOriginTemp(initOriginTemp);
         setVapor(initialVapor);
       }
 
       return nextIsRunning;
     });
   };
-
-    // まだ空気中に含むことができる水蒸気量
-  const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
 
   // タオルの計算
  useEffect(() => {
@@ -191,10 +187,10 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       <div className="experiment-layout">
         <div className="experimental-footage">
           <TowelCanvasAndLegend
-          temperature={temperature}
+          temperature={originTemp}
           water={water}
           humidity={humidity}
-          cupTemperature={cupTemperature}
+          cupTemperature={tergetTemp}
           />
         </div>
         <div className="center-item-layout">
@@ -206,35 +202,36 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         </div>
         <div className="graph-canvas">
           <HumidityGraphCanvasMini
-          temperature={temperature}
+          temp={originTemp}
           saturationVapor={saturationVapor}
           vapor={vapor}
-          waterDrop={waterDrop}
-          cupTemperature={cupTemperature}
+          waterDrop={0}
           remainingVapor={remainingVapor}
+          xAxisLabel={"室温[℃]"}
+          yAxisLabel={"飽和水蒸気量[g/m³]"}
           />
         </div>
       </div>
       <div className="graph-controls">
         <ExperimentDescription
-        initialTemperature={initialTemperature}
+        initialTemperature={initOriginTemp}
         initialVapor={initialVapor}
         initialWater={initialWater}
         isExperimentRunning={isExperimentRunning}
         />
         <TowelControlPanel
           // データ
-          temperature={temperature}
+          temperature={originTemp}
           saturationVapor={saturationVapor}
           vapor={vapor}
-          cupTemperature={cupTemperature}
+          cupTemperature={tergetTemp}
           water={water}
           remainingVapor={remainingVapor}
           isExperimentRunning={isExperimentRunning}
           // 関数
-          setTemperature={setTemperature}
+          setTemperature={setOriginTemp}
           setVapor={setVapor}
-          setCupTemperature={setCupTemperature}
+          setCupTemperature={setTergetTemp}
           setWater={setWater}
           toggleExperiment={toggleExperiment}
         />
