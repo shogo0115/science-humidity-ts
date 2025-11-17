@@ -2,13 +2,13 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../experimentPage.css";
 
-import PageSelectButton from "../../components/common/PageSelectButton";
-import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
-import HumidityGraphCanvasMini from "../../components/common/HumidityGraphCanvasMini";
-import CupControlPanel from "../../components/cup/CupControlPanel";
-import CupCanvasAndLegend from "../../components/cup/CupCanvasAndLegend";
-import ExperimentDescription from "../../components/cup/ExperimentDescription";
-import CondensationStatusDisplay from "../../components/cup/CondensationStatusDisplay";
+import PageSelectButton from "../../components/common/Button/PageSelectButton";
+import ExplanationBarGraph from "../../components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph";
+import HumidityGraphCanvasMini from "../../components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini";
+import CupControlPanel from "../../components/cup/ControlPanel/CupControlPanel";
+import CupCanvasAndLegend from "../../components/cup/ExperimentalFootage/CupExperimentalFootage";
+import ExperimentDescription from "../../components/cup/ExperimentDescription/CupExperimentDescription";
+import CondensationStatusDisplay from "../../components/cup/StatusDisplay/CupStatusDisplay";
 
 // ------------------------------------
 // 1. 関数の定義 (座標変換)

@@ -21,7 +21,7 @@ const ExperimentDescription: React.FC<ExperimentDescriptionProps> = ({
         飽和水蒸気量を超えた水蒸気が凝縮して水滴として現れます。
       </p>
 
-      <h3>実験内容</h3>
+      <h2>実験内容</h2>
       <p>
         室温 {initialTemperature.toFixed(1)}℃、
         空間内の水分量 {initialVapor.toFixed(1)} g/m³ の部屋にある

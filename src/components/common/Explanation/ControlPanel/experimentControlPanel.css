@@ -22,7 +22,7 @@
     margin-top: 5px;
 }
 .graph-row label {
-    width: 330px;
+    width: 350px;
     font-size: 1.1em;
     font-weight: 600;
     margin-bottom: 8px;
@@ -69,7 +69,6 @@
     box-shadow: none;
 }
 
-
 /* -------------------------------------------------- */
 /* レスポンシブ対応 */
 /* -------------------------------------------------- */
@@ -81,7 +80,6 @@
         margin: 20px auto;
     }
 
-    /* 各コンポーネントは幅いっぱいを使用 */
     .experiment-main-layout > *,
     .graph-controls > * {
         flex: 1 1 100%;
