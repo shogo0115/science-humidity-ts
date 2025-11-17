@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import "./graph.css";
 
 // --- 作成済みのカスタムコンポーネントをインポート ---
-import PageSelectButton from "../../components/common/PageSelectButton";
-import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
-import ExplanationFormulas from "../../components/common/ExplanationFormulas";
-import CurrentHumidityDisplay from "../../components/graph/CurrentHumidityDisplay";
-import SavedHumidityDisplay from "../../components/graph/SavedHumidityDisplay";
-import HumidityGraphCanvas from "../../components/graph/HumidityGraphCanvas";
+import PageSelectButton from "../../components/common/Button/PageSelectButton";
+import ExplanationBarGraph from "../../components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph";
+import ExplanationFormulas from "../../components/common/Explanation/ExplanationFormulas/ExplanationFormulas";
+import CurrentHumidityDisplay from "../../components/graph/CurrentHumidityDisplay/CurrentHumidityDisplay";
+import SavedHumidityDisplay from "../../components/graph/SavedHumidityDisplay/SavedHumidityDisplay";
+import HumidityGraphCanvas from "../../components/graph/HumidityGraphCanvas/HumidityGraphCanvas";
 
     // ------------------------------------
     // 1. 関数の定義 (座標変換)

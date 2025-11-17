@@ -27,7 +27,6 @@ const ReadRow: React.FC<ReadRowProps> = ({
 );
 
 interface SavedHumidityDisplayProps {
-  // --- データ (親から渡される状態) ---
   temperature2: number;
   saturationVapor2: number;
   vapor2: number;
@@ -35,9 +34,6 @@ interface SavedHumidityDisplayProps {
   waterDrop2: number;
 }
 
-/**
- * 初めの空間の状態（読み取り専用）を表示するコンポーネント
- */
 const SavedHumidityDisplay: React.FC<SavedHumidityDisplayProps> = ({
   temperature2,
   saturationVapor2,
@@ -47,9 +43,7 @@ const SavedHumidityDisplay: React.FC<SavedHumidityDisplayProps> = ({
 }) => {
   return (
     <div className="graph-panel2">
-      <h3>初めの空間の状態</h3>
-
-      {/* 読み取り専用の行を使用して値を表示 */}
+      <h3 style={{ fontWeight: 'bold' }}>初めの空間の状態</h3>
       <ReadRow label="温度 [℃]" value={temperature2} unit="℃" />
       <ReadRow label="飽和水蒸気量 [g/m³]" value={saturationVapor2} unit="g/m³" />
       <ReadRow label="空間内の水分量 [g/m³]" value={vapor2} unit="g/m³" />

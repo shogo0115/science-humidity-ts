@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import "./savedHumidityDisplay.css";
 
 // --- 描画に必要な定数 ---
 export function satPress(T: number) {

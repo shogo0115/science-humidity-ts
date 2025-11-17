@@ -2,13 +2,13 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../experimentPage.css";
 
-import PageSelectButton from "../../components/common/PageSelectButton";
-import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
-import HumidityGraphCanvasMini from "../../components/common/HumidityGraphCanvasMini";
-import WindowControlPanel from "../../components/window/WindowControlPanel";
-import WindowCanvasAndLegend from "../../components/window/WindowCanvasAndLegend";
-import ExperimentDescription from "../../components/window/ExperimentDescription";
-import CondensationStatusDisplay from "../../components/window/CondensationStatusDisplay";
+import PageSelectButton from "../../components/common/Button/PageSelectButton";
+import ExplanationBarGraph from "../../components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph";
+import HumidityGraphCanvasMini from "../../components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini";
+import WindowControlPanel from "../../components/window/ControlPanel/WindowControlPanel";
+import WindowCanvasAndLegend from "../../components/window/ExperimentalFootage/WindowExperimentalFootage";
+import ExperimentDescription from "../../components/window/ExperimentDescription/WindowExperimentDescription";
+import CondensationStatusDisplay from "../../components/window/StatusDisplay/WindowStatusDisplay";
 
 // ------------------------------------
 // 1. 関数の定義 (座標変換)

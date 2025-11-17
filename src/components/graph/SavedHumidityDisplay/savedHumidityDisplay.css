@@ -4,63 +4,64 @@
 
 .graph-panel2 {
   padding: 20px;
-  flex: 1;
+  max-width: 700px;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
   min-width: 300px;
 }
-
-.graph-panel h3 {
+.graph-panel2 h3 {
   margin-top: 0;
   margin-bottom: 20px;
   color: #333;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
+  font-size: 1.2em;
 }
 
 /* ========================================================= */
 /* 2. ReadRow コンポーネントのレイアウト */
 /* ========================================================= */
 
-/* 行のコンテナ (.read-row-container) */
 .read-row-container {
   display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-/* ラベル (.read-row-label) */
 .read-row-label {
-  min-width: 200px; /* 幅を固定 */
-  font-weight: bold;
-  color: #555;
+  max-width: 70%;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
 }
 
-/* 値と単位のグループ (.read-row-value-group) */
 .read-row-value-group {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.read-row-value-group span {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* ========================================================= */
-/* 3. 入力要素のスタイル */
+/* 3. 出力要素のスタイル */
 /* ========================================================= */
 
-/* 読み取り専用の数値入力ボックス (.read-row-input-compact) */
 .read-row-input-compact {
-  width: 70px; /* 元のインラインスタイル width: 70 を反映 */
-  padding: 5px 8px;
+  width: 75px;
+  padding: 6px 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   text-align: right;
-  font-size: 14px;
-
-  /* 読み取り専用の視覚的なスタイル */
-  background-color: #eee;
+  font-size: 15px;
+  background-color: rgb(230, 230, 230);
   color: #333;
   cursor: default;
 }

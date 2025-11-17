@@ -2,13 +2,13 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../experimentPage.css";
 
-import PageSelectButton from "../../components/common/PageSelectButton";
-import TowelControlPanel from "../../components/towel/TowelControlPanel";
-import TowelCanvasAndLegend from "../../components/towel/TowelCanvasAndLegend";
-import HumidityGraphCanvasMini from "../../components/common/HumidityGraphCanvasMini";
-import ExplanationBarGraph from "../../components/common/ExplanationBarGraph";
-import ExperimentDescription from "../../components/towel/ExperimentDescription";
-import CondensationStatusDisplay from "../../components/towel/CondensationStatusDisplay";
+import PageSelectButton from "../../components/common/Button/PageSelectButton";
+import TowelControlPanel from "../../components/towel/ControlPanel/TowelControlPanel";
+import TowelCanvasAndLegend from "../../components/towel/ExperimentalFootage/TowelExperimentalFootage";
+import HumidityGraphCanvasMini from "../../components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini";
+import ExplanationBarGraph from "../../components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph";
+import ExperimentDescription from "../../components/towel/ExperimentDescription/TowelExperimentDescription";
+import CondensationStatusDisplay from "../../components/towel/StatusDisplay/TowelStatusDisplay";
 
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
@@ -29,7 +29,7 @@ const Cup: React.FC = () => {
  /** ------- 空間の現在の状態 ------- */
  const [originTemp, setOriginTemp] = useState<number>(25.0);
  const [saturationVapor, setSaturationVapor] = useState<number>(23.0);
- const [vapor, setVapor] = useState<number>(11.5);
+ const [vapor, setVapor] = useState<number>(5.0);
  const [waterDrop, setWaterDrop] = useState<number>(0.0);
  const [humidity, setHumidity] = useState<number>(50);
  const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
@@ -89,10 +89,6 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
   const intervalId = setInterval(() => {
 
-    // 湿度が100%になったら停止するチェック
-    // ※注意: humidity の値はEffectが最後に実行された時点の値（クロージャ）です。
-    // そのため、waterの更新ロジック内でチェックする方が確実ですが、ここでは一般的な方法で記載します。
-    // waterの更新ロジック内のsetVaporによって湿度も更新されるため、次の実行時(0.5秒後)には最新値がチェックされます。
     if (humidity >= 100) {
         clearInterval(intervalId);
         return;
@@ -156,8 +152,6 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
   const w = Math.max(0, towelWater);
   setWaterDrop(parseFloat(w.toFixed(1)));
 }, [towelWater]);
-
-
 
     // ------------------------------------
     // 4. UI

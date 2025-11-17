@@ -1,7 +1,7 @@
 import React from "react";
 import "./house.css";
-import PageSelectButton from "../../components/common/PageSelectButton";
-import FurnitureSelectButton from "../../components/common/FurnitureSelectButton";
+import PageSelectButton from "../../components/common/Button/PageSelectButton";
+import FurnitureSelectButton from "../../components/house/FurnitureSelectButton";
 
 const House: React.FC = () => {
 
