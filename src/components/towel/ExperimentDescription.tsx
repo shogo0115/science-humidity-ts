@@ -26,12 +26,6 @@ const ExperimentDescription: React.FC<ExperimentDescriptionProps> = ({
         水蒸気量 {initialVapor.toFixed(1)} g/m³ 入っている1m³の密閉空間に
         あるタオルが水を {initialWater.toFixed(1)}g 含んでいるとき時間経過で乾くのかを観察する。
       </p>
-
-      {isExperimentRunning && (
-        <p className="experiment-note">
-          ※実験中は条件（室温・水分量・コップの温度）を固定して観察します。
-        </p>
-      )}
     </div>
   );
 };

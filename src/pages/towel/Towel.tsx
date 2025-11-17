@@ -14,11 +14,9 @@ import CondensationStatusDisplay from "../../components/towel/CondensationStatus
 // 1. 関数の定義 (座標変換)
 // ------------------------------------
 function satPress(T: number) {
- // 水飽和蒸気圧
  return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
 }
 function satVapor(T: number) {
- // 飽和水蒸気量
  return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
 }
 

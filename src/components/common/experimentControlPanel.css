@@ -1,17 +1,10 @@
-/* -------------------------------------------------- */
-/* コントロールパネルのスタイル (CupControlPanel.tsx) */
-/* -------------------------------------------------- */
-
 .graph-panel {
-    /* ... 既存のスタイルを保持 ... */
     padding: 20px;
     flex: 1;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-    /* min-width: 600px; はレスポンシブデザインの妨げになるため削除または調整を推奨しますが、
-       ここではご提示いただいた元のスタイルを尊重し、レスポンシブ対応はメディアクエリに任せます。 */
-    /* min-width: 600px; */
+    flex-direction: column;
 }
 .graph-panel h3 {
     margin-top: 0;
@@ -19,26 +12,39 @@
     color: #333;
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
-    font-size: 1.4em; /* タイトルの文字サイズを大きく */
+    font-size: 1.4em;
 }
+
 .graph-row {
-    margin-bottom: 15px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
 }
 .graph-row label {
+    width: 330px;
     font-size: 1.1em;
     font-weight: 600;
     margin-bottom: 8px;
     color: #34495e;
 }
 .graph-row input[type="range"] {
-    width: 100%;
+    flex: 1;
     height: 8px;
     cursor: pointer;
     background: #bdc3c7;
     border-radius: 4px;
 }
+.graph-row input[type="number"] {
+    width: 80px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box
+}
+
 .experiment-button {
     width: 100%;
     padding: 12px;
@@ -69,7 +75,6 @@
 /* -------------------------------------------------- */
 
 @media (max-width: 1024px) {
-    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */
     .experiment-main-layout,
     .graph-controls {
         flex-direction: column;

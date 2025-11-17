@@ -13,7 +13,7 @@ const CondensationStatusDisplay: React.FC<CondensationStatusDisplayProps> = ({
     const isCondensed = waterDrop > 0.1;
 
     return (
-        <div style={{ fontSize: "28px" }}>
+        <div style={{ fontSize: "27px" }}>
             <div
                 id="condensationText"
                 style={{ color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }}

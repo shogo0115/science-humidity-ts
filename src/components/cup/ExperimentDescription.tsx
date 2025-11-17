@@ -1,10 +1,10 @@
 import React from "react";
 
 type ExperimentDescriptionProps = {
-  initialOriginalTemperature: number;        // 実験開始時の室温
-  initialVapor: number;              // 実験開始時の水蒸気量
-  initialCupTemperature: number;     // 実験開始時に設定したコップの温度
-  isExperimentRunning: boolean;      // 実験中フラグ
+  initialOriginalTemperature: number;
+  initialVapor: number;
+  initialCupTemperature: number;
+  isExperimentRunning: boolean;
 };
 
 const ExperimentDescription: React.FC<ExperimentDescriptionProps> = ({
@@ -27,12 +27,6 @@ const ExperimentDescription: React.FC<ExperimentDescriptionProps> = ({
         空間内の水分量 {initialVapor.toFixed(1)} g/m³ の部屋にある
         コップを、ゆっくり {initialCupTemperature.toFixed(1)}℃ まで冷ましていきます。
       </p>
-
-      {isExperimentRunning && (
-        <p className="experiment-note">
-          ※実験中は条件（室温・水分量・コップの温度）を固定して観察します。
-        </p>
-      )}
     </div>
   );
 };
