@@ -1,6 +1,6 @@
 import React from "react";
 type ExperimentDescriptionProps = {
-    initialTemperature: number;
+    initialOriginalTemperature: number;
     initialVapor: number;
     initialCupTemperature: number;
     isExperimentRunning: boolean;

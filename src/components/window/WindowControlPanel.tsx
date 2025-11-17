@@ -1,27 +1,24 @@
 import React from "react";
 
 interface WindowControlPanelProps {
-  temperature: number;
-  saturationVapor: number;
+  originTemp: number;
   vapor: number;
-  cupTemperature: number;
-  waterDrop: number;
-  remainingVapor: number;
+  tergetTemp: number;
   isExperimentRunning: boolean;
-  setTemperature: (t: number) => void;
+  setOriginTemp: (t: number) => void;
   setVapor: (v: number) => void;
-  setCupTemperature: (ct: number) => void;
+  setTergetTemp: (ct: number) => void;
   toggleExperiment: () => void;
 }
 
 const WindowControlPanel: React.FC<WindowControlPanelProps> = ({
-  temperature,
+  originTemp,
   vapor,
-  cupTemperature,
+  tergetTemp,
   isExperimentRunning,
-  setTemperature,
+  setOriginTemp,
   setVapor,
-  setCupTemperature,
+  setTergetTemp,
   toggleExperiment
 }) => {
   const isDisabled = isExperimentRunning;
@@ -32,14 +29,14 @@ const WindowControlPanel: React.FC<WindowControlPanelProps> = ({
     <div className="graph-panel">
       <h3>実験条件設定</h3>
       <div className="graph-row">
-          <label>室温 (窓のまわりの温度)  [℃] ({temperature}℃)</label>
+          <label>室温 (窓のまわりの温度)  [℃] ({originTemp}℃)</label>
           <input
             type="range"
             min={14}
             max={25}
             step={0.1}
-            value={temperature}
-            onChange={(e) => setTemperature(parseFloat(e.target.value))}
+            value={originTemp}
+            onChange={(e) => setOriginTemp(parseFloat(e.target.value))}
             disabled={isDisabled}
           />
           <input
@@ -47,8 +44,8 @@ const WindowControlPanel: React.FC<WindowControlPanelProps> = ({
           min={14}
           max={25}
           step={0.1}
-          value={temperature}
-          onChange={(e) => setTemperature(parseFloat(e.target.value || "14"))}
+          value={originTemp}
+          onChange={(e) => setOriginTemp(parseFloat(e.target.value || "14"))}
           />
       </div>
 
@@ -74,14 +71,14 @@ const WindowControlPanel: React.FC<WindowControlPanelProps> = ({
       </div>
 
       <div className="graph-row">
-          <label>外の気温 [℃] ({cupTemperature}℃)</label>
+          <label>外の気温 [℃] ({tergetTemp}℃)</label>
           <input
             type="range"
             min={0}
             max={14}
             step={0.1}
-            value={cupTemperature}
-            onChange={(e) => setCupTemperature(parseFloat(e.target.value))}
+            value={tergetTemp}
+            onChange={(e) => setTergetTemp(parseFloat(e.target.value))}
             disabled={isDisabled}
           />
           <input
@@ -89,8 +86,8 @@ const WindowControlPanel: React.FC<WindowControlPanelProps> = ({
           min={0}
           max={14}
           step={0.1}
-          value={cupTemperature}
-          onChange={(e) => setTemperature(parseFloat(e.target.value || "0"))}
+          value={tergetTemp}
+          onChange={(e) => setOriginTemp(parseFloat(e.target.value || "0"))}
           />
       </div>
 

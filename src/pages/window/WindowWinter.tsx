@@ -29,9 +29,9 @@ const Cup: React.FC = () => {
   const navigate = useNavigate();
 
  /** ------- 空間の現在の状態 ------- */
- const [originTemp, setOriginTemp] = useState<number>(25.0); // 部屋の温度 (T)
- const [saturationVapor, setSaturationVapor] = useState<number>(23.0); // 飽和水蒸気量 (SV)
- const [vapor, setVapor] = useState<number>(11.5); // 空間の水蒸気量 (V)
+ const [originTemp, setOriginTemp] = useState<number>(25.0);
+ const [saturationVapor, setSaturationVapor] = useState<number>(23.0);
+ const [vapor, setVapor] = useState<number>(11.5);
  const [waterDrop, setWaterDrop] = useState<number>(0.0);
  const [humidity, setHumidity] = useState<number>(50);
  const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
@@ -176,18 +176,13 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         isExperimentRunning={isExperimentRunning}
         />
         <WindowControlPanel
-          // データ
-          temperature={originTemp}
-          saturationVapor={saturationVapor}
+          originTemp={originTemp}
           vapor={vapor}
-          cupTemperature={tergetTemp}
-          waterDrop={waterDrop}
-          remainingVapor={remainingVapor}
+          tergetTemp={tergetTemp}
           isExperimentRunning={isExperimentRunning}
-          // 関数
-          setTemperature={setOriginTemp}
+          setOriginTemp={setOriginTemp}
           setVapor={setVapor}
-          setCupTemperature={setTergetTemp}
+          setTergetTemp={setTergetTemp}
           toggleExperiment={toggleExperiment}
         />
       </div>

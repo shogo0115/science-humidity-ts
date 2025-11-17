@@ -196,41 +196,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/cup/cupCanvasAndLegend.css":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/cup/cupCanvasAndLegend.css ***!
-  \*****************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `.picture-layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto -40px auto;
-    min-height: 50vh;
-}`, "",{"version":3,"sources":["webpack://./src/components/cup/cupCanvasAndLegend.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,4BAA4B;IAC5B,gBAAgB;AACpB","sourcesContent":[".picture-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 20px auto -40px auto;\r\n    min-height: 50vh;\r\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/currentHumidityDisplay.css":
 /*!***********************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/components/graph/currentHumidityDisplay.css ***!
@@ -557,19 +522,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.card-link {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/cup/cup.css":
-/*!*********************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/cup/cup.css ***!
-  \*********************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/pages/experimentPage.css":
+/*!****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/pages/experimentPage.css ***!
+  \****************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
@@ -620,6 +585,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
     margin: 0px auto 0px auto;
     justify-content: center;
     align-items: center;
+}
+.picture-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto -40px auto;
+    min-height: 50vh;
 }
 
 .center-item-layout {
@@ -678,7 +653,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
     .graph-controls > * {
         flex: 1 1 100%;
     }
-}`, "",{"version":3,"sources":["webpack://./src/pages/cup/cup.css"],"names":[],"mappings":"AAAA,uDAAuD;AACvD,WAAW;AACX,uDAAuD;;AAEvD;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA,uDAAuD;AACvD,oBAAoB;AACpB,uDAAuD;;AAEvD;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,iBAAiB;IACjB,yBAAyB;IACzB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,SAAS;IACT,WAAW;IACX,gBAAgB;IAChB,0BAA0B;IAC1B,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,gBAAgB;IAChB,0BAA0B;IAC1B,uBAAuB;IACvB,oBAAoB;IACpB,mBAAmB;AACvB;;AAEA,uDAAuD;AACvD,qBAAqB;AACrB,uDAAuD;;AAEvD;IACI,aAAa;IACb,SAAS;IACT,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,eAAe;AACnB;AACA;IACI,OAAO;IACP,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA,uDAAuD;AACvD,aAAa;AACb,uDAAuD;;AAEvD;IACI,6BAA6B;IAC7B;;QAEI,sBAAsB;QACtB,iBAAiB;IACrB;;IAEA,sBAAsB;IACtB;;QAEI,cAAc;IAClB;AACJ","sourcesContent":["/* -------------------------------------------------- */\r\n/* 全体コンテナ */\r\n/* -------------------------------------------------- */\r\n\r\n.overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 上段エリア: 実験映像、グラフ */\r\n/* -------------------------------------------------- */\r\n\r\n.experiment-layout {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n}\r\n\r\n.experimental-footage {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.center-item-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 60px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin:250px auto 0px auto;\r\n    align-items: center;\r\n    font-size: 20px;\r\n}\r\n\r\n.graph-canvas {\r\n    padding: 20px;\r\n    max-width: 600px;\r\n    margin: 0px auto 50px auto;\r\n    background-color: white;\r\n    border-radius: 0.8vw;\r\n    align-items: center;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 下段エリア: 実験内容、条件設定 */\r\n/* -------------------------------------------------- */\r\n\r\n.graph-controls {\r\n    display: flex;\r\n    gap: 20px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0 auto;\r\n    font-size: 24px;\r\n}\r\n.graph-controls > * {\r\n    flex: 1;\r\n    padding: 15px;\r\n    border-radius: 12px;\r\n    min-height: 250px;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* レスポンシブ対応 */\r\n/* -------------------------------------------------- */\r\n\r\n@media (max-width: 1024px) {\r\n    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */\r\n    .experiment-main-layout,\r\n    .graph-controls {\r\n        flex-direction: column;\r\n        margin: 20px auto;\r\n    }\r\n\r\n    /* 各コンポーネントは幅いっぱいを使用 */\r\n    .experiment-main-layout > *,\r\n    .graph-controls > * {\r\n        flex: 1 1 100%;\r\n    }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/experimentPage.css"],"names":[],"mappings":"AAAA,uDAAuD;AACvD,WAAW;AACX,uDAAuD;;AAEvD;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA,uDAAuD;AACvD,oBAAoB;AACpB,uDAAuD;;AAEvD;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,iBAAiB;IACjB,yBAAyB;IACzB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,uBAAuB;IACvB,mBAAmB;AACvB;AACA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,4BAA4B;IAC5B,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,SAAS;IACT,WAAW;IACX,gBAAgB;IAChB,0BAA0B;IAC1B,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,gBAAgB;IAChB,0BAA0B;IAC1B,uBAAuB;IACvB,oBAAoB;IACpB,mBAAmB;AACvB;;AAEA,uDAAuD;AACvD,qBAAqB;AACrB,uDAAuD;;AAEvD;IACI,aAAa;IACb,SAAS;IACT,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,eAAe;AACnB;AACA;IACI,OAAO;IACP,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA,uDAAuD;AACvD,aAAa;AACb,uDAAuD;;AAEvD;IACI,6BAA6B;IAC7B;;QAEI,sBAAsB;QACtB,iBAAiB;IACrB;;IAEA,sBAAsB;IACtB;;QAEI,cAAc;IAClB;AACJ","sourcesContent":["/* -------------------------------------------------- */\r\n/* 全体コンテナ */\r\n/* -------------------------------------------------- */\r\n\r\n.overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 上段エリア: 実験映像、グラフ */\r\n/* -------------------------------------------------- */\r\n\r\n.experiment-layout {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n}\r\n\r\n.experimental-footage {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.picture-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 20px auto -40px auto;\r\n    min-height: 50vh;\r\n}\r\n\r\n.center-item-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 60px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin:250px auto 0px auto;\r\n    align-items: center;\r\n    font-size: 20px;\r\n}\r\n\r\n.graph-canvas {\r\n    padding: 20px;\r\n    max-width: 600px;\r\n    margin: 0px auto 50px auto;\r\n    background-color: white;\r\n    border-radius: 0.8vw;\r\n    align-items: center;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 下段エリア: 実験内容、条件設定 */\r\n/* -------------------------------------------------- */\r\n\r\n.graph-controls {\r\n    display: flex;\r\n    gap: 20px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0 auto;\r\n    font-size: 24px;\r\n}\r\n.graph-controls > * {\r\n    flex: 1;\r\n    padding: 15px;\r\n    border-radius: 12px;\r\n    min-height: 250px;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* レスポンシブ対応 */\r\n/* -------------------------------------------------- */\r\n\r\n@media (max-width: 1024px) {\r\n    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */\r\n    .experiment-main-layout,\r\n    .graph-controls {\r\n        flex-direction: column;\r\n        margin: 20px auto;\r\n    }\r\n\r\n    /* 各コンポーネントは幅いっぱいを使用 */\r\n    .experiment-main-layout > *,\r\n    .graph-controls > * {\r\n        flex: 1 1 100%;\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -704,39 +679,33 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* ----------------------------------------------------
- * 全体コンテナ
- * ---------------------------------------------------- */
-.graph-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  min-height: 100vh;
-  background-color: #f0f4f8;
-  font-family: 'Inter', sans-serif;
+___CSS_LOADER_EXPORT___.push([module.id, `.overall-layout {
+    display: flex;
+    padding: 20px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .page-button-layout {
   display: flex;
   flex-direction: row;
-
   gap: 16px;
   align-self: flex-start;
 }
 
-/* ----------------------------------------------------
- * メインレイアウト: グラフエリアとコントロールエリアの縦並び
- * ---------------------------------------------------- */
 .graph-main-layout {
   display: flex;
+  gap: 0px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0px auto 0px auto;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-
-  width: 100%;
-  max-width: 1700px;
-  margin-top: 30px; /* ボタンとの間隔 */
 }
 
 /* ----------------------------------------------------
@@ -746,11 +715,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
   display: flex;
   gap: 20px;
   flex-grow: 0;
-  max-width: 1700px;
+  max-width: 1500px;
   flex-shrink: 1;
 }
 
-/* 1. 凡例と公式のコンテナ (縦並び) */
 .legend-formula-column {
   display: flex;
   flex-direction: column;
@@ -759,32 +727,32 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
   flex-shrink: 1;
 }
 
-/* 2. グラフキャンバスのコンテナ (グラフ本体) */
-.graph-canvas-wrap {
-  flex-grow: 0;
-  width: 600px; /* ⬅️ ユーザー指定の最大幅を反映 */
-  flex-shrink: 1;
-
-  background-color: white;
+.graph-canvas {
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e0e6ed;
-  text-align: center;
+  max-width: 600px;
+  margin: 0px auto 50px auto;
+  background-color: white;
+  border-radius: 0.8vw;
+  align-items: center;
 }
 
 /* ----------------------------------------------------
  * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする
  * ---------------------------------------------------- */
 .graph-controls {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-
-  width: 620;
-  flex-shrink: 0;
-  flex-wrap: nowrap;
-}`, "",{"version":3,"sources":["webpack://./src/pages/graph/graph.css"],"names":[],"mappings":"AAAA;;yDAEyD;AACzD;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,aAAa;EACb,iBAAiB;EACjB,yBAAyB;EACzB,gCAAgC;AAClC;;AAEA;EACE,aAAa;EACb,mBAAmB;;EAEnB,SAAS;EACT,sBAAsB;AACxB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,SAAS;;EAET,WAAW;EACX,iBAAiB;EACjB,gBAAgB,EAAE,YAAY;AAChC;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA,wBAAwB;AACxB;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,YAAY;EACZ,cAAc;AAChB;;AAEA,6BAA6B;AAC7B;EACE,YAAY;EACZ,YAAY,EAAE,qBAAqB;EACnC,cAAc;;EAEd,uBAAuB;EACvB,aAAa;EACb,mBAAmB;EACnB,0CAA0C;EAC1C,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;;EAET,UAAU;EACV,cAAc;EACd,iBAAiB;AACnB","sourcesContent":["/* ----------------------------------------------------\r\n * 全体コンテナ\r\n * ---------------------------------------------------- */\r\n.graph-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 20px;\r\n  min-height: 100vh;\r\n  background-color: #f0f4f8;\r\n  font-family: 'Inter', sans-serif;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * メインレイアウト: グラフエリアとコントロールエリアの縦並び\r\n * ---------------------------------------------------- */\r\n.graph-main-layout {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  gap: 20px;\r\n\r\n  width: 100%;\r\n  max-width: 1700px;\r\n  margin-top: 30px; /* ボタンとの間隔 */\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * A. グラフエリア: 凡例/公式 と キャンバスを横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-area-wrap {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-grow: 0;\r\n  max-width: 1700px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n/* 1. 凡例と公式のコンテナ (縦並び) */\r\n.legend-formula-column {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  width: 400px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n/* 2. グラフキャンバスのコンテナ (グラフ本体) */\r\n.graph-canvas-wrap {\r\n  flex-grow: 0;\r\n  width: 600px; /* ⬅️ ユーザー指定の最大幅を反映 */\r\n  flex-shrink: 1;\r\n\r\n  background-color: white;\r\n  padding: 20px;\r\n  border-radius: 12px;\r\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);\r\n  border: 1px solid #e0e6ed;\r\n  text-align: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-controls {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 20px;\r\n\r\n  width: 620;\r\n  flex-shrink: 0;\r\n  flex-wrap: nowrap;\r\n}"],"sourceRoot":""}]);
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+.graph-controls > * {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    min-height: 250px;
+}`, "",{"version":3,"sources":["webpack://./src/pages/graph/graph.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,QAAQ;EACR,WAAW;EACX,iBAAiB;EACjB,yBAAyB;EACzB,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,0BAA0B;EAC1B,uBAAuB;EACvB,oBAAoB;EACpB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;IACI,aAAa;IACb,SAAS;IACT,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,eAAe;AACnB;AACA;IACI,OAAO;IACP,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB","sourcesContent":[".overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n.graph-main-layout {\r\n  display: flex;\r\n  gap: 0px;\r\n  width: 100%;\r\n  max-width: 1500px;\r\n  margin: 0px auto 0px auto;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * A. グラフエリア: 凡例/公式 と キャンバスを横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-area-wrap {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-grow: 0;\r\n  max-width: 1500px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.legend-formula-column {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  width: 400px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.graph-canvas {\r\n  padding: 20px;\r\n  max-width: 600px;\r\n  margin: 0px auto 50px auto;\r\n  background-color: white;\r\n  border-radius: 0.8vw;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-controls {\r\n    display: flex;\r\n    gap: 20px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0 auto;\r\n    font-size: 24px;\r\n}\r\n.graph-controls > * {\r\n    flex: 1;\r\n    padding: 15px;\r\n    border-radius: 12px;\r\n    min-height: 250px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -46710,6 +46678,158 @@ exports["default"] = exports.FurnitureSelectButton;
 
 /***/ }),
 
+/***/ "./src/components/common/HumidityGraphCanvasMini.tsx":
+/*!***********************************************************!*\
+  !*** ./src/components/common/HumidityGraphCanvasMini.tsx ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.satPress = satPress;
+exports.satVapor = satVapor;
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+// 飽和水蒸気圧 [hPa]
+function satPress(T) {
+    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
+}
+// 飽和水蒸気量 [g/m³]
+function satVapor(T) {
+    return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
+}
+// --- 描画に必要な定数 ---
+const AXIS = {
+    width: 580,
+    height: 530,
+    padding: 50,
+    xScale: 10, // 1℃ あたり 10px
+    yScale: 5, // 1g/m³ あたり 5px
+    xMax: 60, // 最大温度 50℃
+    yMax: 90, // 最大水蒸気量 90g/m³
+    zeroX: 50, // 0℃ の位置
+    zeroY: 480, // 0g/m³ の位置
+};
+const HumidityGraphCanvasMini = ({ temp, saturationVapor, vapor, waterDrop, remainingVapor, xAxisLabel, yAxisLabel, }) => {
+    const canvasRef = (0, react_1.useRef)(null);
+    (0, react_1.useEffect)(() => {
+        const canvas = canvasRef.current;
+        if (!canvas)
+            return;
+        const ctx = canvas.getContext('2d');
+        if (!ctx)
+            return;
+        // ------------------------------------
+        // 描画ロジックの定義
+        // ------------------------------------
+        const toX = (temp) => AXIS.zeroX + temp * AXIS.xScale;
+        const toY = (vapor) => AXIS.zeroY - vapor * AXIS.yScale;
+        const toScreenY = (vapor) => vapor * AXIS.yScale;
+        const drawAxis = () => {
+            ctx.clearRect(0, 0, AXIS.width, AXIS.height);
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            // Y軸 (飽和水蒸気量)
+            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
+            ctx.lineTo(AXIS.zeroX, AXIS.padding / 2);
+            // X軸
+            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
+            ctx.lineTo(AXIS.width, AXIS.zeroY);
+            ctx.stroke();
+        };
+        const drawScale = () => {
+            ctx.fillStyle = '#333';
+            ctx.font = '18px Arial';
+            // --- X軸（縦線）グリッド ---
+            for (let t = 0; t <= AXIS.xMax; t += 5) { // 5℃ ごと
+                ctx.strokeStyle = '#ddd';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(toX(t), AXIS.zeroY);
+                ctx.lineTo(toX(t), AXIS.padding / 2);
+                ctx.stroke();
+            }
+            // --- Y軸（横線）グリッド ---
+            for (let v = 0; v <= AXIS.yMax; v += 10) { // 10g/m³ ごと
+                ctx.strokeStyle = '#ddd';
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(AXIS.zeroX, toY(v));
+                ctx.lineTo(toX(AXIS.xMax), toY(v));
+                ctx.stroke();
+            }
+            // X軸スケール (温度)
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'top';
+            for (let t = 0; t <= AXIS.xMax; t += 10) {
+                ctx.fillText(`${t}`, toX(t), AXIS.zeroY + 5);
+            }
+            // X軸タイトル (温度)
+            ctx.font = '20px Arial';
+            ctx.fillText(xAxisLabel, AXIS.width / 2, AXIS.zeroY + 30);
+            ctx.font = '18px Arial';
+            // Y軸スケール (飽和水蒸気量)
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'middle';
+            for (let v = 0; v <= AXIS.yMax; v += 10) {
+                if (v !== 0)
+                    ctx.fillText(`${v}`, AXIS.zeroX - 5, toY(v));
+            }
+            // Y軸タイトル (回転)
+            ctx.save();
+            ctx.translate(10, AXIS.height / 2 - 50);
+            ctx.rotate(-Math.PI / 2);
+            ctx.font = '20px Arial';
+            ctx.fillText(yAxisLabel, 0, 0);
+            ctx.restore();
+        };
+        const drawCurve = () => {
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(toX(0), toY(satVapor(0)));
+            for (let t = 0; t <= AXIS.xMax; t += 0.25) {
+                ctx.lineTo(toX(t), toY(satVapor(t)));
+            }
+            ctx.stroke();
+        };
+        const plotPointAndBar = (t, sv, v, wd, rv) => {
+            const barWidth = 8;
+            const barX = toX(t) - barWidth / 2;
+            const drawnVaporAmount = Math.min(v, sv);
+            // ------------------------------------
+            // 棒グラフの描画 (3層構造)
+            // ------------------------------------
+            // (A) 水滴の量
+            if (wd > 0) {
+                const waterDropHeight = toScreenY(wd);
+                ctx.fillStyle = 'rgba(0, 255, 0, 0.5)';
+                ctx.fillRect(barX, toY(sv), barWidth, -waterDropHeight);
+            }
+            // (B) 空間内の水蒸気量
+            const vaporHeight = toScreenY(drawnVaporAmount);
+            ctx.fillStyle = '#3498db';
+            ctx.fillRect(barX, AXIS.zeroY, barWidth, -vaporHeight);
+            // (C) 残りの水蒸気量
+            if (rv > 0 && sv > v) {
+                const remainingHeight = toScreenY(rv);
+                ctx.fillStyle = '#f39c12';
+                ctx.fillRect(barX, toY(v), barWidth, -remainingHeight);
+            }
+        };
+        drawAxis();
+        drawScale();
+        drawCurve();
+        plotPointAndBar(temp, saturationVapor, vapor, waterDrop, remainingVapor);
+    }, [temp, saturationVapor, vapor, waterDrop, remainingVapor, xAxisLabel, yAxisLabel]);
+    return ((0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, width: AXIS.width, height: AXIS.height, style: { border: '0px solid #ccc' } }));
+};
+exports["default"] = HumidityGraphCanvasMini;
+
+
+/***/ }),
+
 /***/ "./src/components/common/PageSelectButton.tsx":
 /*!****************************************************!*\
   !*** ./src/components/common/PageSelectButton.tsx ***!
@@ -46850,9 +46970,9 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const CondensationStatusDisplay = ({ waterDrop, humidity, }) => {
     const isCondensed = waterDrop > 0.1;
-    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "28px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", className: "text-lg mb-2 transition-colors duration-300", style: { color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
+    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "28px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
                     `結露が発生！ (${waterDrop.toFixed(1)}g/m³)` :
-                    "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", className: "text-sm text-gray-700", children: ["\u30B3\u30C3\u30D7\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
+                    "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", children: ["\u30B3\u30C3\u30D7\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
 };
 exports["default"] = CondensationStatusDisplay;
 
@@ -46868,25 +46988,24 @@ exports["default"] = CondensationStatusDisplay;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-__webpack_require__(/*! ./cupCanvasAndLegend.css */ "./src/components/cup/cupCanvasAndLegend.css");
 function getCupImageName(cupTemperature, cupWaterDrop) {
     let roundedTemp;
     // 0℃の場合の特別処理: 0℃は0に、それより大きい場合は5の倍数に切り上げ
     if (cupTemperature <= 0.1) {
         roundedTemp = 2.5;
     }
-    else if (cupTemperature >= 17.5) {
+    else if (cupTemperature > 15) {
         roundedTemp = 17.5;
     }
     else {
-        roundedTemp = Math.ceil(cupTemperature / 2.5) * 2.5;
+        roundedTemp = Math.ceil(cupTemperature / 5) * 5;
     }
     const roundedWater = Math.min(Math.ceil(cupWaterDrop / 5) * 5, 35);
     return `/glass/glass-${roundedTemp * 2}-${roundedWater}.png`;
 }
-const CupCanvasAndLegend = ({ waterDrop, cupTemperature }) => {
-    const cupImageName = getCupImageName(cupTemperature, waterDrop);
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "picture-layout", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `コップの周りの状態: 温度${cupTemperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³` }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/glass/glass-color.png", alt: "\u6C34\u306E\u6E29\u5EA6\u8AAC\u660E\u753B\u50CF" })] }));
+const CupCanvasAndLegend = ({ waterDrop, tergetTemp: tergetTemp }) => {
+    const cupImageName = getCupImageName(tergetTemp, waterDrop);
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "picture-layout", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `コップの周りの状態: 温度${tergetTemp.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³`, style: { width: '300px', height: 'auto' } }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/glass/glass-color.png", alt: "\u6C34\u306E\u6E29\u5EA6\u8AAC\u660E\u753B\u50CF", style: { width: '400px', height: 'auto' } })] }));
 };
 exports["default"] = CupCanvasAndLegend;
 
@@ -46955,11 +47074,11 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 __webpack_require__(/*! ./CupControlPanel.css */ "./src/components/cup/CupControlPanel.css");
-const CupControlPanel = ({ temperature, vapor, cupTemperature, isExperimentRunning, setTemperature, setVapor, setCupTemperature, toggleExperiment }) => {
+const CupControlPanel = ({ originTemp, vapor, tergetTemp, isExperimentRunning, setOriginTemp, setVapor, setTergetTemp, toggleExperiment }) => {
     const isDisabled = isExperimentRunning;
     const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
     const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u90E8\u5C4B\u306E\u6E29\u5EA6 [\u2103] (", temperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 20, max: 40, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 20, max: 40, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "20")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6 [\u2103] (", cupTemperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 20, step: 0.1, value: cupTemperature, onChange: (e) => setCupTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 20, step: 0.1, value: cupTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u90E8\u5C4B\u306E\u6E29\u5EA6 [\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 20, max: 40, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 20, max: 40, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "20")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6 [\u2103] (", tergetTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 20, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 20, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
 };
 exports["default"] = CupControlPanel;
 
@@ -46975,233 +47094,10 @@ exports["default"] = CupControlPanel;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const ExperimentDescription = ({ initialTemperature, initialVapor, initialCupTemperature, isExperimentRunning, }) => {
+const ExperimentDescription = ({ initialOriginalTemperature: initialTemperature, initialVapor, initialCupTemperature, isExperimentRunning, }) => {
     return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u7D50\u9732\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u7A7A\u6C17\u4E2D\u306B\u542B\u307E\u308C\u308B\u6C34\u84B8\u6C17\u304C\u30B3\u30C3\u30D7\u306E\u51B7\u305F\u3044\u7E01\u306B\u89E6\u308C\u308B\u3068\u3001\u305D\u306E\u90E8\u5206\u306E\u7A7A\u6C17\u304C\u51B7\u3084\u3055\u308C\u3001 \u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u305F\u6C34\u84B8\u6C17\u304C\u51DD\u7E2E\u3057\u3066\u6C34\u6EF4\u3068\u3057\u3066\u73FE\u308C\u307E\u3059\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u306E\u90E8\u5C4B\u306B\u3042\u308B \u30B3\u30C3\u30D7\u3092\u3001\u3086\u3063\u304F\u308A ", initialCupTemperature.toFixed(1), "\u2103 \u307E\u3067\u51B7\u307E\u3057\u3066\u3044\u304D\u307E\u3059\u3002"] }), isExperimentRunning && ((0, jsx_runtime_1.jsx)("p", { className: "experiment-note", children: "\u203B\u5B9F\u9A13\u4E2D\u306F\u6761\u4EF6\uFF08\u5BA4\u6E29\u30FB\u6C34\u5206\u91CF\u30FB\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6\uFF09\u3092\u56FA\u5B9A\u3057\u3066\u89B3\u5BDF\u3057\u307E\u3059\u3002" }))] }));
 };
 exports["default"] = ExperimentDescription;
-
-
-/***/ }),
-
-/***/ "./src/components/cup/HumidityGraphCanvasMini.tsx":
-/*!********************************************************!*\
-  !*** ./src/components/cup/HumidityGraphCanvasMini.tsx ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.satPress = satPress;
-exports.satVapor = satVapor;
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-//import "./savedHumidityDisplay.css";
-function satPress(T) {
-    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
-}
-function satVapor(T) {
-    return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
-}
-// --- 描画に必要な定数 ---
-const AXIS = {
-    width: 580,
-    height: 530,
-    padding: 50,
-    xScale: 10, // 1℃ あたり 10px
-    yScale: 5, // 1g/m³ あたり 5px
-    xMax: 60, // 最大温度 50℃
-    yMax: 90, // 最大水蒸気量 90g/m³
-    zeroX: 50, // 0℃ の位置
-    zeroY: 480, // 0g/m³ の位置
-};
-const HumidityGraphCanvasMini = ({ temperature, saturationVapor, vapor, waterDrop, remainingVapor, }) => {
-    const canvasRef = (0, react_1.useRef)(null);
-    (0, react_1.useEffect)(() => {
-        const canvas = canvasRef.current;
-        if (!canvas)
-            return;
-        const ctx = canvas.getContext('2d');
-        if (!ctx)
-            return;
-        // ------------------------------------
-        // 1. ヘルパー関数の定義 (座標変換)
-        // ------------------------------------
-        const toX = (temp) => AXIS.zeroX + temp * AXIS.xScale;
-        const toY = (vapor) => AXIS.zeroY - vapor * AXIS.yScale;
-        const toScreenY = (vapor) => vapor * AXIS.yScale;
-        // ------------------------------------
-        // 2. 描画ロジックの定義 (Graph.tsxから全て移動)
-        // ------------------------------------
-        const drawAxis = () => {
-            // 軸を描画するロジック
-            ctx.clearRect(0, 0, AXIS.width, AXIS.height);
-            ctx.strokeStyle = 'black';
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            // Y軸 (飽和水蒸気量)
-            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
-            ctx.lineTo(AXIS.zeroX, -AXIS.height);
-            // X軸 (温度)
-            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
-            ctx.lineTo(AXIS.width, AXIS.zeroY);
-            ctx.stroke();
-        };
-        const drawScale = () => {
-            ctx.fillStyle = '#333';
-            ctx.font = '18px Arial';
-            // ------------------------------------
-            // ★ 1. グリッド線の描画
-            // ------------------------------------
-            // --- X軸（縦線）グリッド ---
-            for (let t = 0; t <= AXIS.xMax; t += 1) {
-                // 5℃ごと（目盛り位置）は太い線にする
-                if (t % 5 === 0) {
-                    ctx.strokeStyle = '#999';
-                    ctx.lineWidth = 1;
-                }
-                ctx.beginPath();
-                ctx.moveTo(toX(t), AXIS.zeroY);
-                ctx.lineTo(toX(t), -AXIS.height);
-                ctx.stroke();
-            }
-            // --- Y軸（横線）グリッド ---
-            for (let v = 0; v <= AXIS.yMax; v += 1) {
-                // 10g/m³ごと（目盛り位置）は太い線にする
-                if (v % 10 === 0) {
-                    ctx.strokeStyle = '#999';
-                    ctx.lineWidth = 1;
-                }
-                ctx.beginPath();
-                ctx.moveTo(AXIS.zeroX, toY(v));
-                ctx.lineTo(toX(AXIS.xMax), toY(v));
-                ctx.stroke();
-            }
-            // ------------------------------------
-            // ★ 2. テキストラベルの描画（既存ロジック）
-            // ------------------------------------
-            // X軸タイトル (温度)
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'top';
-            for (let t = 0; t <= AXIS.xMax; t += 10) {
-                ctx.fillText(`${t}`, toX(t), AXIS.zeroY + 5);
-            }
-            ctx.fillText('コップの温度 [℃]', AXIS.width / 2, AXIS.zeroY + 30);
-            // Y軸スケール (飽和水蒸気量)
-            ctx.textAlign = 'right';
-            ctx.textBaseline = 'middle';
-            for (let v = 0; v <= AXIS.yMax; v += 10) {
-                if (v !== 0)
-                    ctx.fillText(`${v}`, AXIS.zeroX - 5, toY(v));
-            }
-            // Y軸タイトル (回転)
-            ctx.save();
-            ctx.translate(10, AXIS.height / 2 - 50);
-            ctx.rotate(-Math.PI / 2);
-            ctx.fillText('飽和水蒸気量 [g/m³]', 0, 0);
-            ctx.restore();
-        };
-        const drawCurve = () => {
-            // 飽和水蒸気量曲線を描画するロジック
-            ctx.strokeStyle = '#333';
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            ctx.moveTo(toX(0), toY(satVapor(0)));
-            for (let t = 0; t <= AXIS.xMax; t += 0.25) {
-                ctx.lineTo(toX(t), toY(satVapor(t)));
-            }
-            ctx.stroke();
-        };
-        const plotPointAndBar = (t, sv, v, wd, rv) => {
-            const barWidth = 8;
-            const barX = toX(t);
-            -barWidth / 2;
-            const drawnVaporAmount = Math.min(v, sv);
-            // ------------------------------------
-            // 1. 棒グラフの描画 (3層構造)
-            // ------------------------------------
-            // (A) 水滴の量 (WaterDrop) - 最も上 (飽和ラインの上)
-            // v > sv の場合に wd > 0 となる
-            if (wd > 0) {
-                ctx.fillStyle = 'rgba(0, 255, 0, 0.5)';
-                ctx.fillRect(barX, toY(sv), barWidth, -toScreenY(wd));
-            }
-            // (B) 空間内の水蒸気量 (Vapor)
-            ctx.fillStyle = '#3498db';
-            ctx.fillRect(barX, toY(drawnVaporAmount), barWidth, toScreenY(drawnVaporAmount));
-            // (C) 残りの水蒸気量 (RemainingVapor)
-            if (rv > 0) {
-                ctx.fillStyle = '#f39c12';
-                ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
-            }
-        };
-        // ------------------------------------
-        // 3. 全ての描画処理を実行
-        // ------------------------------------
-        drawAxis();
-        drawScale();
-        drawCurve();
-        plotPointAndBar(temperature, saturationVapor, vapor, waterDrop, remainingVapor);
-    }, [temperature,
-        saturationVapor,
-        vapor,
-        waterDrop,
-        remainingVapor
-    ]);
-    return ((0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, width: AXIS.width, height: AXIS.height, style: { border: '0px solid #ccc' } }));
-};
-exports["default"] = HumidityGraphCanvasMini;
-
-
-/***/ }),
-
-/***/ "./src/components/cup/cupCanvasAndLegend.css":
-/*!***************************************************!*\
-  !*** ./src/components/cup/cupCanvasAndLegend.css ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./cupCanvasAndLegend.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/cup/cupCanvasAndLegend.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_cupCanvasAndLegend_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -47216,7 +47112,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 __webpack_require__(/*! ./currentHumidityDisplay.css */ "./src/components/graph/currentHumidityDisplay.css");
-// Row コンポーネントもクラスベースに修正
 const Row = ({ label, children, }) => {
     return ((0, jsx_runtime_1.jsxs)("div", { className: "row-container", children: [(0, jsx_runtime_1.jsx)("label", { className: "row-label", children: label }), (0, jsx_runtime_1.jsx)("div", { className: "row-controls", children: children })] }));
 };
@@ -47226,9 +47121,7 @@ const CurrentHumidityDisplay = ({ temperature, saturationVapor, vapor, humidity,
     const humidityEnabled = anyFixed;
     const isSaturationVaporAlert = saturationVapor >= 82.8;
     const isTemperatureAlert = temperature >= 50.0;
-    return (
-    // クラス名でコンテナのスタイルを設定
-    (0, jsx_runtime_1.jsxs)("div", { className: "graph-panel1", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u7A7A\u9593\u306E\u72B6\u614B" }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6E29\u5EA6 [\u2103]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 50, step: 0.1, value: temperature, disabled: fixTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 50, step: 0.1, value: temperature, disabled: fixTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "0")), className: `input-compact ${isTemperatureAlert ? "text-alert" : ""}` }), (0, jsx_runtime_1.jsx)("span", { children: "\u2103" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF [g/m\u00B3]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 82.8, step: 0.1, value: saturationVapor, disabled: fixTemperature, onChange: (e) => setSaturationVapor(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 82.8, step: 0.1, value: saturationVapor, disabled: fixTemperature, onChange: (e) => setSaturationVapor(parseFloat(e.target.value || "4.9")), className: `input-compact ${isSaturationVaporAlert ? "text-alert" : ""}` }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 90, step: 0.1, value: vapor, disabled: fixVapor, onChange: (e) => setVapor(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 90, step: 0.1, value: vapor, disabled: fixVapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")), className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6E7F\u5EA6 [%]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 5.9, max: 100, step: 0.1, value: humidity, disabled: !humidityEnabled, onChange: (e) => setHumidity(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5.9, max: 100, step: 0.1, value: humidity, disabled: !humidityEnabled, onChange: (e) => setHumidity(parseFloat(e.target.value || "5.9")), className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "%" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6C34\u6EF4\u306E\u91CF [g/m\u00B3]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 85.1, step: 0.1, value: waterDrop, disabled: true, readOnly: true }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 85.1, step: 0.1, value: waterDrop, disabled: true, readOnly: true, className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "btn-group", children: [(0, jsx_runtime_1.jsx)("button", { onClick: toggleFixTemperature, className: `btn ${fixTemperature ? "active" : ""}`, children: fixTemperature ? "温度を固定中" : "温度を固定" }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleFixVapor, className: `btn ${fixVapor ? "active" : ""}`, children: fixVapor ? "水分量を固定中" : "水分量を固定" }), (0, jsx_runtime_1.jsx)("button", { onClick: saveState, className: "btn", children: "\u521D\u3081\u306E\u7A7A\u9593\u306E\u72B6\u614B\u3068\u3057\u3066\u4FDD\u5B58" })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel1", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u7A7A\u9593\u306E\u72B6\u614B" }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6E29\u5EA6 [\u2103](0~50\u2103)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 50, step: 0.1, value: temperature, disabled: fixTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 50, step: 0.1, value: temperature, disabled: fixTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "0")), className: `input-compact ${isTemperatureAlert ? "text-alert" : ""}` }), (0, jsx_runtime_1.jsx)("span", { children: "\u2103" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF [g/m\u00B3](4.9~82.8g/m\u00B3)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 82.8, step: 0.1, value: saturationVapor, disabled: fixTemperature, onChange: (e) => setSaturationVapor(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 82.8, step: 0.1, value: saturationVapor, disabled: fixTemperature, onChange: (e) => setSaturationVapor(parseFloat(e.target.value || "4.9")), className: `input-compact ${isSaturationVaporAlert ? "text-alert" : ""}` }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3](4.9~90.0g/m\u00B3)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 90, step: 0.1, value: vapor, disabled: fixVapor, onChange: (e) => setVapor(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 90, step: 0.1, value: vapor, disabled: fixVapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")), className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6E7F\u5EA6 [%](5.9~100%)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 5.9, max: 100, step: 0.1, value: humidity, disabled: !humidityEnabled, onChange: (e) => setHumidity(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5.9, max: 100, step: 0.1, value: humidity, disabled: !humidityEnabled, onChange: (e) => setHumidity(parseFloat(e.target.value || "5.9")), className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "%" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6C34\u6EF4\u306E\u91CF [g/m\u00B3](0~85.1g/m\u00B3)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 85.1, step: 0.1, value: waterDrop, disabled: true, readOnly: true }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 85.1, step: 0.1, value: waterDrop, disabled: true, readOnly: true, className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "btn-group", children: [(0, jsx_runtime_1.jsx)("button", { onClick: toggleFixTemperature, className: `btn ${fixTemperature ? "active" : ""}`, children: fixTemperature ? "温度を固定中" : "温度を固定" }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleFixVapor, className: `btn ${fixVapor ? "active" : ""}`, children: fixVapor ? "水分量を固定中" : "水分量を固定" }), (0, jsx_runtime_1.jsx)("button", { onClick: saveState, className: "btn", children: "\u521D\u3081\u306E\u7A7A\u9593\u306E\u72B6\u614B\u3068\u3057\u3066\u4FDD\u5B58" })] })] }));
 };
 exports["default"] = CurrentHumidityDisplay;
 
@@ -47248,7 +47141,7 @@ exports.satVapor = satVapor;
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 __webpack_require__(/*! ./savedHumidityDisplay.css */ "./src/components/graph/savedHumidityDisplay.css");
-// --- 描画に必要な定数 (Graph.tsx から移動を想定) ---
+// --- 描画に必要な定数 ---
 function satPress(T) {
     return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
 }
@@ -47277,14 +47170,11 @@ const HumidityGraphCanvas = ({ temperature, saturationVapor, vapor, waterDrop, r
         if (!ctx)
             return;
         // ------------------------------------
-        // 1. ヘルパー関数の定義 (座標変換)
+        // グラフの描画
         // ------------------------------------
         const toX = (temp) => AXIS.zeroX + temp * AXIS.xScale;
         const toY = (vapor) => AXIS.zeroY - vapor * AXIS.yScale;
         const toScreenY = (vapor) => vapor * AXIS.yScale;
-        // ------------------------------------
-        // 2. 描画ロジックの定義 (Graph.tsxから全て移動)
-        // ------------------------------------
         const drawAxis = () => {
             // 軸を描画するロジック
             ctx.clearRect(0, 0, AXIS.width, AXIS.height);
@@ -47302,14 +47192,10 @@ const HumidityGraphCanvas = ({ temperature, saturationVapor, vapor, waterDrop, r
         const drawScale = () => {
             ctx.fillStyle = '#333';
             ctx.font = '18px Arial';
-            // ------------------------------------
-            // ★ 1. グリッド線の描画
-            // ------------------------------------
             // --- X軸（縦線）グリッド ---
             for (let t = 0; t <= AXIS.xMax; t += 1) {
                 ctx.strokeStyle = '#ddd';
                 ctx.lineWidth = 0.5;
-                // 10℃ごと（目盛り位置）は太い線にする
                 if (t % 10 === 0) {
                     ctx.strokeStyle = '#999';
                     ctx.lineWidth = 1;
@@ -47323,7 +47209,6 @@ const HumidityGraphCanvas = ({ temperature, saturationVapor, vapor, waterDrop, r
             for (let v = 0; v <= AXIS.yMax; v += 1) {
                 ctx.strokeStyle = '#ddd';
                 ctx.lineWidth = 0.5;
-                // 10g/m³ごと（目盛り位置）は太い線にする
                 if (v % 10 === 0) {
                     ctx.strokeStyle = '#999';
                     ctx.lineWidth = 1;
@@ -47333,9 +47218,6 @@ const HumidityGraphCanvas = ({ temperature, saturationVapor, vapor, waterDrop, r
                 ctx.lineTo(toX(AXIS.xMax), toY(v));
                 ctx.stroke();
             }
-            // ------------------------------------
-            // ★ 2. テキストラベルの描画（既存ロジック）
-            // ------------------------------------
             // X軸タイトル (温度)
             ctx.textAlign = 'center';
             ctx.textBaseline = 'top';
@@ -47374,10 +47256,9 @@ const HumidityGraphCanvas = ({ temperature, saturationVapor, vapor, waterDrop, r
             -barWidth / 2;
             const drawnVaporAmount = Math.min(v, sv);
             // ------------------------------------
-            // 1. 棒グラフの描画 (3層構造)
+            //  棒グラフの描画 (3層構造)
             // ------------------------------------
-            // (A) 水滴の量 (WaterDrop) - 最も上 (飽和ラインの上)
-            // v > sv の場合に wd > 0 となる
+            // (A) 水滴の量 (WaterDrop)
             if (wd > 0) {
                 ctx.fillStyle = isSaved ? 'rgba(0, 255, 0, 0.5)' : '#1abc9c';
                 ctx.fillRect(barX, toY(sv), barWidth, -toScreenY(wd));
@@ -47390,32 +47271,7 @@ const HumidityGraphCanvas = ({ temperature, saturationVapor, vapor, waterDrop, r
                 ctx.fillStyle = isSaved ? 'rgba(255, 165, 0, 0.5)' : '#f39c12';
                 ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
             }
-            /*
-            // ------------------------------------
-            // 2. 飽和水蒸気量レベルの横線
-            // ------------------------------------
-            ctx.strokeStyle = isSaved ? 'blue' : 'red'; // 保存:青 / 現在:赤 (参考コードに合わせる)
-            ctx.lineWidth = 2;
-            ctx.beginPath();
-            // グラフの左端からX軸の最大値(toX(AXIS.xMax))まで線を引く
-            ctx.moveTo(AXIS.zeroX, toY(drawnVaporAmount));
-            ctx.lineTo(toX(AXIS.xMax), toY(drawnVaporAmount));
-            ctx.stroke();
-      
-            // ------------------------------------
-            // 3. 点 (プロット) の描画
-            // ------------------------------------
-            // 水分総量 (vaporTotal) の位置に点を打つ
-            const pointY = toY(vaporTotal);
-            ctx.fillStyle = isSaved ? 'purple' : 'black'; // 点の色 (以前のやり取りの提案に合わせる)
-            ctx.beginPath();
-            ctx.arc(toX(barX), toY(sv), 5, 0, 2 * Math.PI);
-            ctx.fill();
-            */
         };
-        // ------------------------------------
-        // 3. 全ての描画処理を実行
-        // ------------------------------------
         drawAxis();
         drawScale();
         drawCurve();
@@ -47647,9 +47503,9 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const CondensationStatusDisplay = ({ water, humidity, }) => {
     const isCondensed = water == 0.0;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "flex flex-col items-center p-3 mt-4 w-full bg-white rounded-lg shadow-md border border-gray-200", children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", className: "text-lg mb-2 transition-colors duration-300", style: { color: isCondensed ? "#2688f8ff" : "#1ffd74ff", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
-                    `タオルは濡れている (${water.toFixed(1)}g/m³)` :
-                    "タオルが乾いた" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", className: "text-sm text-gray-700", children: ["\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "27px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "#1dd664ff" : "#2688f8ff", fontWeight: isCondensed ? "normal" : "bold" }, children: isCondensed ?
+                    "タオルが乾いた" :
+                    `タオルは濡れている (${water.toFixed(1)}g/m³)` }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", className: "text-sm text-gray-700", children: ["\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
 };
 exports["default"] = CondensationStatusDisplay;
 
@@ -47669,172 +47525,6 @@ const ExperimentDescription = ({ initialTemperature, initialVapor, initialWater,
     return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u84B8\u767A\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u306F\u6E29\u5EA6\u306B\u3088\u3063\u3066\u6C7A\u5B9A\u3057\u3001\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u4E0A\u56DE\u308B\u6C34\u5206\u306F\u84B8\u767A\u3057\u307E\u305B\u3093\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u6C34\u84B8\u6C17\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u5165\u3063\u3066\u3044\u308B1m\u00B3\u306E\u5BC6\u9589\u7A7A\u9593\u306B \u3042\u308B\u30BF\u30AA\u30EB\u304C\u6C34\u3092 ", initialWater.toFixed(1), "g \u542B\u3093\u3067\u3044\u308B\u3068\u304D\u6642\u9593\u7D4C\u904E\u3067\u4E7E\u304F\u306E\u304B\u3092\u89B3\u5BDF\u3059\u308B\u3002"] }), isExperimentRunning && ((0, jsx_runtime_1.jsx)("p", { className: "experiment-note", children: "\u203B\u5B9F\u9A13\u4E2D\u306F\u6761\u4EF6\uFF08\u5BA4\u6E29\u30FB\u6C34\u5206\u91CF\u30FB\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6\uFF09\u3092\u56FA\u5B9A\u3057\u3066\u89B3\u5BDF\u3057\u307E\u3059\u3002" }))] }));
 };
 exports["default"] = ExperimentDescription;
-
-
-/***/ }),
-
-/***/ "./src/components/towel/HumidityGraphCanvasMini.tsx":
-/*!**********************************************************!*\
-  !*** ./src/components/towel/HumidityGraphCanvasMini.tsx ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.satPress = satPress;
-exports.satVapor = satVapor;
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function satPress(T) {
-    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
-}
-function satVapor(T) {
-    return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
-}
-// --- 描画に必要な定数 ---
-const AXIS = {
-    width: 580,
-    height: 530,
-    padding: 50,
-    xScale: 10, // 1℃ あたり 10px
-    yScale: 5, // 1g/m³ あたり 5px
-    xMax: 60, // 最大温度 50℃
-    yMax: 90, // 最大水蒸気量 90g/m³
-    zeroX: 50, // 0℃ の位置
-    zeroY: 480, // 0g/m³ の位置
-};
-const HumidityGraphCanvasMini = ({ temperature, saturationVapor, vapor, waterDrop, remainingVapor, }) => {
-    const canvasRef = (0, react_1.useRef)(null);
-    (0, react_1.useEffect)(() => {
-        const canvas = canvasRef.current;
-        if (!canvas)
-            return;
-        const ctx = canvas.getContext('2d');
-        if (!ctx)
-            return;
-        // ------------------------------------
-        // 1. ヘルパー関数の定義 (座標変換)
-        // ------------------------------------
-        const toX = (temp) => AXIS.zeroX + temp * AXIS.xScale;
-        const toY = (vapor) => AXIS.zeroY - vapor * AXIS.yScale;
-        const toScreenY = (vapor) => vapor * AXIS.yScale;
-        // ------------------------------------
-        // 2. 描画ロジックの定義 (Graph.tsxから全て移動)
-        // ------------------------------------
-        const drawAxis = () => {
-            // 軸を描画するロジック
-            ctx.clearRect(0, 0, AXIS.width, AXIS.height);
-            ctx.strokeStyle = 'black';
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            // Y軸 (飽和水蒸気量)
-            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
-            ctx.lineTo(AXIS.zeroX, -AXIS.height);
-            // X軸 (温度)
-            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
-            ctx.lineTo(AXIS.width, AXIS.zeroY);
-            ctx.stroke();
-        };
-        const drawScale = () => {
-            ctx.fillStyle = '#333';
-            ctx.font = '18px Arial';
-            // ------------------------------------
-            // ★ 1. グリッド線の描画
-            // ------------------------------------
-            // --- X軸（縦線）グリッド ---
-            for (let t = 0; t <= AXIS.xMax; t += 1) {
-                // 5℃ごと（目盛り位置）は太い線にする
-                if (t % 5 === 0) {
-                    ctx.strokeStyle = '#999';
-                    ctx.lineWidth = 1;
-                }
-                ctx.beginPath();
-                ctx.moveTo(toX(t), AXIS.zeroY);
-                ctx.lineTo(toX(t), -AXIS.height);
-                ctx.stroke();
-            }
-            // --- Y軸（横線）グリッド ---
-            for (let v = 0; v <= AXIS.yMax; v += 1) {
-                // 10g/m³ごと（目盛り位置）は太い線にする
-                if (v % 10 === 0) {
-                    ctx.strokeStyle = '#999';
-                    ctx.lineWidth = 1;
-                }
-                ctx.beginPath();
-                ctx.moveTo(AXIS.zeroX, toY(v));
-                ctx.lineTo(toX(AXIS.xMax), toY(v));
-                ctx.stroke();
-            }
-            // ------------------------------------
-            // ★ 2. テキストラベルの描画（既存ロジック）
-            // ------------------------------------
-            // X軸タイトル (温度)
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'top';
-            for (let t = 0; t <= AXIS.xMax; t += 10) {
-                ctx.fillText(`${t}`, toX(t), AXIS.zeroY + 5);
-            }
-            ctx.fillText('空間の温度 [℃]', AXIS.width / 2, AXIS.zeroY + 30);
-            // Y軸スケール (飽和水蒸気量)
-            ctx.textAlign = 'right';
-            ctx.textBaseline = 'middle';
-            for (let v = 0; v <= AXIS.yMax; v += 10) {
-                if (v !== 0)
-                    ctx.fillText(`${v}`, AXIS.zeroX - 5, toY(v));
-            }
-            // Y軸タイトル (回転)
-            ctx.save();
-            ctx.translate(10, AXIS.height / 2 - 50);
-            ctx.rotate(-Math.PI / 2);
-            ctx.fillText('飽和水蒸気量 [g/m³]', 0, 0);
-            ctx.restore();
-        };
-        const drawCurve = () => {
-            // 飽和水蒸気量曲線を描画するロジック
-            ctx.strokeStyle = '#333';
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            ctx.moveTo(toX(0), toY(satVapor(0)));
-            for (let t = 0; t <= AXIS.xMax; t += 0.25) {
-                ctx.lineTo(toX(t), toY(satVapor(t)));
-            }
-            ctx.stroke();
-        };
-        const plotPointAndBar = (t, sv, v, rv) => {
-            const barWidth = 8;
-            const barX = toX(t);
-            -barWidth / 2;
-            const drawnVaporAmount = Math.min(v, sv);
-            // ------------------------------------
-            // 1. 棒グラフの描画 (3層構造)
-            // ------------------------------------
-            // (A) 水滴の量 (WaterDrop) - 最も上 (飽和ラインの上)
-            // v > sv の場合に wd > 0 となる
-            // (B) 空間内の水蒸気量 (Vapor)
-            ctx.fillStyle = '#3498db';
-            ctx.fillRect(barX, toY(drawnVaporAmount), barWidth, toScreenY(drawnVaporAmount));
-            // (C) 残りの水蒸気量 (RemainingVapor)
-            if (rv > 0) {
-                ctx.fillStyle = '#f39c12';
-                ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
-            }
-        };
-        // ------------------------------------
-        // 3. 全ての描画処理を実行
-        // ------------------------------------
-        drawAxis();
-        drawScale();
-        drawCurve();
-        plotPointAndBar(temperature, saturationVapor, vapor, remainingVapor);
-    }, [temperature,
-        saturationVapor,
-        vapor,
-        waterDrop,
-        remainingVapor
-    ]);
-    return ((0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, width: AXIS.width, height: AXIS.height, style: { border: '0px solid #ccc' } }));
-};
-exports["default"] = HumidityGraphCanvasMini;
 
 
 /***/ }),
@@ -47866,7 +47556,7 @@ function getCupImageName(water) {
 const TowelCanvasAndLegend = ({ water }) => {
     // 💡 純粋な関数として画像パスを取得 (TS2322 エラー解消)
     const cupImageName = getCupImageName(water);
-    return ((0, jsx_runtime_1.jsx)("div", { id: "cup-container", children: (0, jsx_runtime_1.jsx)("div", { id: "layout-container", children: (0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `タオルの状態: タオルに含まれる水分量${water.toFixed(1)}g/m³` }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/towel/towel-water.png", alt: "\u30BF\u30AA\u30EB\u753B\u50CF" })] }) }) }));
+    return ((0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `タオルの状態: タオルに含まれる水分量${water.toFixed(1)}g/m³`, style: { width: '400px', height: 'auto' } }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/towel/towel-water.png", alt: "\u30BF\u30AA\u30EB\u753B\u50CF", style: { width: '400px', height: 'auto' } })] }));
 };
 exports["default"] = TowelCanvasAndLegend;
 
@@ -47882,11 +47572,11 @@ exports["default"] = TowelCanvasAndLegend;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const TowelControlPanel = ({ temperature, vapor, cupTemperature, isExperimentRunning, water, setTemperature, setVapor, setWater, toggleExperiment }) => {
+const TowelControlPanel = ({ originTemp, vapor, towelWater, isExperimentRunning, setTemperature, setVapor, setWater, toggleExperiment }) => {
     const isDisabled = isExperimentRunning;
     const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
     const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6E29\u5EA6[\u2103] (", temperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 10, max: 35, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 10, max: 35, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "10")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6C34\u84B8\u6C17\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30BF\u30AA\u30EB\u306B\u542B\u3080\u6C34\u5206\u91CF [g] (", water, "g)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 30, step: 0.1, value: water, onChange: (e) => setWater(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 30, step: 0.1, value: water, onChange: (e) => setWater(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6E29\u5EA6[\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 10, max: 35, step: 0.1, value: originTemp, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 10, max: 35, step: 0.1, value: originTemp, onChange: (e) => setTemperature(parseFloat(e.target.value || "10")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6C34\u84B8\u6C17\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30BF\u30AA\u30EB\u306B\u542B\u3080\u6C34\u5206\u91CF [g] (", towelWater, "g)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 30, step: 0.1, value: towelWater, onChange: (e) => setWater(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 30, step: 0.1, value: towelWater, onChange: (e) => setWater(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
 };
 exports["default"] = TowelControlPanel;
 
@@ -47930,176 +47620,6 @@ exports["default"] = ExperimentDescription;
 
 /***/ }),
 
-/***/ "./src/components/window/HumidityGraphCanvasMini.tsx":
-/*!***********************************************************!*\
-  !*** ./src/components/window/HumidityGraphCanvasMini.tsx ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.satPress = satPress;
-exports.satVapor = satVapor;
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function satPress(T) {
-    return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
-}
-function satVapor(T) {
-    return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
-}
-// --- 描画に必要な定数 ---
-const AXIS = {
-    width: 580,
-    height: 530,
-    padding: 50,
-    xScale: 10, // 1℃ あたり 10px
-    yScale: 5, // 1g/m³ あたり 5px
-    xMax: 60, // 最大温度 50℃
-    yMax: 90, // 最大水蒸気量 90g/m³
-    zeroX: 50, // 0℃ の位置
-    zeroY: 480, // 0g/m³ の位置
-};
-const HumidityGraphCanvasMini = ({ temperature, saturationVapor, vapor, waterDrop, remainingVapor, }) => {
-    const canvasRef = (0, react_1.useRef)(null);
-    (0, react_1.useEffect)(() => {
-        const canvas = canvasRef.current;
-        if (!canvas)
-            return;
-        const ctx = canvas.getContext('2d');
-        if (!ctx)
-            return;
-        // ------------------------------------
-        // 1. ヘルパー関数の定義 (座標変換)
-        // ------------------------------------
-        const toX = (temp) => AXIS.zeroX + temp * AXIS.xScale;
-        const toY = (vapor) => AXIS.zeroY - vapor * AXIS.yScale;
-        const toScreenY = (vapor) => vapor * AXIS.yScale;
-        // ------------------------------------
-        // 2. 描画ロジックの定義 (Graph.tsxから全て移動)
-        // ------------------------------------
-        const drawAxis = () => {
-            // 軸を描画するロジック
-            ctx.clearRect(0, 0, AXIS.width, AXIS.height);
-            ctx.strokeStyle = 'black';
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            // Y軸 (飽和水蒸気量)
-            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
-            ctx.lineTo(AXIS.zeroX, -AXIS.height);
-            // X軸 (温度)
-            ctx.moveTo(AXIS.zeroX, AXIS.zeroY);
-            ctx.lineTo(AXIS.width, AXIS.zeroY);
-            ctx.stroke();
-        };
-        const drawScale = () => {
-            ctx.fillStyle = '#333';
-            ctx.font = '18px Arial';
-            // ------------------------------------
-            // ★ 1. グリッド線の描画
-            // ------------------------------------
-            // --- X軸（縦線）グリッド ---
-            for (let t = 0; t <= AXIS.xMax; t += 1) {
-                // 5℃ごと（目盛り位置）は太い線にする
-                if (t % 5 === 0) {
-                    ctx.strokeStyle = '#999';
-                    ctx.lineWidth = 1;
-                }
-                ctx.beginPath();
-                ctx.moveTo(toX(t), AXIS.zeroY);
-                ctx.lineTo(toX(t), -AXIS.height);
-                ctx.stroke();
-            }
-            // --- Y軸（横線）グリッド ---
-            for (let v = 0; v <= AXIS.yMax; v += 1) {
-                // 10g/m³ごと（目盛り位置）は太い線にする
-                if (v % 10 === 0) {
-                    ctx.strokeStyle = '#999';
-                    ctx.lineWidth = 1;
-                }
-                ctx.beginPath();
-                ctx.moveTo(AXIS.zeroX, toY(v));
-                ctx.lineTo(toX(AXIS.xMax), toY(v));
-                ctx.stroke();
-            }
-            // ------------------------------------
-            // ★ 2. テキストラベルの描画（既存ロジック）
-            // ------------------------------------
-            // X軸タイトル (温度)
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'top';
-            for (let t = 0; t <= AXIS.xMax; t += 10) {
-                ctx.fillText(`${t}`, toX(t), AXIS.zeroY + 5);
-            }
-            ctx.fillText('コップの温度 [℃]', AXIS.width / 2, AXIS.zeroY + 30);
-            // Y軸スケール (飽和水蒸気量)
-            ctx.textAlign = 'right';
-            ctx.textBaseline = 'middle';
-            for (let v = 0; v <= AXIS.yMax; v += 10) {
-                if (v !== 0)
-                    ctx.fillText(`${v}`, AXIS.zeroX - 5, toY(v));
-            }
-            // Y軸タイトル (回転)
-            ctx.save();
-            ctx.translate(10, AXIS.height / 2 - 50);
-            ctx.rotate(-Math.PI / 2);
-            ctx.fillText('飽和水蒸気量 [g/m³]', 0, 0);
-            ctx.restore();
-        };
-        const drawCurve = () => {
-            // 飽和水蒸気量曲線を描画するロジック
-            ctx.strokeStyle = '#333';
-            ctx.lineWidth = 3;
-            ctx.beginPath();
-            ctx.moveTo(toX(0), toY(satVapor(0)));
-            for (let t = 0; t <= AXIS.xMax; t += 0.25) {
-                ctx.lineTo(toX(t), toY(satVapor(t)));
-            }
-            ctx.stroke();
-        };
-        const plotPointAndBar = (t, sv, v, wd, rv) => {
-            const barWidth = 8;
-            const barX = toX(t);
-            -barWidth / 2;
-            const drawnVaporAmount = Math.min(v, sv);
-            // ------------------------------------
-            // 1. 棒グラフの描画 (3層構造)
-            // ------------------------------------
-            // (A) 水滴の量 (WaterDrop) - 最も上 (飽和ラインの上)
-            // v > sv の場合に wd > 0 となる
-            if (wd > 0) {
-                ctx.fillStyle = 'rgba(0, 255, 0, 0.5)';
-                ctx.fillRect(barX, toY(sv), barWidth, -toScreenY(wd));
-            }
-            // (B) 空間内の水蒸気量 (Vapor)
-            ctx.fillStyle = '#3498db';
-            ctx.fillRect(barX, toY(drawnVaporAmount), barWidth, toScreenY(drawnVaporAmount));
-            // (C) 残りの水蒸気量 (RemainingVapor)
-            if (rv > 0) {
-                ctx.fillStyle = '#f39c12';
-                ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
-            }
-        };
-        // ------------------------------------
-        // 3. 全ての描画処理を実行
-        // ------------------------------------
-        drawAxis();
-        drawScale();
-        drawCurve();
-        plotPointAndBar(temperature, saturationVapor, vapor, waterDrop, remainingVapor);
-    }, [temperature,
-        saturationVapor,
-        vapor,
-        waterDrop,
-        remainingVapor
-    ]);
-    return ((0, jsx_runtime_1.jsx)("canvas", { ref: canvasRef, width: AXIS.width, height: AXIS.height, style: { border: '0px solid #ccc' } }));
-};
-exports["default"] = HumidityGraphCanvasMini;
-
-
-/***/ }),
-
 /***/ "./src/components/window/WindowCanvasAndLegend.tsx":
 /*!*********************************************************!*\
   !*** ./src/components/window/WindowCanvasAndLegend.tsx ***!
@@ -48109,26 +47629,24 @@ exports["default"] = HumidityGraphCanvasMini;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function getCupImageName(cupTemperature, cupWaterDrop) {
+function getWindowImageName(temperature, waterDrop) {
     let roundedTemp;
     // 0℃の場合の特別処理: 0℃は0に、それより大きい場合は5の倍数に切り上げ
-    if (cupTemperature <= 0.1) {
+    if (temperature <= 0.1) {
         roundedTemp = 2;
     }
-    else if (cupTemperature >= 14) {
+    else if (temperature >= 14) {
         roundedTemp = 14;
     }
     else {
-        roundedTemp = Math.ceil(cupTemperature / 2) * 2;
+        roundedTemp = Math.ceil(temperature / 2) * 2;
     }
-    const roundedWater = Math.min(Math.ceil(cupWaterDrop / 5) * 5, 35);
-    // 画像名を決定し、stringとして返す
+    const roundedWater = Math.min(Math.ceil(waterDrop / 5) * 5, 35);
     return `/winter-window/window-${roundedTemp}-${roundedWater}.png`;
 }
-const WindowCanvasAndLegend = ({ temperature, waterDrop, cupTemperature }) => {
-    // 💡 純粋な関数として画像パスを取得 (TS2322 エラー解消)
-    const cupImageName = getCupImageName(cupTemperature, waterDrop);
-    return ((0, jsx_runtime_1.jsx)("div", { id: "cup-container", children: (0, jsx_runtime_1.jsx)("div", { id: "layout-container", children: (0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `窓付近の状態: 温度${temperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³` }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/winter-window/winter-sky.png", alt: "\u5916\u306E\u6E29\u5EA6\u8AAC\u660E\u753B\u50CF" })] }) }) }));
+const WindowCanvasAndLegend = ({ temperature, waterDrop, }) => {
+    const cupImageName = getWindowImageName(temperature, waterDrop);
+    return ((0, jsx_runtime_1.jsx)("div", { id: "cup-container", children: (0, jsx_runtime_1.jsx)("div", { id: "layout-container", children: (0, jsx_runtime_1.jsxs)("div", { id: "photos-container", children: [(0, jsx_runtime_1.jsx)("img", { id: "cup-image", src: cupImageName, alt: `窓付近の状態: 温度${temperature.toFixed(1)}℃ 結露量${waterDrop.toFixed(1)}g/m³`, style: { width: '400px', height: 'auto' } }), (0, jsx_runtime_1.jsx)("img", { id: "temperature-image", src: "/winter-window/winter-sky.png", alt: "\u5916\u306E\u6E29\u5EA6\u8AAC\u660E\u753B\u50CF", style: { width: '400px', height: 'auto' } })] }) }) }));
 };
 exports["default"] = WindowCanvasAndLegend;
 
@@ -48144,11 +47662,11 @@ exports["default"] = WindowCanvasAndLegend;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const WindowControlPanel = ({ temperature, vapor, cupTemperature, isExperimentRunning, setTemperature, setVapor, setCupTemperature, toggleExperiment }) => {
+const WindowControlPanel = ({ originTemp, vapor, tergetTemp, isExperimentRunning, setOriginTemp, setVapor, setTergetTemp, toggleExperiment }) => {
     const isDisabled = isExperimentRunning;
     const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
     const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5BA4\u6E29 (\u7A93\u306E\u307E\u308F\u308A\u306E\u6E29\u5EA6)  [\u2103] (", temperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 14, max: 25, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 14, max: 25, step: 0.1, value: temperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "14")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5916\u306E\u6C17\u6E29 [\u2103] (", cupTemperature, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 14, step: 0.1, value: cupTemperature, onChange: (e) => setCupTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 14, step: 0.1, value: cupTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5BA4\u6E29 (\u7A93\u306E\u307E\u308F\u308A\u306E\u6E29\u5EA6)  [\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 14, max: 25, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 14, max: 25, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "14")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5916\u306E\u6C17\u6E29 [\u2103] (", tergetTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 14, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 14, step: 0.1, value: tergetTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
 };
 exports["default"] = WindowControlPanel;
 
@@ -48189,12 +47707,12 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-__webpack_require__(/*! ./cup.css */ "./src/pages/cup/cup.css");
+__webpack_require__(/*! ../experimentPage.css */ "./src/pages/experimentPage.css");
 const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
 const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/HumidityGraphCanvasMini */ "./src/components/common/HumidityGraphCanvasMini.tsx"));
 const CupControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CupControlPanel */ "./src/components/cup/CupControlPanel.tsx"));
 const CupCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CupCanvasAndLegend */ "./src/components/cup/CupCanvasAndLegend.tsx"));
-const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/cup/HumidityGraphCanvasMini */ "./src/components/cup/HumidityGraphCanvasMini.tsx"));
 const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/cup/ExperimentDescription */ "./src/components/cup/ExperimentDescription.tsx"));
 const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CondensationStatusDisplay */ "./src/components/cup/CondensationStatusDisplay.tsx"));
 // ------------------------------------
@@ -48212,32 +47730,34 @@ function satVapor(T) {
 const Cup = () => {
     const navigate = (0, react_router_dom_1.useNavigate)();
     /** ------- 空間の現在の状態 ------- */
-    const [temperature, setTemperature] = (0, react_1.useState)(25.0); // 部屋の温度 (T)
-    const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0); // 飽和水蒸気量 (SV)
-    const [vapor, setVapor] = (0, react_1.useState)(11.5); // 空間の水蒸気量 (V)
+    const [originTemp, setOriginTemp] = (0, react_1.useState)(25.0);
+    const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0);
+    const [vapor, setVapor] = (0, react_1.useState)(11.5);
     const [waterDrop, setWaterDrop] = (0, react_1.useState)(0.0);
     const [humidity, setHumidity] = (0, react_1.useState)(50);
-    // まだ空気中に含むことができる水蒸気量
     const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
     /** ------- コップの状態 ------- */
-    const [cupTemperature, setCupTemperature] = (0, react_1.useState)(0.0);
+    const [tergetTemp, setTergetTemp] = (0, react_1.useState)(0.0);
     /** ------- 実験の状態管理と初期値保存 ------- */
     const [isExperimentRunning, setIsExperimentRunning] = (0, react_1.useState)(false);
     // 問題文として表示する初期条件
-    const [initialTemperature, setInitialTemperature] = (0, react_1.useState)(25.0);
-    const [initialVapor, setInitialVapor] = (0, react_1.useState)(11.5);
-    const [experimentInitialCupTemp, setExperimentInitialCupTemp] = (0, react_1.useState)(0.0);
+    const [initOriginTemp, setInitOriginTemp] = (0, react_1.useState)(25.0);
+    const [initVapor, setInitVapor] = (0, react_1.useState)(11.5);
+    const [initTergetTemp, setInitTergetTemp] = (0, react_1.useState)(0.0);
     // ------------------------------------
     // 3. ユーザの操作による変化/計算ロジック
     // ------------------------------------
+    //飽和水蒸気量の計算
     (0, react_1.useEffect)(() => {
-        const sv = satVapor(temperature);
+        const sv = satVapor(originTemp);
         setSaturationVapor(parseFloat(sv.toFixed(1)));
-    }, [temperature]);
+    }, [originTemp]);
+    // 結露量の計算
     (0, react_1.useEffect)(() => {
         const wd = Math.max(0, vapor - saturationVapor);
         setWaterDrop(parseFloat(wd.toFixed(1)));
     }, [vapor, saturationVapor]);
+    // 湿度計算
     (0, react_1.useEffect)(() => {
         const h = Math.min(100, (vapor / saturationVapor) * 100);
         setHumidity(parseFloat(h.toFixed(1)));
@@ -48245,19 +47765,19 @@ const Cup = () => {
     // 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
     (0, react_1.useEffect)(() => {
         if (!isExperimentRunning) {
-            setInitialTemperature(temperature);
-            setInitialVapor(vapor);
-            setExperimentInitialCupTemp(cupTemperature);
+            setInitOriginTemp(originTemp);
+            setInitVapor(vapor);
+            setInitTergetTemp(tergetTemp);
         }
-    }, [isExperimentRunning, temperature, vapor, cupTemperature]);
+    }, [isExperimentRunning, originTemp, vapor, tergetTemp]);
     // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
     (0, react_1.useEffect)(() => {
         if (!isExperimentRunning) {
             return;
         }
-        const targetTemp = experimentInitialCupTemp;
+        const targetTemp = initTergetTemp;
         const intervalId = setInterval(() => {
-            setTemperature(currentT => {
+            setOriginTemp(currentT => {
                 const nextT = currentT - 0.1;
                 if (nextT <= targetTemp) {
                     clearInterval(intervalId);
@@ -48265,22 +47785,22 @@ const Cup = () => {
                 }
                 return parseFloat(nextT.toFixed(1));
             });
-        }, 500);
+        }, 100);
         // クリーンアップ関数
         return () => clearInterval(intervalId);
-    }, [isExperimentRunning, experimentInitialCupTemp]);
+    }, [isExperimentRunning, initTergetTemp]);
     // 実験開始/停止を切り替える関数
     const toggleExperiment = () => {
         setIsExperimentRunning(prevIsRunning => {
             const nextIsRunning = !prevIsRunning;
             if (nextIsRunning) {
-                setInitialTemperature(temperature);
-                setInitialVapor(vapor);
-                setExperimentInitialCupTemp(cupTemperature);
+                setInitOriginTemp(originTemp);
+                setInitVapor(vapor);
+                setInitTergetTemp(tergetTemp);
             }
             else {
-                setTemperature(initialTemperature);
-                setVapor(initialVapor);
+                setOriginTemp(initOriginTemp);
+                setVapor(initVapor);
             }
             return nextIsRunning;
         });
@@ -48288,42 +47808,36 @@ const Cup = () => {
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(CupCanvasAndLegend_1.default, { temperature: temperature, waterDrop: waterDrop, humidity: humidity, cupTemperature: cupTemperature }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, cupTemperature: cupTemperature, remainingVapor: remainingVapor }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initialTemperature, initialVapor: initialVapor, initialCupTemperature: experimentInitialCupTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(CupControlPanel_1.default
-                    // データ
-                    , { 
-                        // データ
-                        temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, cupTemperature: cupTemperature, waterDrop: waterDrop, remainingVapor: remainingVapor, isExperimentRunning: isExperimentRunning, 
-                        // 関数
-                        setTemperature: setTemperature, setVapor: setVapor, setCupTemperature: setCupTemperature, toggleExperiment: toggleExperiment })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(CupCanvasAndLegend_1.default, { waterDrop: waterDrop, tergetTemp: tergetTemp }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, xAxisLabel: "コップの温度[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialOriginalTemperature: initOriginTemp, initialVapor: initVapor, initialCupTemperature: initTergetTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(CupControlPanel_1.default, { originTemp: originTemp, vapor: vapor, tergetTemp: tergetTemp, isExperimentRunning: isExperimentRunning, setOriginTemp: setOriginTemp, setVapor: setVapor, setTergetTemp: setTergetTemp, toggleExperiment: toggleExperiment })] })] }));
 };
 exports["default"] = Cup;
 
 
 /***/ }),
 
-/***/ "./src/pages/cup/cup.css":
-/*!*******************************!*\
-  !*** ./src/pages/cup/cup.css ***!
-  \*******************************/
+/***/ "./src/pages/experimentPage.css":
+/*!**************************************!*\
+  !*** ./src/pages/experimentPage.css ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./cup.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/cup/cup.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_experimentPage_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./experimentPage.css */ "./node_modules/css-loader/dist/cjs.js!./src/pages/experimentPage.css");
 
       
       
@@ -48343,12 +47857,12 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_experimentPage_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_cup_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_experimentPage_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_experimentPage_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_experimentPage_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -48506,7 +48020,7 @@ const Graph = () => {
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-container", children: [(0, jsx_runtime_1.jsx)("div", { className: ".home-back-button", children: (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }) }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-main-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "graph-area-wrap", children: [(0, jsx_runtime_1.jsxs)("div", { className: "legend-formula-column", children: [(0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {}), (0, jsx_runtime_1.jsx)(ExplanationFormulas_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas-wrap", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvas_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, temperature2: temperature2, saturationVapor2: saturationVapor2, vapor2: vapor2, waterDrop2: waterDrop2, remainingVapor2: remainingVapor2 }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(CurrentHumidityDisplay_1.default
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "page-button-layout", children: (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }) }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-main-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "graph-area-wrap", children: [(0, jsx_runtime_1.jsxs)("div", { className: "legend-formula-column", children: [(0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {}), (0, jsx_runtime_1.jsx)(ExplanationFormulas_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvas_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, temperature2: temperature2, saturationVapor2: saturationVapor2, vapor2: vapor2, waterDrop2: waterDrop2, remainingVapor2: remainingVapor2 }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(CurrentHumidityDisplay_1.default
                             // データ
                             , { 
                                 // データ
@@ -48733,11 +48247,11 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-__webpack_require__(/*! ../cup/cup.css */ "./src/pages/cup/cup.css");
+__webpack_require__(/*! ../experimentPage.css */ "./src/pages/experimentPage.css");
 const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
 const TowelControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/towel/TowelControlPanel */ "./src/components/towel/TowelControlPanel.tsx"));
 const TowelCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/towel/TowelCanvasAndLegend */ "./src/components/towel/TowelCanvasAndLegend.tsx"));
-const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/towel/HumidityGraphCanvasMini */ "./src/components/towel/HumidityGraphCanvasMini.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/HumidityGraphCanvasMini */ "./src/components/common/HumidityGraphCanvasMini.tsx"));
 const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
 const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/towel/ExperimentDescription */ "./src/components/towel/ExperimentDescription.tsx"));
 const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/towel/CondensationStatusDisplay */ "./src/components/towel/CondensationStatusDisplay.tsx"));
@@ -48758,29 +48272,28 @@ function satVapor(T) {
 const Cup = () => {
     const navigate = (0, react_router_dom_1.useNavigate)();
     /** ------- 空間の現在の状態 ------- */
-    const [temperature, setTemperature] = (0, react_1.useState)(25.0); // 部屋の温度 (T)
-    const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0); // 飽和水蒸気量 (SV)
-    const [vapor, setVapor] = (0, react_1.useState)(11.5); // 空間の水蒸気量 (V)
+    const [originTemp, setOriginTemp] = (0, react_1.useState)(25.0);
+    const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0);
+    const [vapor, setVapor] = (0, react_1.useState)(11.5);
     const [waterDrop, setWaterDrop] = (0, react_1.useState)(0.0);
     const [humidity, setHumidity] = (0, react_1.useState)(50);
-    /** ------- コップの状態 ------- */
-    const [cupTemperature, setCupTemperature] = (0, react_1.useState)(0.0);
+    const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
     /** ------- タオルの状態 ------- */
-    const [water, setWater] = (0, react_1.useState)(0.0);
+    const [tergetTemp, setTergetTemp] = (0, react_1.useState)(0.0);
+    const [towelWater, setTowelWater] = (0, react_1.useState)(0.0);
     /** ------- 実験の状態管理と初期値保存 ------- */
     const [isExperimentRunning, setIsExperimentRunning] = (0, react_1.useState)(false);
     // 問題文として表示する初期条件（実験開始時に固定される値）
-    const [initialTemperature, setInitialTemperature] = (0, react_1.useState)(25.0);
+    const [initOriginTemp, setInitOriginTemp] = (0, react_1.useState)(25.0);
     const [initialVapor, setInitialVapor] = (0, react_1.useState)(11.5);
-    const [initialCupTemp, setInitialCupTemp] = (0, react_1.useState)(0.0);
     const [initialWater, setInitialWater] = (0, react_1.useState)(0.0);
     // ------------------------------------
     // 3. ユーザの操作による変化/計算ロジック
     // ------------------------------------
     (0, react_1.useEffect)(() => {
-        const sv = satVapor(temperature);
+        const sv = satVapor(originTemp);
         setSaturationVapor(parseFloat(sv.toFixed(1)));
-    }, [temperature]);
+    }, [originTemp]);
     // 結露量の計算
     (0, react_1.useEffect)(() => {
         const wd = Math.max(0, vapor - saturationVapor);
@@ -48794,21 +48307,17 @@ const Cup = () => {
     // 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
     (0, react_1.useEffect)(() => {
         if (!isExperimentRunning) {
-            setInitialTemperature(temperature);
+            setInitOriginTemp(originTemp);
             setInitialVapor(vapor);
-            setInitialWater(water);
+            setInitialWater(towelWater);
         }
-    }, [isExperimentRunning, temperature, vapor, water]);
+    }, [isExperimentRunning, originTemp, vapor, towelWater]);
     // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
     (0, react_1.useEffect)(() => {
-        // 実験が実行中でなければ何もしない
         if (!isExperimentRunning) {
             return;
         }
-        // 依存配列に humidity を追加したため、humidityが変更されるたびに
-        // この Effect は再実行されますが、これは現在の湿度を最新に保つために必要です。
         if (humidity >= 100) {
-            // Effectがセットアップされる時点で既に100%であれば、何もしない
             return;
         }
         const intervalId = setInterval(() => {
@@ -48820,7 +48329,7 @@ const Cup = () => {
                 clearInterval(intervalId);
                 return;
             }
-            setWater(currentWater => {
+            setTowelWater(currentWater => {
                 // waterが既に0g以下の場合は処理を停止するため、現在のwater値をそのまま返す
                 if (currentWater <= 0) {
                     clearInterval(intervalId); // water 0gで停止
@@ -48841,44 +48350,36 @@ const Cup = () => {
                 setVapor(currentVapor => parseFloat((currentVapor + 0.1).toFixed(1)));
                 return parseFloat(nextWater.toFixed(1));
             });
-        }, 500);
+        }, 100);
         // クリーンアップ関数
         return () => clearInterval(intervalId);
         // 依存配列に humidity を追加
-    }, [isExperimentRunning, humidity, setWater, setVapor]);
+    }, [isExperimentRunning, humidity, setTowelWater, setVapor]);
     // 実験開始/停止を切り替える関数（初期値の保存と復元ロジックを追加）
     const toggleExperiment = () => {
         setIsExperimentRunning(prevIsRunning => {
             const nextIsRunning = !prevIsRunning;
             if (nextIsRunning) {
-                setInitialTemperature(temperature);
+                setInitOriginTemp(originTemp);
                 setInitialVapor(vapor);
-                setInitialWater(water);
+                setInitialWater(towelWater);
             }
             else {
-                setTemperature(initialTemperature);
+                setOriginTemp(initOriginTemp);
                 setVapor(initialVapor);
             }
             return nextIsRunning;
         });
     };
-    // まだ空気中に含むことができる水蒸気量
-    const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
     // タオルの計算
     (0, react_1.useEffect)(() => {
-        const w = Math.max(0, water);
+        const w = Math.max(0, towelWater);
         setWaterDrop(parseFloat(w.toFixed(1)));
-    }, [water]);
+    }, [towelWater]);
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(TowelCanvasAndLegend_1.default, { temperature: temperature, water: water, humidity: humidity, cupTemperature: cupTemperature }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { water: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, cupTemperature: cupTemperature, remainingVapor: remainingVapor }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initialTemperature, initialVapor: initialVapor, initialWater: initialWater, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(TowelControlPanel_1.default
-                    // データ
-                    , { 
-                        // データ
-                        temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, cupTemperature: cupTemperature, water: water, remainingVapor: remainingVapor, isExperimentRunning: isExperimentRunning, 
-                        // 関数
-                        setTemperature: setTemperature, setVapor: setVapor, setCupTemperature: setCupTemperature, setWater: setWater, toggleExperiment: toggleExperiment })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(TowelCanvasAndLegend_1.default, { temperature: originTemp, water: towelWater, humidity: humidity, cupTemperature: tergetTemp }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { water: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: 0, remainingVapor: remainingVapor, xAxisLabel: "室温[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initOriginTemp, initialVapor: initialVapor, initialWater: initialWater, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(TowelControlPanel_1.default, { originTemp: originTemp, vapor: vapor, towelWater: towelWater, isExperimentRunning: isExperimentRunning, setTemperature: setOriginTemp, setVapor: setVapor, setCupTemperature: setTergetTemp, setWater: setTowelWater, toggleExperiment: toggleExperiment })] })] }));
 };
 exports["default"] = Cup;
 
@@ -48899,12 +48400,12 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-__webpack_require__(/*! ../cup/cup.css */ "./src/pages/cup/cup.css");
+__webpack_require__(/*! ../experimentPage.css */ "./src/pages/experimentPage.css");
 const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/HumidityGraphCanvasMini */ "./src/components/common/HumidityGraphCanvasMini.tsx"));
 const WindowControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/window/WindowControlPanel */ "./src/components/window/WindowControlPanel.tsx"));
 const WindowCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/window/WindowCanvasAndLegend */ "./src/components/window/WindowCanvasAndLegend.tsx"));
-const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/window/HumidityGraphCanvasMini */ "./src/components/window/HumidityGraphCanvasMini.tsx"));
-const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
 const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/window/ExperimentDescription */ "./src/components/window/ExperimentDescription.tsx"));
 const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/window/CondensationStatusDisplay */ "./src/components/window/CondensationStatusDisplay.tsx"));
 // ------------------------------------
@@ -48924,26 +48425,28 @@ function satVapor(T) {
 const Cup = () => {
     const navigate = (0, react_router_dom_1.useNavigate)();
     /** ------- 空間の現在の状態 ------- */
-    const [temperature, setTemperature] = (0, react_1.useState)(25.0); // 部屋の温度 (T)
-    const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0); // 飽和水蒸気量 (SV)
-    const [vapor, setVapor] = (0, react_1.useState)(11.5); // 空間の水蒸気量 (V)
+    const [originTemp, setOriginTemp] = (0, react_1.useState)(25.0);
+    const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0);
+    const [vapor, setVapor] = (0, react_1.useState)(11.5);
     const [waterDrop, setWaterDrop] = (0, react_1.useState)(0.0);
     const [humidity, setHumidity] = (0, react_1.useState)(50);
+    const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
     /** ------- コップの状態 ------- */
-    const [cupTemperature, setCupTemperature] = (0, react_1.useState)(0.0);
+    const [tergetTemp, setTergetTemp] = (0, react_1.useState)(0.0);
     /** ------- 実験の状態管理と初期値保存 ------- */
     const [isExperimentRunning, setIsExperimentRunning] = (0, react_1.useState)(false);
     // 問題文として表示する初期条件（実験開始時に固定される値）
-    const [initialTemperature, setInitialTemperature] = (0, react_1.useState)(25.0);
+    const [initOriginTemp, setInitOriginTemp] = (0, react_1.useState)(25.0);
     const [initialVapor, setInitialVapor] = (0, react_1.useState)(11.5);
-    const [experimentInitialCupTemp, setExperimentInitialCupTemp] = (0, react_1.useState)(0.0);
+    const [initTergetTemp, setInitTergetTemp] = (0, react_1.useState)(0.0);
     // ------------------------------------
     // 3. ユーザの操作による変化/計算ロジック
     // ------------------------------------
+    //飽和水蒸気量の計算
     (0, react_1.useEffect)(() => {
-        const sv = satVapor(temperature);
+        const sv = satVapor(originTemp);
         setSaturationVapor(parseFloat(sv.toFixed(1)));
-    }, [temperature]);
+    }, [originTemp]);
     // 結露量の計算
     (0, react_1.useEffect)(() => {
         const wd = Math.max(0, vapor - saturationVapor);
@@ -48957,19 +48460,19 @@ const Cup = () => {
     // 実験停止中、問題文に表示される初期値を現在のスライダーの値と同期させる
     (0, react_1.useEffect)(() => {
         if (!isExperimentRunning) {
-            setInitialTemperature(temperature);
+            setInitOriginTemp(originTemp);
             setInitialVapor(vapor);
-            setExperimentInitialCupTemp(cupTemperature);
+            setInitTergetTemp(tergetTemp);
         }
-    }, [isExperimentRunning, temperature, vapor, cupTemperature]);
+    }, [isExperimentRunning, originTemp, vapor, tergetTemp]);
     // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
     (0, react_1.useEffect)(() => {
         if (!isExperimentRunning) {
             return;
         }
-        const targetTemp = experimentInitialCupTemp;
+        const targetTemp = initTergetTemp;
         const intervalId = setInterval(() => {
-            setTemperature(currentT => {
+            setOriginTemp(currentT => {
                 const nextT = currentT - 0.1;
                 if (nextT <= targetTemp) {
                     clearInterval(intervalId);
@@ -48980,35 +48483,27 @@ const Cup = () => {
         }, 500);
         // クリーンアップ関数
         return () => clearInterval(intervalId);
-    }, [isExperimentRunning, experimentInitialCupTemp]); // 依存配列を修正
-    // 実験開始/停止を切り替える関数（初期値の保存と復元ロジックを追加）
+    }, [isExperimentRunning, initTergetTemp]);
+    // 実験開始/停止を切り替える関数
     const toggleExperiment = () => {
         setIsExperimentRunning(prevIsRunning => {
             const nextIsRunning = !prevIsRunning;
             if (nextIsRunning) {
-                setInitialTemperature(temperature);
+                setInitOriginTemp(originTemp);
                 setInitialVapor(vapor);
-                setExperimentInitialCupTemp(cupTemperature);
+                setInitTergetTemp(tergetTemp);
             }
             else {
-                setTemperature(initialTemperature);
+                setOriginTemp(initOriginTemp);
                 setVapor(initialVapor);
             }
             return nextIsRunning;
         });
     };
-    // まだ空気中に含むことができる水蒸気量
-    const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(WindowCanvasAndLegend_1.default, { temperature: temperature, waterDrop: waterDrop, humidity: humidity, cupTemperature: cupTemperature }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, cupTemperature: cupTemperature, remainingVapor: remainingVapor }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initialTemperature, initialVapor: initialVapor, initialCupTemperature: experimentInitialCupTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(WindowControlPanel_1.default
-                    // データ
-                    , { 
-                        // データ
-                        temperature: temperature, saturationVapor: saturationVapor, vapor: vapor, cupTemperature: cupTemperature, waterDrop: waterDrop, remainingVapor: remainingVapor, isExperimentRunning: isExperimentRunning, 
-                        // 関数
-                        setTemperature: setTemperature, setVapor: setVapor, setCupTemperature: setCupTemperature, toggleExperiment: toggleExperiment })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(WindowCanvasAndLegend_1.default, { temperature: tergetTemp, waterDrop: waterDrop }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, xAxisLabel: "室温 (窓のまわりの温度)[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initOriginTemp, initialVapor: initialVapor, initialCupTemperature: initTergetTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(WindowControlPanel_1.default, { originTemp: originTemp, vapor: vapor, tergetTemp: tergetTemp, isExperimentRunning: isExperimentRunning, setOriginTemp: setOriginTemp, setVapor: setVapor, setTergetTemp: setTergetTemp, toggleExperiment: toggleExperiment })] })] }));
 };
 exports["default"] = Cup;
 
