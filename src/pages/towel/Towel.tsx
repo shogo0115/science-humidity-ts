@@ -29,16 +29,16 @@ const Cup: React.FC = () => {
   const navigate = useNavigate();
 
  /** ------- 空間の現在の状態 ------- */
- const [originTemp, setOriginTemp] = useState<number>(25.0); // 部屋の温度 (T)
- const [saturationVapor, setSaturationVapor] = useState<number>(23.0); // 飽和水蒸気量 (SV)
- const [vapor, setVapor] = useState<number>(11.5); // 空間の水蒸気量 (V)
+ const [originTemp, setOriginTemp] = useState<number>(25.0);
+ const [saturationVapor, setSaturationVapor] = useState<number>(23.0);
+ const [vapor, setVapor] = useState<number>(11.5);
  const [waterDrop, setWaterDrop] = useState<number>(0.0);
  const [humidity, setHumidity] = useState<number>(50);
  const remainingVapor = useMemo(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
 
   /** ------- タオルの状態 ------- */
  const [tergetTemp, setTergetTemp] = useState<number>(0.0);
- const [water, setWater] = useState<number>(0.0);
+ const [towelWater, setTowelWater] = useState<number>(0.0);
 
 /** ------- 実験の状態管理と初期値保存 ------- */
 const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
@@ -46,7 +46,6 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
  // 問題文として表示する初期条件（実験開始時に固定される値）
  const [initOriginTemp, setInitOriginTemp] = useState<number>(25.0);
  const [initialVapor, setInitialVapor] = useState<number>(11.5);
- const [initTergetTemp, setInitTergetTemp] = useState<number>(0.0);
  const [initialWater, setInitialWater] = useState<number>(0.0);
 
 
@@ -76,22 +75,17 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
   if (!isExperimentRunning) {
     setInitOriginTemp(originTemp);
     setInitialVapor(vapor);
-    setInitialWater(water);
+    setInitialWater(towelWater);
   }
- }, [isExperimentRunning, originTemp, vapor, water]);
+ }, [isExperimentRunning, originTemp, vapor, towelWater]);
 
 
 // 実験ロジック (コップの温度が目標値となるように室温を変化させるアニメーション)
  useEffect(() => {
-  // 実験が実行中でなければ何もしない
   if (!isExperimentRunning) {
     return;
   }
-
-  // 依存配列に humidity を追加したため、humidityが変更されるたびに
-  // この Effect は再実行されますが、これは現在の湿度を最新に保つために必要です。
   if (humidity >= 100) {
-    // Effectがセットアップされる時点で既に100%であれば、何もしない
     return;
   }
 
@@ -106,7 +100,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         return;
     }
 
-    setWater(currentWater => {
+    setTowelWater(currentWater => {
       // waterが既に0g以下の場合は処理を停止するため、現在のwater値をそのまま返す
       if (currentWater <= 0) {
         clearInterval(intervalId); // water 0gで停止
@@ -137,7 +131,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
   // クリーンアップ関数
   return () => clearInterval(intervalId);
   // 依存配列に humidity を追加
-}, [isExperimentRunning, humidity, setWater, setVapor]);
+}, [isExperimentRunning, humidity, setTowelWater, setVapor]);
 
   // 実験開始/停止を切り替える関数（初期値の保存と復元ロジックを追加）
   const toggleExperiment = () => {
@@ -147,7 +141,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       if (nextIsRunning) {
         setInitOriginTemp(originTemp);
         setInitialVapor(vapor);
-        setInitialWater(water);
+        setInitialWater(towelWater);
 
       } else {
 
@@ -161,9 +155,9 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
   // タオルの計算
  useEffect(() => {
-  const w = Math.max(0, water);
+  const w = Math.max(0, towelWater);
   setWaterDrop(parseFloat(w.toFixed(1)));
-}, [water]);
+}, [towelWater]);
 
 
 
@@ -188,7 +182,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         <div className="experimental-footage">
           <TowelCanvasAndLegend
           temperature={originTemp}
-          water={water}
+          water={towelWater}
           humidity={humidity}
           cupTemperature={tergetTemp}
           />
@@ -220,19 +214,14 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         isExperimentRunning={isExperimentRunning}
         />
         <TowelControlPanel
-          // データ
-          temperature={originTemp}
-          saturationVapor={saturationVapor}
+          originTemp={originTemp}
           vapor={vapor}
-          cupTemperature={tergetTemp}
-          water={water}
-          remainingVapor={remainingVapor}
+          towelWater={towelWater}
           isExperimentRunning={isExperimentRunning}
-          // 関数
           setTemperature={setOriginTemp}
           setVapor={setVapor}
           setCupTemperature={setTergetTemp}
-          setWater={setWater}
+          setWater={setTowelWater}
           toggleExperiment={toggleExperiment}
         />
       </div>

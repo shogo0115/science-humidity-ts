@@ -1,1 +1,1 @@
-{"version":3,"file":"Cup.d.ts","sourceRoot":"","sources":["Cup.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAuC,MAAM,OAAO,CAAC;AAE5D,OAAO,WAAW,CAAC;AAuBnB,QAAA,MAAM,GAAG,EAAE,KAAK,CAAC,EAsKhB,CAAC;AAEF,eAAe,GAAG,CAAC"}
+{"version":3,"file":"Cup.d.ts","sourceRoot":"","sources":["Cup.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAuC,MAAM,OAAO,CAAC;AAE5D,OAAO,uBAAuB,CAAC;AAuB/B,QAAA,MAAM,GAAG,EAAE,KAAK,CAAC,EAiKhB,CAAC;AAEF,eAAe,GAAG,CAAC"}

@@ -1,11 +1,8 @@
 import React from "react";
 interface TowelControlPanelProps {
-    temperature: number;
-    saturationVapor: number;
+    originTemp: number;
     vapor: number;
-    cupTemperature: number;
-    water: number;
-    remainingVapor: number;
+    towelWater: number;
     isExperimentRunning: boolean;
     setTemperature: (t: number) => void;
     setVapor: (v: number) => void;

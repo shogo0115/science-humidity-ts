@@ -1,12 +1,9 @@
 import React from "react";
 
 interface TowelControlPanelProps {
-  temperature: number;
-  saturationVapor: number;
+  originTemp: number;
   vapor: number;
-  cupTemperature: number;
-  water: number;
-  remainingVapor: number;
+  towelWater: number;
   isExperimentRunning: boolean;
   setTemperature: (t: number) => void;
   setVapor: (v: number) => void;
@@ -16,11 +13,10 @@ interface TowelControlPanelProps {
 }
 
 const TowelControlPanel: React.FC<TowelControlPanelProps> = ({
-  temperature,
+  originTemp,
   vapor,
-  cupTemperature,
+  towelWater,
   isExperimentRunning,
-  water,
   setTemperature,
   setVapor,
   setWater,
@@ -34,13 +30,13 @@ const TowelControlPanel: React.FC<TowelControlPanelProps> = ({
     <div className="graph-panel">
       <h3>実験条件設定</h3>
       <div className="graph-row">
-          <label>温度[℃] ({temperature}℃)</label>
+          <label>温度[℃] ({originTemp}℃)</label>
           <input
             type="range"
             min={10}
             max={35}
             step={0.1}
-            value={temperature}
+            value={originTemp}
             onChange={(e) => setTemperature(parseFloat(e.target.value))}
             disabled={isDisabled}
           />
@@ -49,7 +45,7 @@ const TowelControlPanel: React.FC<TowelControlPanelProps> = ({
           min={10}
           max={35}
           step={0.1}
-          value={temperature}
+          value={originTemp}
           onChange={(e) => setTemperature(parseFloat(e.target.value || "10"))}
           />
       </div>
@@ -76,13 +72,13 @@ const TowelControlPanel: React.FC<TowelControlPanelProps> = ({
       </div>
 
       <div className="graph-row">
-          <label>タオルに含む水分量 [g] ({water}g)</label>
+          <label>タオルに含む水分量 [g] ({towelWater}g)</label>
           <input
             type="range"
             min={0}
             max={30}
             step={0.1}
-            value={water}
+            value={towelWater}
             onChange={(e) => setWater(parseFloat(e.target.value))}
             disabled={isDisabled}
           />
@@ -91,7 +87,7 @@ const TowelControlPanel: React.FC<TowelControlPanelProps> = ({
           min={0}
           max={30}
           step={0.1}
-          value={water}
+          value={towelWater}
           onChange={(e) => setWater(parseFloat(e.target.value || "0"))}
           />
       </div>

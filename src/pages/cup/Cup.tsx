@@ -142,7 +142,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         <div className="experimental-footage">
           <CupCanvasAndLegend
           waterDrop={waterDrop}
-          originTemp={originTemp}
+          tergetTemp={tergetTemp}
           />
         </div>
         <div className="center-item-layout">
@@ -172,16 +172,13 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
         isExperimentRunning={isExperimentRunning}
         />
         <CupControlPanel
-          temperature={originTemp}
-          saturationVapor={saturationVapor}
+          originTemp={originTemp}
           vapor={vapor}
-          cupTemperature={tergetTemp}
-          waterDrop={waterDrop}
-          remainingVapor={remainingVapor}
+          tergetTemp={tergetTemp}
           isExperimentRunning={isExperimentRunning}
-          setOriginalTemperature={setOriginTemp}
+          setOriginTemp={setOriginTemp}
           setVapor={setVapor}
-          setCupTemperature={setTergetTemp}
+          setTergetTemp={setTergetTemp}
           toggleExperiment={toggleExperiment}
         />
       </div>

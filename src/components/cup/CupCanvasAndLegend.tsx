@@ -2,7 +2,7 @@ import React from "react";
 
 interface CupCanvasAndLegendProps {
   waterDrop: number;
-  originTemp: number;
+  tergetTemp: number;
 }
 
 function getCupImageName(cupTemperature: number, cupWaterDrop: number): string {
@@ -10,10 +10,10 @@ function getCupImageName(cupTemperature: number, cupWaterDrop: number): string {
 
     // 0℃の場合の特別処理: 0℃は0に、それより大きい場合は5の倍数に切り上げ
     if (cupTemperature <= 0.1) {
-        roundedTemp = 5;
+        roundedTemp = 2.5;
     }
-      else if (cupTemperature >= 35) {
-        roundedTemp = 35;
+      else if (cupTemperature > 15) {
+        roundedTemp = 17.5;
       }
       else {
         roundedTemp = Math.ceil(cupTemperature / 5) * 5;
@@ -21,12 +21,12 @@ function getCupImageName(cupTemperature: number, cupWaterDrop: number): string {
 
     const roundedWater = Math.min(Math.ceil(cupWaterDrop / 5) * 5, 35);
 
-    return `/glass/glass-${roundedTemp}-${roundedWater}.png`;
+    return `/glass/glass-${roundedTemp * 2}-${roundedWater}.png`;
 }
 
 const CupCanvasAndLegend: React.FC<CupCanvasAndLegendProps> = ({
   waterDrop,
-  originTemp: tergetTemp
+  tergetTemp: tergetTemp
 }) => {
     const cupImageName = getCupImageName(tergetTemp, waterDrop);
 
