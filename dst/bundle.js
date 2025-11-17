@@ -2,10 +2,412 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/furnitureSelectButton.css":
-/*!***********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/furnitureSelectButton.css ***!
-  \***********************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/Button/pageSelectButton.css":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/Button/pageSelectButton.css ***!
+  \*************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.page-select-button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  padding: 1vw 3vw;
+  border-radius: 0.8vw;
+
+  font-size: clamp(14px, 1vw, 18px);
+
+  min-width: 120px;
+  max-width: 320px;
+}
+.page-select-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}`, "",{"version":3,"sources":["webpack://./src/components/common/Button/pageSelectButton.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,YAAY;EACZ,eAAe;EACf,gBAAgB;;EAEhB,gBAAgB;EAChB,oBAAoB;;EAEpB,iCAAiC;;EAEjC,gBAAgB;EAChB,gBAAgB;AAClB;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C","sourcesContent":[".page-select-button {\r\n  color: white;\r\n  border: none;\r\n  cursor: pointer;\r\n  transition: 0.3s;\r\n\r\n  padding: 1vw 3vw;\r\n  border-radius: 0.8vw;\r\n\r\n  font-size: clamp(14px, 1vw, 18px);\r\n\r\n  min-width: 120px;\r\n  max-width: 320px;\r\n}\r\n.page-select-button:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/Explanation/ControlPanel/experimentControlPanel.css":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/Explanation/ControlPanel/experimentControlPanel.css ***!
+  \*************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.graph-panel {
+    padding: 20px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    flex-direction: column;
+}
+.graph-panel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.graph-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+.graph-row label {
+    width: 350px;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+.graph-row input[type="range"] {
+    flex: 1;
+    height: 8px;
+    cursor: pointer;
+    background: #bdc3c7;
+    border-radius: 4px;
+}
+.graph-row input[type="number"] {
+    width: 80px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box
+}
+
+.experiment-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.experiment-button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.experiment-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* -------------------------------------------------- */
+/* レスポンシブ対応 */
+/* -------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    .experiment-main-layout,
+    .graph-controls {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .experiment-main-layout > *,
+    .graph-controls > * {
+        flex: 1 1 100%;
+    }
+}`, "",{"version":3,"sources":["webpack://./src/components/common/Explanation/ControlPanel/experimentControlPanel.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,OAAO;IACP,sBAAsB;IACtB,kBAAkB;IAClB,yBAAyB;IACzB,sBAAsB;AAC1B;AACA;IACI,aAAa;IACb,mBAAmB;IACnB,WAAW;IACX,6BAA6B;IAC7B,oBAAoB;IACpB,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,SAAS;IACT,eAAe;AACnB;AACA;IACI,YAAY;IACZ,gBAAgB;IAChB,gBAAgB;IAChB,kBAAkB;IAClB,cAAc;AAClB;AACA;IACI,OAAO;IACP,WAAW;IACX,eAAe;IACf,mBAAmB;IACnB,kBAAkB;AACtB;AACA;IACI,WAAW;IACX,YAAY;IACZ,YAAY;IACZ,sBAAsB;IACtB,kBAAkB;IAClB,kBAAkB;IAClB;AACJ;;AAEA;IACI,WAAW;IACX,aAAa;IACb,gBAAgB;IAChB,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,YAAY;IACZ,gBAAgB;IAChB,iBAAiB;IACjB,eAAe;IACf,kDAAkD;IAClD,wCAAwC;AAC5C;AACA;IACI,yBAAyB;IACzB,yCAAyC;AAC7C;AACA;IACI,yBAAyB;IACzB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA,uDAAuD;AACvD,aAAa;AACb,uDAAuD;;AAEvD;IACI;;QAEI,sBAAsB;QACtB,iBAAiB;IACrB;;IAEA;;QAEI,cAAc;IAClB;AACJ","sourcesContent":[".graph-panel {\r\n    padding: 20px;\r\n    flex: 1;\r\n    border: 1px solid #ddd;\r\n    border-radius: 8px;\r\n    background-color: #f9f9f9;\r\n    flex-direction: column;\r\n}\r\n.graph-panel h3 {\r\n    margin-top: 0;\r\n    margin-bottom: 20px;\r\n    color: #333;\r\n    border-bottom: 2px solid #eee;\r\n    padding-bottom: 10px;\r\n    font-size: 1.4em;\r\n}\r\n\r\n.graph-row {\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 10px;\r\n    margin-top: 5px;\r\n}\r\n.graph-row label {\r\n    width: 350px;\r\n    font-size: 1.1em;\r\n    font-weight: 600;\r\n    margin-bottom: 8px;\r\n    color: #34495e;\r\n}\r\n.graph-row input[type=\"range\"] {\r\n    flex: 1;\r\n    height: 8px;\r\n    cursor: pointer;\r\n    background: #bdc3c7;\r\n    border-radius: 4px;\r\n}\r\n.graph-row input[type=\"number\"] {\r\n    width: 80px;\r\n    height: 50px;\r\n    padding: 5px;\r\n    border: 1px solid #ccc;\r\n    border-radius: 4px;\r\n    text-align: center;\r\n    box-sizing: border-box\r\n}\r\n\r\n.experiment-button {\r\n    width: 100%;\r\n    padding: 12px;\r\n    margin-top: 20px;\r\n    border: none;\r\n    border-radius: 8px;\r\n    background-color: #e74c3c;\r\n    color: white;\r\n    font-size: 1.1em;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n    transition: background-color 0.3s, box-shadow 0.1s;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n}\r\n.experiment-button:hover {\r\n    background-color: #c0392b;\r\n    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);\r\n}\r\n.experiment-button:disabled {\r\n    background-color: #95a5a6;\r\n    cursor: not-allowed;\r\n    box-shadow: none;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* レスポンシブ対応 */\r\n/* -------------------------------------------------- */\r\n\r\n@media (max-width: 1024px) {\r\n    .experiment-main-layout,\r\n    .graph-controls {\r\n        flex-direction: column;\r\n        margin: 20px auto;\r\n    }\r\n\r\n    .experiment-main-layout > *,\r\n    .graph-controls > * {\r\n        flex: 1 1 100%;\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/CurrentHumidityDisplay/currentHumidityDisplay.css":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/graph/CurrentHumidityDisplay/currentHumidityDisplay.css ***!
+  \**********************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* ========================================================= */
+/* 1. 全体コンテナのスタイル */
+/* ========================================================= */
+
+.graph-panel1 {
+  padding: 20px;
+  max-width: 700px;
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  min-width: 600px;
+}
+
+.graph-panel h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* ========================================================= */
+/* 2. Row コンポーネントのレイアウト (元のインラインスタイルを反映) */
+/* ========================================================= */
+
+.row-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.row-label {
+  max-width: 70%;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+.row-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+/* ========================================================= */
+/* 3. 入力要素のスタイル */
+/* ========================================================= */
+
+.input-compact {
+  width: 60px;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+  font-size: 14px;
+}
+
+input[type="range"] {
+  flex-grow: 1;
+  margin: 10px 0;
+  width: auto;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input:disabled,
+input[readonly] {
+  background-color: #eee;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* ========================================================= */
+/* 4. アラート（警告）のスタイル */
+/* ========================================================= */
+.text-alert {
+  border-color: #e74c3c;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+  background-color: #fbecec;
+}
+
+/* ========================================================= */
+/* 5. ボタンとボタンのグループのスタイル */
+/* ========================================================= */
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.btn:hover:not(.active) {
+  background-color: #2980b9;
+}
+
+/* 固定中（アクティブ）のボタンのスタイル */
+.btn.active {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  font-weight: bold;
+}
+
+.btn.active:hover {
+  background-color: #27ae60;
+}`, "",{"version":3,"sources":["webpack://./src/components/graph/CurrentHumidityDisplay/currentHumidityDisplay.css"],"names":[],"mappings":"AAAA,8DAA8D;AAC9D,mBAAmB;AACnB,8DAA8D;;AAE9D;EACE,aAAa;EACb,gBAAgB;EAChB,OAAO;EACP,sBAAsB;EACtB,kBAAkB;EAClB,yBAAyB;EACzB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,6BAA6B;EAC7B,oBAAoB;EACpB,gBAAgB;AAClB;;AAEA,8DAA8D;AAC9D,0CAA0C;AAC1C,8DAA8D;;AAE9D;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;EACnB,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,QAAQ;EACR,YAAY;AACd;;AAEA,8DAA8D;AAC9D,iBAAiB;AACjB,8DAA8D;;AAE9D;EACE,WAAW;EACX,gBAAgB;EAChB,sBAAsB;EACtB,kBAAkB;EAClB,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,cAAc;EACd,WAAW;;EAEX,wBAAwB;EACxB,qBAAqB;EACrB,gBAAgB;;EAEhB,WAAW;EACX,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;;EAEE,sBAAsB;EACtB,WAAW;EACX,mBAAmB;AACrB;;AAEA,8DAA8D;AAC9D,qBAAqB;AACrB,8DAA8D;AAC9D;EACE,qBAAqB;EACrB,0CAA0C;EAC1C,yBAAyB;AAC3B;;AAEA,8DAA8D;AAC9D,yBAAyB;AACzB,8DAA8D;AAC9D;EACE,aAAa;EACb,yBAAyB;EACzB,SAAS;EACT,gBAAgB;EAChB,iBAAiB;EACjB,2BAA2B;AAC7B;;AAEA;EACE,iBAAiB;EACjB,yBAAyB;EACzB,kBAAkB;EAClB,yBAAyB;EACzB,YAAY;EACZ,eAAe;EACf,iCAAiC;EACjC,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA,wBAAwB;AACxB;EACE,yBAAyB;EACzB,qBAAqB;EACrB,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;AAC3B","sourcesContent":["/* ========================================================= */\r\n/* 1. 全体コンテナのスタイル */\r\n/* ========================================================= */\r\n\r\n.graph-panel1 {\r\n  padding: 20px;\r\n  max-width: 700px;\r\n  flex: 1;\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  background-color: #f9f9f9;\r\n  min-width: 600px;\r\n}\r\n\r\n.graph-panel h3 {\r\n  margin-top: 0;\r\n  margin-bottom: 20px;\r\n  color: #333;\r\n  border-bottom: 2px solid #ddd;\r\n  padding-bottom: 10px;\r\n  font-size: 1.2em;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 2. Row コンポーネントのレイアウト (元のインラインスタイルを反映) */\r\n/* ========================================================= */\r\n\r\n.row-container {\r\n  display: flex;\r\n  gap: 10px;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n.row-label {\r\n  max-width: 70%;\r\n  font-weight: 500;\r\n  color: #333;\r\n  text-align: left;\r\n}\r\n\r\n.row-controls {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  flex-grow: 1;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 3. 入力要素のスタイル */\r\n/* ========================================================= */\r\n\r\n.input-compact {\r\n  width: 60px;\r\n  padding: 5px 8px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 4px;\r\n  text-align: right;\r\n  font-size: 14px;\r\n}\r\n\r\ninput[type=\"range\"] {\r\n  flex-grow: 1;\r\n  margin: 10px 0;\r\n  width: auto;\r\n\r\n  -webkit-appearance: none;\r\n  -moz-appearance: none;\r\n  appearance: none;\r\n\r\n  height: 8px;\r\n  background: #ddd;\r\n  border-radius: 4px;\r\n  cursor: pointer;\r\n}\r\n\r\ninput:disabled,\r\ninput[readonly] {\r\n  background-color: #eee;\r\n  color: #aaa;\r\n  cursor: not-allowed;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 4. アラート（警告）のスタイル */\r\n/* ========================================================= */\r\n.text-alert {\r\n  border-color: #e74c3c;\r\n  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);\r\n  background-color: #fbecec;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 5. ボタンとボタンのグループのスタイル */\r\n/* ========================================================= */\r\n.btn-group {\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  gap: 10px;\r\n  margin-top: 20px;\r\n  padding-top: 10px;\r\n  border-top: 1px dashed #eee;\r\n}\r\n\r\n.btn {\r\n  padding: 8px 15px;\r\n  border: 1px solid #3498db;\r\n  border-radius: 4px;\r\n  background-color: #3498db;\r\n  color: white;\r\n  cursor: pointer;\r\n  transition: background-color 0.2s;\r\n  font-size: 14px;\r\n}\r\n\r\n.btn:hover:not(.active) {\r\n  background-color: #2980b9;\r\n}\r\n\r\n/* 固定中（アクティブ）のボタンのスタイル */\r\n.btn.active {\r\n  background-color: #2ecc71;\r\n  border-color: #2ecc71;\r\n  font-weight: bold;\r\n}\r\n\r\n.btn.active:hover {\r\n  background-color: #27ae60;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/SavedHumidityDisplay/savedHumidityDisplay.css":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/graph/SavedHumidityDisplay/savedHumidityDisplay.css ***!
+  \******************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* ========================================================= */
+/* 1. 全体コンテナのスタイル (CurrentHumidityDisplayと共通) */
+/* ========================================================= */
+
+.graph-panel2 {
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  min-width: 300px;
+}
+.graph-panel2 h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* ========================================================= */
+/* 2. ReadRow コンポーネントのレイアウト */
+/* ========================================================= */
+
+.read-row-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.read-row-label {
+  max-width: 70%;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+.read-row-value-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.read-row-value-group span {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ========================================================= */
+/* 3. 出力要素のスタイル */
+/* ========================================================= */
+
+.read-row-input-compact {
+  width: 75px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+  font-size: 15px;
+  background-color: rgb(230, 230, 230);
+  color: #333;
+  cursor: default;
+}`, "",{"version":3,"sources":["webpack://./src/components/graph/SavedHumidityDisplay/savedHumidityDisplay.css"],"names":[],"mappings":"AAAA,8DAA8D;AAC9D,+CAA+C;AAC/C,8DAA8D;;AAE9D;EACE,aAAa;EACb,gBAAgB;EAChB,WAAW;EACX,sBAAsB;EACtB,kBAAkB;EAClB,yBAAyB;EACzB,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,6BAA6B;EAC7B,oBAAoB;EACpB,gBAAgB;AAClB;;AAEA,8DAA8D;AAC9D,6BAA6B;AAC7B,8DAA8D;;AAE9D;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,QAAQ;EACR,cAAc;AAChB;AACA;IACI,eAAe;IACf,WAAW;IACX,gBAAgB;AACpB;;AAEA,8DAA8D;AAC9D,iBAAiB;AACjB,8DAA8D;;AAE9D;EACE,WAAW;EACX,gBAAgB;EAChB,sBAAsB;EACtB,kBAAkB;EAClB,iBAAiB;EACjB,eAAe;EACf,oCAAoC;EACpC,WAAW;EACX,eAAe;AACjB","sourcesContent":["/* ========================================================= */\r\n/* 1. 全体コンテナのスタイル (CurrentHumidityDisplayと共通) */\r\n/* ========================================================= */\r\n\r\n.graph-panel2 {\r\n  padding: 20px;\r\n  max-width: 700px;\r\n  width: 100%;\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  background-color: #f9f9f9;\r\n  min-width: 300px;\r\n}\r\n.graph-panel2 h3 {\r\n  margin-top: 0;\r\n  margin-bottom: 20px;\r\n  color: #333;\r\n  border-bottom: 2px solid #ddd;\r\n  padding-bottom: 10px;\r\n  font-size: 1.2em;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 2. ReadRow コンポーネントのレイアウト */\r\n/* ========================================================= */\r\n\r\n.read-row-container {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n.read-row-label {\r\n  max-width: 70%;\r\n  font-weight: 500;\r\n  color: #333;\r\n  text-align: left;\r\n}\r\n\r\n.read-row-value-group {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 4px;\r\n  flex-shrink: 0;\r\n}\r\n.read-row-value-group span {\r\n    font-size: 14px;\r\n    color: #555;\r\n    line-height: 1.5;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 3. 出力要素のスタイル */\r\n/* ========================================================= */\r\n\r\n.read-row-input-compact {\r\n  width: 75px;\r\n  padding: 6px 8px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 4px;\r\n  text-align: right;\r\n  font-size: 15px;\r\n  background-color: rgb(230, 230, 230);\r\n  color: #333;\r\n  cursor: default;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/house/furnitureSelectButton.css":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/house/furnitureSelectButton.css ***!
+  \**********************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -37,413 +439,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.furniture-select-button {
 .furniture-select-button:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}`, "",{"version":3,"sources":["webpack://./src/components/common/furnitureSelectButton.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,gBAAgB;EAChB,oBAAoB;EACpB,YAAY;EACZ,eAAe;EACf,aAAa;EACb,YAAY;EACZ,gBAAgB;EAChB,gBAAgB;EAChB,gBAAgB;EAChB,gBAAgB;AAClB;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C","sourcesContent":[".furniture-select-button {\r\n  color: white;\r\n  padding: 1vw 3vw;\r\n  border-radius: 0.8vw;\r\n  border: none;\r\n  cursor: pointer;\r\n  height: 100px;\r\n  width: 320px;\r\n  font-size: 1.5vw;\r\n  min-width: 120px;\r\n  max-width: 320px;\r\n  transition: 0.3s;\r\n}\r\n.furniture-select-button:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/common/pageSelectButton.css":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/common/pageSelectButton.css ***!
-  \******************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `.page-select-button {
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-
-  padding: 1vw 3vw;
-  border-radius: 0.8vw;
-
-  font-size: clamp(14px, 1vw, 18px);
-
-  min-width: 120px;
-  max-width: 320px;
-}
-.page-select-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}`, "",{"version":3,"sources":["webpack://./src/components/common/pageSelectButton.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,YAAY;EACZ,eAAe;EACf,gBAAgB;;EAEhB,gBAAgB;EAChB,oBAAoB;;EAEpB,iCAAiC;;EAEjC,gBAAgB;EAChB,gBAAgB;AAClB;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C","sourcesContent":[".page-select-button {\r\n  color: white;\r\n  border: none;\r\n  cursor: pointer;\r\n  transition: 0.3s;\r\n\r\n  padding: 1vw 3vw;\r\n  border-radius: 0.8vw;\r\n\r\n  font-size: clamp(14px, 1vw, 18px);\r\n\r\n  min-width: 120px;\r\n  max-width: 320px;\r\n}\r\n.page-select-button:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/cup/CupControlPanel.css":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/cup/CupControlPanel.css ***!
-  \**************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* -------------------------------------------------- */
-/* コントロールパネルのスタイル (CupControlPanel.tsx) */
-/* -------------------------------------------------- */
-
-.graph-panel {
-    /* ... 既存のスタイルを保持 ... */
-    padding: 20px;
-    flex: 1;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    /* min-width: 600px; はレスポンシブデザインの妨げになるため削除または調整を推奨しますが、
-       ここではご提示いただいた元のスタイルを尊重し、レスポンシブ対応はメディアクエリに任せます。 */
-    /* min-width: 600px; */
-}
-.graph-panel h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #333;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-    font-size: 1.4em; /* タイトルの文字サイズを大きく */
-}
-.graph-row {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-}
-.graph-row label {
-    font-size: 1.1em;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #34495e;
-}
-.graph-row input[type="range"] {
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-    background: #bdc3c7;
-    border-radius: 4px;
-}
-.experiment-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: #e74c3c;
-    color: white;
-    font-size: 1.1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.1s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.experiment-button:hover {
-    background-color: #c0392b;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-.experiment-button:disabled {
-    background-color: #95a5a6;
-    cursor: not-allowed;
-    box-shadow: none;
-}
-
-
-/* -------------------------------------------------- */
-/* レスポンシブ対応 */
-/* -------------------------------------------------- */
-
-@media (max-width: 1024px) {
-    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */
-    .experiment-main-layout,
-    .graph-controls {
-        flex-direction: column;
-        margin: 20px auto;
-    }
-
-    /* 各コンポーネントは幅いっぱいを使用 */
-    .experiment-main-layout > *,
-    .graph-controls > * {
-        flex: 1 1 100%;
-    }
-}`, "",{"version":3,"sources":["webpack://./src/components/cup/CupControlPanel.css"],"names":[],"mappings":"AAAA,uDAAuD;AACvD,yCAAyC;AACzC,uDAAuD;;AAEvD;IACI,uBAAuB;IACvB,aAAa;IACb,OAAO;IACP,sBAAsB;IACtB,kBAAkB;IAClB,yBAAyB;IACzB;sDACkD;IAClD,sBAAsB;AAC1B;AACA;IACI,aAAa;IACb,mBAAmB;IACnB,WAAW;IACX,6BAA6B;IAC7B,oBAAoB;IACpB,gBAAgB,EAAE,mBAAmB;AACzC;AACA;IACI,mBAAmB;IACnB,aAAa;IACb,sBAAsB;AAC1B;AACA;IACI,gBAAgB;IAChB,gBAAgB;IAChB,kBAAkB;IAClB,cAAc;AAClB;AACA;IACI,WAAW;IACX,WAAW;IACX,eAAe;IACf,mBAAmB;IACnB,kBAAkB;AACtB;AACA;IACI,WAAW;IACX,aAAa;IACb,gBAAgB;IAChB,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,YAAY;IACZ,gBAAgB;IAChB,iBAAiB;IACjB,eAAe;IACf,kDAAkD;IAClD,wCAAwC;AAC5C;AACA;IACI,yBAAyB;IACzB,yCAAyC;AAC7C;AACA;IACI,yBAAyB;IACzB,mBAAmB;IACnB,gBAAgB;AACpB;;;AAGA,uDAAuD;AACvD,aAAa;AACb,uDAAuD;;AAEvD;IACI,6BAA6B;IAC7B;;QAEI,sBAAsB;QACtB,iBAAiB;IACrB;;IAEA,sBAAsB;IACtB;;QAEI,cAAc;IAClB;AACJ","sourcesContent":["/* -------------------------------------------------- */\r\n/* コントロールパネルのスタイル (CupControlPanel.tsx) */\r\n/* -------------------------------------------------- */\r\n\r\n.graph-panel {\r\n    /* ... 既存のスタイルを保持 ... */\r\n    padding: 20px;\r\n    flex: 1;\r\n    border: 1px solid #ddd;\r\n    border-radius: 8px;\r\n    background-color: #f9f9f9;\r\n    /* min-width: 600px; はレスポンシブデザインの妨げになるため削除または調整を推奨しますが、\r\n       ここではご提示いただいた元のスタイルを尊重し、レスポンシブ対応はメディアクエリに任せます。 */\r\n    /* min-width: 600px; */\r\n}\r\n.graph-panel h3 {\r\n    margin-top: 0;\r\n    margin-bottom: 20px;\r\n    color: #333;\r\n    border-bottom: 2px solid #eee;\r\n    padding-bottom: 10px;\r\n    font-size: 1.4em; /* タイトルの文字サイズを大きく */\r\n}\r\n.graph-row {\r\n    margin-bottom: 15px;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n.graph-row label {\r\n    font-size: 1.1em;\r\n    font-weight: 600;\r\n    margin-bottom: 8px;\r\n    color: #34495e;\r\n}\r\n.graph-row input[type=\"range\"] {\r\n    width: 100%;\r\n    height: 8px;\r\n    cursor: pointer;\r\n    background: #bdc3c7;\r\n    border-radius: 4px;\r\n}\r\n.experiment-button {\r\n    width: 100%;\r\n    padding: 12px;\r\n    margin-top: 20px;\r\n    border: none;\r\n    border-radius: 8px;\r\n    background-color: #e74c3c;\r\n    color: white;\r\n    font-size: 1.1em;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n    transition: background-color 0.3s, box-shadow 0.1s;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n}\r\n.experiment-button:hover {\r\n    background-color: #c0392b;\r\n    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);\r\n}\r\n.experiment-button:disabled {\r\n    background-color: #95a5a6;\r\n    cursor: not-allowed;\r\n    box-shadow: none;\r\n}\r\n\r\n\r\n/* -------------------------------------------------- */\r\n/* レスポンシブ対応 */\r\n/* -------------------------------------------------- */\r\n\r\n@media (max-width: 1024px) {\r\n    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */\r\n    .experiment-main-layout,\r\n    .graph-controls {\r\n        flex-direction: column;\r\n        margin: 20px auto;\r\n    }\r\n\r\n    /* 各コンポーネントは幅いっぱいを使用 */\r\n    .experiment-main-layout > *,\r\n    .graph-controls > * {\r\n        flex: 1 1 100%;\r\n    }\r\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/currentHumidityDisplay.css":
-/*!***********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/graph/currentHumidityDisplay.css ***!
-  \***********************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* ========================================================= */
-/* 1. 全体コンテナのスタイル */
-/* ========================================================= */
-
-.graph-panel1 {
-  padding: 20px;
-  flex: 1;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  min-width: 600px;
-}
-
-.graph-panel h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #333;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-}
-
-/* ========================================================= */
-/* 2. Row コンポーネントのレイアウト (元のインラインスタイルを反映) */
-/* ========================================================= */
-
-.row-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.row-label {
-  /* 元の style={{ minWidth: 200 }} を反映 */
-  min-width: 200px;
-  font-weight: bold;
-  color: #555;
-}
-
-.row-controls {
-  /* 元の style={{ display: "flex", alignItems: "center", gap: 8 }} を反映 */
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-grow: 1; /* 入力部分を広げる */
-}
-
-/* ========================================================= */
-/* 3. 入力要素のスタイル */
-/* ========================================================= */
-
-/* 数値入力ボックスのコンパクトなスタイル */
-.input-compact {
-  width: 60px; /* コンパクトな幅 */
-  padding: 5px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-align: right;
-  font-size: 14px;
-}
-
-/* スライダーの基本スタイル */
-input[type="range"] {
-  /* 1. 基本設定 */
-  flex-grow: 1; /* 親要素に合わせて幅いっぱいに広げる */
-  margin: 10px 0; /* 上下のマージンを設定し、つまみのはみ出しに対応 */
-  width: auto; /* 幅はflex-growに任せる */
-
-  /* 2. ネイティブな外観の無効化（カスタマイズに必須） */
-  -webkit-appearance: none; /* Chrome, Safari, Edge (WebKit) */
-  -moz-appearance: none;    /* Firefox (通常は不要だが、保険として) */
-  appearance: none;         /* 標準 */
-
-  /* 3. トラック（バー）の基本スタイル */
-  height: 8px; /* トラックの高さ */
-  background: #ddd; /* トラックの背景色 */
-  border-radius: 4px;
-  cursor: pointer; /* マウスオーバー時にカーソルを指の形にする */
-}
-
-/* 無効化された入力フィールドのスタイル */
-input:disabled,
-input[readonly] {
-  background-color: #eee;
-  color: #aaa;
-  cursor: not-allowed;
-}
-
-/* ========================================================= */
-/* 4. アラート（警告）のスタイル */
-/* ========================================================= */
-
-.text-alert {
-  /* 警告時の視覚的なフィードバック */
-  border-color: #e74c3c;
-  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
-  background-color: #fbecec;
-}
-
-/* ========================================================= */
-/* 5. ボタンとボタンのグループのスタイル */
-/* ========================================================= */
-
-.btn-group {
-  display: flex;
-  justify-content: flex-end; /* ボタンを右寄せに配置 */
-  gap: 10px;
-  margin-top: 20px;
-  padding-top: 10px;
-  border-top: 1px dashed #eee;
-}
-
-.btn {
-  padding: 8px 15px;
-  border: 1px solid #3498db;
-  border-radius: 4px;
-  background-color: #3498db;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  font-size: 14px;
-}
-
-.btn:hover:not(.active) {
-  background-color: #2980b9;
-}
-
-/* 固定中（アクティブ）のボタンのスタイル */
-.btn.active {
-  background-color: #2ecc71;
-  border-color: #2ecc71;
-  font-weight: bold;
-}
-
-.btn.active:hover {
-  background-color: #27ae60;
-}`, "",{"version":3,"sources":["webpack://./src/components/graph/currentHumidityDisplay.css"],"names":[],"mappings":"AAAA,8DAA8D;AAC9D,mBAAmB;AACnB,8DAA8D;;AAE9D;EACE,aAAa;EACb,OAAO;EACP,sBAAsB;EACtB,kBAAkB;EAClB,yBAAyB;EACzB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,6BAA6B;EAC7B,oBAAoB;AACtB;;AAEA,8DAA8D;AAC9D,0CAA0C;AAC1C,8DAA8D;;AAE9D;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;EACnB,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,qCAAqC;EACrC,gBAAgB;EAChB,iBAAiB;EACjB,WAAW;AACb;;AAEA;EACE,qEAAqE;EACrE,aAAa;EACb,mBAAmB;EACnB,QAAQ;EACR,YAAY,EAAE,aAAa;AAC7B;;AAEA,8DAA8D;AAC9D,iBAAiB;AACjB,8DAA8D;;AAE9D,wBAAwB;AACxB;EACE,WAAW,EAAE,YAAY;EACzB,gBAAgB;EAChB,sBAAsB;EACtB,kBAAkB;EAClB,iBAAiB;EACjB,eAAe;AACjB;;AAEA,iBAAiB;AACjB;EACE,YAAY;EACZ,YAAY,EAAE,sBAAsB;EACpC,cAAc,EAAE,4BAA4B;EAC5C,WAAW,EAAE,oBAAoB;;EAEjC,+BAA+B;EAC/B,wBAAwB,EAAE,kCAAkC;EAC5D,qBAAqB,KAAK,4BAA4B;EACtD,gBAAgB,UAAU,OAAO;;EAEjC,uBAAuB;EACvB,WAAW,EAAE,YAAY;EACzB,gBAAgB,EAAE,aAAa;EAC/B,kBAAkB;EAClB,eAAe,EAAE,yBAAyB;AAC5C;;AAEA,uBAAuB;AACvB;;EAEE,sBAAsB;EACtB,WAAW;EACX,mBAAmB;AACrB;;AAEA,8DAA8D;AAC9D,qBAAqB;AACrB,8DAA8D;;AAE9D;EACE,oBAAoB;EACpB,qBAAqB;EACrB,0CAA0C;EAC1C,yBAAyB;AAC3B;;AAEA,8DAA8D;AAC9D,yBAAyB;AACzB,8DAA8D;;AAE9D;EACE,aAAa;EACb,yBAAyB,EAAE,eAAe;EAC1C,SAAS;EACT,gBAAgB;EAChB,iBAAiB;EACjB,2BAA2B;AAC7B;;AAEA;EACE,iBAAiB;EACjB,yBAAyB;EACzB,kBAAkB;EAClB,yBAAyB;EACzB,YAAY;EACZ,eAAe;EACf,iCAAiC;EACjC,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA,wBAAwB;AACxB;EACE,yBAAyB;EACzB,qBAAqB;EACrB,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;AAC3B","sourcesContent":["/* ========================================================= */\r\n/* 1. 全体コンテナのスタイル */\r\n/* ========================================================= */\r\n\r\n.graph-panel1 {\r\n  padding: 20px;\r\n  flex: 1;\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  background-color: #f9f9f9;\r\n  min-width: 600px;\r\n}\r\n\r\n.graph-panel h3 {\r\n  margin-top: 0;\r\n  margin-bottom: 20px;\r\n  color: #333;\r\n  border-bottom: 2px solid #eee;\r\n  padding-bottom: 10px;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 2. Row コンポーネントのレイアウト (元のインラインスタイルを反映) */\r\n/* ========================================================= */\r\n\r\n.row-container {\r\n  display: flex;\r\n  gap: 10px;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.row-label {\r\n  /* 元の style={{ minWidth: 200 }} を反映 */\r\n  min-width: 200px;\r\n  font-weight: bold;\r\n  color: #555;\r\n}\r\n\r\n.row-controls {\r\n  /* 元の style={{ display: \"flex\", alignItems: \"center\", gap: 8 }} を反映 */\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n  flex-grow: 1; /* 入力部分を広げる */\r\n}\r\n\r\n/* ========================================================= */\r\n/* 3. 入力要素のスタイル */\r\n/* ========================================================= */\r\n\r\n/* 数値入力ボックスのコンパクトなスタイル */\r\n.input-compact {\r\n  width: 60px; /* コンパクトな幅 */\r\n  padding: 5px 8px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 4px;\r\n  text-align: right;\r\n  font-size: 14px;\r\n}\r\n\r\n/* スライダーの基本スタイル */\r\ninput[type=\"range\"] {\r\n  /* 1. 基本設定 */\r\n  flex-grow: 1; /* 親要素に合わせて幅いっぱいに広げる */\r\n  margin: 10px 0; /* 上下のマージンを設定し、つまみのはみ出しに対応 */\r\n  width: auto; /* 幅はflex-growに任せる */\r\n\r\n  /* 2. ネイティブな外観の無効化（カスタマイズに必須） */\r\n  -webkit-appearance: none; /* Chrome, Safari, Edge (WebKit) */\r\n  -moz-appearance: none;    /* Firefox (通常は不要だが、保険として) */\r\n  appearance: none;         /* 標準 */\r\n\r\n  /* 3. トラック（バー）の基本スタイル */\r\n  height: 8px; /* トラックの高さ */\r\n  background: #ddd; /* トラックの背景色 */\r\n  border-radius: 4px;\r\n  cursor: pointer; /* マウスオーバー時にカーソルを指の形にする */\r\n}\r\n\r\n/* 無効化された入力フィールドのスタイル */\r\ninput:disabled,\r\ninput[readonly] {\r\n  background-color: #eee;\r\n  color: #aaa;\r\n  cursor: not-allowed;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 4. アラート（警告）のスタイル */\r\n/* ========================================================= */\r\n\r\n.text-alert {\r\n  /* 警告時の視覚的なフィードバック */\r\n  border-color: #e74c3c;\r\n  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);\r\n  background-color: #fbecec;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 5. ボタンとボタンのグループのスタイル */\r\n/* ========================================================= */\r\n\r\n.btn-group {\r\n  display: flex;\r\n  justify-content: flex-end; /* ボタンを右寄せに配置 */\r\n  gap: 10px;\r\n  margin-top: 20px;\r\n  padding-top: 10px;\r\n  border-top: 1px dashed #eee;\r\n}\r\n\r\n.btn {\r\n  padding: 8px 15px;\r\n  border: 1px solid #3498db;\r\n  border-radius: 4px;\r\n  background-color: #3498db;\r\n  color: white;\r\n  cursor: pointer;\r\n  transition: background-color 0.2s;\r\n  font-size: 14px;\r\n}\r\n\r\n.btn:hover:not(.active) {\r\n  background-color: #2980b9;\r\n}\r\n\r\n/* 固定中（アクティブ）のボタンのスタイル */\r\n.btn.active {\r\n  background-color: #2ecc71;\r\n  border-color: #2ecc71;\r\n  font-weight: bold;\r\n}\r\n\r\n.btn.active:hover {\r\n  background-color: #27ae60;\r\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/savedHumidityDisplay.css":
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/graph/savedHumidityDisplay.css ***!
-  \*********************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* ========================================================= */
-/* 1. 全体コンテナのスタイル (CurrentHumidityDisplayと共通) */
-/* ========================================================= */
-
-.graph-panel2 {
-  padding: 20px;
-  flex: 1;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  min-width: 300px;
-}
-
-.graph-panel h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #333;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-}
-
-/* ========================================================= */
-/* 2. ReadRow コンポーネントのレイアウト */
-/* ========================================================= */
-
-/* 行のコンテナ (.read-row-container) */
-.read-row-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-/* ラベル (.read-row-label) */
-.read-row-label {
-  min-width: 200px; /* 幅を固定 */
-  font-weight: bold;
-  color: #555;
-}
-
-/* 値と単位のグループ (.read-row-value-group) */
-.read-row-value-group {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* ========================================================= */
-/* 3. 入力要素のスタイル */
-/* ========================================================= */
-
-/* 読み取り専用の数値入力ボックス (.read-row-input-compact) */
-.read-row-input-compact {
-  width: 70px; /* 元のインラインスタイル width: 70 を反映 */
-  padding: 5px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-align: right;
-  font-size: 14px;
-
-  /* 読み取り専用の視覚的なスタイル */
-  background-color: #eee;
-  color: #333;
-  cursor: default;
-}`, "",{"version":3,"sources":["webpack://./src/components/graph/savedHumidityDisplay.css"],"names":[],"mappings":"AAAA,8DAA8D;AAC9D,+CAA+C;AAC/C,8DAA8D;;AAE9D;EACE,aAAa;EACb,OAAO;EACP,sBAAsB;EACtB,kBAAkB;EAClB,yBAAyB;EACzB,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,6BAA6B;EAC7B,oBAAoB;AACtB;;AAEA,8DAA8D;AAC9D,6BAA6B;AAC7B,8DAA8D;;AAE9D,iCAAiC;AACjC;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;EACnB,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA,0BAA0B;AAC1B;EACE,gBAAgB,EAAE,SAAS;EAC3B,iBAAiB;EACjB,WAAW;AACb;;AAEA,sCAAsC;AACtC;EACE,aAAa;EACb,mBAAmB;EACnB,QAAQ;AACV;;AAEA,8DAA8D;AAC9D,iBAAiB;AACjB,8DAA8D;;AAE9D,8CAA8C;AAC9C;EACE,WAAW,EAAE,8BAA8B;EAC3C,gBAAgB;EAChB,sBAAsB;EACtB,kBAAkB;EAClB,iBAAiB;EACjB,eAAe;;EAEf,oBAAoB;EACpB,sBAAsB;EACtB,WAAW;EACX,eAAe;AACjB","sourcesContent":["/* ========================================================= */\r\n/* 1. 全体コンテナのスタイル (CurrentHumidityDisplayと共通) */\r\n/* ========================================================= */\r\n\r\n.graph-panel2 {\r\n  padding: 20px;\r\n  flex: 1;\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  background-color: #f9f9f9;\r\n  min-width: 300px;\r\n}\r\n\r\n.graph-panel h3 {\r\n  margin-top: 0;\r\n  margin-bottom: 20px;\r\n  color: #333;\r\n  border-bottom: 2px solid #eee;\r\n  padding-bottom: 10px;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 2. ReadRow コンポーネントのレイアウト */\r\n/* ========================================================= */\r\n\r\n/* 行のコンテナ (.read-row-container) */\r\n.read-row-container {\r\n  display: flex;\r\n  gap: 10px;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n/* ラベル (.read-row-label) */\r\n.read-row-label {\r\n  min-width: 200px; /* 幅を固定 */\r\n  font-weight: bold;\r\n  color: #555;\r\n}\r\n\r\n/* 値と単位のグループ (.read-row-value-group) */\r\n.read-row-value-group {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 8px;\r\n}\r\n\r\n/* ========================================================= */\r\n/* 3. 入力要素のスタイル */\r\n/* ========================================================= */\r\n\r\n/* 読み取り専用の数値入力ボックス (.read-row-input-compact) */\r\n.read-row-input-compact {\r\n  width: 70px; /* 元のインラインスタイル width: 70 を反映 */\r\n  padding: 5px 8px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 4px;\r\n  text-align: right;\r\n  font-size: 14px;\r\n\r\n  /* 読み取り専用の視覚的なスタイル */\r\n  background-color: #eee;\r\n  color: #333;\r\n  cursor: default;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/house/furnitureSelectButton.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,gBAAgB;EAChB,oBAAoB;EACpB,YAAY;EACZ,eAAe;EACf,aAAa;EACb,YAAY;EACZ,gBAAgB;EAChB,gBAAgB;EAChB,gBAAgB;EAChB,gBAAgB;AAClB;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C","sourcesContent":[".furniture-select-button {\r\n  color: white;\r\n  padding: 1vw 3vw;\r\n  border-radius: 0.8vw;\r\n  border: none;\r\n  cursor: pointer;\r\n  height: 100px;\r\n  width: 320px;\r\n  font-size: 1.5vw;\r\n  min-width: 120px;\r\n  max-width: 320px;\r\n  transition: 0.3s;\r\n}\r\n.furniture-select-button:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -703,7 +699,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.overall-layout {
   gap: 0px;
   width: 100%;
   max-width: 1500px;
-  margin: 0px auto 0px auto;
+  margin: 0px auto;
   flex-direction: column;
   align-items: center;
 }
@@ -740,19 +736,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.overall-layout {
  * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする
  * ---------------------------------------------------- */
 .graph-controls {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    font-size: 24px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 24px;
 }
+
+/* グラフコントロール内の直接の子要素（パネルなど）のスタイル */
 .graph-controls > * {
-    flex: 1;
-    padding: 15px;
-    border-radius: 12px;
-    min-height: 250px;
-}`, "",{"version":3,"sources":["webpack://./src/pages/graph/graph.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,QAAQ;EACR,WAAW;EACX,iBAAiB;EACjB,yBAAyB;EACzB,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,0BAA0B;EAC1B,uBAAuB;EACvB,oBAAoB;EACpB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;IACI,aAAa;IACb,SAAS;IACT,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,eAAe;AACnB;AACA;IACI,OAAO;IACP,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB","sourcesContent":[".overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n.graph-main-layout {\r\n  display: flex;\r\n  gap: 0px;\r\n  width: 100%;\r\n  max-width: 1500px;\r\n  margin: 0px auto 0px auto;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * A. グラフエリア: 凡例/公式 と キャンバスを横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-area-wrap {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-grow: 0;\r\n  max-width: 1500px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.legend-formula-column {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  width: 400px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.graph-canvas {\r\n  padding: 20px;\r\n  max-width: 600px;\r\n  margin: 0px auto 50px auto;\r\n  background-color: white;\r\n  border-radius: 0.8vw;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-controls {\r\n    display: flex;\r\n    gap: 20px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0 auto;\r\n    font-size: 24px;\r\n}\r\n.graph-controls > * {\r\n    flex: 1;\r\n    padding: 15px;\r\n    border-radius: 12px;\r\n    min-height: 250px;\r\n}"],"sourceRoot":""}]);
+  flex: 1;
+  padding: 15px;
+  border-radius: 12px;
+  min-height: 250px;
+}`, "",{"version":3,"sources":["webpack://./src/pages/graph/graph.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,QAAQ;EACR,WAAW;EACX,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,0BAA0B;EAC1B,uBAAuB;EACvB,oBAAoB;EACpB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,WAAW;EACX,iBAAiB;EACjB,cAAc;EACd,eAAe;AACjB;;AAEA,kCAAkC;AAClC;EACE,OAAO;EACP,aAAa;EACb,mBAAmB;EACnB,iBAAiB;AACnB","sourcesContent":[".overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n.graph-main-layout {\r\n  display: flex;\r\n  gap: 0px;\r\n  width: 100%;\r\n  max-width: 1500px;\r\n  margin: 0px auto;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * A. グラフエリア: 凡例/公式 と キャンバスを横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-area-wrap {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-grow: 0;\r\n  max-width: 1500px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.legend-formula-column {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  width: 400px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.graph-canvas {\r\n  padding: 20px;\r\n  max-width: 600px;\r\n  margin: 0px auto 50px auto;\r\n  background-color: white;\r\n  border-radius: 0.8vw;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-controls {\r\n  display: flex;\r\n  gap: 20px;\r\n  width: 100%;\r\n  max-width: 1500px;\r\n  margin: 0 auto;\r\n  font-size: 24px;\r\n}\r\n\r\n/* グラフコントロール内の直接の子要素（パネルなど）のスタイル */\r\n.graph-controls > * {\r\n  flex: 1;\r\n  padding: 15px;\r\n  border-radius: 12px;\r\n  min-height: 250px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -46619,10 +46617,139 @@ exports["default"] = App;
 
 /***/ }),
 
-/***/ "./src/components/common/ExplanationBarGraph.tsx":
-/*!*******************************************************!*\
-  !*** ./src/components/common/ExplanationBarGraph.tsx ***!
-  \*******************************************************/
+/***/ "./src/components/common/Button/PageSelectButton.tsx":
+/*!***********************************************************!*\
+  !*** ./src/components/common/Button/PageSelectButton.tsx ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.PageSelectButton = void 0;
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ./pageSelectButton.css */ "./src/components/common/Button/pageSelectButton.css");
+const PageSelectButton = ({ label, to, color, }) => {
+    const handleClick = () => {
+        window.location.href = to;
+    };
+    return ((0, jsx_runtime_1.jsx)("button", { className: "page-select-button", style: {
+            backgroundColor: color,
+        }, onClick: handleClick, children: label }));
+};
+exports.PageSelectButton = PageSelectButton;
+exports["default"] = exports.PageSelectButton;
+
+
+/***/ }),
+
+/***/ "./src/components/common/Button/pageSelectButton.css":
+/*!***********************************************************!*\
+  !*** ./src/components/common/Button/pageSelectButton.css ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./pageSelectButton.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/Button/pageSelectButton.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/common/Explanation/ControlPanel/experimentControlPanel.css":
+/*!***********************************************************************************!*\
+  !*** ./src/components/common/Explanation/ControlPanel/experimentControlPanel.css ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_experimentControlPanel_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js!./experimentControlPanel.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/Explanation/ControlPanel/experimentControlPanel.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_experimentControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_experimentControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_experimentControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_experimentControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph.tsx":
+/*!***************************************************************************************!*\
+  !*** ./src/components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph.tsx ***!
+  \***************************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -46636,10 +46763,10 @@ exports["default"] = ExplanationBarGraph;
 
 /***/ }),
 
-/***/ "./src/components/common/ExplanationFormulas.tsx":
-/*!*******************************************************!*\
-  !*** ./src/components/common/ExplanationFormulas.tsx ***!
-  \*******************************************************/
+/***/ "./src/components/common/Explanation/ExplanationFormulas/ExplanationFormulas.tsx":
+/*!***************************************************************************************!*\
+  !*** ./src/components/common/Explanation/ExplanationFormulas/ExplanationFormulas.tsx ***!
+  \***************************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -46653,35 +46780,10 @@ exports["default"] = ExplanationFormulas;
 
 /***/ }),
 
-/***/ "./src/components/common/FurnitureSelectButton.tsx":
-/*!*********************************************************!*\
-  !*** ./src/components/common/FurnitureSelectButton.tsx ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.FurnitureSelectButton = void 0;
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-__webpack_require__(/*! ./furnitureSelectButton.css */ "./src/components/common/furnitureSelectButton.css");
-const FurnitureSelectButton = ({ label, to, color, }) => {
-    const handleClick = () => {
-        window.location.href = to;
-    };
-    return ((0, jsx_runtime_1.jsx)("button", { className: "furniture-select-button", style: {
-            backgroundColor: color,
-        }, onClick: handleClick, children: label }));
-};
-exports.FurnitureSelectButton = FurnitureSelectButton;
-exports["default"] = exports.FurnitureSelectButton;
-
-
-/***/ }),
-
-/***/ "./src/components/common/HumidityGraphCanvasMini.tsx":
-/*!***********************************************************!*\
-  !*** ./src/components/common/HumidityGraphCanvasMini.tsx ***!
-  \***********************************************************/
+/***/ "./src/components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini.tsx":
+/*!***********************************************************************************************!*\
+  !*** ./src/components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini.tsx ***!
+  \***********************************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -46830,159 +46932,48 @@ exports["default"] = HumidityGraphCanvasMini;
 
 /***/ }),
 
-/***/ "./src/components/common/PageSelectButton.tsx":
-/*!****************************************************!*\
-  !*** ./src/components/common/PageSelectButton.tsx ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.PageSelectButton = void 0;
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-__webpack_require__(/*! ./pageSelectButton.css */ "./src/components/common/pageSelectButton.css");
-const PageSelectButton = ({ label, to, color, }) => {
-    const handleClick = () => {
-        window.location.href = to;
-    };
-    return ((0, jsx_runtime_1.jsx)("button", { className: "page-select-button", style: {
-            backgroundColor: color,
-        }, onClick: handleClick, children: label }));
-};
-exports.PageSelectButton = PageSelectButton;
-exports["default"] = exports.PageSelectButton;
-
-
-/***/ }),
-
-/***/ "./src/components/common/furnitureSelectButton.css":
-/*!*********************************************************!*\
-  !*** ./src/components/common/furnitureSelectButton.css ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./furnitureSelectButton.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/furnitureSelectButton.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/components/common/pageSelectButton.css":
-/*!****************************************************!*\
-  !*** ./src/components/common/pageSelectButton.css ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./pageSelectButton.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/common/pageSelectButton.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_pageSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/components/cup/CondensationStatusDisplay.tsx":
-/*!**********************************************************!*\
-  !*** ./src/components/cup/CondensationStatusDisplay.tsx ***!
-  \**********************************************************/
+/***/ "./src/components/cup/ControlPanel/CupControlPanel.tsx":
+/*!*************************************************************!*\
+  !*** ./src/components/cup/ControlPanel/CupControlPanel.tsx ***!
+  \*************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const CondensationStatusDisplay = ({ waterDrop, humidity, }) => {
-    const isCondensed = waterDrop > 0.1;
-    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "28px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
-                    `結露が発生！ (${waterDrop.toFixed(1)}g/m³)` :
-                    "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", children: ["\u30B3\u30C3\u30D7\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
+__webpack_require__(/*! ../../common/Explanation/ControlPanel/experimentControlPanel.css */ "./src/components/common/Explanation/ControlPanel/experimentControlPanel.css");
+const CupControlPanel = ({ originTemp, vapor, tergetTemp, isExperimentRunning, setOriginTemp, setVapor, setTergetTemp, toggleExperiment }) => {
+    const isDisabled = isExperimentRunning;
+    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
+    const buttonClass = `experiment-button ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u90E8\u5C4B\u306E\u6E29\u5EA6 [\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 20, max: 40, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 20, max: 40, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "20")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6 [\u2103] (", tergetTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 20, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 20, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
 };
-exports["default"] = CondensationStatusDisplay;
+exports["default"] = CupControlPanel;
 
 
 /***/ }),
 
-/***/ "./src/components/cup/CupCanvasAndLegend.tsx":
-/*!***************************************************!*\
-  !*** ./src/components/cup/CupCanvasAndLegend.tsx ***!
-  \***************************************************/
+/***/ "./src/components/cup/ExperimentDescription/CupExperimentDescription.tsx":
+/*!*******************************************************************************!*\
+  !*** ./src/components/cup/ExperimentDescription/CupExperimentDescription.tsx ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const ExperimentDescription = ({ initialOriginalTemperature: initialTemperature, initialVapor, initialCupTemperature, isExperimentRunning, }) => {
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u7D50\u9732\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u7A7A\u6C17\u4E2D\u306B\u542B\u307E\u308C\u308B\u6C34\u84B8\u6C17\u304C\u30B3\u30C3\u30D7\u306E\u51B7\u305F\u3044\u7E01\u306B\u89E6\u308C\u308B\u3068\u3001\u305D\u306E\u90E8\u5206\u306E\u7A7A\u6C17\u304C\u51B7\u3084\u3055\u308C\u3001 \u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u305F\u6C34\u84B8\u6C17\u304C\u51DD\u7E2E\u3057\u3066\u6C34\u6EF4\u3068\u3057\u3066\u73FE\u308C\u307E\u3059\u3002" }), (0, jsx_runtime_1.jsx)("h2", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u306E\u90E8\u5C4B\u306B\u3042\u308B \u30B3\u30C3\u30D7\u3092\u3001\u3086\u3063\u304F\u308A ", initialCupTemperature.toFixed(1), "\u2103 \u307E\u3067\u51B7\u307E\u3057\u3066\u3044\u304D\u307E\u3059\u3002"] })] }));
+};
+exports["default"] = ExperimentDescription;
+
+
+/***/ }),
+
+/***/ "./src/components/cup/ExperimentalFootage/CupExperimentalFootage.tsx":
+/*!***************************************************************************!*\
+  !*** ./src/components/cup/ExperimentalFootage/CupExperimentalFootage.tsx ***!
+  \***************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -47012,29 +47003,75 @@ exports["default"] = CupCanvasAndLegend;
 
 /***/ }),
 
-/***/ "./src/components/cup/CupControlPanel.css":
-/*!************************************************!*\
-  !*** ./src/components/cup/CupControlPanel.css ***!
-  \************************************************/
+/***/ "./src/components/cup/StatusDisplay/CupStatusDisplay.tsx":
+/*!***************************************************************!*\
+  !*** ./src/components/cup/StatusDisplay/CupStatusDisplay.tsx ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const CondensationStatusDisplay = ({ waterDrop, humidity, }) => {
+    const isCondensed = waterDrop > 0.1;
+    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "27px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
+                    `結露が発生！ (${waterDrop.toFixed(1)}g/m³)` :
+                    "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", children: ["\u30B3\u30C3\u30D7\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
+};
+exports["default"] = CondensationStatusDisplay;
+
+
+/***/ }),
+
+/***/ "./src/components/graph/CurrentHumidityDisplay/CurrentHumidityDisplay.tsx":
+/*!********************************************************************************!*\
+  !*** ./src/components/graph/CurrentHumidityDisplay/CurrentHumidityDisplay.tsx ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ./currentHumidityDisplay.css */ "./src/components/graph/CurrentHumidityDisplay/currentHumidityDisplay.css");
+const Row = ({ label, children, }) => {
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "row-container", children: [(0, jsx_runtime_1.jsx)("label", { className: "row-label", children: label }), (0, jsx_runtime_1.jsx)("div", { className: "row-controls", children: children })] }));
+};
+const CurrentHumidityDisplay = ({ temperature, saturationVapor, vapor, humidity, waterDrop, fixTemperature, fixVapor, setTemperature, setSaturationVapor, setVapor, setHumidity, toggleFixTemperature, toggleFixVapor, saveState, }) => {
+    // 親コンポーネントのロジックを反映した UI 制御
+    const anyFixed = fixTemperature || fixVapor;
+    const humidityEnabled = anyFixed;
+    const isSaturationVaporAlert = saturationVapor >= 82.8;
+    const isTemperatureAlert = temperature >= 50.0;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel1", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u7A7A\u9593\u306E\u72B6\u614B" }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6E29\u5EA6 [\u2103]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 50, step: 0.1, value: temperature, disabled: fixTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 50, step: 0.1, value: temperature, disabled: fixTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "0")), className: `input-compact ${isTemperatureAlert ? "text-alert" : ""}` }), (0, jsx_runtime_1.jsx)("span", { children: "\u2103" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF [g/m\u00B3]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 82.8, step: 0.1, value: saturationVapor, disabled: fixTemperature, onChange: (e) => setSaturationVapor(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 82.8, step: 0.1, value: saturationVapor, disabled: fixTemperature, onChange: (e) => setSaturationVapor(parseFloat(e.target.value || "4.9")), className: `input-compact ${isSaturationVaporAlert ? "text-alert" : ""}` }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 90, step: 0.1, value: vapor, disabled: fixVapor, onChange: (e) => setVapor(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 90, step: 0.1, value: vapor, disabled: fixVapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")), className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6E7F\u5EA6 [%]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 5.9, max: 100, step: 0.1, value: humidity, disabled: !humidityEnabled, onChange: (e) => setHumidity(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5.9, max: 100, step: 0.1, value: humidity, disabled: !humidityEnabled, onChange: (e) => setHumidity(parseFloat(e.target.value || "5.9")), className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "%" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6C34\u6EF4\u306E\u91CF [g/m\u00B3]", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 85.1, step: 0.1, value: waterDrop, disabled: true, readOnly: true }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 85.1, step: 0.1, value: waterDrop, disabled: true, readOnly: true, className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "btn-group", children: [(0, jsx_runtime_1.jsx)("button", { onClick: toggleFixTemperature, className: `btn ${fixTemperature ? "active" : ""}`, children: fixTemperature ? "温度を固定中" : "温度を固定" }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleFixVapor, className: `btn ${fixVapor ? "active" : ""}`, children: fixVapor ? "水分量を固定中" : "水分量を固定" }), (0, jsx_runtime_1.jsx)("button", { onClick: saveState, className: "btn", children: "\u521D\u3081\u306E\u7A7A\u9593\u306E\u72B6\u614B\u3068\u3057\u3066\u4FDD\u5B58" })] })] }));
+};
+exports["default"] = CurrentHumidityDisplay;
+
+
+/***/ }),
+
+/***/ "./src/components/graph/CurrentHumidityDisplay/currentHumidityDisplay.css":
+/*!********************************************************************************!*\
+  !*** ./src/components/graph/CurrentHumidityDisplay/currentHumidityDisplay.css ***!
+  \********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./CupControlPanel.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/cup/CupControlPanel.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./currentHumidityDisplay.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/CurrentHumidityDisplay/currentHumidityDisplay.css");
 
       
       
@@ -47054,84 +47091,20 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_CupControlPanel_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/components/cup/CupControlPanel.tsx":
-/*!************************************************!*\
-  !*** ./src/components/cup/CupControlPanel.tsx ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-__webpack_require__(/*! ./CupControlPanel.css */ "./src/components/cup/CupControlPanel.css");
-const CupControlPanel = ({ originTemp, vapor, tergetTemp, isExperimentRunning, setOriginTemp, setVapor, setTergetTemp, toggleExperiment }) => {
-    const isDisabled = isExperimentRunning;
-    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
-    const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u90E8\u5C4B\u306E\u6E29\u5EA6 [\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 20, max: 40, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 20, max: 40, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "20")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 51.1, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6 [\u2103] (", tergetTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 20, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 20, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
-};
-exports["default"] = CupControlPanel;
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
 
-/***/ "./src/components/cup/ExperimentDescription.tsx":
-/*!******************************************************!*\
-  !*** ./src/components/cup/ExperimentDescription.tsx ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const ExperimentDescription = ({ initialOriginalTemperature: initialTemperature, initialVapor, initialCupTemperature, isExperimentRunning, }) => {
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u7D50\u9732\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u7A7A\u6C17\u4E2D\u306B\u542B\u307E\u308C\u308B\u6C34\u84B8\u6C17\u304C\u30B3\u30C3\u30D7\u306E\u51B7\u305F\u3044\u7E01\u306B\u89E6\u308C\u308B\u3068\u3001\u305D\u306E\u90E8\u5206\u306E\u7A7A\u6C17\u304C\u51B7\u3084\u3055\u308C\u3001 \u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u305F\u6C34\u84B8\u6C17\u304C\u51DD\u7E2E\u3057\u3066\u6C34\u6EF4\u3068\u3057\u3066\u73FE\u308C\u307E\u3059\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u306E\u90E8\u5C4B\u306B\u3042\u308B \u30B3\u30C3\u30D7\u3092\u3001\u3086\u3063\u304F\u308A ", initialCupTemperature.toFixed(1), "\u2103 \u307E\u3067\u51B7\u307E\u3057\u3066\u3044\u304D\u307E\u3059\u3002"] }), isExperimentRunning && ((0, jsx_runtime_1.jsx)("p", { className: "experiment-note", children: "\u203B\u5B9F\u9A13\u4E2D\u306F\u6761\u4EF6\uFF08\u5BA4\u6E29\u30FB\u6C34\u5206\u91CF\u30FB\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6\uFF09\u3092\u56FA\u5B9A\u3057\u3066\u89B3\u5BDF\u3057\u307E\u3059\u3002" }))] }));
-};
-exports["default"] = ExperimentDescription;
-
-
-/***/ }),
-
-/***/ "./src/components/graph/CurrentHumidityDisplay.tsx":
-/*!*********************************************************!*\
-  !*** ./src/components/graph/CurrentHumidityDisplay.tsx ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-__webpack_require__(/*! ./currentHumidityDisplay.css */ "./src/components/graph/currentHumidityDisplay.css");
-const Row = ({ label, children, }) => {
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "row-container", children: [(0, jsx_runtime_1.jsx)("label", { className: "row-label", children: label }), (0, jsx_runtime_1.jsx)("div", { className: "row-controls", children: children })] }));
-};
-const CurrentHumidityDisplay = ({ temperature, saturationVapor, vapor, humidity, waterDrop, fixTemperature, fixVapor, setTemperature, setSaturationVapor, setVapor, setHumidity, toggleFixTemperature, toggleFixVapor, saveState, }) => {
-    // 親コンポーネントのロジックを反映した UI 制御
-    const anyFixed = fixTemperature || fixVapor;
-    const humidityEnabled = anyFixed;
-    const isSaturationVaporAlert = saturationVapor >= 82.8;
-    const isTemperatureAlert = temperature >= 50.0;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel1", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u7A7A\u9593\u306E\u72B6\u614B" }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6E29\u5EA6 [\u2103](0~50\u2103)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 50, step: 0.1, value: temperature, disabled: fixTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 50, step: 0.1, value: temperature, disabled: fixTemperature, onChange: (e) => setTemperature(parseFloat(e.target.value || "0")), className: `input-compact ${isTemperatureAlert ? "text-alert" : ""}` }), (0, jsx_runtime_1.jsx)("span", { children: "\u2103" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF [g/m\u00B3](4.9~82.8g/m\u00B3)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 82.8, step: 0.1, value: saturationVapor, disabled: fixTemperature, onChange: (e) => setSaturationVapor(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 82.8, step: 0.1, value: saturationVapor, disabled: fixTemperature, onChange: (e) => setSaturationVapor(parseFloat(e.target.value || "4.9")), className: `input-compact ${isSaturationVaporAlert ? "text-alert" : ""}` }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3](4.9~90.0g/m\u00B3)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 4.9, max: 90, step: 0.1, value: vapor, disabled: fixVapor, onChange: (e) => setVapor(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 4.9, max: 90, step: 0.1, value: vapor, disabled: fixVapor, onChange: (e) => setVapor(parseFloat(e.target.value || "4.9")), className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6E7F\u5EA6 [%](5.9~100%)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 5.9, max: 100, step: 0.1, value: humidity, disabled: !humidityEnabled, onChange: (e) => setHumidity(parseFloat(e.target.value)) }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5.9, max: 100, step: 0.1, value: humidity, disabled: !humidityEnabled, onChange: (e) => setHumidity(parseFloat(e.target.value || "5.9")), className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "%" })] }), (0, jsx_runtime_1.jsxs)(Row, { label: "\u6C34\u6EF4\u306E\u91CF [g/m\u00B3](0~85.1g/m\u00B3)", children: [(0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 85.1, step: 0.1, value: waterDrop, disabled: true, readOnly: true }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 85.1, step: 0.1, value: waterDrop, disabled: true, readOnly: true, className: "input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: "g/m\u00B3" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "btn-group", children: [(0, jsx_runtime_1.jsx)("button", { onClick: toggleFixTemperature, className: `btn ${fixTemperature ? "active" : ""}`, children: fixTemperature ? "温度を固定中" : "温度を固定" }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleFixVapor, className: `btn ${fixVapor ? "active" : ""}`, children: fixVapor ? "水分量を固定中" : "水分量を固定" }), (0, jsx_runtime_1.jsx)("button", { onClick: saveState, className: "btn", children: "\u521D\u3081\u306E\u7A7A\u9593\u306E\u72B6\u614B\u3068\u3057\u3066\u4FDD\u5B58" })] })] }));
-};
-exports["default"] = CurrentHumidityDisplay;
-
-
-/***/ }),
-
-/***/ "./src/components/graph/HumidityGraphCanvas.tsx":
-/*!******************************************************!*\
-  !*** ./src/components/graph/HumidityGraphCanvas.tsx ***!
-  \******************************************************/
+/***/ "./src/components/graph/HumidityGraphCanvas/HumidityGraphCanvas.tsx":
+/*!**************************************************************************!*\
+  !*** ./src/components/graph/HumidityGraphCanvas/HumidityGraphCanvas.tsx ***!
+  \**************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -47140,7 +47113,6 @@ exports.satPress = satPress;
 exports.satVapor = satVapor;
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-__webpack_require__(/*! ./savedHumidityDisplay.css */ "./src/components/graph/savedHumidityDisplay.css");
 // --- 描画に必要な定数 ---
 function satPress(T) {
     return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
@@ -47294,103 +47266,48 @@ exports["default"] = HumidityGraphCanvas;
 
 /***/ }),
 
-/***/ "./src/components/graph/SavedHumidityDisplay.tsx":
-/*!*******************************************************!*\
-  !*** ./src/components/graph/SavedHumidityDisplay.tsx ***!
-  \*******************************************************/
+/***/ "./src/components/graph/SavedHumidityDisplay/SavedHumidityDisplay.tsx":
+/*!****************************************************************************!*\
+  !*** ./src/components/graph/SavedHumidityDisplay/SavedHumidityDisplay.tsx ***!
+  \****************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-__webpack_require__(/*! ./savedHumidityDisplay.css */ "./src/components/graph/savedHumidityDisplay.css");
+__webpack_require__(/*! ./savedHumidityDisplay.css */ "./src/components/graph/SavedHumidityDisplay/savedHumidityDisplay.css");
 const ReadRow = ({ label, value, unit, }) => ((0, jsx_runtime_1.jsxs)("div", { className: "read-row-container", children: [(0, jsx_runtime_1.jsx)("label", { className: "read-row-label", children: label }), (0, jsx_runtime_1.jsxs)("div", { className: "read-row-value-group", children: [(0, jsx_runtime_1.jsx)("input", { type: "number", value: value.toFixed(1), readOnly: true, className: "read-row-input-compact" }), (0, jsx_runtime_1.jsx)("span", { children: unit })] })] }));
-/**
- * 初めの空間の状態（読み取り専用）を表示するコンポーネント
- */
 const SavedHumidityDisplay = ({ temperature2, saturationVapor2, vapor2, humidity2, waterDrop2, }) => {
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel2", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u521D\u3081\u306E\u7A7A\u9593\u306E\u72B6\u614B" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u6E29\u5EA6 [\u2103]", value: temperature2, unit: "\u2103" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF [g/m\u00B3]", value: saturationVapor2, unit: "g/m\u00B3" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3]", value: vapor2, unit: "g/m\u00B3" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u6E7F\u5EA6 [%]", value: humidity2, unit: "%" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u6C34\u6EF4\u306E\u91CF [g/m\u00B3]", value: waterDrop2, unit: "g/m\u00B3" })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel2", children: [(0, jsx_runtime_1.jsx)("h3", { style: { fontWeight: 'bold' }, children: "\u521D\u3081\u306E\u7A7A\u9593\u306E\u72B6\u614B" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u6E29\u5EA6 [\u2103]", value: temperature2, unit: "\u2103" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF [g/m\u00B3]", value: saturationVapor2, unit: "g/m\u00B3" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3]", value: vapor2, unit: "g/m\u00B3" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u6E7F\u5EA6 [%]", value: humidity2, unit: "%" }), (0, jsx_runtime_1.jsx)(ReadRow, { label: "\u6C34\u6EF4\u306E\u91CF [g/m\u00B3]", value: waterDrop2, unit: "g/m\u00B3" })] }));
 };
 exports["default"] = SavedHumidityDisplay;
 
 
 /***/ }),
 
-/***/ "./src/components/graph/currentHumidityDisplay.css":
-/*!*********************************************************!*\
-  !*** ./src/components/graph/currentHumidityDisplay.css ***!
-  \*********************************************************/
+/***/ "./src/components/graph/SavedHumidityDisplay/savedHumidityDisplay.css":
+/*!****************************************************************************!*\
+  !*** ./src/components/graph/SavedHumidityDisplay/savedHumidityDisplay.css ***!
+  \****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./currentHumidityDisplay.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/currentHumidityDisplay.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_currentHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/components/graph/savedHumidityDisplay.css":
-/*!*******************************************************!*\
-  !*** ./src/components/graph/savedHumidityDisplay.css ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_savedHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./savedHumidityDisplay.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/savedHumidityDisplay.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_savedHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./savedHumidityDisplay.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/graph/SavedHumidityDisplay/savedHumidityDisplay.css");
 
       
       
@@ -47416,6 +47333,83 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_savedHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_savedHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_savedHumidityDisplay_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/house/FurnitureSelectButton.tsx":
+/*!********************************************************!*\
+  !*** ./src/components/house/FurnitureSelectButton.tsx ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.FurnitureSelectButton = void 0;
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ./furnitureSelectButton.css */ "./src/components/house/furnitureSelectButton.css");
+const FurnitureSelectButton = ({ label, to, color, }) => {
+    const handleClick = () => {
+        window.location.href = to;
+    };
+    return ((0, jsx_runtime_1.jsx)("button", { className: "furniture-select-button", style: {
+            backgroundColor: color,
+        }, onClick: handleClick, children: label }));
+};
+exports.FurnitureSelectButton = FurnitureSelectButton;
+exports["default"] = exports.FurnitureSelectButton;
+
+
+/***/ }),
+
+/***/ "./src/components/house/furnitureSelectButton.css":
+/*!********************************************************!*\
+  !*** ./src/components/house/furnitureSelectButton.css ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./furnitureSelectButton.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/house/furnitureSelectButton.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_furnitureSelectButton_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -47492,47 +47486,48 @@ exports.Card = Card;
 
 /***/ }),
 
-/***/ "./src/components/towel/CondensationStatusDisplay.tsx":
-/*!************************************************************!*\
-  !*** ./src/components/towel/CondensationStatusDisplay.tsx ***!
-  \************************************************************/
+/***/ "./src/components/towel/ControlPanel/TowelControlPanel.tsx":
+/*!*****************************************************************!*\
+  !*** ./src/components/towel/ControlPanel/TowelControlPanel.tsx ***!
+  \*****************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const CondensationStatusDisplay = ({ water, humidity, }) => {
-    const isCondensed = water == 0.0;
-    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "27px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "#1dd664ff" : "#2688f8ff", fontWeight: isCondensed ? "normal" : "bold" }, children: isCondensed ?
-                    "タオルが乾いた" :
-                    `タオルは濡れている (${water.toFixed(1)}g/m³)` }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", className: "text-sm text-gray-700", children: ["\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
+__webpack_require__(/*! ../../common/Explanation/ControlPanel/experimentControlPanel.css */ "./src/components/common/Explanation/ControlPanel/experimentControlPanel.css");
+const TowelControlPanel = ({ originTemp, vapor, towelWater, isExperimentRunning, setTemperature, setVapor, setWater, toggleExperiment }) => {
+    const isDisabled = isExperimentRunning;
+    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
+    const buttonClass = `experiment-button ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6E29\u5EA6[\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 10, max: 35, step: 0.1, value: originTemp, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 10, max: 35, step: 0.1, value: originTemp, onChange: (e) => setTemperature(parseFloat(e.target.value || "10")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6C34\u84B8\u6C17\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30BF\u30AA\u30EB\u306B\u542B\u307E\u308C\u308B\u6C34\u5206\u91CF [g] (", towelWater, "g)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 30, step: 0.1, value: towelWater, onChange: (e) => setWater(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 30, step: 0.1, value: towelWater, onChange: (e) => setWater(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
 };
-exports["default"] = CondensationStatusDisplay;
+exports["default"] = TowelControlPanel;
 
 
 /***/ }),
 
-/***/ "./src/components/towel/ExperimentDescription.tsx":
-/*!********************************************************!*\
-  !*** ./src/components/towel/ExperimentDescription.tsx ***!
-  \********************************************************/
+/***/ "./src/components/towel/ExperimentDescription/TowelExperimentDescription.tsx":
+/*!***********************************************************************************!*\
+  !*** ./src/components/towel/ExperimentDescription/TowelExperimentDescription.tsx ***!
+  \***********************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const ExperimentDescription = ({ initialTemperature, initialVapor, initialWater, isExperimentRunning, }) => {
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u84B8\u767A\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u306F\u6E29\u5EA6\u306B\u3088\u3063\u3066\u6C7A\u5B9A\u3057\u3001\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u4E0A\u56DE\u308B\u6C34\u5206\u306F\u84B8\u767A\u3057\u307E\u305B\u3093\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u6C34\u84B8\u6C17\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u5165\u3063\u3066\u3044\u308B1m\u00B3\u306E\u5BC6\u9589\u7A7A\u9593\u306B \u3042\u308B\u30BF\u30AA\u30EB\u304C\u6C34\u3092 ", initialWater.toFixed(1), "g \u542B\u3093\u3067\u3044\u308B\u3068\u304D\u6642\u9593\u7D4C\u904E\u3067\u4E7E\u304F\u306E\u304B\u3092\u89B3\u5BDF\u3059\u308B\u3002"] }), isExperimentRunning && ((0, jsx_runtime_1.jsx)("p", { className: "experiment-note", children: "\u203B\u5B9F\u9A13\u4E2D\u306F\u6761\u4EF6\uFF08\u5BA4\u6E29\u30FB\u6C34\u5206\u91CF\u30FB\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6\uFF09\u3092\u56FA\u5B9A\u3057\u3066\u89B3\u5BDF\u3057\u307E\u3059\u3002" }))] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u84B8\u767A\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u306F\u6E29\u5EA6\u306B\u3088\u3063\u3066\u6C7A\u5B9A\u3057\u3001\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u4E0A\u56DE\u308B\u6C34\u5206\u306F\u84B8\u767A\u3057\u307E\u305B\u3093\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u6C34\u84B8\u6C17\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u5165\u3063\u3066\u3044\u308B1m\u00B3\u306E\u5BC6\u9589\u7A7A\u9593\u306B \u3042\u308B\u30BF\u30AA\u30EB\u304C\u6C34\u3092 ", initialWater.toFixed(1), "g \u542B\u3093\u3067\u3044\u308B\u3068\u304D\u6642\u9593\u7D4C\u904E\u3067\u4E7E\u304F\u306E\u304B\u3092\u89B3\u5BDF\u3059\u308B\u3002"] })] }));
 };
 exports["default"] = ExperimentDescription;
 
 
 /***/ }),
 
-/***/ "./src/components/towel/TowelCanvasAndLegend.tsx":
-/*!*******************************************************!*\
-  !*** ./src/components/towel/TowelCanvasAndLegend.tsx ***!
-  \*******************************************************/
+/***/ "./src/components/towel/ExperimentalFootage/TowelExperimentalFootage.tsx":
+/*!*******************************************************************************!*\
+  !*** ./src/components/towel/ExperimentalFootage/TowelExperimentalFootage.tsx ***!
+  \*******************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -47551,7 +47546,7 @@ function getCupImageName(water) {
         setTowel = Math.ceil(water / 5) * 5;
     }
     // 画像名を決定し、stringとして返す
-    return `/towel/towel2-${setTowel}.png`;
+    return `/towel/towel-${setTowel}.png`;
 }
 const TowelCanvasAndLegend = ({ water }) => {
     // 💡 純粋な関数として画像パスを取得 (TS2322 エラー解消)
@@ -47563,67 +47558,68 @@ exports["default"] = TowelCanvasAndLegend;
 
 /***/ }),
 
-/***/ "./src/components/towel/TowelControlPanel.tsx":
-/*!****************************************************!*\
-  !*** ./src/components/towel/TowelControlPanel.tsx ***!
-  \****************************************************/
+/***/ "./src/components/towel/StatusDisplay/TowelStatusDisplay.tsx":
+/*!*******************************************************************!*\
+  !*** ./src/components/towel/StatusDisplay/TowelStatusDisplay.tsx ***!
+  \*******************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const TowelControlPanel = ({ originTemp, vapor, towelWater, isExperimentRunning, setTemperature, setVapor, setWater, toggleExperiment }) => {
-    const isDisabled = isExperimentRunning;
-    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
-    const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6E29\u5EA6[\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 10, max: 35, step: 0.1, value: originTemp, onChange: (e) => setTemperature(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 10, max: 35, step: 0.1, value: originTemp, onChange: (e) => setTemperature(parseFloat(e.target.value || "10")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u6C34\u84B8\u6C17\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 9.4, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u30BF\u30AA\u30EB\u306B\u542B\u3080\u6C34\u5206\u91CF [g] (", towelWater, "g)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 30, step: 0.1, value: towelWater, onChange: (e) => setWater(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 30, step: 0.1, value: towelWater, onChange: (e) => setWater(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
-};
-exports["default"] = TowelControlPanel;
-
-
-/***/ }),
-
-/***/ "./src/components/window/CondensationStatusDisplay.tsx":
-/*!*************************************************************!*\
-  !*** ./src/components/window/CondensationStatusDisplay.tsx ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const CondensationStatusDisplay = ({ waterDrop, humidity, }) => {
-    const isCondensed = waterDrop > 0.1;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "flex flex-col items-center p-3 mt-4 w-full bg-white rounded-lg shadow-md border border-gray-200", children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", className: "text-lg mb-2 transition-colors duration-300", style: { color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
-                    `結露が発生！ (${waterDrop.toFixed(1)}g/m³)` :
-                    "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", className: "text-sm text-gray-700", children: ["\u30B3\u30C3\u30D7\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
+const CondensationStatusDisplay = ({ water, humidity, }) => {
+    const isCondensed = water == 0.0;
+    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "27px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "#1dd664ff" : "#2688f8ff", fontWeight: isCondensed ? "normal" : "bold" }, children: isCondensed ?
+                    "タオルが乾いた" :
+                    `タオルは濡れている (${water.toFixed(1)}g/m³)` }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", children: ["\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
 };
 exports["default"] = CondensationStatusDisplay;
 
 
 /***/ }),
 
-/***/ "./src/components/window/ExperimentDescription.tsx":
-/*!*********************************************************!*\
-  !*** ./src/components/window/ExperimentDescription.tsx ***!
-  \*********************************************************/
+/***/ "./src/components/window/ControlPanel/WindowControlPanel.tsx":
+/*!*******************************************************************!*\
+  !*** ./src/components/window/ControlPanel/WindowControlPanel.tsx ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+__webpack_require__(/*! ../../common/Explanation/ControlPanel/experimentControlPanel.css */ "./src/components/common/Explanation/ControlPanel/experimentControlPanel.css");
+const WindowControlPanel = ({ originTemp, vapor, tergetTemp, isExperimentRunning, setOriginTemp, setVapor, setTergetTemp, toggleExperiment }) => {
+    const isDisabled = isExperimentRunning;
+    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
+    const buttonClass = `experiment-button ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5BA4\u6E29 (\u7A93\u306E\u307E\u308F\u308A\u306E\u6E29\u5EA6)  [\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 14, max: 25, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 14, max: 25, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "14")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5916\u306E\u6C17\u6E29 [\u2103] (", tergetTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 14, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 14, step: 0.1, value: tergetTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
+};
+exports["default"] = WindowControlPanel;
+
+
+/***/ }),
+
+/***/ "./src/components/window/ExperimentDescription/WindowExperimentDescription.tsx":
+/*!*************************************************************************************!*\
+  !*** ./src/components/window/ExperimentDescription/WindowExperimentDescription.tsx ***!
+  \*************************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const ExperimentDescription = ({ initialTemperature, initialVapor, initialCupTemperature, isExperimentRunning, }) => {
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u7D50\u9732\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u5BA4\u5185\u306E\u6696\u304B\u3044\u7A7A\u6C17\u304C\u51B7\u305F\u3044\u7A93\u306B\u89E6\u308C\u3001\u6C34\u84B8\u6C17\u91CF\u304C\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u308B\u3053\u3068\u3067\u3001 \u6C34\u6EF4\u304C\u767A\u751F\u3057\u307E\u3059\u3002 \u305D\u306E\u305F\u3081\u6C34\u6EF4\u306F\u7A93\u306E\u5185\u5074\u306B\u767A\u751F\u3057\u307E\u3059\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u306E\u90E8\u5C4B\u304C\u3042\u308A \u5916\u306E\u6C17\u6E29\u304C ", initialCupTemperature.toFixed(1), "\u2103 \u306E\u6642\u306E\u7A93\u306E\u69D8\u5B50\u3092\u89B3\u5BDF\u3059\u308B\u3002"] }), isExperimentRunning && ((0, jsx_runtime_1.jsx)("p", { className: "experiment-note", children: "\u203B\u5B9F\u9A13\u4E2D\u306F\u6761\u4EF6\uFF08\u5BA4\u6E29\u30FB\u6C34\u5206\u91CF\u30FB\u30B3\u30C3\u30D7\u306E\u6E29\u5EA6\uFF09\u3092\u56FA\u5B9A\u3057\u3066\u89B3\u5BDF\u3057\u307E\u3059\u3002" }))] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u7D50\u9732\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u5BA4\u5185\u306E\u6696\u304B\u3044\u7A7A\u6C17\u304C\u51B7\u305F\u3044\u7A93\u306B\u89E6\u308C\u3001\u6C34\u84B8\u6C17\u91CF\u304C\u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u308B\u3053\u3068\u3067\u3001 \u6C34\u6EF4\u304C\u767A\u751F\u3057\u307E\u3059\u3002 \u305D\u306E\u305F\u3081\u6C34\u6EF4\u306F\u7A93\u306E\u5185\u5074\u306B\u767A\u751F\u3057\u307E\u3059\u3002" }), (0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u306E\u90E8\u5C4B\u304C\u3042\u308A \u5916\u306E\u6C17\u6E29\u304C ", initialCupTemperature.toFixed(1), "\u2103 \u306E\u6642\u306E\u7A93\u306E\u69D8\u5B50\u3092\u89B3\u5BDF\u3059\u308B\u3002"] })] }));
 };
 exports["default"] = ExperimentDescription;
 
 
 /***/ }),
 
-/***/ "./src/components/window/WindowCanvasAndLegend.tsx":
-/*!*********************************************************!*\
-  !*** ./src/components/window/WindowCanvasAndLegend.tsx ***!
-  \*********************************************************/
+/***/ "./src/components/window/ExperimentalFootage/WindowExperimentalFootage.tsx":
+/*!*********************************************************************************!*\
+  !*** ./src/components/window/ExperimentalFootage/WindowExperimentalFootage.tsx ***!
+  \*********************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -47653,22 +47649,22 @@ exports["default"] = WindowCanvasAndLegend;
 
 /***/ }),
 
-/***/ "./src/components/window/WindowControlPanel.tsx":
-/*!******************************************************!*\
-  !*** ./src/components/window/WindowControlPanel.tsx ***!
-  \******************************************************/
+/***/ "./src/components/window/StatusDisplay/WindowStatusDisplay.tsx":
+/*!*********************************************************************!*\
+  !*** ./src/components/window/StatusDisplay/WindowStatusDisplay.tsx ***!
+  \*********************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const WindowControlPanel = ({ originTemp, vapor, tergetTemp, isExperimentRunning, setOriginTemp, setVapor, setTergetTemp, toggleExperiment }) => {
-    const isDisabled = isExperimentRunning;
-    const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
-    const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "graph-panel", children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u5B9F\u9A13\u6761\u4EF6\u8A2D\u5B9A" }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5BA4\u6E29 (\u7A93\u306E\u307E\u308F\u308A\u306E\u6E29\u5EA6)  [\u2103] (", originTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 14, max: 25, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 14, max: 25, step: 0.1, value: originTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "14")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF [g/m\u00B3] (", vapor, "g/m\u00B3)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 5, max: 40, step: 0.1, value: vapor, onChange: (e) => setVapor(parseFloat(e.target.value || "5")) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-row", children: [(0, jsx_runtime_1.jsxs)("label", { children: ["\u5916\u306E\u6C17\u6E29 [\u2103] (", tergetTemp, "\u2103)"] }), (0, jsx_runtime_1.jsx)("input", { type: "range", min: 0, max: 14, step: 0.1, value: tergetTemp, onChange: (e) => setTergetTemp(parseFloat(e.target.value)), disabled: isDisabled }), (0, jsx_runtime_1.jsx)("input", { type: "number", min: 0, max: 14, step: 0.1, value: tergetTemp, onChange: (e) => setOriginTemp(parseFloat(e.target.value || "0")) })] }), (0, jsx_runtime_1.jsx)("button", { onClick: toggleExperiment, className: buttonClass, children: buttonText })] }));
+const CondensationStatusDisplay = ({ waterDrop, humidity, }) => {
+    const isCondensed = waterDrop > 0.1;
+    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "27px" }, children: [(0, jsx_runtime_1.jsx)("div", { id: "condensationText", style: { color: isCondensed ? "#e74c3c" : "#7f8c8d", fontWeight: isCondensed ? "bold" : "normal" }, children: isCondensed ?
+                    `結露が発生！ (${waterDrop.toFixed(1)}g/m³)` :
+                    "結露は発生していません" }), (0, jsx_runtime_1.jsxs)("div", { id: "humidityText", children: ["\u7A93\u306E\u8868\u9762\u306E\u6E7F\u5EA6: ", (0, jsx_runtime_1.jsx)("span", { className: "font-semibold text-blue-600", children: humidity.toFixed(1) }), "%"] })] }));
 };
-exports["default"] = WindowControlPanel;
+exports["default"] = CondensationStatusDisplay;
 
 
 /***/ }),
@@ -47708,13 +47704,13 @@ const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modul
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 __webpack_require__(/*! ../experimentPage.css */ "./src/pages/experimentPage.css");
-const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
-const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
-const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/HumidityGraphCanvasMini */ "./src/components/common/HumidityGraphCanvasMini.tsx"));
-const CupControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CupControlPanel */ "./src/components/cup/CupControlPanel.tsx"));
-const CupCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CupCanvasAndLegend */ "./src/components/cup/CupCanvasAndLegend.tsx"));
-const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/cup/ExperimentDescription */ "./src/components/cup/ExperimentDescription.tsx"));
-const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/cup/CondensationStatusDisplay */ "./src/components/cup/CondensationStatusDisplay.tsx"));
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/Button/PageSelectButton */ "./src/components/common/Button/PageSelectButton.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph */ "./src/components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini */ "./src/components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini.tsx"));
+const CupControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/cup/ControlPanel/CupControlPanel */ "./src/components/cup/ControlPanel/CupControlPanel.tsx"));
+const CupExperimentalFootage_1 = __importDefault(__webpack_require__(/*! ../../components/cup/ExperimentalFootage/CupExperimentalFootage */ "./src/components/cup/ExperimentalFootage/CupExperimentalFootage.tsx"));
+const CupExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/cup/ExperimentDescription/CupExperimentDescription */ "./src/components/cup/ExperimentDescription/CupExperimentDescription.tsx"));
+const CupStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/cup/StatusDisplay/CupStatusDisplay */ "./src/components/cup/StatusDisplay/CupStatusDisplay.tsx"));
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
 // ------------------------------------
@@ -47808,7 +47804,7 @@ const Cup = () => {
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(CupCanvasAndLegend_1.default, { waterDrop: waterDrop, tergetTemp: tergetTemp }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, xAxisLabel: "コップの温度[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialOriginalTemperature: initOriginTemp, initialVapor: initVapor, initialCupTemperature: initTergetTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(CupControlPanel_1.default, { originTemp: originTemp, vapor: vapor, tergetTemp: tergetTemp, isExperimentRunning: isExperimentRunning, setOriginTemp: setOriginTemp, setVapor: setVapor, setTergetTemp: setTergetTemp, toggleExperiment: toggleExperiment })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(CupExperimentalFootage_1.default, { waterDrop: waterDrop, tergetTemp: tergetTemp }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CupStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, xAxisLabel: "コップの温度[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(CupExperimentDescription_1.default, { initialOriginalTemperature: initOriginTemp, initialVapor: initVapor, initialCupTemperature: initTergetTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(CupControlPanel_1.default, { originTemp: originTemp, vapor: vapor, tergetTemp: tergetTemp, isExperimentRunning: isExperimentRunning, setOriginTemp: setOriginTemp, setVapor: setVapor, setTergetTemp: setTergetTemp, toggleExperiment: toggleExperiment })] })] }));
 };
 exports["default"] = Cup;
 
@@ -47883,12 +47879,12 @@ const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js"
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 __webpack_require__(/*! ./graph.css */ "./src/pages/graph/graph.css");
 // --- 作成済みのカスタムコンポーネントをインポート ---
-const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
-const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
-const ExplanationFormulas_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationFormulas */ "./src/components/common/ExplanationFormulas.tsx"));
-const CurrentHumidityDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/graph/CurrentHumidityDisplay */ "./src/components/graph/CurrentHumidityDisplay.tsx"));
-const SavedHumidityDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/graph/SavedHumidityDisplay */ "./src/components/graph/SavedHumidityDisplay.tsx"));
-const HumidityGraphCanvas_1 = __importDefault(__webpack_require__(/*! ../../components/graph/HumidityGraphCanvas */ "./src/components/graph/HumidityGraphCanvas.tsx"));
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/Button/PageSelectButton */ "./src/components/common/Button/PageSelectButton.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph */ "./src/components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph.tsx"));
+const ExplanationFormulas_1 = __importDefault(__webpack_require__(/*! ../../components/common/Explanation/ExplanationFormulas/ExplanationFormulas */ "./src/components/common/Explanation/ExplanationFormulas/ExplanationFormulas.tsx"));
+const CurrentHumidityDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/graph/CurrentHumidityDisplay/CurrentHumidityDisplay */ "./src/components/graph/CurrentHumidityDisplay/CurrentHumidityDisplay.tsx"));
+const SavedHumidityDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/graph/SavedHumidityDisplay/SavedHumidityDisplay */ "./src/components/graph/SavedHumidityDisplay/SavedHumidityDisplay.tsx"));
+const HumidityGraphCanvas_1 = __importDefault(__webpack_require__(/*! ../../components/graph/HumidityGraphCanvas/HumidityGraphCanvas */ "./src/components/graph/HumidityGraphCanvas/HumidityGraphCanvas.tsx"));
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
 // ------------------------------------
@@ -48098,8 +48094,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 __webpack_require__(/*! ./house.css */ "./src/pages/house/house.css");
-const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
-const FurnitureSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/FurnitureSelectButton */ "./src/components/common/FurnitureSelectButton.tsx"));
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/Button/PageSelectButton */ "./src/components/common/Button/PageSelectButton.tsx"));
+const FurnitureSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/house/FurnitureSelectButton */ "./src/components/house/FurnitureSelectButton.tsx"));
 const House = () => {
     return ((0, jsx_runtime_1.jsxs)("div", { className: "house-page", children: [(0, jsx_runtime_1.jsx)("div", { className: "page-button-layout", children: (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }) }), (0, jsx_runtime_1.jsx)("img", { src: "/title/\u5BB6\u5177.png", alt: "\u90E8\u5C4B\u306E\u30A4\u30E9\u30B9\u30C8", className: "house-picture" }), (0, jsx_runtime_1.jsx)("h1", { className: "question-text", children: "\u3069\u308C\u306B\u3064\u3044\u3066\u8ABF\u3079\u307E\u3059\u304B\uFF1F" }), (0, jsx_runtime_1.jsxs)("div", { className: "buttonContainer", children: [(0, jsx_runtime_1.jsx)(FurnitureSelectButton_1.default, { label: "\u30B3\u30C3\u30D7", to: "/cup", color: "#28a745" }), (0, jsx_runtime_1.jsx)(FurnitureSelectButton_1.default, { label: "\u7A93\uFF08\u51AC\uFF09", to: "/winter-window", color: "#28a745" }), (0, jsx_runtime_1.jsx)(FurnitureSelectButton_1.default, { label: "\u30BF\u30AA\u30EB", to: "/towel", color: "#28a745" })] })] }));
 };
@@ -48248,22 +48244,20 @@ const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modul
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 __webpack_require__(/*! ../experimentPage.css */ "./src/pages/experimentPage.css");
-const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
-const TowelControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/towel/TowelControlPanel */ "./src/components/towel/TowelControlPanel.tsx"));
-const TowelCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/towel/TowelCanvasAndLegend */ "./src/components/towel/TowelCanvasAndLegend.tsx"));
-const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/HumidityGraphCanvasMini */ "./src/components/common/HumidityGraphCanvasMini.tsx"));
-const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
-const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/towel/ExperimentDescription */ "./src/components/towel/ExperimentDescription.tsx"));
-const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/towel/CondensationStatusDisplay */ "./src/components/towel/CondensationStatusDisplay.tsx"));
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/Button/PageSelectButton */ "./src/components/common/Button/PageSelectButton.tsx"));
+const TowelControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/towel/ControlPanel/TowelControlPanel */ "./src/components/towel/ControlPanel/TowelControlPanel.tsx"));
+const TowelExperimentalFootage_1 = __importDefault(__webpack_require__(/*! ../../components/towel/ExperimentalFootage/TowelExperimentalFootage */ "./src/components/towel/ExperimentalFootage/TowelExperimentalFootage.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini */ "./src/components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph */ "./src/components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph.tsx"));
+const TowelExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/towel/ExperimentDescription/TowelExperimentDescription */ "./src/components/towel/ExperimentDescription/TowelExperimentDescription.tsx"));
+const TowelStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/towel/StatusDisplay/TowelStatusDisplay */ "./src/components/towel/StatusDisplay/TowelStatusDisplay.tsx"));
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
 // ------------------------------------
 function satPress(T) {
-    // 水飽和蒸気圧
     return 6.1078 * Math.pow(10, (7.5 * T) / (T + 237.3));
 }
 function satVapor(T) {
-    // 飽和水蒸気量
     return parseFloat(((217 * satPress(T)) / (T + 273.15)).toFixed(1));
 }
 // ------------------------------------
@@ -48274,7 +48268,7 @@ const Cup = () => {
     /** ------- 空間の現在の状態 ------- */
     const [originTemp, setOriginTemp] = (0, react_1.useState)(25.0);
     const [saturationVapor, setSaturationVapor] = (0, react_1.useState)(23.0);
-    const [vapor, setVapor] = (0, react_1.useState)(11.5);
+    const [vapor, setVapor] = (0, react_1.useState)(5.0);
     const [waterDrop, setWaterDrop] = (0, react_1.useState)(0.0);
     const [humidity, setHumidity] = (0, react_1.useState)(50);
     const remainingVapor = (0, react_1.useMemo)(() => Math.max(0, saturationVapor - vapor), [saturationVapor, vapor]);
@@ -48321,10 +48315,6 @@ const Cup = () => {
             return;
         }
         const intervalId = setInterval(() => {
-            // 湿度が100%になったら停止するチェック
-            // ※注意: humidity の値はEffectが最後に実行された時点の値（クロージャ）です。
-            // そのため、waterの更新ロジック内でチェックする方が確実ですが、ここでは一般的な方法で記載します。
-            // waterの更新ロジック内のsetVaporによって湿度も更新されるため、次の実行時(0.5秒後)には最新値がチェックされます。
             if (humidity >= 100) {
                 clearInterval(intervalId);
                 return;
@@ -48379,7 +48369,7 @@ const Cup = () => {
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(TowelCanvasAndLegend_1.default, { temperature: originTemp, water: towelWater, humidity: humidity, cupTemperature: tergetTemp }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { water: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: 0, remainingVapor: remainingVapor, xAxisLabel: "室温[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initOriginTemp, initialVapor: initialVapor, initialWater: initialWater, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(TowelControlPanel_1.default, { originTemp: originTemp, vapor: vapor, towelWater: towelWater, isExperimentRunning: isExperimentRunning, setTemperature: setOriginTemp, setVapor: setVapor, setCupTemperature: setTergetTemp, setWater: setTowelWater, toggleExperiment: toggleExperiment })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(TowelExperimentalFootage_1.default, { temperature: originTemp, water: towelWater, humidity: humidity, cupTemperature: tergetTemp }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(TowelStatusDisplay_1.default, { water: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: 0, remainingVapor: remainingVapor, xAxisLabel: "室温[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(TowelExperimentDescription_1.default, { initialTemperature: initOriginTemp, initialVapor: initialVapor, initialWater: initialWater, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(TowelControlPanel_1.default, { originTemp: originTemp, vapor: vapor, towelWater: towelWater, isExperimentRunning: isExperimentRunning, setTemperature: setOriginTemp, setVapor: setVapor, setCupTemperature: setTergetTemp, setWater: setTowelWater, toggleExperiment: toggleExperiment })] })] }));
 };
 exports["default"] = Cup;
 
@@ -48401,13 +48391,13 @@ const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modul
 const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 __webpack_require__(/*! ../experimentPage.css */ "./src/pages/experimentPage.css");
-const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/PageSelectButton */ "./src/components/common/PageSelectButton.tsx"));
-const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/ExplanationBarGraph */ "./src/components/common/ExplanationBarGraph.tsx"));
-const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/HumidityGraphCanvasMini */ "./src/components/common/HumidityGraphCanvasMini.tsx"));
-const WindowControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/window/WindowControlPanel */ "./src/components/window/WindowControlPanel.tsx"));
-const WindowCanvasAndLegend_1 = __importDefault(__webpack_require__(/*! ../../components/window/WindowCanvasAndLegend */ "./src/components/window/WindowCanvasAndLegend.tsx"));
-const ExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/window/ExperimentDescription */ "./src/components/window/ExperimentDescription.tsx"));
-const CondensationStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/window/CondensationStatusDisplay */ "./src/components/window/CondensationStatusDisplay.tsx"));
+const PageSelectButton_1 = __importDefault(__webpack_require__(/*! ../../components/common/Button/PageSelectButton */ "./src/components/common/Button/PageSelectButton.tsx"));
+const ExplanationBarGraph_1 = __importDefault(__webpack_require__(/*! ../../components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph */ "./src/components/common/Explanation/ExplanationBarGraph/ExplanationBarGraph.tsx"));
+const HumidityGraphCanvasMini_1 = __importDefault(__webpack_require__(/*! ../../components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini */ "./src/components/common/Explanation/HumidityGraphCanvasMini/HumidityGraphCanvasMini.tsx"));
+const WindowControlPanel_1 = __importDefault(__webpack_require__(/*! ../../components/window/ControlPanel/WindowControlPanel */ "./src/components/window/ControlPanel/WindowControlPanel.tsx"));
+const WindowExperimentalFootage_1 = __importDefault(__webpack_require__(/*! ../../components/window/ExperimentalFootage/WindowExperimentalFootage */ "./src/components/window/ExperimentalFootage/WindowExperimentalFootage.tsx"));
+const WindowExperimentDescription_1 = __importDefault(__webpack_require__(/*! ../../components/window/ExperimentDescription/WindowExperimentDescription */ "./src/components/window/ExperimentDescription/WindowExperimentDescription.tsx"));
+const WindowStatusDisplay_1 = __importDefault(__webpack_require__(/*! ../../components/window/StatusDisplay/WindowStatusDisplay */ "./src/components/window/StatusDisplay/WindowStatusDisplay.tsx"));
 // ------------------------------------
 // 1. 関数の定義 (座標変換)
 // ------------------------------------
@@ -48503,7 +48493,7 @@ const Cup = () => {
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(WindowCanvasAndLegend_1.default, { temperature: tergetTemp, waterDrop: waterDrop }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CondensationStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, xAxisLabel: "室温 (窓のまわりの温度)[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(ExperimentDescription_1.default, { initialTemperature: initOriginTemp, initialVapor: initialVapor, initialCupTemperature: initTergetTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(WindowControlPanel_1.default, { originTemp: originTemp, vapor: vapor, tergetTemp: tergetTemp, isExperimentRunning: isExperimentRunning, setOriginTemp: setOriginTemp, setVapor: setVapor, setTergetTemp: setTergetTemp, toggleExperiment: toggleExperiment })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(WindowExperimentalFootage_1.default, { temperature: tergetTemp, waterDrop: waterDrop }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(WindowStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, xAxisLabel: "室温 (窓のまわりの温度)[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(WindowExperimentDescription_1.default, { initialTemperature: initOriginTemp, initialVapor: initialVapor, initialCupTemperature: initTergetTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(WindowControlPanel_1.default, { originTemp: originTemp, vapor: vapor, tergetTemp: tergetTemp, isExperimentRunning: isExperimentRunning, setOriginTemp: setOriginTemp, setVapor: setVapor, setTergetTemp: setTergetTemp, toggleExperiment: toggleExperiment })] })] }));
 };
 exports["default"] = Cup;
 

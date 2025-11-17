@@ -7,9 +7,6 @@ interface SavedHumidityDisplayProps {
     humidity2: number;
     waterDrop2: number;
 }
-/**
- * 初めの空間の状態（読み取り専用）を表示するコンポーネント
- */
 declare const SavedHumidityDisplay: React.FC<SavedHumidityDisplayProps>;
 export default SavedHumidityDisplay;
 //# sourceMappingURL=SavedHumidityDisplay.d.ts.map

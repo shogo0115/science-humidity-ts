@@ -1,4 +1,5 @@
 import React from "react";
+import "../../common/Explanation/ControlPanel/experimentControlPanel.css";
 interface TowelControlPanelProps {
     originTemp: number;
     vapor: number;

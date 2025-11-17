@@ -1,5 +1,5 @@
 import React from "react";
-import "./CupControlPanel.css";
+import "../../common/Explanation/ControlPanel/experimentControlPanel.css";
 interface CupControlPanelProps {
     originTemp: number;
     vapor: number;

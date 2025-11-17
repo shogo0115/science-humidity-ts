@@ -7,4 +7,4 @@ interface TowelCanvasAndLegendProps {
 }
 declare const TowelCanvasAndLegend: React.FC<TowelCanvasAndLegendProps>;
 export default TowelCanvasAndLegend;
-//# sourceMappingURL=TowelCanvasAndLegend.d.ts.map
+//# sourceMappingURL=TowelExperimentalFootage.d.ts.map

@@ -7,4 +7,4 @@ type ExperimentDescriptionProps = {
 };
 declare const ExperimentDescription: React.FC<ExperimentDescriptionProps>;
 export default ExperimentDescription;
-//# sourceMappingURL=ExperimentDescription.d.ts.map
+//# sourceMappingURL=CupExperimentDescription.d.ts.map
