@@ -1,5 +1,4 @@
 import React from 'react';
-import "./savedHumidityDisplay.css";
 export declare function satPress(T: number): number;
 export declare function satVapor(T: number): number;
 interface HumidityGraphCanvasProps {

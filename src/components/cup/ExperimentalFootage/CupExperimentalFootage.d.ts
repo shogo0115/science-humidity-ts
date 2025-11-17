@@ -5,4 +5,4 @@ interface CupCanvasAndLegendProps {
 }
 declare const CupCanvasAndLegend: React.FC<CupCanvasAndLegendProps>;
 export default CupCanvasAndLegend;
-//# sourceMappingURL=CupCanvasAndLegend.d.ts.map
+//# sourceMappingURL=CupExperimentalFootage.d.ts.map

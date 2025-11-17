@@ -1,4 +1,5 @@
 import React from "react";
+import "../../common/Explanation/ControlPanel/experimentControlPanel.css";
 interface WindowControlPanelProps {
     originTemp: number;
     vapor: number;

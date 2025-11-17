@@ -5,4 +5,4 @@ interface WindowCanvasAndLegendProps {
 }
 declare const WindowCanvasAndLegend: React.FC<WindowCanvasAndLegendProps>;
 export default WindowCanvasAndLegend;
-//# sourceMappingURL=WindowCanvasAndLegend.d.ts.map
+//# sourceMappingURL=WindowExperimentalFootage.d.ts.map

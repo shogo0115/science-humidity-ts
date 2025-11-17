@@ -1,8 +1,8 @@
 import React from 'react';
 interface CondensationStatusDisplayProps {
-    waterDrop: number;
+    water: number;
     humidity: number;
 }
 declare const CondensationStatusDisplay: React.FC<CondensationStatusDisplayProps>;
 export default CondensationStatusDisplay;
-//# sourceMappingURL=WindowStatusDisplay.d.ts.map
+//# sourceMappingURL=TowelStatusDisplay.d.ts.map
