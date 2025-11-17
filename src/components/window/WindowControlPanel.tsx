@@ -1,4 +1,5 @@
 import React from "react";
+import "../common/experimentControlPanel.css";
 
 interface WindowControlPanelProps {
   originTemp: number;
@@ -23,7 +24,7 @@ const WindowControlPanel: React.FC<WindowControlPanelProps> = ({
 }) => {
   const isDisabled = isExperimentRunning;
   const buttonText = isExperimentRunning ? "実験を停止" : "実験開始";
-  const buttonClass = `btn ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
+  const buttonClass = `experiment-button ${isExperimentRunning ? "btn-danger" : "btn-primary"}`;
 
   return (
     <div className="graph-panel">

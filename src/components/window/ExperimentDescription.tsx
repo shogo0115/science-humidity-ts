@@ -27,12 +27,6 @@ const ExperimentDescription: React.FC<ExperimentDescriptionProps> = ({
         空間内の水分量 {initialVapor.toFixed(1)} g/m³ の部屋があり
         外の気温が {initialCupTemperature.toFixed(1)}℃ の時の窓の様子を観察する。
       </p>
-
-      {isExperimentRunning && (
-        <p className="experiment-note">
-          ※実験中は条件（室温・水分量・コップの温度）を固定して観察します。
-        </p>
-      )}
     </div>
   );
 };

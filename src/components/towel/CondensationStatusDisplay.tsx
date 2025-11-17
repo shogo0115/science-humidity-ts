@@ -14,10 +14,7 @@ const CondensationStatusDisplay: React.FC<CondensationStatusDisplayProps> = ({
 
     return (
         <div style={{ fontSize: "27px" }}>
-
-            {/* 結露判定 */}
             <div
-
                 id="condensationText"
                 style={{ color: isCondensed ? "#1dd664ff" : "#2688f8ff", fontWeight: isCondensed ? "normal" : "bold" }}
             >
@@ -27,8 +24,7 @@ const CondensationStatusDisplay: React.FC<CondensationStatusDisplayProps> = ({
                 }
             </div>
 
-            {/* コップ表面の湿度 */}
-            <div id="humidityText" className="text-sm text-gray-700">
+            <div id="humidityText">
                 湿度: <span className="font-semibold text-blue-600">{humidity.toFixed(1)}</span>%
             </div>
 

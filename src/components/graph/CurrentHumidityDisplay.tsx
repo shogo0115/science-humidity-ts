@@ -56,7 +56,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
     <div className="graph-panel1">
       <h3>空間の状態</h3>
 
-      <Row label="温度 [℃](0~50℃)">
+      <Row label="温度 [℃]">
         <input
           type="range"
           min={0}
@@ -79,7 +79,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>℃</span>
       </Row>
 
-      <Row label="飽和水蒸気量 [g/m³](4.9~82.8g/m³)">
+      <Row label="飽和水蒸気量 [g/m³]">
         <input
           type="range"
           min={4.9}
@@ -102,7 +102,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>g/m³</span>
       </Row>
 
-      <Row label="空間内の水分量 [g/m³](4.9~90.0g/m³)">
+      <Row label="空間内の水分量 [g/m³]">
         <input
           type="range"
           min={4.9}
@@ -125,7 +125,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>g/m³</span>
       </Row>
 
-      <Row label="湿度 [%](5.9~100%)">
+      <Row label="湿度 [%]">
         <input
           type="range"
           min={5.9}
@@ -148,7 +148,7 @@ const CurrentHumidityDisplay: React.FC<CurrentHumidityDisplayProps> = ({
         <span>%</span>
       </Row>
 
-      <Row label="水滴の量 [g/m³](0~85.1g/m³)">
+      <Row label="水滴の量 [g/m³]">
         <input
           type="range"
           min={0}

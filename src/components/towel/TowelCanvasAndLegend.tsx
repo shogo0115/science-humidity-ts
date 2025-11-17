@@ -22,7 +22,7 @@ function getCupImageName(water: number): string {
     }
 
     // 画像名を決定し、stringとして返す
-    return `/towel/towel2-${setTowel}.png`;
+    return `/towel/towel-${setTowel}.png`;
 }
 
 const TowelCanvasAndLegend: React.FC<TowelCanvasAndLegendProps> = ({
