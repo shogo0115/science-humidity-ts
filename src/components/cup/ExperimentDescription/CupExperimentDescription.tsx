@@ -1,17 +1,15 @@
 import React from "react";
 
 type ExperimentDescriptionProps = {
-  initialOriginalTemperature: number;
+  initOriginTemp: number;
   initialVapor: number;
-  initialCupTemperature: number;
-  isExperimentRunning: boolean;
+  initTergetTemp: number;
 };
 
 const ExperimentDescription: React.FC<ExperimentDescriptionProps> = ({
-  initialOriginalTemperature: initialTemperature,
+  initOriginTemp: initialTemperature,
   initialVapor,
-  initialCupTemperature,
-  isExperimentRunning,
+  initTergetTemp: initialCupTemperature,
 }) => {
   return (
     <div className="experiment-description">

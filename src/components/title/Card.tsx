@@ -1,8 +1,6 @@
-// Card.tsx (修正後 - 横長レイアウト対応)
-
 import React from "react";
 import { Link } from 'react-router-dom';
-import './Card.css';
+import './card.css';
 
 type CardProps = {
   imageSrc: string;

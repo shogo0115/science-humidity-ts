@@ -166,10 +166,9 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       </div>
       <div className="graph-controls">
         <ExperimentDescription
-        initialOriginalTemperature={initOriginTemp}
+        initOriginTemp={initOriginTemp}
         initialVapor={initVapor}
-        initialCupTemperature={initTergetTemp}
-        isExperimentRunning={isExperimentRunning}
+        initTergetTemp={initTergetTemp}
         />
         <CupControlPanel
           originTemp={originTemp}

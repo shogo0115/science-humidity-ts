@@ -1,9 +1,8 @@
 import React from "react";
 type ExperimentDescriptionProps = {
-    initialOriginalTemperature: number;
+    initOriginTemp: number;
     initialVapor: number;
-    initialCupTemperature: number;
-    isExperimentRunning: boolean;
+    initTergetTemp: number;
 };
 declare const ExperimentDescription: React.FC<ExperimentDescriptionProps>;
 export default ExperimentDescription;

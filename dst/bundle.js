@@ -446,9 +446,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.furniture-select-button {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/title/Card.css":
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/title/card.css":
 /*!*****************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/title/Card.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/title/card.css ***!
   \*****************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -511,7 +511,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.card-link {
 }
 .card-content h2 {
     margin-top: 0;
-}`, "",{"version":3,"sources":["webpack://./src/components/title/Card.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,gBAAgB;EAChB,YAAY;;EAEZ,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;EACV,gBAAgB;EAChB,sBAAsB;;EAEtB,aAAa;EACb,mBAAmB;EACnB,oBAAoB;;EAEpB,qBAAqB;EACrB,cAAc;EACd,eAAe;;EAEf,uBAAuB;;EAEvB,mEAAmE;AACrE;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,OAAO;EACP,YAAY;AACd;AACA;IACI,aAAa;AACjB","sourcesContent":[".card-link {\r\n  width: 100%;\r\n  max-width: 800px;\r\n  height: auto;\r\n\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  padding: 0;\r\n  text-align: left;\r\n  box-sizing: border-box;\r\n\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: stretch;\r\n\r\n  text-decoration: none;\r\n  color: inherit;\r\n  cursor: pointer;\r\n\r\n  background-color: white;\r\n\r\n  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\r\n}\r\n.card-link:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}\r\n\r\n.card-image-container {\r\n  flex: 0 0 40%;\r\n}\r\n\r\n.card-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  display: block;\r\n}\r\n\r\n.card-content {\r\n  flex: 1;\r\n  padding: 2vw;\r\n}\r\n.card-content h2 {\r\n    margin-top: 0;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/title/card.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,gBAAgB;EAChB,YAAY;;EAEZ,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;EACV,gBAAgB;EAChB,sBAAsB;;EAEtB,aAAa;EACb,mBAAmB;EACnB,oBAAoB;;EAEpB,qBAAqB;EACrB,cAAc;EACd,eAAe;;EAEf,uBAAuB;;EAEvB,mEAAmE;AACrE;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,OAAO;EACP,YAAY;AACd;AACA;IACI,aAAa;AACjB","sourcesContent":[".card-link {\r\n  width: 100%;\r\n  max-width: 800px;\r\n  height: auto;\r\n\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  padding: 0;\r\n  text-align: left;\r\n  box-sizing: border-box;\r\n\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: stretch;\r\n\r\n  text-decoration: none;\r\n  color: inherit;\r\n  cursor: pointer;\r\n\r\n  background-color: white;\r\n\r\n  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\r\n}\r\n.card-link:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}\r\n\r\n.card-image-container {\r\n  flex: 0 0 40%;\r\n}\r\n\r\n.card-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  display: block;\r\n}\r\n\r\n.card-content {\r\n  flex: 1;\r\n  padding: 2vw;\r\n}\r\n.card-content h2 {\r\n    margin-top: 0;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -46962,7 +46962,7 @@ exports["default"] = CupControlPanel;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const ExperimentDescription = ({ initialOriginalTemperature: initialTemperature, initialVapor, initialCupTemperature, isExperimentRunning, }) => {
+const ExperimentDescription = ({ initOriginTemp: initialTemperature, initialVapor, initTergetTemp: initialCupTemperature, }) => {
     return ((0, jsx_runtime_1.jsxs)("div", { className: "experiment-description", children: [(0, jsx_runtime_1.jsx)("h2", { children: "\u7D50\u9732\u306E\u3057\u304F\u307F" }), (0, jsx_runtime_1.jsx)("p", { children: "\u7A7A\u6C17\u4E2D\u306B\u542B\u307E\u308C\u308B\u6C34\u84B8\u6C17\u304C\u30B3\u30C3\u30D7\u306E\u51B7\u305F\u3044\u7E01\u306B\u89E6\u308C\u308B\u3068\u3001\u305D\u306E\u90E8\u5206\u306E\u7A7A\u6C17\u304C\u51B7\u3084\u3055\u308C\u3001 \u98FD\u548C\u6C34\u84B8\u6C17\u91CF\u3092\u8D85\u3048\u305F\u6C34\u84B8\u6C17\u304C\u51DD\u7E2E\u3057\u3066\u6C34\u6EF4\u3068\u3057\u3066\u73FE\u308C\u307E\u3059\u3002" }), (0, jsx_runtime_1.jsx)("h2", { children: "\u5B9F\u9A13\u5185\u5BB9" }), (0, jsx_runtime_1.jsxs)("p", { children: ["\u5BA4\u6E29 ", initialTemperature.toFixed(1), "\u2103\u3001 \u7A7A\u9593\u5185\u306E\u6C34\u5206\u91CF ", initialVapor.toFixed(1), " g/m\u00B3 \u306E\u90E8\u5C4B\u306B\u3042\u308B \u30B3\u30C3\u30D7\u3092\u3001\u3086\u3063\u304F\u308A ", initialCupTemperature.toFixed(1), "\u2103 \u307E\u3067\u51B7\u307E\u3057\u3066\u3044\u304D\u307E\u3059\u3002"] })] }));
 };
 exports["default"] = ExperimentDescription;
@@ -47414,9 +47414,29 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/components/title/Card.css":
+/***/ "./src/components/title/Card.tsx":
 /*!***************************************!*\
-  !*** ./src/components/title/Card.css ***!
+  !*** ./src/components/title/Card.tsx ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Card = void 0;
+const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+__webpack_require__(/*! ./card.css */ "./src/components/title/card.css");
+const Card = ({ imageSrc, title, description, to, }) => {
+    return ((0, jsx_runtime_1.jsxs)(react_router_dom_1.Link, { to: to, className: "card-link", children: [(0, jsx_runtime_1.jsx)("div", { className: "card-image-container", children: (0, jsx_runtime_1.jsx)("img", { src: imageSrc, alt: title, className: "card-image" }) }), (0, jsx_runtime_1.jsxs)("div", { className: "card-content", children: [(0, jsx_runtime_1.jsx)("h2", { children: title }), (0, jsx_runtime_1.jsx)("p", { children: description })] })] }));
+};
+exports.Card = Card;
+
+
+/***/ }),
+
+/***/ "./src/components/title/card.css":
+/*!***************************************!*\
+  !*** ./src/components/title/card.css ***!
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -47436,7 +47456,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./Card.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/title/Card.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_card_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./card.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/title/card.css");
 
       
       
@@ -47456,32 +47476,12 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_card_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/components/title/Card.tsx":
-/*!***************************************!*\
-  !*** ./src/components/title/Card.tsx ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.Card = void 0;
-const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-__webpack_require__(/*! ./Card.css */ "./src/components/title/Card.css");
-const Card = ({ imageSrc, title, description, to, }) => {
-    return ((0, jsx_runtime_1.jsxs)(react_router_dom_1.Link, { to: to, className: "card-link", children: [(0, jsx_runtime_1.jsx)("div", { className: "card-image-container", children: (0, jsx_runtime_1.jsx)("img", { src: imageSrc, alt: title, className: "card-image" }) }), (0, jsx_runtime_1.jsxs)("div", { className: "card-content", children: [(0, jsx_runtime_1.jsx)("h2", { children: title }), (0, jsx_runtime_1.jsx)("p", { children: description })] })] }));
-};
-exports.Card = Card;
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_card_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_card_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_card_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -47804,7 +47804,7 @@ const Cup = () => {
     // ------------------------------------
     // 4. UI
     // ------------------------------------
-    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(CupExperimentalFootage_1.default, { waterDrop: waterDrop, tergetTemp: tergetTemp }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CupStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, xAxisLabel: "コップの温度[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(CupExperimentDescription_1.default, { initialOriginalTemperature: initOriginTemp, initialVapor: initVapor, initialCupTemperature: initTergetTemp, isExperimentRunning: isExperimentRunning }), (0, jsx_runtime_1.jsx)(CupControlPanel_1.default, { originTemp: originTemp, vapor: vapor, tergetTemp: tergetTemp, isExperimentRunning: isExperimentRunning, setOriginTemp: setOriginTemp, setVapor: setVapor, setTergetTemp: setTergetTemp, toggleExperiment: toggleExperiment })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { className: "overall-layout", children: [(0, jsx_runtime_1.jsxs)("div", { className: "page-button-layout", children: [(0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u30DB\u30FC\u30E0\u306B\u623B\u308B", to: "/", color: "#3498db" }), (0, jsx_runtime_1.jsx)(PageSelectButton_1.default, { label: "\u9055\u3046\u3082\u306E\u3092\u8ABF\u3079\u308B", to: "/house", color: "#3498db" })] }), (0, jsx_runtime_1.jsxs)("div", { className: "experiment-layout", children: [(0, jsx_runtime_1.jsx)("div", { className: "experimental-footage", children: (0, jsx_runtime_1.jsx)(CupExperimentalFootage_1.default, { waterDrop: waterDrop, tergetTemp: tergetTemp }) }), (0, jsx_runtime_1.jsxs)("div", { className: "center-item-layout", children: [(0, jsx_runtime_1.jsx)(CupStatusDisplay_1.default, { waterDrop: waterDrop, humidity: humidity }), (0, jsx_runtime_1.jsx)(ExplanationBarGraph_1.default, {})] }), (0, jsx_runtime_1.jsx)("div", { className: "graph-canvas", children: (0, jsx_runtime_1.jsx)(HumidityGraphCanvasMini_1.default, { temp: originTemp, saturationVapor: saturationVapor, vapor: vapor, waterDrop: waterDrop, remainingVapor: remainingVapor, xAxisLabel: "コップの温度[℃]", yAxisLabel: "飽和水蒸気量[g/m³]" }) })] }), (0, jsx_runtime_1.jsxs)("div", { className: "graph-controls", children: [(0, jsx_runtime_1.jsx)(CupExperimentDescription_1.default, { initOriginTemp: initOriginTemp, initialVapor: initVapor, initTergetTemp: initTergetTemp }), (0, jsx_runtime_1.jsx)(CupControlPanel_1.default, { originTemp: originTemp, vapor: vapor, tergetTemp: tergetTemp, isExperimentRunning: isExperimentRunning, setOriginTemp: setOriginTemp, setVapor: setVapor, setTergetTemp: setTergetTemp, toggleExperiment: toggleExperiment })] })] }));
 };
 exports["default"] = Cup;
 
