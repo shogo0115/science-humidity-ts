@@ -160,13 +160,13 @@ const HumidityGraphCanvasMini: React.FC<HumidityGraphCanvasMiniProps> = ({
 
       // (B) 空間内の水蒸気量
       const vaporHeight = toScreenY(drawnVaporAmount);
-      ctx.fillStyle ='#3498db';
+      ctx.fillStyle ='rgba(0, 0, 255, 1)';
       ctx.fillRect(barX, AXIS.zeroY, barWidth, -vaporHeight);
 
       // (C) 残りの水蒸気量
       if (rv > 0 && sv > v) {
         const remainingHeight = toScreenY(rv);
-        ctx.fillStyle = '#f39c12';
+        ctx.fillStyle = 'rgba(255, 166, 0, 1)';
         ctx.fillRect(barX, toY(v), barWidth, -remainingHeight);
       }
 

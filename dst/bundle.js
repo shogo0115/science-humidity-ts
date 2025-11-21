@@ -46782,7 +46782,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 const ExplanationBarGraph = () => {
-    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "20px" }, children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u68D2\u30B0\u30E9\u30D5\u306E\u8272\u306E\u8AAC\u660E" }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "blue" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u84B8\u6C17\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "green" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u6EF4\u306E\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "orange" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u307E\u3060\u7A7A\u6C17\u4E2D\u306B\u542B\u3080\u3053\u3068\u304C\u3067\u304D\u308B\u6C34\u84B8\u6C17\u91CF" })] })] }));
+    return ((0, jsx_runtime_1.jsxs)("div", { style: { fontSize: "20px" }, children: [(0, jsx_runtime_1.jsx)("h3", { children: "\u68D2\u30B0\u30E9\u30D5\u306E\u8272\u306E\u8AAC\u660E" }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "rgba(0, 0, 255, 1)" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u84B8\u6C17\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "rgba(0, 255, 0, 0.5)" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u6C34\u6EF4\u306E\u91CF" })] }), (0, jsx_runtime_1.jsxs)("div", { style: { display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }, children: [(0, jsx_runtime_1.jsx)("div", { style: { width: 20, height: 20, background: "rgba(255, 166, 0, 1)" } }), (0, jsx_runtime_1.jsx)("span", { children: "\u307E\u3060\u7A7A\u6C17\u4E2D\u306B\u542B\u3080\u3053\u3068\u304C\u3067\u304D\u308B\u6C34\u84B8\u6C17\u91CF" })] })] }));
 };
 exports["default"] = ExplanationBarGraph;
 
@@ -46937,12 +46937,12 @@ const HumidityGraphCanvasMini = ({ temp, saturationVapor, vapor, waterDrop, rema
             }
             // (B) 空間内の水蒸気量
             const vaporHeight = toScreenY(drawnVaporAmount);
-            ctx.fillStyle = '#3498db';
+            ctx.fillStyle = 'rgba(0, 0, 255, 1)';
             ctx.fillRect(barX, AXIS.zeroY, barWidth, -vaporHeight);
             // (C) 残りの水蒸気量
             if (rv > 0 && sv > v) {
                 const remainingHeight = toScreenY(rv);
-                ctx.fillStyle = '#f39c12';
+                ctx.fillStyle = 'rgba(255, 166, 0, 1)';
                 ctx.fillRect(barX, toY(v), barWidth, -remainingHeight);
             }
         };
