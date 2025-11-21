@@ -94,14 +94,12 @@
 /* -------------------------------------------------- */
 
 @media (max-width: 1024px) {
-    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */
     .experiment-main-layout,
     .graph-controls {
         flex-direction: column;
         margin: 20px auto;
     }
 
-    /* 各コンポーネントは幅いっぱいを使用 */
     .experiment-main-layout > *,
     .graph-controls > * {
         flex: 1 1 100%;
