@@ -1,6 +1,6 @@
 .card-link {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   height: auto;
 
   border: 1px solid #ddd;
@@ -27,8 +27,22 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* card.css */
+
 .card-image-container {
-  flex: 0 0 40%;
+    flex: 0 0 40%;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+.card-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .card-image {
@@ -41,7 +55,24 @@
 .card-content {
   flex: 1;
   padding: 2vw;
+  box-sizing: border-box;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 .card-content h2 {
-    margin-top: 0;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin-top: 0;
+}
+
+/* card.css の末尾に追加 */
+
+@media (max-width: 768px) {
+    .card-link {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+        .card-image-container {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
 }

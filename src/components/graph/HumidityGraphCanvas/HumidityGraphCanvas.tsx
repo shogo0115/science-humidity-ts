@@ -165,17 +165,17 @@ const HumidityGraphCanvas: React.FC<HumidityGraphCanvasProps> = ({
       // ------------------------------------
       // (A) 水滴の量 (WaterDrop)
       if (wd > 0) {
-        ctx.fillStyle = isSaved ? 'rgba(0, 255, 0, 0.5)' : '#1abc9c';
+        ctx.fillStyle = isSaved ? '#1abc9c' : 'rgba(0, 255, 0, 0.5)';
         ctx.fillRect(barX, toY(sv), barWidth, -toScreenY(wd));
       }
 
       // (B) 空間内の水蒸気量 (Vapor)
-      ctx.fillStyle = isSaved ? 'rgba(0, 0, 255, 0.5)' : '#3498db';
+      ctx.fillStyle = isSaved ? '#3498db' : 'rgba(0, 0, 255, 1)';
       ctx.fillRect(barX, toY(drawnVaporAmount), barWidth, toScreenY(drawnVaporAmount));
 
       // (C) 残りの水蒸気量 (RemainingVapor)
       if (rv > 0) {
-        ctx.fillStyle = isSaved ? 'rgba(255, 165, 0, 0.5)' : '#f39c12';
+        ctx.fillStyle = isSaved ? '#f39c12' : 'rgba(255, 166, 0, 1)';
         ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
       }
 

@@ -64,7 +64,7 @@
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: clamp(18px, 2vw, 24px);
 }
 
 /* グラフコントロール内の直接の子要素（パネルなど）のスタイル */

@@ -467,7 +467,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.card-link {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   height: auto;
 
   border: 1px solid #ddd;
@@ -494,8 +494,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.card-link {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* card.css */
+
 .card-image-container {
-  flex: 0 0 40%;
+    flex: 0 0 40%;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+.card-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .card-image {
@@ -508,10 +522,27 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.card-link {
 .card-content {
   flex: 1;
   padding: 2vw;
+  box-sizing: border-box;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 .card-content h2 {
-    margin-top: 0;
-}`, "",{"version":3,"sources":["webpack://./src/components/title/card.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,gBAAgB;EAChB,YAAY;;EAEZ,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;EACV,gBAAgB;EAChB,sBAAsB;;EAEtB,aAAa;EACb,mBAAmB;EACnB,oBAAoB;;EAEpB,qBAAqB;EACrB,cAAc;EACd,eAAe;;EAEf,uBAAuB;;EAEvB,mEAAmE;AACrE;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,OAAO;EACP,YAAY;AACd;AACA;IACI,aAAa;AACjB","sourcesContent":[".card-link {\r\n  width: 100%;\r\n  max-width: 800px;\r\n  height: auto;\r\n\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  padding: 0;\r\n  text-align: left;\r\n  box-sizing: border-box;\r\n\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: stretch;\r\n\r\n  text-decoration: none;\r\n  color: inherit;\r\n  cursor: pointer;\r\n\r\n  background-color: white;\r\n\r\n  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\r\n}\r\n.card-link:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}\r\n\r\n.card-image-container {\r\n  flex: 0 0 40%;\r\n}\r\n\r\n.card-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  display: block;\r\n}\r\n\r\n.card-content {\r\n  flex: 1;\r\n  padding: 2vw;\r\n}\r\n.card-content h2 {\r\n    margin-top: 0;\r\n}"],"sourceRoot":""}]);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin-top: 0;
+}
+
+/* card.css の末尾に追加 */
+
+@media (max-width: 768px) {
+    .card-link {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+        .card-image-container {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}`, "",{"version":3,"sources":["webpack://./src/components/title/card.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,iBAAiB;EACjB,YAAY;;EAEZ,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;EACV,gBAAgB;EAChB,sBAAsB;;EAEtB,aAAa;EACb,mBAAmB;EACnB,oBAAoB;;EAEpB,qBAAqB;EACrB,cAAc;EACd,eAAe;;EAEf,uBAAuB;;EAEvB,mEAAmE;AACrE;AACA;EACE,2BAA2B;EAC3B,2CAA2C;AAC7C;;AAEA,aAAa;;AAEb;IACI,aAAa;IACb,gBAAgB;IAChB,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,YAAY;IACZ,sBAAsB;AAC1B;AACA;IACI,WAAW;IACX,YAAY;IACZ,cAAc;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,OAAO;EACP,YAAY;EACZ,sBAAsB;EACtB,mCAAmC;AACrC;AACA;EACE,mCAAmC;EACnC,aAAa;AACf;;AAEA,oBAAoB;;AAEpB;IACI;QACI,sBAAsB;QACtB,eAAe;IACnB;QACI;QACA,eAAe;QACf,WAAW;QACX,YAAY;IAChB;AACJ","sourcesContent":[".card-link {\r\n  width: 100%;\r\n  max-width: 1000px;\r\n  height: auto;\r\n\r\n  border: 1px solid #ddd;\r\n  border-radius: 8px;\r\n  overflow: hidden;\r\n  padding: 0;\r\n  text-align: left;\r\n  box-sizing: border-box;\r\n\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: stretch;\r\n\r\n  text-decoration: none;\r\n  color: inherit;\r\n  cursor: pointer;\r\n\r\n  background-color: white;\r\n\r\n  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;\r\n}\r\n.card-link:hover {\r\n  transform: translateY(-5px);\r\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);\r\n}\r\n\r\n/* card.css */\r\n\r\n.card-image-container {\r\n    flex: 0 0 40%;\r\n    overflow: hidden;\r\n    height: auto;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 1vw;\r\n    box-sizing: border-box;\r\n}\r\n.card-image-container img {\r\n    width: 100%;\r\n    height: auto;\r\n    display: block;\r\n}\r\n\r\n.card-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  display: block;\r\n}\r\n\r\n.card-content {\r\n  flex: 1;\r\n  padding: 2vw;\r\n  box-sizing: border-box;\r\n  font-size: clamp(1rem, 2vw, 1.5rem);\r\n}\r\n.card-content h2 {\r\n  font-size: clamp(1.2rem, 3vw, 2rem);\r\n  margin-top: 0;\r\n}\r\n\r\n/* card.css の末尾に追加 */\r\n\r\n@media (max-width: 768px) {\r\n    .card-link {\r\n        flex-direction: column;\r\n        max-width: 90vw;\r\n    }\r\n        .card-image-container {\r\n        max-width: 100%;\r\n        width: 100%;\r\n        height: auto;\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -537,11 +568,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* -------------------------------------------------- */
-/* 全体コンテナ */
-/* -------------------------------------------------- */
-
-.overall-layout {
+___CSS_LOADER_EXPORT___.push([module.id, `.overall-layout {
     display: flex;
     padding: 20px;
     background-color: #f0f4f8;
@@ -601,7 +628,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
     max-width: 400px;
     margin:250px auto 0px auto;
     align-items: center;
-    font-size: 20px;
+    font-size: clamp(16px, 2.5vw, 24px);
 }
 
 .graph-canvas {
@@ -649,7 +676,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* -----------------------------------
     .graph-controls > * {
         flex: 1 1 100%;
     }
-}`, "",{"version":3,"sources":["webpack://./src/pages/experimentPage.css"],"names":[],"mappings":"AAAA,uDAAuD;AACvD,WAAW;AACX,uDAAuD;;AAEvD;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA,uDAAuD;AACvD,oBAAoB;AACpB,uDAAuD;;AAEvD;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,iBAAiB;IACjB,yBAAyB;IACzB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,uBAAuB;IACvB,mBAAmB;AACvB;AACA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,4BAA4B;IAC5B,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,SAAS;IACT,WAAW;IACX,gBAAgB;IAChB,0BAA0B;IAC1B,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,gBAAgB;IAChB,0BAA0B;IAC1B,uBAAuB;IACvB,oBAAoB;IACpB,mBAAmB;AACvB;;AAEA,uDAAuD;AACvD,qBAAqB;AACrB,uDAAuD;;AAEvD;IACI,aAAa;IACb,SAAS;IACT,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,eAAe;AACnB;AACA;IACI,OAAO;IACP,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA,uDAAuD;AACvD,aAAa;AACb,uDAAuD;;AAEvD;IACI,6BAA6B;IAC7B;;QAEI,sBAAsB;QACtB,iBAAiB;IACrB;;IAEA,sBAAsB;IACtB;;QAEI,cAAc;IAClB;AACJ","sourcesContent":["/* -------------------------------------------------- */\r\n/* 全体コンテナ */\r\n/* -------------------------------------------------- */\r\n\r\n.overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 上段エリア: 実験映像、グラフ */\r\n/* -------------------------------------------------- */\r\n\r\n.experiment-layout {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n}\r\n\r\n.experimental-footage {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.picture-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 20px auto -40px auto;\r\n    min-height: 50vh;\r\n}\r\n\r\n.center-item-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 60px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin:250px auto 0px auto;\r\n    align-items: center;\r\n    font-size: 20px;\r\n}\r\n\r\n.graph-canvas {\r\n    padding: 20px;\r\n    max-width: 600px;\r\n    margin: 0px auto 50px auto;\r\n    background-color: white;\r\n    border-radius: 0.8vw;\r\n    align-items: center;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 下段エリア: 実験内容、条件設定 */\r\n/* -------------------------------------------------- */\r\n\r\n.graph-controls {\r\n    display: flex;\r\n    gap: 20px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0 auto;\r\n    font-size: 24px;\r\n}\r\n.graph-controls > * {\r\n    flex: 1;\r\n    padding: 15px;\r\n    border-radius: 12px;\r\n    min-height: 250px;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* レスポンシブ対応 */\r\n/* -------------------------------------------------- */\r\n\r\n@media (max-width: 1024px) {\r\n    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */\r\n    .experiment-main-layout,\r\n    .graph-controls {\r\n        flex-direction: column;\r\n        margin: 20px auto;\r\n    }\r\n\r\n    /* 各コンポーネントは幅いっぱいを使用 */\r\n    .experiment-main-layout > *,\r\n    .graph-controls > * {\r\n        flex: 1 1 100%;\r\n    }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/experimentPage.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA,uDAAuD;AACvD,oBAAoB;AACpB,uDAAuD;;AAEvD;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,iBAAiB;IACjB,yBAAyB;IACzB,uBAAuB;AAC3B;;AAEA;IACI,aAAa;IACb,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,uBAAuB;IACvB,mBAAmB;AACvB;AACA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;IACR,WAAW;IACX,gBAAgB;IAChB,4BAA4B;IAC5B,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,SAAS;IACT,WAAW;IACX,gBAAgB;IAChB,0BAA0B;IAC1B,mBAAmB;IACnB,mCAAmC;AACvC;;AAEA;IACI,aAAa;IACb,gBAAgB;IAChB,0BAA0B;IAC1B,uBAAuB;IACvB,oBAAoB;IACpB,mBAAmB;AACvB;;AAEA,uDAAuD;AACvD,qBAAqB;AACrB,uDAAuD;;AAEvD;IACI,aAAa;IACb,SAAS;IACT,WAAW;IACX,iBAAiB;IACjB,cAAc;IACd,eAAe;AACnB;AACA;IACI,OAAO;IACP,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA,uDAAuD;AACvD,aAAa;AACb,uDAAuD;;AAEvD;IACI,6BAA6B;IAC7B;;QAEI,sBAAsB;QACtB,iBAAiB;IACrB;;IAEA,sBAAsB;IACtB;;QAEI,cAAc;IAClB;AACJ","sourcesContent":[".overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 上段エリア: 実験映像、グラフ */\r\n/* -------------------------------------------------- */\r\n\r\n.experiment-layout {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n}\r\n\r\n.experimental-footage {\r\n    display: flex;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 0px auto 0px auto;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.picture-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 0px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin: 20px auto -40px auto;\r\n    min-height: 50vh;\r\n}\r\n\r\n.center-item-layout {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 60px;\r\n    width: 100%;\r\n    max-width: 400px;\r\n    margin:250px auto 0px auto;\r\n    align-items: center;\r\n    font-size: clamp(16px, 2.5vw, 24px);\r\n}\r\n\r\n.graph-canvas {\r\n    padding: 20px;\r\n    max-width: 600px;\r\n    margin: 0px auto 50px auto;\r\n    background-color: white;\r\n    border-radius: 0.8vw;\r\n    align-items: center;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* 下段エリア: 実験内容、条件設定 */\r\n/* -------------------------------------------------- */\r\n\r\n.graph-controls {\r\n    display: flex;\r\n    gap: 20px;\r\n    width: 100%;\r\n    max-width: 1500px;\r\n    margin: 0 auto;\r\n    font-size: 24px;\r\n}\r\n.graph-controls > * {\r\n    flex: 1;\r\n    padding: 15px;\r\n    border-radius: 12px;\r\n    min-height: 250px;\r\n}\r\n\r\n/* -------------------------------------------------- */\r\n/* レスポンシブ対応 */\r\n/* -------------------------------------------------- */\r\n\r\n@media (max-width: 1024px) {\r\n    /* 画面幅が狭い場合、上段・下段の要素を縦並びにする */\r\n    .experiment-main-layout,\r\n    .graph-controls {\r\n        flex-direction: column;\r\n        margin: 20px auto;\r\n    }\r\n\r\n    /* 各コンポーネントは幅いっぱいを使用 */\r\n    .experiment-main-layout > *,\r\n    .graph-controls > * {\r\n        flex: 1 1 100%;\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -741,7 +768,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.overall-layout {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: clamp(18px, 2vw, 24px);
 }
 
 /* グラフコントロール内の直接の子要素（パネルなど）のスタイル */
@@ -750,7 +777,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.overall-layout {
   padding: 15px;
   border-radius: 12px;
   min-height: 250px;
-}`, "",{"version":3,"sources":["webpack://./src/pages/graph/graph.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,QAAQ;EACR,WAAW;EACX,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,0BAA0B;EAC1B,uBAAuB;EACvB,oBAAoB;EACpB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,WAAW;EACX,iBAAiB;EACjB,cAAc;EACd,eAAe;AACjB;;AAEA,kCAAkC;AAClC;EACE,OAAO;EACP,aAAa;EACb,mBAAmB;EACnB,iBAAiB;AACnB","sourcesContent":[".overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n.graph-main-layout {\r\n  display: flex;\r\n  gap: 0px;\r\n  width: 100%;\r\n  max-width: 1500px;\r\n  margin: 0px auto;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * A. グラフエリア: 凡例/公式 と キャンバスを横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-area-wrap {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-grow: 0;\r\n  max-width: 1500px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.legend-formula-column {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  width: 400px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.graph-canvas {\r\n  padding: 20px;\r\n  max-width: 600px;\r\n  margin: 0px auto 50px auto;\r\n  background-color: white;\r\n  border-radius: 0.8vw;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-controls {\r\n  display: flex;\r\n  gap: 20px;\r\n  width: 100%;\r\n  max-width: 1500px;\r\n  margin: 0 auto;\r\n  font-size: 24px;\r\n}\r\n\r\n/* グラフコントロール内の直接の子要素（パネルなど）のスタイル */\r\n.graph-controls > * {\r\n  flex: 1;\r\n  padding: 15px;\r\n  border-radius: 12px;\r\n  min-height: 250px;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/graph/graph.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,aAAa;IACb,yBAAyB;IACzB,iBAAiB;IACjB,sBAAsB;IACtB,kBAAkB;IAClB,gCAAgC;IAChC,sBAAsB;IACtB,SAAS;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,QAAQ;EACR,WAAW;EACX,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,YAAY;EACZ,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,0BAA0B;EAC1B,uBAAuB;EACvB,oBAAoB;EACpB,mBAAmB;AACrB;;AAEA;;yDAEyD;AACzD;EACE,aAAa;EACb,SAAS;EACT,WAAW;EACX,iBAAiB;EACjB,cAAc;EACd,iCAAiC;AACnC;;AAEA,kCAAkC;AAClC;EACE,OAAO;EACP,aAAa;EACb,mBAAmB;EACnB,iBAAiB;AACnB","sourcesContent":[".overall-layout {\r\n    display: flex;\r\n    padding: 20px;\r\n    background-color: #f0f4f8;\r\n    min-height: 100vh;\r\n    box-sizing: border-box;\r\n    position: relative;\r\n    font-family: 'Inter', sans-serif;\r\n    flex-direction: column;\r\n    gap: 16px;\r\n}\r\n\r\n.page-button-layout {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 16px;\r\n  align-self: flex-start;\r\n}\r\n\r\n.graph-main-layout {\r\n  display: flex;\r\n  gap: 0px;\r\n  width: 100%;\r\n  max-width: 1500px;\r\n  margin: 0px auto;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * A. グラフエリア: 凡例/公式 と キャンバスを横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-area-wrap {\r\n  display: flex;\r\n  gap: 20px;\r\n  flex-grow: 0;\r\n  max-width: 1500px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.legend-formula-column {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n  width: 400px;\r\n  flex-shrink: 1;\r\n}\r\n\r\n.graph-canvas {\r\n  padding: 20px;\r\n  max-width: 600px;\r\n  margin: 0px auto 50px auto;\r\n  background-color: white;\r\n  border-radius: 0.8vw;\r\n  align-items: center;\r\n}\r\n\r\n/* ----------------------------------------------------\r\n * B. コントロールエリア: 現在の状態 と 保存した状態 を横並びにする\r\n * ---------------------------------------------------- */\r\n.graph-controls {\r\n  display: flex;\r\n  gap: 20px;\r\n  width: 100%;\r\n  max-width: 1500px;\r\n  margin: 0 auto;\r\n  font-size: clamp(18px, 2vw, 24px);\r\n}\r\n\r\n/* グラフコントロール内の直接の子要素（パネルなど）のスタイル */\r\n.graph-controls > * {\r\n  flex: 1;\r\n  padding: 15px;\r\n  border-radius: 12px;\r\n  min-height: 250px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -862,7 +889,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.top {
 
   width: 100vw;
   max-width: 1500px;
-  margin: 5vh 5vw;
+  margin: 2vh 2vw;
   padding: 0 2vw;
   align-items: center;
   box-sizing: border-box;
@@ -883,15 +910,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.top {
   box-sizing: border-box;
 }
 .title h1 {
-  font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   margin: 0.5em 0;
 }
 .title p {
-  font-size: clamp(0.9rem, 1.2vw, 1.5rem);
-  max-width: 60vw;
+  font-size: clamp(1.2rem, 1.4vw, 2.2rem);
   margin: 0;
   line-height: 1.6;
-}`, "",{"version":3,"sources":["webpack://./src/pages/title/title.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,kBAAkB;EAClB,gBAAgB;EAChB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,QAAQ;;EAER,YAAY;EACZ,iBAAiB;EACjB,eAAe;EACf,cAAc;EACd,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,kBAAkB;;EAElB,QAAQ;EACR,WAAW;EACX,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;EACd,sBAAsB;AACxB;AACA;EACE,uCAAuC;EACvC,eAAe;AACjB;AACA;EACE,uCAAuC;EACvC,eAAe;EACf,SAAS;EACT,gBAAgB;AAClB","sourcesContent":[".top {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-align: center;\r\n  min-height: 10vh;\r\n  padding: 2vh 2vw;\r\n  box-sizing: border-box;\r\n  background-color: #f0f4f8;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 3vh;\r\n\r\n  width: 100vw;\r\n  max-width: 1500px;\r\n  margin: 5vh 5vw;\r\n  padding: 0 2vw;\r\n  align-items: center;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.title {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-align: center;\r\n\r\n  gap: 0vw;\r\n  width: 60vw;\r\n  max-width: 1500px;\r\n  margin: 5vh auto;\r\n  padding: 0 2vw;\r\n  box-sizing: border-box;\r\n}\r\n.title h1 {\r\n  font-size: clamp(1.2rem, 2.5vw, 2.5rem);\r\n  margin: 0.5em 0;\r\n}\r\n.title p {\r\n  font-size: clamp(0.9rem, 1.2vw, 1.5rem);\r\n  max-width: 60vw;\r\n  margin: 0;\r\n  line-height: 1.6;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/title/title.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,kBAAkB;EAClB,gBAAgB;EAChB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,QAAQ;;EAER,YAAY;EACZ,iBAAiB;EACjB,eAAe;EACf,cAAc;EACd,mBAAmB;EACnB,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,kBAAkB;;EAElB,QAAQ;EACR,WAAW;EACX,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;EACd,sBAAsB;AACxB;AACA;EACE,qCAAqC;EACrC,eAAe;AACjB;AACA;EACE,uCAAuC;EACvC,SAAS;EACT,gBAAgB;AAClB","sourcesContent":[".top {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-align: center;\r\n  min-height: 10vh;\r\n  padding: 2vh 2vw;\r\n  box-sizing: border-box;\r\n  background-color: #f0f4f8;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 3vh;\r\n\r\n  width: 100vw;\r\n  max-width: 1500px;\r\n  margin: 2vh 2vw;\r\n  padding: 0 2vw;\r\n  align-items: center;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.title {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-align: center;\r\n\r\n  gap: 0vw;\r\n  width: 60vw;\r\n  max-width: 1500px;\r\n  margin: 5vh auto;\r\n  padding: 0 2vw;\r\n  box-sizing: border-box;\r\n}\r\n.title h1 {\r\n  font-size: clamp(1.2rem, 3vw, 2.5rem);\r\n  margin: 0.5em 0;\r\n}\r\n.title p {\r\n  font-size: clamp(1.2rem, 1.4vw, 2.2rem);\r\n  margin: 0;\r\n  line-height: 1.6;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -47232,15 +47258,15 @@ const HumidityGraphCanvas = ({ temperature, saturationVapor, vapor, waterDrop, r
             // ------------------------------------
             // (A) 水滴の量 (WaterDrop)
             if (wd > 0) {
-                ctx.fillStyle = isSaved ? 'rgba(0, 255, 0, 0.5)' : '#1abc9c';
+                ctx.fillStyle = isSaved ? '#1abc9c' : 'rgba(0, 255, 0, 0.5)';
                 ctx.fillRect(barX, toY(sv), barWidth, -toScreenY(wd));
             }
             // (B) 空間内の水蒸気量 (Vapor)
-            ctx.fillStyle = isSaved ? 'rgba(0, 0, 255, 0.5)' : '#3498db';
+            ctx.fillStyle = isSaved ? '#3498db' : 'rgba(0, 0, 255, 1)';
             ctx.fillRect(barX, toY(drawnVaporAmount), barWidth, toScreenY(drawnVaporAmount));
             // (C) 残りの水蒸気量 (RemainingVapor)
             if (rv > 0) {
-                ctx.fillStyle = isSaved ? 'rgba(255, 165, 0, 0.5)' : '#f39c12';
+                ctx.fillStyle = isSaved ? '#f39c12' : 'rgba(255, 166, 0, 1)';
                 ctx.fillRect(barX, toY(sv), barWidth, toScreenY(rv));
             }
         };
