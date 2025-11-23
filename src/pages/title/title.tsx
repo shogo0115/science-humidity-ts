@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import React from "react";
 import "./title.css";
 import { Card } from "../../components/title/Card";
