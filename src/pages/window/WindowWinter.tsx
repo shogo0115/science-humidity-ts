@@ -98,7 +98,7 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
       return parseFloat(nextT.toFixed(1));
       });
-    }, 500);
+    }, 200);
 
     // クリーンアップ関数
     return () => clearInterval(intervalId);

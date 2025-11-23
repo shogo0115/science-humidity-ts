@@ -95,9 +95,8 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
     }
 
     setTowelWater(currentWater => {
-      // waterが既に0g以下の場合は処理を停止するため、現在のwater値をそのまま返す
       if (currentWater <= 0) {
-        clearInterval(intervalId); // water 0gで停止
+        clearInterval(intervalId);
         return 0;
       }
 
@@ -106,11 +105,9 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
 
       // waterが0g以下になる場合は、0gで停止
       if (nextWater <= 0) {
-        // waterが0になった時点でインターバルを停止
         clearInterval(intervalId);
 
         // waterが減った分だけvaporを増やす
-        // vaporが変化することでhumidityも更新され、次のサイクルで100%チェックが機能する
         setVapor(currentVapor => parseFloat((currentVapor + currentWater).toFixed(1)));
 
         return 0;
@@ -120,11 +117,10 @@ const [isExperimentRunning, setIsExperimentRunning] = useState<boolean>(false);
       setVapor(currentVapor => parseFloat((currentVapor + 0.1).toFixed(1)));
       return parseFloat(nextWater.toFixed(1));
     });
-  }, 100);
+  }, 200);
 
   // クリーンアップ関数
   return () => clearInterval(intervalId);
-  // 依存配列に humidity を追加
 }, [isExperimentRunning, humidity, setTowelWater, setVapor]);
 
   // 実験開始/停止を切り替える関数（初期値の保存と復元ロジックを追加）
