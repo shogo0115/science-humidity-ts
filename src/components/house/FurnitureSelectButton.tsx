@@ -1,5 +1,6 @@
 import React from "react";
-import './furnitureSelectButton.css';
+import { useNavigate } from "react-router-dom";
+import "./furnitureSelectButton.css";
 
 type FurnitureSelectButtonProps = {
   label: string;
@@ -12,16 +13,16 @@ export const FurnitureSelectButton: React.FC<FurnitureSelectButtonProps> = ({
   to,
   color,
 }) => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
-    window.location.href = to;
+    navigate(to);
   };
 
   return (
     <button
       className="furniture-select-button"
-      style={{
-        backgroundColor: color,
-      }}
+      style={{ backgroundColor: color }}
       onClick={handleClick}
     >
       {label}

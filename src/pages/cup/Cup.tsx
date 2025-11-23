@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "../experimentPage.css";
 
 import PageSelectButton from "../../components/common/Button/PageSelectButton";
@@ -24,8 +23,6 @@ function satVapor(T: number) {
  // 2. コンポーネントの初期化と状態定義
  // ------------------------------------
 const Cup: React.FC = () => {
-  const navigate = useNavigate();
-
  /** ------- 空間の現在の状態 ------- */
  const [originTemp, setOriginTemp] = useState<number>(25.0);
  const [saturationVapor, setSaturationVapor] = useState<number>(23.0);

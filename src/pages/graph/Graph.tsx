@@ -50,7 +50,6 @@ function temperatureFromSaturationVapor(
     // 2. コンポーネントの初期化と状態定義
     // ------------------------------------
 const Graph: React.FC = () => {
-  const navigate = useNavigate();
   const table = useMemo(() => buildSaturationTable(), []);
 
   /** ------- 状態（気体1：現在の空間） ------- */

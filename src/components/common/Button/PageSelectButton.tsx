@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './pageSelectButton.css';
 
 type PageSelectButtonProps = {
@@ -12,17 +13,13 @@ export const PageSelectButton: React.FC<PageSelectButtonProps> = ({
   to,
   color,
 }) => {
-  const handleClick = () => {
-    window.location.href = to;
-  };
+  const navigate = useNavigate();
 
   return (
     <button
       className="page-select-button"
-      style={{
-        backgroundColor: color,
-      }}
-      onClick={handleClick}
+      style={{ backgroundColor: color }}
+      onClick={() => navigate(to)}
     >
       {label}
     </button>
